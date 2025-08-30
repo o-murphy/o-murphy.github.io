@@ -15,11 +15,13 @@ export default function Home() {
           </h2>
           <p className="text-sm font-light leading-relaxed">
             Lover of programming languages.<br />
-            Musician.
+            Amateur musician and singer.
           </p>
           <div className="flex space-x-0 mt-4">
             <span className="text-xl">👨‍💻</span>
             <span className="text-xl">🐍</span>
+            <span className="text-xl">🎸</span>
+            <span className="text-xl">🎤</span>
           </div>
         </section>
       </div>
