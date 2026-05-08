@@ -2,21 +2,18 @@ name: Deploy to GitHub Pages
 
 on:
   schedule:
-    # Запуск кожну неділю о 00:00
     - cron: "0 0 * * 0"
-  workflow_dispatch: # Можливість запуску вручну
+  workflow_dispatch:
   push:
     branches:
       - main
       - master
 
-# Дозволяємо деплой на GitHub Pages
 permissions:
   contents: write
   pages: write
   id-token: write
 
-# Конфлікт одночасних деплоїв
 concurrency:
   group: "pages"
   cancel-in-progress: false
@@ -27,12 +24,12 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v6
+        uses: actions/checkout@v4
 
       - name: Setup Node.js
-        uses: actions/setup-node@v6
+        uses: actions/setup-node@v4
         with:
-          node-version: "22"
+          node-version: "20"
           cache: "yarn"
 
       - name: Install dependencies
@@ -44,23 +41,20 @@ jobs:
           echo "GITHUB_USERNAME=${{ secrets.GITHUB_USERNAME }}" >> .env
 
       - name: Run fetch script to update GitHub data
-        run: yarn fetch:data
+        run: node fetcher.mjs
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_USERNAME: ${{ secrets.GITHUB_USERNAME }}
 
       - name: Setup public/data directory
-        run: yarn setup
+        run: mkdir -p public/data
 
-      - name: Copy JSON files to public/data
+      - name: Copy portfolio.json to public/data
         run: |
-          # Копіюємо portfolio.json якщо існує
           if [ -f "portfolio.json" ]; then
             cp portfolio.json public/data/portfolio.json
-            echo "✅ Copied portfolio.json"
+            echo "✅ Copied portfolio.json to public/data/"
           fi
-
-          # Показуємо що скопійовано
           echo "📁 Files in public/data:"
           ls -la public/data/
 
@@ -72,10 +66,15 @@ jobs:
       - name: Copy JSON files to out directory
         run: |
           mkdir -p out/data
-          cp -r public/data/* out/data/ 2>/dev/null || true
-          cp portfolio.json out/data/ 2>/dev/null || true
+          if [ -f "public/data/portfolio.json" ]; then
+            cp public/data/portfolio.json out/data/
+            echo "✅ Copied portfolio.json to out/data/"
+          fi
+          if [ -d "public/data" ]; then
+            cp -r public/data/* out/data/ 2>/dev/null || true
+          fi
           echo "📁 Files in out/data:"
-          ls -la out/data/
+          ls -la out/data/ || echo "No files"
 
       - name: Create .nojekyll file
         run: touch out/.nojekyll
@@ -83,10 +82,11 @@ jobs:
       - name: Debug - check output directory
         run: |
           echo "🔍 Checking build outputs:"
-          ls -la out/ || echo "❌ No out folder"
+          echo "out/ contents:"
+          ls -la out/
           echo ""
-          echo "📁 Files in out directory:"
-          ls -la out/ || echo "No files"
+          echo "out/data/ contents:"
+          ls -la out/data/ || echo "No out/data folder"
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
