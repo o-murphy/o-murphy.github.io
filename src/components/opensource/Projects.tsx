@@ -1,53 +1,110 @@
+// src/components/opensource/Projects.tsx
 'use client';
 
-import { useEffect, useState } from 'react';
 import Link from 'next/link';
-import projectsData from '@/shared/opensource/projects.json';
-import { Project } from '@/types/opensource'; // Виправлений шлях
+import { Project } from '@/types/opensource';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { 
+  faPython, 
+  faJs, 
+  faJava, 
+  faPhp, 
+  faRust, 
+  faGitAlt,
+  faDocker,
+  faSwift,
+  faNode,
+  faReact,
+  faDartLang,
+  faFlutter
+} from '@fortawesome/free-brands-svg-icons';
+import { 
+  faCode, 
+  faDatabase, 
+  faGem,
+  faGear,
+  faTerminal,
+  faFileCode
+} from '@fortawesome/free-solid-svg-icons';
 
-export default function Projects() {
-  const [projects, setProjects] = useState<Project[]>([]);
+interface ProjectsProps {
+  projects: Project[];
+}
 
-  useEffect(() => {
-    setProjects(projectsData.data || []);
-  }, []);
+const languageIcons: Record<string, any> = {
+  'Python': faPython,
+  'JavaScript': faJs,
+  'TypeScript': faJs,
+  'Java': faJava,
+  'PHP': faPhp,
+  'Rust': faRust,
+  'Flutter': faFlutter,
+  'Dart': faDartLang,
+  'Git': faGitAlt,
+  'Dockerfile': faDocker,
+  'Docker': faDocker,
+  'Swift': faSwift,
+  'Node.js': faNode,
+  'React': faReact,
+  'Ruby': faGem,
+  'C++': faGear,
+  'C#': faCode,
+  'Shell': faTerminal,
+  'HTML': faCode,
+  'CSS': faCode,
+  'SQL': faDatabase,
+  'Go': faCode,
+  'Kotlin': faCode,
+  'Jupyter Notebook': faFileCode,
+};
 
-  if (projects.length === 0) {
-    return (
-      <div className="space-y-4">
-        <h2 className="text-2xl font-bold mb-4">Pinned Projects</h2>
-        <p className="text-gray-500 text-center py-8">No projects data available.</p>
-      </div>
-    );
+const getLanguageIcon = (langName: string) => {
+  const icon = languageIcons[langName];
+  if (icon) {
+    return <FontAwesomeIcon icon={icon} className="w-3.5 h-3.5" />;
+  }
+  return <FontAwesomeIcon icon={faCode} className="w-3.5 h-3.5" />;
+};
+
+export default function Projects({ projects }: ProjectsProps) {
+  if (!projects || projects.length === 0) {
+    return null;
   }
 
   return (
-    <div className="space-y-4">
+    <section>
       <h2 className="text-2xl font-bold mb-4">Pinned Projects</h2>
       <div className="grid md:grid-cols-2 gap-6">
         {projects.map((project) => (
-          <div key={project.url} className="border rounded-lg p-4 hover:shadow-lg transition-shadow">
+          <div key={project.url} className="border rounded-lg p-5 hover:shadow-lg transition-shadow bg-white">
             <Link href={project.url} target="_blank" className="block">
               <h3 className="text-xl font-semibold text-blue-600 hover:underline mb-2">
                 {project.name}
               </h3>
               {project.description && (
-                <p className="text-gray-600 mb-3">{project.description}</p>
+                <p className="text-gray-600 text-sm mb-3 line-clamp-2">{project.description}</p>
               )}
+              
               <div className="flex flex-wrap gap-2 mb-3">
-                {project.languages.map((lang) => (
-                  <span key={lang.name} className="px-2 py-1 bg-gray-100 rounded text-sm">
-                    {lang.name}
+                {project.languages?.map((lang) => (
+                  <span 
+                    key={lang.name} 
+                    className="inline-flex items-center gap-1.5 text-xs bg-gray-100 px-2.5 py-1.5 rounded-full"
+                    title={lang.name}
+                  >
+                    {getLanguageIcon(lang.name)}
+                    <span>{lang.name}</span>
                   </span>
                 ))}
               </div>
-              <div className="text-sm text-gray-500">
+              
+              <div className="text-xs text-gray-400">
                 📅 Created: {new Date(project.createdAt).toLocaleDateString()}
               </div>
             </Link>
           </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 }

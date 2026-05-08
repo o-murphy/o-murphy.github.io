@@ -1,71 +1,69 @@
+// src/components/opensource/PullRequests.tsx
 'use client';
 
-import { useEffect, useState } from 'react';
 import Link from 'next/link';
-import pullRequestsData from '@/shared/opensource/pull_requests.json';
-import { PullRequest } from '@/types/opensource'; // Виправлений шлях
+import { PullRequest } from '@/types/opensource';
 
-export default function PullRequests() {
-  const [pullRequests, setPullRequests] = useState<PullRequest[]>([]);
+interface PullRequestsProps {
+  pullRequests: PullRequest[];
+  limit?: number;
+  id?: string;
+}
 
-  useEffect(() => {
-    setPullRequests(pullRequestsData.data || []);
-  }, []);
-
-  const openCount = pullRequests.filter(pr => pr.state === 'OPEN').length;
-  const mergedCount = pullRequests.filter(pr => pr.state === 'MERGED').length;
-  const closedCount = pullRequests.filter(pr => pr.state === 'CLOSED').length;
-
-  // Якщо даних немає, показуємо повідомлення
-  if (pullRequests.length === 0) {
-    return (
-      <div className="space-y-4">
-        <h2 className="text-2xl font-bold mb-4">Pull Requests (0)</h2>
-        <p className="text-gray-500 text-center py-8">No pull requests data available.</p>
-      </div>
-    );
+export default function PullRequests({ pullRequests, limit = 20, id }: PullRequestsProps) {
+  if (!pullRequests || pullRequests.length === 0) {
+    return null;
   }
 
+  const displayPRs = pullRequests.slice(0, limit);
+  const hasMore = pullRequests.length > limit;
+
+  const mergedPRs = pullRequests.filter((pr) => pr.state === 'MERGED').length;
+  const openPRs = pullRequests.filter((pr) => pr.state === 'OPEN').length;
+  const closedPRs = pullRequests.filter((pr) => pr.state === 'CLOSED').length;
+
   return (
-    <div className="space-y-4">
+    <section id={id}>
       <h2 className="text-2xl font-bold mb-4">
         Pull Requests ({pullRequests.length})
+        <span className="ml-2 text-sm font-normal text-gray-500">
+          (✅ {mergedPRs} merged, 🟢 {openPRs} open, ❌ {closedPRs} closed)
+        </span>
       </h2>
-      <div className="grid gap-4">
-        {pullRequests.map((pr) => (
-          <div key={pr.url} className="border rounded-lg p-4 hover:shadow-lg transition-shadow">
-            <Link href={pr.url} target="_blank" className="block">
-              <div className="flex justify-between items-start">
-                <div>
-                  <h3 className="text-lg font-semibold text-blue-600 hover:underline">
+      <div className="border rounded-lg bg-gray-50 overflow-hidden">
+        <div className="space-y-3 max-h-96 overflow-y-auto p-6">
+          {displayPRs.map((pr) => (
+            <div key={pr.url} className="border rounded-lg p-4 hover:shadow-md transition-shadow bg-white">
+              <Link href={pr.url} target="_blank" className="block">
+                <div className="flex justify-between items-start gap-2">
+                  <span className="font-semibold text-blue-600 hover:underline text-sm line-clamp-2">
                     {pr.title}
-                  </h3>
-                  <p className="text-sm text-gray-600">
-                    #{pr.number} in {pr.baseRepository.owner.login}/{pr.baseRepository.name}
-                  </p>
+                  </span>
+                  <span className={`text-xs px-2 py-1 rounded whitespace-nowrap ${pr.state === 'MERGED' ? 'bg-purple-100 text-purple-700' :
+                    pr.state === 'OPEN' ? 'bg-green-100 text-green-700' :
+                      'bg-gray-100 text-gray-700'
+                    }`}>
+                    {pr.state}
+                  </span>
                 </div>
-                <span className={`px-2 py-1 rounded text-xs font-semibold ${
-                  pr.state === 'MERGED' ? 'bg-purple-100 text-purple-800' :
-                  pr.state === 'OPEN' ? 'bg-green-100 text-green-800' :
-                  'bg-gray-100 text-gray-800'
-                }`}>
-                  {pr.state}
-                </span>
-              </div>
-              <div className="mt-2 flex gap-4 text-sm text-gray-500">
-                <span>➕ {pr.additions} additions</span>
-                <span>➖ {pr.deletions} deletions</span>
-                <span>📅 {new Date(pr.createdAt).toLocaleDateString()}</span>
-              </div>
-            </Link>
-          </div>
-        ))}
+                <div className="text-xs text-gray-500 mt-2">
+                  <span className="font-mono">#{pr.number}</span> in {pr.baseRepository.owner.login}/{pr.baseRepository.name}
+                </div>
+                <div className="flex gap-3 mt-2 text-xs text-gray-400">
+                  <span>➕ {pr.additions}</span>
+                  <span>➖ {pr.deletions}</span>
+                  <span>📅 {new Date(pr.createdAt).toLocaleDateString()}</span>
+                </div>
+              </Link>
+            </div>
+          ))}
+          {hasMore && (
+            <p className="text-center text-gray-400 text-sm pt-2">
+              + {pullRequests.length - limit} more contributions
+            </p>
+          )}
+        </div>
       </div>
-      <div className="mt-4 flex gap-4 text-sm">
-        <span>✅ Merged: {mergedCount}</span>
-        <span>🟢 Open: {openCount}</span>
-        <span>❌ Closed: {closedCount}</span>
-      </div>
-    </div>
+    </section>
   );
 }
