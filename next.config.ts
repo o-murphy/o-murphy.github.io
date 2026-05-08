@@ -1,13 +1,15 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
-  // eslint: {
-  //   ignoreDuringBuilds: true, // Ігнорувати помилки ESLint (ті самі лапки та <a> теги)
-  // },
-  // typescript: {
-  //   ignoreBuildErrors: true,   // Ігнорувати помилки типів (ті самі any)
-  // },
+  allowedDevOrigins: ['192.168.6.162', 'localhost'],
+  
+  webpack: (config) => {
+    config.module.rules.push({
+      test: /\.json$/,
+      type: 'json',
+    });
+    return config;
+  },
 };
 
 export default nextConfig;
