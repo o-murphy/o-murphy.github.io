@@ -3,8 +3,8 @@ name: Deploy to GitHub Pages
 on:
   schedule:
     # Запуск кожну неділю о 00:00
-    - cron: '0 0 * * 0'
-  workflow_dispatch:  # Можливість запуску вручну
+    - cron: "0 0 * * 0"
+  workflow_dispatch: # Можливість запуску вручну
   push:
     branches:
       - main
@@ -12,7 +12,7 @@ on:
 
 # Дозволяємо деплой на GitHub Pages
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 
@@ -24,34 +24,34 @@ concurrency:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
-    
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-      
+
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '24'
-          cache: 'yarn'
-      
+          node-version: "20"
+          cache: "yarn"
+
       - name: Install dependencies
         run: yarn install --frozen-lockfile
-      
+
       - name: Create .env file for fetch script
         run: |
           echo "GITHUB_TOKEN=${{ secrets.GITHUB_TOKEN }}" >> .env
           echo "GITHUB_USERNAME=${{ secrets.GITHUB_USERNAME }}" >> .env
-      
+
       - name: Run fetch script to update GitHub data
         run: yarn fetch:data
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_USERNAME: ${{ secrets.GITHUB_USERNAME }}
-      
+
       - name: Setup public/data directory
         run: yarn setup
-      
+
       - name: Copy JSON files to public/data
         run: |
           # Копіюємо portfolio.json якщо існує
@@ -59,32 +59,34 @@ jobs:
             cp portfolio.json public/data/portfolio.json
             echo "✅ Copied portfolio.json"
           fi
-          
+
           # Показуємо що скопійовано
           echo "📁 Files in public/data:"
           ls -la public/data/
-      
+
       - name: Build Next.js static site
         run: yarn build
         env:
           NODE_ENV: production
-      
+
       - name: Create .nojekyll file
         run: touch out/.nojekyll
-      
+
       - name: Debug - check output directory
         run: |
           echo "🔍 Checking build outputs:"
           ls -la out/ || echo "❌ No out folder"
           echo ""
-          echo "📁 Public folder contents:"
-          ls -la public/ || echo "❌ No public folder"
-      
-      - name: Upload artifact for Pages
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: ./out
-      
+          echo "📁 Files in out directory:"
+          ls -la out/ || echo "No files"
+
       - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./out
+          publish_branch: gh-pages
+          force_orphan: true
+          user_name: "github-actions[bot]"
+          user_email: "github-actions[bot]@users.noreply.github.com"
+          commit_message: "Deploy to GitHub Pages"
