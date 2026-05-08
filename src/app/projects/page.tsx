@@ -23,7 +23,7 @@ export default function ProjectsPage() {
                         <div className="space-y-2">
 
                             <Link href="https://github.com/o-murphy/py-ballisticcalc"
-                                className="block p-2 text-black hover:bg-black hover:text-white">
+                                className="block p-2 text-black hover:bg-black hover:text-white transition-colors">
                                 <div className="flex justify-between items-center">
                                     <h3 className="font-bold text-sm">py-ballisticcalc</h3>
                                     <div className="flex gap-1.5">
@@ -35,7 +35,7 @@ export default function ProjectsPage() {
                             </Link>
 
                             <Link href="https://github.com/o-murphy/ebalistyka-app"
-                                className="block p-2 text-black hover:bg-black hover:text-white">
+                                className="block p-2 text-black hover:bg-black hover:text-white transition-colors">
                                 <div className="flex justify-between items-center">
                                     <h3 className="font-bold text-sm">ebalistyka-app</h3>
                                     <div className="flex gap-1.5">
@@ -48,7 +48,7 @@ export default function ProjectsPage() {
 
 
                             <Link href="https://github.com/o-murphy/pydfuutil"
-                                className="block p-2 text-black hover:bg-black hover:text-white">
+                                className="block p-2 text-black hover:bg-black hover:text-white transition-colors">
                                 <div className="flex justify-between items-center">
                                     <h3 className="font-bold text-sm">pydfuutil</h3>
                                     <FontAwesomeIcon icon={faPython} className="w-4 h-4 text-blue-500" />
@@ -57,7 +57,7 @@ export default function ProjectsPage() {
                             </Link>
 
                             <Link href="https://github.com/o-murphy/js-ballistics"
-                                className="block p-2 text-black hover:bg-black hover:text-white">
+                                className="block p-2 text-black hover:bg-black hover:text-white transition-colors">
                                 <div className="flex justify-between items-center">
                                     <h3 className="font-bold text-sm">js-ballistics</h3>
                                     <FontAwesomeIcon icon={faJs} className="w-4 h-4 text-yellow-500" />
@@ -66,7 +66,7 @@ export default function ProjectsPage() {
                             </Link>
 
                             <Link href="https://github.com/o-murphy/py-aiowialon"
-                                className="block p-2 text-black hover:bg-black hover:text-white">
+                                className="block p-2 text-black hover:bg-black hover:text-white transition-colors">
                                 <div className="flex justify-between items-center">
                                     <h3 className="font-bold text-sm">py-aiowialon</h3>
                                     <FontAwesomeIcon icon={faPython} className="w-4 h-4 text-blue-500" />
