@@ -6,7 +6,13 @@
     "dev": "next dev --turbopack",
     "build": "next build --turbopack",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "fetch": "node scripts/fetch.mjs",
+    "fetch:data": "node scripts/fetch.mjs",
+    "prebuild": "yarn fetch:data",
+    "deploy": "yarn fetch:data && yarn build",
+    "clean": "rm -rf .next out public/data",
+    "setup": "mkdir -p public/data"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^7.2.0",
