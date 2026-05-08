@@ -76,7 +76,7 @@ export default function Projects({ projects }: ProjectsProps) {
       <h2 className="text-2xl font-bold mb-4">Pinned Projects</h2>
       <div className="grid md:grid-cols-2 gap-6">
         {projects.map((project) => (
-          <div key={project.url} className="border rounded-lg p-5 hover:shadow-lg transition-shadow bg-white">
+          <div key={project.url} className="border border-gray-300 rounded-lg p-5 hover:bg-gray-100 transition-colors bg-white">
             <Link href={project.url} target="_blank" className="block">
               <h3 className="text-xl font-semibold text-blue-600 hover:underline mb-2">
                 {project.name}
@@ -89,7 +89,7 @@ export default function Projects({ projects }: ProjectsProps) {
                 {project.languages?.map((lang) => (
                   <span 
                     key={lang.name} 
-                    className="inline-flex items-center gap-1.5 text-xs bg-gray-100 px-2.5 py-1.5 rounded-full"
+                    className="inline-flex items-center gap-1.5 text-xs bg-blue-200 px-2.5 py-1.5 rounded-full"
                     title={lang.name}
                   >
                     {getLanguageIcon(lang.name)}

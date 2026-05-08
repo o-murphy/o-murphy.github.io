@@ -30,10 +30,10 @@ export default function PullRequests({ pullRequests, limit = 20, id }: PullReque
           (✅ {mergedPRs} merged, 🟢 {openPRs} open, ❌ {closedPRs} closed)
         </span>
       </h2>
-      <div className="border rounded-lg bg-gray-50 overflow-hidden">
+      <div className="border border-gray-400 rounded-lg bg-white-50 overflow-hidden">
         <div className="space-y-3 max-h-96 overflow-y-auto p-6">
           {displayPRs.map((pr) => (
-            <div key={pr.url} className="border rounded-lg p-4 hover:shadow-md transition-shadow bg-white">
+            <div key={pr.url} className="border border-gray-300 rounded-lg p-5 hover:bg-gray-100 transition-colors bg-white">
               <Link href={pr.url} target="_blank" className="block">
                 <div className="flex justify-between items-start gap-2">
                   <span className="font-semibold text-blue-600 hover:underline text-sm line-clamp-2">

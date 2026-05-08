@@ -165,7 +165,18 @@ fetch(baseUrl, {
         const allNodes = data.data.search.nodes || [];
         const publicNodes = filterPrivateNodes(allNodes);
         
-        cropped["data"] = publicNodes;
+        // Репозиторії, які потрібно ПРИХОВАТИ
+        const hideRepos = [
+            "ArcherBC2",            // Додайте інші репозиторії для приховування
+        ];
+        
+        // Фільтрація - виключаємо зазначені репозиторії
+        const filteredPRs = publicNodes.filter(pr => {
+            const repoName = pr.baseRepository?.name;
+            return !hideRepos.includes(repoName);
+        });
+        
+        cropped["data"] = filteredPRs;
 
         var open = 0;
         var closed = 0;
@@ -208,7 +219,19 @@ fetch(baseUrl, {
         const allNodes = data.data.search.nodes || [];
         const publicIssues = filterPrivateNodes(allNodes);
 
-        cropped["data"] = publicIssues;
+        // Репозиторії, які потрібно ПРИХОВАТИ
+        const hideRepos = [
+            "ArcherBC2",
+            // Додайте інші репозиторії для приховування
+        ];
+        
+        // Фільтрація - виключаємо зазначені репозиторії
+        const filteredIssues = publicIssues.filter(issue => {
+            const repoName = issue.repository?.name;
+            return !hideRepos.includes(repoName); // NOT hideRepos
+        });
+
+        cropped["data"] = filteredIssues;
 
         var open = 0;
         var closed = 0;

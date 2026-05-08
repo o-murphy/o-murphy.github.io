@@ -73,3 +73,16 @@ export interface Project {
     iconifyClass: string;
   }>;
 }
+
+
+export interface ProjectLangIcon {
+  name: string;
+  color: string;
+}
+
+export interface ProjectInfo {
+  title: string;
+  url: string;
+  desc: string;
+  icons: ProjectLangIcon[];
+}
