@@ -7,7 +7,7 @@ export default function ContactsImg({ className }: { className: string }) {
 
   return (
     <svg xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 583.2 408.31"
+      viewBox="0 0 573.2 543.75"
       className={className}
       style={{ width: '100%', height: 'auto' }}
     >
