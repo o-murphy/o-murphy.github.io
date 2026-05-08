@@ -27,10 +27,10 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: Setup Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v6
         with:
           node-version: "22"
           cache: "yarn"
@@ -68,6 +68,14 @@ jobs:
         run: yarn build
         env:
           NODE_ENV: production
+
+      - name: Copy JSON files to out directory
+        run: |
+          mkdir -p out/data
+          cp -r public/data/* out/data/ 2>/dev/null || true
+          cp portfolio.json out/data/ 2>/dev/null || true
+          echo "📁 Files in out/data:"
+          ls -la out/data/
 
       - name: Create .nojekyll file
         run: touch out/.nojekyll
