@@ -63,7 +63,7 @@ export default function Organizations({ organizations }: OrganizationsProps) {
             key={org.login}
             href={`https://github.com/${org.login}`}
             target="_blank"
-            className="flex items-center gap-2 p-2 hover:bg-gray-100 rounded transition-colors"
+            className="flex items-center gap-2 p-2 hover:bg-gray-200 rounded transition-colors"
           >
             <img 
               src={org.avatarUrl} 
