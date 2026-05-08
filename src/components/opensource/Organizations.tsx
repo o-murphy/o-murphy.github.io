@@ -2,7 +2,7 @@
 'use client';
 
 import Link from 'next/link';
-import { Organization } from '@/types/opensource';
+import { Organization } from '@/types/dataTypes';
 import { useEffect, useState } from 'react';
 
 interface OrganizationsProps {

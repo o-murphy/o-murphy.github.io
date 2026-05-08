@@ -2,7 +2,7 @@
 'use client';
 
 import Link from 'next/link';
-import { PullRequest } from '@/types/opensource';
+import { PullRequest } from '@/types/dataTypes';
 
 interface PullRequestsProps {
   pullRequests: PullRequest[];

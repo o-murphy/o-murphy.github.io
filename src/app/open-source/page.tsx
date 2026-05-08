@@ -3,7 +3,7 @@
 
 import { Template } from '@/components/template';
 import { useEffect, useState } from 'react';
-import { Project, PullRequest, Issue, Organization } from '@/types/opensource';
+import { Project, PullRequest, Issue, Organization } from '@/types/dataTypes';
 import Organizations from '@/components/opensource/Organizations';
 import Projects from '@/components/opensource/Projects';
 import PullRequests from '@/components/opensource/PullRequests';

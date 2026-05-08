@@ -2,7 +2,7 @@
 
 import MProjectsImg from '@/components/images/MProjectsImg';
 import { Template } from '@/components/template';
-import { ProjectInfo } from '@/types/opensource';
+import { ProjectInfo } from '@/types/dataTypes';
 import { faFlutter, faJs, faPython } from '@fortawesome/free-brands-svg-icons';
 import { faC } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -22,7 +22,7 @@ export default function ProjectsPage() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch('/links.json')
+    fetch('/data/portfolio.json')
       .then(res => res.json())
       .then(data => {
         setProjects(data.projects || []);

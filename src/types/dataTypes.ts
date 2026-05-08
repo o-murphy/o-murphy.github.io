@@ -86,3 +86,20 @@ export interface ProjectInfo {
   desc: string;
   icons: ProjectLangIcon[];
 }
+
+export interface Contact {
+  name: string;
+  url: string;
+  icon: string;
+}
+
+export interface SocialLink {
+  name: string;
+  url: string;
+  icon: string;
+}
+
+export interface NavLink {
+  name: string;
+  path: string;
+}

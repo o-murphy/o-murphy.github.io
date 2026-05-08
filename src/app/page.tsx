@@ -1,27 +1,63 @@
-// page.tsx
-
 'use client';
 
+import React from 'react';  // ← Додайте цей імпорт
 import { Template } from '@/components/template';
-import React from 'react';
+import { useEffect, useState } from 'react';
+
+interface Person {
+  name: string;
+  copyright: string;
+  homeTitle: string;
+  homeSubtitles: string[];
+  homeEmojis: string[];
+}
 
 export default function Home() {
+  const [person, setPerson] = useState<Person | null>(null);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    fetch('/data/portfolio.json')
+      .then(res => res.json())
+      .then(data => {
+        setPerson(data.person);
+        setLoading(false);
+      })
+      .catch(err => {
+        console.error('Error loading portfolio data:', err);
+        setLoading(false);
+      });
+  }, []);
+
+  if (loading) {
+    return (
+      <Template>
+        <div className="w-full max-w-4xl p-8 text-center">
+          <p>Loading...</p>
+        </div>
+      </Template>
+    );
+  }
+
   return (
     <Template>
       <div className="w-full max-w-4xl p-8">
         <section id="hero" className="flex flex-col items-center justify-center h-full text-center">
           <h2 className="text-xl font-bold mb-4 max-w-lg">
-            👋🏻 I&apos;m Dmytro: Python Developer & Software Engineer.
+            {person?.homeTitle}
           </h2>
           <p className="text-sm font-light leading-relaxed">
-            Lover of programming languages.<br />
-            Amateur musician and singer.
+            {person?.homeSubtitles?.map((subtitle, index) => (
+              <React.Fragment key={index}>
+                {subtitle}
+                {index < (person?.homeSubtitles?.length || 0) - 1 && <br />}
+              </React.Fragment>
+            ))}
           </p>
           <div className="flex space-x-0 mt-4">
-            <span className="text-xl">👨‍💻</span>
-            <span className="text-xl">🐍</span>
-            <span className="text-xl">🎸</span>
-            <span className="text-xl">🎤</span>
+            {person?.homeEmojis?.map((emoji, index) => (
+              <span key={index} className="text-xl">{emoji}</span>
+            ))}
           </div>
         </section>
       </div>

@@ -2,7 +2,7 @@
 'use client';
 
 import Link from 'next/link';
-import { Project } from '@/types/opensource';
+import { Project } from '@/types/dataTypes';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { 
   faPython, 

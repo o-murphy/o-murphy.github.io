@@ -2,7 +2,7 @@
 'use client';
 
 import Link from 'next/link';
-import { Issue } from '@/types/opensource';
+import { Issue } from '@/types/dataTypes';
 
 interface IssuesProps {
   issues: Issue[];
