@@ -74,7 +74,7 @@ jobs:
         run: touch out/.nojekyll
 
       - name: Create CNAME file
-        run: echo "portfolio.o-murphy.net" > out/CNAME
+        run: echo "o-murphy.net" > out/CNAME
 
       - name: Debug - check output directory
         run: |
