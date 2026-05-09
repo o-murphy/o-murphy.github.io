@@ -1,21 +1,11 @@
 'use client';
 
 import ContactsImg from '@/components/images/MContactsImg';
+import { IconTextLink } from '@/components/links/links';
 import { Template } from '@/components/template';
 import { ContactLink } from '@/types/dataTypes';
-import { faGithub, faLinkedin, faTelegram } from '@fortawesome/free-brands-svg-icons';
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import Link from 'next/link';
 import { useEffect, useState } from 'react';
 
-// Мапінг назв іконок до компонентів
-const iconMap: Record<string, any> = {
-  'github': faGithub,
-  'telegram': faTelegram,
-  'linkedin': faLinkedin,
-  'envelope': faEnvelope,
-};
 
 export default function ContactPage() {
   const [contacts, setContacts] = useState<ContactLink[]>([]);
@@ -63,18 +53,7 @@ export default function ContactPage() {
           {/* Contact Links - 2 columns grid */}
           <div className="grid grid-cols-2 gap-3 max-w-md w-full mx-auto">
             {contacts.map((link) => (
-              <Link
-                key={link.name}
-                href={link.url}
-                target={link.name !== 'Email' ? '_blank' : undefined}
-                rel={link.name !== 'Email' ? 'noopener noreferrer' : undefined}
-                className={`group flex items-center justify-center gap-2 hover:bg-black hover:text-white p-2 transition-colors ${link.bgColor}`}
-              >
-                <FontAwesomeIcon icon={iconMap[link.icon]}
-                  className={`w-5 h-5 ${link.color} group-hover:text-white transition-colors`}
-                />
-                <span className="text-sm">{link.name}</span>
-              </Link>
+              <IconTextLink link={link} key={link.name}/>
             ))}
           </div>
 

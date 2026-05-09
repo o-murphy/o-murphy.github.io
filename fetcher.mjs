@@ -12,7 +12,7 @@ const openSource = {
 // Додаємо is:public у всі пошукові запити
 const query_pr = {
     query: `query {
-    search(first: 100, type: ISSUE, query: "is:pr author:${openSource.githubUserName} is:public sort:created-desc") {
+    search(first: 200, type: ISSUE, query: "is:pr author:${openSource.githubUserName} is:public sort:created-desc") {
       issueCount
       nodes {
         ... on PullRequest {
@@ -49,7 +49,7 @@ const query_pr = {
 
 const query_issue = {
     query: `query {
-    search(first: 100, type: ISSUE, query: "is:issue author:${openSource.githubUserName} is:public sort:updated-desc") {
+    search(first: 200, type: ISSUE, query: "is:issue author:${openSource.githubUserName} is:public sort:updated-desc") {
       issueCount
       nodes {
         ... on Issue {
@@ -61,7 +61,7 @@ const query_issue = {
           number
           isPrivate
           updatedAt
-          assignees(first: 100) {
+          assignees(first: 200) {
             nodes {
               avatarUrl
               name
@@ -176,7 +176,7 @@ fetch(baseUrl, {
             return !hideRepos.includes(repoName);
         });
         
-        cropped["data"] = filteredPRs;
+        cropped["data"] = filteredPRs.slice(0, 100);
 
         var open = 0;
         var closed = 0;
@@ -231,7 +231,7 @@ fetch(baseUrl, {
             return !hideRepos.includes(repoName); // NOT hideRepos
         });
 
-        cropped["data"] = filteredIssues;
+        cropped["data"] = filteredIssues.slice(0, 100);
 
         var open = 0;
         var closed = 0;

@@ -1,3 +1,4 @@
+import { Icon } from "@iconify/react";
 import React from "react"
 
 export const EnvelopeSVG = () => {
@@ -7,3 +8,57 @@ export const EnvelopeSVG = () => {
         </svg>
     );
 };
+
+
+export function IssueIcon({ closed, color: customColor }: { closed: boolean, color?: string }) {
+    const icon = closed ? "octicon:issue-closed-16" : "octicon:issue-opened-16";
+    const defaultColor = closed ? "text-purple-700" : "text-green-600";
+    const color = customColor || defaultColor;
+
+    return (
+        <Icon icon={icon} className={`inline w-4 h-4 ${color} align-middle`} />
+    );
+}
+
+export enum PrState {
+    merged,
+    open,
+    closed
+}
+
+export function stringToPrState(state: string): PrState {
+    const upperState = state.toUpperCase();
+    switch (upperState) {
+        case 'MERGED':
+            return PrState.merged;
+        case 'OPEN':
+            return PrState.open;
+        case 'CLOSED':
+            return PrState.closed;
+        default:
+            return PrState.closed;
+    }
+}
+
+export function PrIcon({ state }: { state: PrState }) {
+    const config = {
+        [PrState.merged]: {
+            icon: "octicon:git-merge-16",
+            color: "text-purple-700"
+        },
+        [PrState.open]: {
+            icon: "octicon:git-pull-request-16",
+            color: "text-green-700"
+        },
+        [PrState.closed]: {
+            icon: "octicon:git-pull-request-16",
+            color: "text-red-700"
+        }
+    };
+
+    const { icon, color } = config[state];
+
+    return (
+        <Icon icon={icon} className={`inline w-4 h-4 ${color} align-middle`} />
+    );
+}

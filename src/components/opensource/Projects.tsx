@@ -73,7 +73,7 @@ export default function Projects({ projects }: ProjectsProps) {
 
   return (
     <section>
-      <h2 className="text-2xl font-bold mb-4">Pinned Projects</h2>
+      <h2 className="text-xl font-bold mb-4">Pinned Projects</h2>
       <div className="grid md:grid-cols-2 gap-6">
         {projects.map((project) => (
           <div key={project.url} className="border border-gray-300 rounded-lg p-5 hover:bg-gray-100 transition-colors bg-white">

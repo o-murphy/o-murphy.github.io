@@ -2,6 +2,7 @@
 'use client';
 
 import { Link as ScrollLink } from 'react-scroll';
+import { IssueIcon, PrIcon, PrState } from '../icons';
 
 interface StatisticsProps {
     mergedPRs: number;
@@ -22,8 +23,11 @@ export default function Statistics({ mergedPRs, openPRs, openIssues, closedIssue
                 className="cursor-pointer"
             >
                 <div className="bg-green-100 p-4 rounded-lg hover:bg-green-200 transition-colors">
-                    <div className="text-2xl font-bold text-green-600">{openPRs}</div>
-                    <div className="text-sm">Open PRs</div>
+                    <div className="flex items-center justify-center gap-2">
+                        <PrIcon state={PrState.open} />
+                        <div className="text-2xl font-bold text-green-600">{openPRs}</div>
+                    </div>
+                    <div className="text-sm text-center mt-1">Open PRs</div>
                 </div>
             </ScrollLink>
 
@@ -34,8 +38,11 @@ export default function Statistics({ mergedPRs, openPRs, openIssues, closedIssue
                 className="cursor-pointer"
             >
                 <div className="bg-purple-100 p-4 rounded-lg hover:bg-purple-200 transition-colors">
-                    <div className="text-2xl font-bold text-purple-600">{mergedPRs}</div>
-                    <div className="text-sm">Merged PRs</div>
+                    <div className="flex items-center justify-center">
+                        <PrIcon state={PrState.merged} />
+                        <div className="text-2xl font-bold text-purple-600 ml-2">{mergedPRs}</div>
+                    </div>
+                    <div className="text-sm text-center mt-1">Merged PRs</div>
                 </div>
             </ScrollLink>
 
@@ -46,8 +53,11 @@ export default function Statistics({ mergedPRs, openPRs, openIssues, closedIssue
                 className="cursor-pointer"
             >
                 <div className="bg-blue-100 p-4 rounded-lg hover:bg-blue-200 transition-colors">
-                    <div className="text-2xl font-bold text-blue-600">{openIssues}</div>
-                    <div className="text-sm">Open Issues</div>
+                    <div className="flex items-center justify-center gap-2">
+                        <IssueIcon closed={false} color='text-blue-600'/>
+                        <div className="text-2xl font-bold text-blue-600">{openIssues}</div>
+                    </div>
+                    <div className="text-sm text-center mt-1">Open Issues</div>
                 </div>
             </ScrollLink>
 
@@ -58,8 +68,11 @@ export default function Statistics({ mergedPRs, openPRs, openIssues, closedIssue
                 className="cursor-pointer"
             >
                 <div className="bg-gray-100 p-4 rounded-lg hover:bg-gray-200 transition-colors">
-                    <div className="text-2xl font-bold text-gray-600">{closedIssues}</div>
-                    <div className="text-sm">Closed Issues</div>
+                    <div className="flex items-center justify-center gap-2">
+                        <IssueIcon closed={true} />
+                        <div className="text-2xl font-bold text-gray-600">{closedIssues}</div>
+                    </div>
+                    <div className="text-sm text-center mt-1">Closed Issues</div>
                 </div>
             </ScrollLink>
         </div>

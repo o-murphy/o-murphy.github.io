@@ -1,21 +1,10 @@
 'use client';
 
+import {IconTextLinkBordered} from '@/components/links/links';
 import { Template } from '@/components/template';
 import { ArtLink } from '@/types/dataTypes';
-import { faApple, faSpotify, faTiktok, faYoutube } from '@fortawesome/free-brands-svg-icons';
-import { faMusic } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import Link from 'next/link';
 import { useEffect, useState } from 'react';
 
-const iconMap: Record<string, any> = {
-    'spotify': faSpotify,
-    'youtube': faYoutube,
-    'youtubeMusic': faYoutube,
-    'apple': faYoutube,
-    'appleMusic': faApple,
-    'tiktok': faTiktok,
-};
 
 export default function ArtPage() {
     const [artLinks, setArtLinks] = useState<ArtLink[]>([]);
@@ -49,26 +38,14 @@ export default function ArtPage() {
         <Template>
             <div className="w-full max-w-4xl p-8">
                 <section className="flex flex-col items-center justify-center h-full text-center">
-                    <h1 className="text-3xl font-bold mb-8">Art & Music</h1>
+                    {/* <h1 className="text-3xl font-bold mb-8">Art & Music</h1> */}
 
                     {/* Music Links */}
                     <div className="w-full max-w-md mx-auto">
                         <h2 className="text-xl font-bold mb-6">Listen to my music</h2>
                         <div className="space-y-3">
-                            {artLinks.map((link: any) => (
-                                <Link
-                                    key={link.name}
-                                    href={link.url}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className={`group flex items-center justify-center gap-2 w-full p-2 border rounded-lg hover:text-white transition-colors ${link.bgColor}`}
-                                >
-                                    <FontAwesomeIcon
-                                        icon={iconMap[link.icon] || faMusic}
-                                        className={`w-5 h-5 ${link.color} group-hover:text-white transition-colors`}
-                                    />
-                                    <span className="text-sm font-medium">{link.name}</span>
-                                </Link>
+                            {artLinks.map((link) => (
+                                <IconTextLinkBordered key={link.name} link={link} />
                             ))}
                         </div>
                     </div>

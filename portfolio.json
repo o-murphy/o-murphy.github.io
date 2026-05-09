@@ -26,21 +26,21 @@
     "artLinks": [
         {
             "name": "Spotify",
-            "url": "https://open.spotify.com/artist/5MMonfU5cEE3wKrAmIUmoi?si=Q30BXm21SXGFaI0H6CZQ1w",
+            "url": "https://open.spotify.com/artist/5MMonfU5cEE3wKrAmIUmoi",
             "icon": "spotify",
             "color": "text-green-500",
             "bgColor": "bg-green-100 border-green-300 hover:bg-green-500 hover:border-transparent"
         },
         {
             "name": "YouTube Music",
-            "url": "https://music.youtube.com/channel/UC...",
+            "url": "https://music.youtube.com/@murphyslawproductions9838",
             "icon": "youtubeMusic",
             "color": "text-red-500",
             "bgColor": "bg-red-100 border-red-300 hover:bg-red-500 hover:border-transparent"
         },
         {
             "name": "Apple Music",
-            "url": "https://music.apple.com/...",
+            "url": "https://music.apple.com/ua/artist/murphys-law",
             "icon": "appleMusic",
             "color": "text-gray-700",
             "bgColor": "bg-purple-100 border-purple-300 hover:bg-purple-500 hover:border-transparent"
@@ -97,7 +97,7 @@
         },
         {
             "name": "Spotify",
-            "url": "https://open.spotify.com/artist/5MMonfU5cEE3wKrAmIUmoi?si=Q30BXm21SXGFaI0H6CZQ1w",
+            "url": "https://open.spotify.com/artist/5MMonfU5cEE3wKrAmIUmoi",
             "icon": "spotify"
         },
         {

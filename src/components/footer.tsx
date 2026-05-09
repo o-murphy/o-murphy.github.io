@@ -59,7 +59,7 @@ export const Footer = () => {
             <Link 
               key={link.path} 
               href={link.path} 
-              className="hover:bg-black hover:text-white p-1 transition-colors"
+              className="hover:bg-black hover:text-white p-1 transition-colors underline"
             >
               {link.name}
             </Link>

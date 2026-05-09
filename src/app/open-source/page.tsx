@@ -55,7 +55,7 @@ export default function OpenSourcePage() {
     return (
         <Template>
             <div className="w-full max-w-6xl p-8 space-y-12">
-                <h1 className="text-3xl font-bold text-center">Open Source Contributions</h1>
+                <h1 className="text-xl font-bold text-center">Open Source Contributions</h1>
 
                 <Statistics
                     mergedPRs={mergedPRs}

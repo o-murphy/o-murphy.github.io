@@ -22,18 +22,18 @@ export const Header = () => {
 
   if (loading) {
     return (
-      <header className="py-6 px-4 flex justify-start w-full">
+      <header className="py-6 px-8 flex justify-start w-full">
         <Link href="/" className="hover:bg-black hover:text-white p-1">
-          <h1 className="text-l underline">{"<Loading...>"}</h1>
+          <h1 className="text-l underline font-medium">{"<Loading...>"}</h1>
         </Link>
       </header>
     );
   }
 
   return (
-    <header className="py-6 px-4 flex justify-start w-full">
+    <header className="py-6 px-8 flex justify-start w-full">
       <Link href="/" className="hover:bg-black hover:text-white p-1">
-        <h1 className="text-l underline">{`<${name}>`}</h1>
+        <h1 className="text-l underline font-medium">{`<${name}>`}</h1>
       </Link>
     </header>
   );

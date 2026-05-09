@@ -1,21 +1,12 @@
 'use client';
 
 import MProjectsImg from '@/components/images/MProjectsImg';
+import { iconMap } from '@/components/links/iconMap';
 import { Template } from '@/components/template';
 import { ProjectInfo } from '@/types/dataTypes';
-import { faFlutter, faJs, faPython } from '@fortawesome/free-brands-svg-icons';
-import { faC } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
-
-// Мапінг назв іконок до компонентів FontAwesome
-const iconMap: Record<string, any> = {
-  'python': faPython,
-  'flutter': faFlutter,
-  'js': faJs,
-  'c': faC,
-};
 
 export default function ProjectsPage() {
   const [projects, setProjects] = useState<ProjectInfo[]>([]);

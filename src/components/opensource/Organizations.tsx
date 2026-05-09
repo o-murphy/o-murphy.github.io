@@ -31,7 +31,7 @@ export default function Organizations({ organizations }: OrganizationsProps) {
   if (isSmallScreen) {
     return (
       <section>
-        <h2 className="text-2xl font-bold mb-4">Organizations Contributed</h2>
+        <h2 className="text-xl font-bold mb-4">Organizations Contributed</h2>
         <div className="flex flex-wrap gap-3">
           {organizations.map((org) => (
             <Link
@@ -56,7 +56,7 @@ export default function Organizations({ organizations }: OrganizationsProps) {
   // На великих екранах - grid з іконками + текст
   return (
     <section>
-      <h2 className="text-2xl font-bold mb-4">Organizations Contributed</h2>
+      <h2 className="text-xl font-bold mb-4">Organizations Contributed</h2>
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-3">
         {organizations.map((org) => (
           <Link
