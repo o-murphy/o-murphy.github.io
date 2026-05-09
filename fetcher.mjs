@@ -12,7 +12,7 @@ const openSource = {
 // Додаємо is:public у всі пошукові запити
 const query_pr = {
     query: `query {
-    search(first: 200, type: ISSUE, query: "is:pr author:${openSource.githubUserName} is:public sort:created-desc") {
+    search(first: 100, type: ISSUE, query: "is:pr author:${openSource.githubUserName} is:public sort:created-desc") {
       issueCount
       nodes {
         ... on PullRequest {
@@ -20,7 +20,6 @@ const query_pr = {
           title
           url
           state
-          isPrivate
           mergedBy {
             avatarUrl
             url
@@ -49,7 +48,7 @@ const query_pr = {
 
 const query_issue = {
     query: `query {
-    search(first: 200, type: ISSUE, query: "is:issue author:${openSource.githubUserName} is:public sort:updated-desc") {
+    search(first: 100, type: ISSUE, query: "is:issue author:${openSource.githubUserName} is:public sort:updated-desc") {
       issueCount
       nodes {
         ... on Issue {
@@ -59,9 +58,8 @@ const query_issue = {
           createdAt
           url
           number
-          isPrivate
           updatedAt
-          assignees(first: 200) {
+          assignees(first: 100) {
             nodes {
               avatarUrl
               name
@@ -159,23 +157,30 @@ fetch(baseUrl, {
     .then((response) => response.text())
     .then((txt) => {
         const data = JSON.parse(txt);
+
+        if (data.errors) {
+            console.error("GraphQL errors:", JSON.stringify(data.errors, null, 2));
+            throw new Error(data.errors[0].message);
+        }
+
+        if (!data.data || !data.data.search) {
+            console.error("Unexpected response structure:", Object.keys(data));
+            return;
+        }
         var cropped = { data: [] };
 
         // Фільтруємо приватні PR
         const allNodes = data.data.search.nodes || [];
         const publicNodes = filterPrivateNodes(allNodes);
-        
         // Репозиторії, які потрібно ПРИХОВАТИ
         const hideRepos = [
             "ArcherBC2",            // Додайте інші репозиторії для приховування
         ];
-        
         // Фільтрація - виключаємо зазначені репозиторії
         const filteredPRs = publicNodes.filter(pr => {
             const repoName = pr.baseRepository?.name;
             return !hideRepos.includes(repoName);
         });
-        
         cropped["data"] = filteredPRs.slice(0, 100);
 
         var open = 0;
@@ -214,6 +219,18 @@ fetch(baseUrl, {
     .then((response) => response.text())
     .then((txt) => {
         const data = JSON.parse(txt);
+
+        if (data.errors) {
+            console.error("GraphQL errors:", JSON.stringify(data.errors, null, 2));
+            throw new Error(data.errors[0].message);
+        }
+
+        if (!data.data || !data.data.search) {
+            console.error("Unexpected response structure:", Object.keys(data));
+            return;
+        }
+
+
         var cropped = { data: [] };
 
         const allNodes = data.data.search.nodes || [];
@@ -224,12 +241,19 @@ fetch(baseUrl, {
             "ArcherBC2",
             // Додайте інші репозиторії для приховування
         ];
-        
         // Фільтрація - виключаємо зазначені репозиторії
         const filteredIssues = publicIssues.filter(issue => {
             const repoName = issue.repository?.name;
-            return !hideRepos.includes(repoName); // NOT hideRepos
+            return !hideRepos.includes(repoName);
         });
+
+        console.log(`Found ${filteredIssues.length} issues after repo filter`); // Діагностика
+
+        // Виводимо перші 5 issues для перевірки
+        if (filteredIssues.length > 0) {
+        } else {
+            console.warn("No issues found! Check if you have any issues or if they are all private.");
+        }
 
         cropped["data"] = filteredIssues.slice(0, 100);
 
@@ -244,18 +268,27 @@ fetch(baseUrl, {
         cropped["closed"] = closed;
         cropped["totalCount"] = cropped["data"].length;
 
-        console.log("Fetching the Issues Data.\n");
+        console.log("Fetching the Issues Data. Total issues saved:", cropped["totalCount"]);
         fs.writeFile(
             "./public/data/issues.json",
             JSON.stringify(cropped, null, 2),
             function (err) {
                 if (err) {
-                    console.log(err);
+                    console.log("Error writing issues.json:", err);
+                } else {
+                    console.log("Successfully wrote issues.json");
                 }
             }
         );
     })
-    .catch((error) => console.log(JSON.stringify(error)));
+    .catch((error) => {
+        console.error("Error fetching issues:", JSON.stringify(error));
+        // Створюємо пустий файл у разі помилки, щоб не поламати сайт
+        const emptyData = { data: [], open: 0, closed: 0, totalCount: 0 };
+        fs.writeFile("./public/data/issues.json", JSON.stringify(emptyData, null, 2), (err) => {
+            if (err) console.error("Error writing empty issues.json:", err);
+        });
+    });
 
 // Organizations
 fetch(baseUrl, {
@@ -266,11 +299,21 @@ fetch(baseUrl, {
     .then((response) => response.text())
     .then((txt) => {
         const data = JSON.parse(txt);
+
+        if (data.errors) {
+            console.error("GraphQL errors:", JSON.stringify(data.errors, null, 2));
+            throw new Error(data.errors[0].message);
+        }
+
+        if (!data.data || !data.data.search) {
+            console.error("Unexpected response structure:", Object.keys(data));
+            return;
+        }
         const repos = data["data"]["user"]["repositoriesContributedTo"]["nodes"] || [];
-        
+
         // Фільтруємо тільки публічні репозиторії
         const publicRepos = repos.filter(repo => repo.isPrivate === false);
-        
+
         var newOrgs = { data: [] };
         for (var i = 0; i < publicRepos.length; i++) {
             var obj = publicRepos[i]["owner"];
@@ -328,11 +371,21 @@ fetch(baseUrl, {
     .then((response) => response.text())
     .then((txt) => {
         const data = JSON.parse(txt);
+
+        if (data.errors) {
+            console.error("GraphQL errors:", JSON.stringify(data.errors, null, 2));
+            throw new Error(data.errors[0].message);
+        }
+
+        if (!data.data || !data.data.search) {
+            console.error("Unexpected response structure:", Object.keys(data));
+            return;
+        }
         const projects = data["data"]["user"]["pinnedItems"]["nodes"] || [];
-        
+
         // Фільтруємо тільки публічні проекти
         const publicProjects = projects.filter(project => project.isPrivate === false);
-        
+
         var newProjects = { data: [] };
         for (var i = 0; i < publicProjects.length; i++) {
             var obj = publicProjects[i];
