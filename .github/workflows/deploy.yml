@@ -35,6 +35,9 @@ jobs:
       - name: Install dependencies
         run: yarn install --frozen-lockfile
 
+      - name: Setup public/data directory
+        run: mkdir -p public/data
+
       - name: Create .env file for fetch script
         run: |
           echo "GITHUB_TOKEN=${{ secrets.GITHUB_TOKEN }}" >> .env
@@ -45,9 +48,6 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_USERNAME: ${{ secrets.GITHUB_USERNAME }}
-
-      - name: Setup public/data directory
-        run: mkdir -p public/data
 
       - name: Copy portfolio.json to public/data
         run: |
