@@ -23,6 +23,36 @@
             "Always eager to learn new technologies and deliver innovative solutions."
         ]
     },
+    "artLinks": [
+        {
+            "name": "Spotify",
+            "url": "https://open.spotify.com/artist/5MMonfU5cEE3wKrAmIUmoi?si=Q30BXm21SXGFaI0H6CZQ1w",
+            "icon": "spotify",
+            "color": "text-green-500",
+            "bgColor": "bg-green-100 border-green-300 hover:bg-green-500 hover:border-transparent"
+        },
+        {
+            "name": "YouTube Music",
+            "url": "https://music.youtube.com/channel/UC...",
+            "icon": "youtubeMusic",
+            "color": "text-red-500",
+            "bgColor": "bg-red-100 border-red-300 hover:bg-red-500 hover:border-transparent"
+        },
+        {
+            "name": "Apple Music",
+            "url": "https://music.apple.com/...",
+            "icon": "appleMusic",
+            "color": "text-gray-700",
+            "bgColor": "bg-purple-100 border-purple-300 hover:bg-purple-500 hover:border-transparent"
+        },
+        {
+            "name": "TikTok",
+            "url": "https://www.tiktok.com/@o_murphy/",
+            "icon": "tiktok",
+            "color": "text-black",
+            "bgColor": "bg-white border-gray-300 hover:bg-black hover:border-transparent"
+        }
+    ],
     "navLinks": [
         {
             "name": "home",
@@ -90,22 +120,30 @@
         {
             "name": "GitHub",
             "url": "https://github.com/o-murphy/",
-            "icon": "github"
+            "icon": "github",
+            "color": "text-gray-700",
+            "bgColor": ""
         },
         {
             "name": "Telegram",
             "url": "https://t.me/beanyone/",
-            "icon": "telegram"
+            "icon": "telegram",
+            "color": "text-gray-700",
+            "bgColor": ""
         },
         {
             "name": "LinkedIn",
             "url": "https://www.linkedin.com/in/o--murphy/",
-            "icon": "linkedin"
+            "icon": "linkedin",
+            "color": "text-gray-700",
+            "bgColor": ""
         },
         {
             "name": "Email",
             "url": "mailto:thehelixpg@gmail.com?subject=[Inquiry]%20o-murphy.net",
-            "icon": "envelope"
+            "icon": "envelope",
+            "color": "text-gray-700",
+            "bgColor": ""
         }
     ],
     "projects": [

@@ -4,14 +4,14 @@ import Link from 'next/link';
 import { useEffect, useState } from 'react';
 
 export const Header = () => {
-  const [name, setName] = useState<string>('Dmytro Yaroshenko');
+  const [name, setName] = useState<string>('<unknown name>');
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     fetch('/data/portfolio.json')
       .then(res => res.json())
       .then(data => {
-        setName(data.person?.name || 'Dmytro Yaroshenko');
+        setName(data.person?.name || '<unknown name>');
         setLoading(false);
       })
       .catch(err => {

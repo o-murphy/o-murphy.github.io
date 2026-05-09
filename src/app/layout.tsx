@@ -22,8 +22,8 @@ async function getPortfolioData() {
     console.error('Error loading portfolio data:', error);
     return {
       person: {
-        name: "Dmytro Yaroshenko",
-        title: "Portfolio site"
+        name: "<unknown name>",
+        description: "Portfolio site"
       }
     };
   }
@@ -34,7 +34,7 @@ export async function generateMetadata() {
   const data = await getPortfolioData();
   
   return {
-    title: data.person?.name || "Dmytro Yaroshenko",
+    name: data.person?.name || "<unknown name>",
     description: data.person?.description || "Portfolio site",
   };
 }

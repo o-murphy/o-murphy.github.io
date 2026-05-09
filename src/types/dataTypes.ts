@@ -75,6 +75,15 @@ export interface Project {
 }
 
 
+export interface Person {
+  name: string;
+  copyright: string;
+  homeTitle: string;
+  homeSubtitles: string[];
+  homeEmojis: string[];
+}
+
+
 export interface ProjectLangIcon {
   name: string;
   color: string;
@@ -87,10 +96,12 @@ export interface ProjectInfo {
   icons: ProjectLangIcon[];
 }
 
-export interface Contact {
+export interface ContactLink {
   name: string;
   url: string;
   icon: string;
+  color: string;
+  bgColor: string;
 }
 
 export interface SocialLink {
@@ -102,4 +113,12 @@ export interface SocialLink {
 export interface NavLink {
   name: string;
   path: string;
+}
+
+export interface ArtLink {
+  name: string;
+  url: string;
+  icon: string;
+  color: string;
+  bgColor: string;
 }

@@ -2,7 +2,7 @@
 
 import ContactsImg from '@/components/images/MContactsImg';
 import { Template } from '@/components/template';
-import { Contact } from '@/types/dataTypes';
+import { ContactLink } from '@/types/dataTypes';
 import { faGithub, faLinkedin, faTelegram } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -18,7 +18,7 @@ const iconMap: Record<string, any> = {
 };
 
 export default function ContactPage() {
-  const [contacts, setContacts] = useState<Contact[]>([]);
+  const [contacts, setContacts] = useState<ContactLink[]>([]);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -48,7 +48,7 @@ export default function ContactPage() {
     <Template>
       <div className="w-full max-w-4xl p-8">
         <section className="flex flex-col items-center justify-center h-full text-center">
-                    
+
           {/* Картинка */}
           <div className="flex justify-center mb-6">
             <div className="w-48 md:w-64">
@@ -62,16 +62,18 @@ export default function ContactPage() {
 
           {/* Contact Links - 2 columns grid */}
           <div className="grid grid-cols-2 gap-3 max-w-md w-full mx-auto">
-            {contacts.map((contact) => (
-              <Link 
-                key={contact.name}
-                href={contact.url}
-                target={contact.name !== 'Email' ? '_blank' : undefined}
-                rel={contact.name !== 'Email' ? 'noopener noreferrer' : undefined}
-                className="flex items-center justify-center gap-2 hover:bg-black hover:text-white p-2 transition-colors"
+            {contacts.map((link) => (
+              <Link
+                key={link.name}
+                href={link.url}
+                target={link.name !== 'Email' ? '_blank' : undefined}
+                rel={link.name !== 'Email' ? 'noopener noreferrer' : undefined}
+                className={`group flex items-center justify-center gap-2 hover:bg-black hover:text-white p-2 transition-colors ${link.bgColor}`}
               >
-                <FontAwesomeIcon icon={iconMap[contact.icon]} className="w-5 h-5" />
-                <span className="text-sm">{contact.name}</span>
+                <FontAwesomeIcon icon={iconMap[link.icon]}
+                  className={`w-5 h-5 ${link.color} group-hover:text-white transition-colors`}
+                />
+                <span className="text-sm">{link.name}</span>
               </Link>
             ))}
           </div>
