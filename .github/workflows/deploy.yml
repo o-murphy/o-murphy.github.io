@@ -66,15 +66,9 @@ jobs:
       - name: Copy JSON files to out directory
         run: |
           mkdir -p out/data
-          if [ -f "public/data/portfolio.json" ]; then
-            cp public/data/portfolio.json out/data/
-            echo "✅ Copied portfolio.json to out/data/"
-          fi
-          if [ -d "public/data" ]; then
-            cp -r public/data/* out/data/ 2>/dev/null || true
-          fi
+          cp -r public/data/. out/data/
           echo "📁 Files in out/data:"
-          ls -la out/data/ || echo "No files"
+          ls -la out/data/
 
       - name: Create .nojekyll file
         run: touch out/.nojekyll
