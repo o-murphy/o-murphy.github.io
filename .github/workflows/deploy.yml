@@ -79,6 +79,9 @@ jobs:
       - name: Create .nojekyll file
         run: touch out/.nojekyll
 
+      - name: Create .nojekyll file
+        run: echo "portfolio.o-murphy.net" > out/CNAME
+
       - name: Debug - check output directory
         run: |
           echo "🔍 Checking build outputs:"
