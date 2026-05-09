@@ -3,13 +3,14 @@
 import MFeelingProud from '@/components/images/MFeelingProud';
 import { Template } from '@/components/template';
 import { useEffect, useState } from 'react';
+import { basePath } from '@/app/basePath';
 
 export default function AboutPage() {
     const [paragraphs, setParagraphs] = useState<string[]>([]);
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        fetch('/data/portfolio.json')
+        fetch(`${basePath}/data/portfolio.json`)
             .then(res => res.json())
             .then(data => {
                 setParagraphs(data.about?.paragraphs || []);

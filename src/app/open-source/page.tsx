@@ -9,6 +9,7 @@ import Projects from '@/components/opensource/Projects';
 import PullRequests from '@/components/opensource/PullRequests';
 import Issues from '@/components/opensource/Issues';
 import Statistics from '@/components/opensource/Statistics';
+import { basePath } from '@/app/basePath';
 
 export default function OpenSourcePage() {
     const [pullRequests, setPullRequests] = useState<PullRequest[]>([]);
@@ -19,10 +20,10 @@ export default function OpenSourcePage() {
 
     useEffect(() => {
         Promise.all([
-            fetch('/data/pull_requests.json').then(res => res.json()),
-            fetch('/data/issues.json').then(res => res.json()),
-            fetch('/data/projects.json').then(res => res.json()),
-            fetch('/data/organizations.json').then(res => res.json()),
+            fetch(`${basePath}/data/pull_requests.json`).then(res => res.json()),
+            fetch(`${basePath}/data/issues.json`).then(res => res.json()),
+            fetch(`${basePath}/data/projects.json`).then(res => res.json()),
+            fetch(`${basePath}/data/organizations.json`).then(res => res.json()),
         ])
             .then(([prData, issuesData, projectsData, orgsData]) => {
                 setPullRequests(prData.data || []);

@@ -3,21 +3,17 @@
 import React from 'react';  // ← Додайте цей імпорт
 import { Template } from '@/components/template';
 import { useEffect, useState } from 'react';
+import { Person } from '@/types/dataTypes';
+import { basePath } from '@/app/basePath';
 
-interface Person {
-  name: string;
-  copyright: string;
-  homeTitle: string;
-  homeSubtitles: string[];
-  homeEmojis: string[];
-}
+
 
 export default function Home() {
   const [person, setPerson] = useState<Person | null>(null);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch('/data/portfolio.json')
+    fetch(`${basePath}/data/portfolio.json`)
       .then(res => res.json())
       .then(data => {
         setPerson(data.person);

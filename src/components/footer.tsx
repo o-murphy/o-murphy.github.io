@@ -7,6 +7,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
 import { NavLink, SocialLink } from '@/types/dataTypes';
+import { basePath } from '@/app/basePath';
 
 // Мапінг назв іконок до компонентів FontAwesome
 const iconMap: Record<string, any> = {
@@ -26,7 +27,7 @@ export const Footer = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch('/data/portfolio.json')
+    fetch(`${basePath}/data/portfolio.json`)
       .then(res => res.json())
       .then(data => {
         setNavLinks(data.navLinks || []);

@@ -7,13 +7,14 @@ import { ProjectInfo } from '@/types/dataTypes';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
+import { basePath } from '@/app/basePath';
 
 export default function ProjectsPage() {
   const [projects, setProjects] = useState<ProjectInfo[]>([]);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch('/data/portfolio.json')
+    fetch(`${basePath}/data/portfolio.json`)
       .then(res => res.json())
       .then(data => {
         setProjects(data.projects || []);

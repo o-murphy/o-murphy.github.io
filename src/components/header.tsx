@@ -1,5 +1,6 @@
 'use client';
 
+import { basePath } from '@/app/basePath';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
 
@@ -8,7 +9,7 @@ export const Header = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch('/data/portfolio.json')
+    fetch(`${basePath}/data/portfolio.json`)
       .then(res => res.json())
       .then(data => {
         setName(data.person?.name || '<unknown name>');

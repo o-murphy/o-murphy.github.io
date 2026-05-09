@@ -5,6 +5,7 @@ import { IconTextLink } from '@/components/links/links';
 import { Template } from '@/components/template';
 import { ContactLink } from '@/types/dataTypes';
 import { useEffect, useState } from 'react';
+import { basePath } from '@/app/basePath';
 
 
 export default function ContactPage() {
@@ -12,7 +13,7 @@ export default function ContactPage() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch('/data/portfolio.json')
+    fetch(`${basePath}/data/portfolio.json`)
       .then(res => res.json())
       .then(data => {
         setContacts(data.contacts || []);

@@ -4,6 +4,7 @@ import {IconTextLinkBordered} from '@/components/links/links';
 import { Template } from '@/components/template';
 import { ArtLink } from '@/types/dataTypes';
 import { useEffect, useState } from 'react';
+import { basePath } from '@/app/basePath';
 
 
 export default function ArtPage() {
@@ -11,7 +12,7 @@ export default function ArtPage() {
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        fetch('/data/portfolio.json')
+        fetch(`${basePath}/data/portfolio.json`)
             .then(res => res.json())
             .then(data => {
                 setArtLinks(data.artLinks || []);
