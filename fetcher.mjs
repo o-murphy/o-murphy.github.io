@@ -372,15 +372,15 @@ fetch(baseUrl, {
     .then((txt) => {
         const data = JSON.parse(txt);
 
-        if (data.errors) {
-            console.error("GraphQL errors:", JSON.stringify(data.errors, null, 2));
-            throw new Error(data.errors[0].message);
-        }
+        // if (data.errors) {
+        //     console.error("GraphQL errors:", JSON.stringify(data.errors, null, 2));
+        //     throw new Error(data.errors[0].message);
+        // }
 
-        if (!data.data || !data.data.search) {
-            console.error("Unexpected response structure:", Object.keys(data));
-            return;
-        }
+        // if (!data.data || !data.data.search) {
+        //     console.error("Unexpected response structure:", Object.keys(data));
+        //     return;
+        // }
         const projects = data["data"]["user"]["pinnedItems"]["nodes"] || [];
 
         // Фільтруємо тільки публічні проекти
