@@ -1,7 +1,6 @@
 // layout.tsx
 import "./globals.css";
 import { IBM_Plex_Mono } from "next/font/google";
-import { headers } from 'next/headers';
 
 const plexMono = IBM_Plex_Mono({
   subsets: ["latin"],

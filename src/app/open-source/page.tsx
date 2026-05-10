@@ -4,11 +4,11 @@
 import { Template } from '@/components/template';
 import { useEffect, useState } from 'react';
 import { Project, PullRequest, Issue, Organization } from '@/types/dataTypes';
-import Organizations from '@/components/opensource/Organizations';
-import Projects from '@/components/opensource/Projects';
-import PullRequests from '@/components/opensource/PullRequests';
-import Issues from '@/components/opensource/Issues';
-import Statistics from '@/components/opensource/Statistics';
+import Organizations from '@/components/open-source/Organizations';
+import Projects from '@/components/open-source/Projects';
+import PullRequests from '@/components/open-source/PullRequests';
+import Issues from '@/components/open-source/Issues';
+import Statistics from '@/components/open-source/Statistics';
 import { basePath } from '@/app/basePath';
 
 export default function OpenSourcePage() {

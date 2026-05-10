@@ -54,8 +54,17 @@ export default function PullRequests({ pullRequests, limit = 20, id }: PullReque
                     {pr.state}
                   </span>
                 </div>
-                <div className="text-xs text-gray-500 mt-2">
-                  <span className="font-mono">#{pr.number}</span> in {pr.baseRepository.owner.login}/{pr.baseRepository.name}
+                <div className="text-xs text-gray-500 mt-2 flex items-center gap-1">
+                  <span className="font-mono">#{pr.number}</span>
+                  <span>in</span>
+                  <span className="sm:hidden">
+                    <img
+                      src={pr.baseRepository.owner.avatarUrl}
+                      alt={pr.baseRepository.owner.login}
+                      className="w-3 h-3 rounded-full"
+                    />
+                  </span>
+                  <span>{pr.baseRepository.owner.login}/{pr.baseRepository.name}</span>
                 </div>
                 <div className="flex flex-wrap items-center gap-3 mt-2 text-xs">
                   <div className="flex items-center gap-1 text-gray-500">
@@ -77,7 +86,7 @@ export default function PullRequests({ pullRequests, limit = 20, id }: PullReque
               </Link>
 
               {/* Owner avatar - absolute positioned in bottom right corner */}
-              <div className="absolute bottom-5 right-5">
+              <div className="hidden sm:block absolute bottom-5 right-5">
                 <Link
                   href={pr.baseRepository.owner.url}
                   target="_blank"

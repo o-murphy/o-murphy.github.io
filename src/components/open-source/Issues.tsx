@@ -56,8 +56,17 @@ export default function Issues({ issues, limit = 20, id }: IssuesProps) {
                     {issue.closed ? 'CLOSED' : 'OPEN'}
                   </span>
                 </div>
-                <div className="text-xs text-gray-500 mt-2">
-                  <span className="font-mono">#{issue.number}</span> in {issue.repository.owner.login}/{issue.repository.name}
+                <div className="text-xs text-gray-500 mt-2 flex items-center gap-1">
+                  <span className="font-mono">#{issue.number}</span>
+                  <span>in</span>
+                  <span className="sm:hidden">
+                    <img
+                      src={issue.repository.owner.avatarUrl}
+                      alt={issue.repository.owner.login}
+                      className="w-3 h-3 rounded-full"
+                    />
+                  </span>
+                  <span>{issue.repository.owner.login}/{issue.repository.name}</span>
                 </div>
                 <div className="flex flex-wrap items-center gap-3 mt-2 text-xs text-gray-500">
                   <div className="flex items-center gap-1">
@@ -80,7 +89,8 @@ export default function Issues({ issues, limit = 20, id }: IssuesProps) {
               </Link>
 
               {/* Owner avatar - absolute positioned in bottom right corner */}
-              <div className="absolute bottom-5 right-5">
+              {/* Owner avatar - hidden on mobile */}
+              <div className="hidden sm:block absolute bottom-5 right-5">
                 <Link
                   href={issue.repository.owner.url}
                   target="_blank"
