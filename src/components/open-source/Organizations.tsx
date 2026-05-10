@@ -79,6 +79,9 @@ export default function Organizations({ organizations }: OrganizationsProps) {
           </Link>
         ))}
       </div>
+      <p className="flex justify-center text-xs text-gray-400 mt-6">
+        Includes Pull Requests and Issues
+      </p>
     </section>
   );
 }
