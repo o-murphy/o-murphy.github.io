@@ -51,9 +51,21 @@ export default function ArtPage() {
                             frameBorder="0"
                             allowFullScreen
                             allow="clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                            loading="lazy"
+                            loading="lazy"s
                         />
                     </div> */}
+
+
+                    <div className="w-full max-w-md mx-auto">
+                        <iframe
+                            data-testid="embed-iframe"
+                            className="rounded-xl w-full"
+                            src="https://open.spotify.com/embed/track/7FcGOFQQhCqLBINpd0ERNg?utm_source=generator&theme=0"
+                            height="152"
+                            frameBorder="0"
+                            allowFullScreen
+                            allow="clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                    </div>
 
                     {/* Music Links */}
                     <div className="w-full max-w-md mx-auto mt-8">
