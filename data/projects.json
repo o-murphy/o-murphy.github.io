@@ -1,0 +1,114 @@
+{
+  "data": [
+    {
+      "id": "R_kgDOHjeS2w",
+      "name": "py-ballisticcalc",
+      "createdAt": "2022-06-24T09:49:24Z",
+      "url": "https://github.com/o-murphy/py-ballisticcalc",
+      "description": "LGPL library for small arms ballistic calculations based on point-mass (3 DoF) plus spin drift.",
+      "isFork": false,
+      "isPrivate": false,
+      "languages": [
+        {
+          "name": "Python",
+          "iconifyClass": "logos-python"
+        },
+        {
+          "name": "Shell",
+          "iconifyClass": "simple-icons:shell"
+        },
+        {
+          "name": "HTML",
+          "iconifyClass": "logos-html-5"
+        }
+      ]
+    },
+    {
+      "id": "R_kgDORuj2Xw",
+      "name": "bclibc",
+      "createdAt": "2026-03-23T14:56:07Z",
+      "url": "https://github.com/ballistics-lab/bclibc",
+      "description": "Pure C++ Ballistic Solver Engine",
+      "isFork": false,
+      "isPrivate": false,
+      "languages": [
+        {
+          "name": "Shell",
+          "iconifyClass": "simple-icons:shell"
+        },
+        {
+          "name": "C",
+          "iconifyClass": "logos-c"
+        }
+      ]
+    },
+    {
+      "id": "R_kgDORofZ4w",
+      "name": "ebalistyka",
+      "createdAt": "2026-03-16T13:33:14Z",
+      "url": "https://github.com/o-murphy/ebalistyka",
+      "description": "A high performance cross-platform ballistic calculator",
+      "isFork": false,
+      "isPrivate": false,
+      "languages": [
+        {
+          "name": "Dart",
+          "iconifyClass": "simple-icons:dart"
+        },
+        {
+          "name": "C",
+          "iconifyClass": "logos-c"
+        },
+        {
+          "name": "HTML",
+          "iconifyClass": "logos-html-5"
+        }
+      ]
+    },
+    {
+      "id": "R_kgDOK5ACsQ",
+      "name": "js-ballistics",
+      "createdAt": "2023-12-12T20:36:20Z",
+      "url": "https://github.com/o-murphy/js-ballistics",
+      "description": "ISC library for small arms ballistic calculations based on point-mass (3 DoF) plus spin drift.",
+      "isFork": false,
+      "isPrivate": false,
+      "languages": [
+        {
+          "name": "JavaScript",
+          "iconifyClass": "logos-javascript"
+        }
+      ]
+    },
+    {
+      "id": "R_kgDOJqOIXQ",
+      "name": "pydfuutil",
+      "createdAt": "2023-06-01T14:38:26Z",
+      "url": "https://github.com/o-murphy/pydfuutil",
+      "description": "PyDfuUtil - Pure python realisation of dfu-util wrappers to libusb",
+      "isFork": false,
+      "isPrivate": false,
+      "languages": [
+        {
+          "name": "Python",
+          "iconifyClass": "logos-python"
+        }
+      ]
+    },
+    {
+      "id": "R_kgDOGtMrFA",
+      "name": "py-aiowialon",
+      "createdAt": "2022-01-20T10:14:39Z",
+      "url": "https://github.com/o-murphy/py-aiowialon",
+      "description": "AIO Wialon is an async realisation of Python wrapper for Remote Api",
+      "isFork": false,
+      "isPrivate": false,
+      "languages": [
+        {
+          "name": "Python",
+          "iconifyClass": "logos-python"
+        }
+      ]
+    }
+  ]
+}
