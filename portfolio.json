@@ -18,7 +18,7 @@
         "paragraphs": [
             "Based in Kyiv, Ukraine. Passionate about building sustainable and scalable systems.",
             "Creator of the leading <a href='https://github.com/o-murphy/py-ballisticcalc' class='underline hover:bg-black hover:text-white p-1'>open-source ballistics project</a> — a 3-DOF + spin-drift ballistic solver with extensive customization features.",
-            "Experienced in cross-platform development and cross-language integration (Cython, WASM, C++). Author of <a href='https://github.com/o-murphy/ebalistyka-app' class='underline hover:bg-black hover:text-white p-1'>ebalistyka</a> (Ballistic Calculator built with Flutter), <a href='https://github.com/ballistics-lab/bclibc' class='underline hover:bg-black hover:text-white p-1'>bclibc</a> (high performance C++ ballistic calculation engine), and <a href='https://github.com/o-murphy/pydfuutil' class='underline hover:bg-black hover:text-white p-1'>pydfuutil</a> (Python DFU utility wrapper).",
+            "Experienced in cross-platform development and cross-language integration (Cython, WASM, C++). Author of <a href='https://github.com/o-murphy/ebalistyka' class='underline hover:bg-black hover:text-white p-1'>eBalistyka</a> (Ballistic Calculator built with Flutter), <a href='https://github.com/ballistics-lab/bclibc' class='underline hover:bg-black hover:text-white p-1'>bclibc</a> (high performance C++ ballistic calculation engine), and <a href='https://github.com/o-murphy/pydfuutil' class='underline hover:bg-black hover:text-white p-1'>pydfuutil</a> (Python DFU utility wrapper).",
             "Former Telematics Specialist, currently working with IoT solutions.",
             "Always eager to learn new technologies and deliver innovative solutions."
         ]
@@ -174,8 +174,8 @@
             ]
         },
         {
-            "title": "ebalistyka-app",
-            "url": "https://github.com/o-murphy/ebalistyka-app",
+            "title": "ebalistyka",
+            "url": "https://github.com/o-murphy/ebalistyka",
             "desc": "Ballistic Calculator built with Flutter and high performance C++ engine",
             "icons": [
                 {
