@@ -1,0 +1,225 @@
+{
+    "person": {
+        "name": "Dmytro Yaroshenko",
+        "copyright": "Copyright © 2025. Dmytro Yaroshenko",
+        "homeTitle": "👋🏻 I'm Dmytro: Python Developer & Software Engineer.",
+        "homeSubtitles": [
+            "Lover of programming languages.",
+            "Amateur musician and singer."
+        ],
+        "homeEmojis": [
+            "👨‍💻",
+            "🐍",
+            "🎸",
+            "🎤"
+        ]
+    },
+    "about": {
+        "paragraphs": [
+            "Based in Kyiv, Ukraine. Passionate about building sustainable and scalable systems.",
+            "Creator of the leading <a href='https://github.com/o-murphy/py-ballisticcalc' class='underline hover:bg-black hover:text-white p-1'>open-source ballistics project</a> — a 3-DOF + spin-drift ballistic solver with extensive customization features.",
+            "Experienced in cross-platform development and cross-language integration (Cython, WASM, C++). Author of <a href='https://github.com/o-murphy/ebalistyka' class='underline hover:bg-black hover:text-white p-1'>eBalistyka</a> (Ballistic Calculator built with Flutter), <a href='https://github.com/ballistics-lab/bclibc' class='underline hover:bg-black hover:text-white p-1'>bclibc</a> (high performance C++ ballistic calculation engine), and <a href='https://github.com/o-murphy/pydfuutil' class='underline hover:bg-black hover:text-white p-1'>pydfuutil</a> (Python DFU utility wrapper).",
+            "Former Telematics Specialist, currently working with IoT solutions.",
+            "Always eager to learn new technologies and deliver innovative solutions."
+        ]
+    },
+    "artLinks": [
+        {
+            "name": "Spotify",
+            "url": "https://open.spotify.com/artist/5MMonfU5cEE3wKrAmIUmoi",
+            "icon": "spotify",
+            "color": "text-green-500",
+            "bgColor": "bg-green-100 border-green-300 hover:bg-green-500 hover:border-transparent"
+        },
+        {
+            "name": "YouTube Music",
+            "url": "https://music.youtube.com/@murphyslawproductions9838",
+            "icon": "youtubeMusic",
+            "color": "text-red-500",
+            "bgColor": "bg-red-100 border-red-300 hover:bg-red-500 hover:border-transparent"
+        },
+        {
+            "name": "Apple Music",
+            "url": "https://music.apple.com/ua/artist/murphys-law",
+            "icon": "appleMusic",
+            "color": "text-gray-700",
+            "bgColor": "bg-purple-100 border-purple-300 hover:bg-purple-500 hover:border-transparent"
+        },
+        {
+            "name": "TikTok",
+            "url": "https://www.tiktok.com/@o_murphy/",
+            "icon": "tiktok",
+            "color": "text-black",
+            "bgColor": "bg-white border-gray-300 hover:bg-black hover:border-transparent"
+        }
+    ],
+    "navLinks": [
+        {
+            "name": "home",
+            "path": "/"
+        },
+        {
+            "name": "about",
+            "path": "/about"
+        },
+        {
+            "name": "projects",
+            "path": "/projects"
+        },
+        {
+            "name": "open-source",
+            "path": "/open-source"
+        },
+        {
+            "name": "art",
+            "path": "/art"
+        },
+        {
+            "name": "contact",
+            "path": "/contact"
+        }
+    ],
+    "socialLinks": [
+        {
+            "name": "GitHub",
+            "url": "https://github.com/o-murphy/",
+            "icon": "github"
+        },
+        {
+            "name": "Telegram",
+            "url": "https://t.me/beanyone/",
+            "icon": "telegram"
+        },
+        {
+            "name": "TikTok",
+            "url": "https://www.tiktok.com/@o_murphy/",
+            "icon": "tiktok"
+        },
+        {
+            "name": "Spotify",
+            "url": "https://open.spotify.com/artist/5MMonfU5cEE3wKrAmIUmoi",
+            "icon": "spotify"
+        },
+        {
+            "name": "Instagram",
+            "url": "https://www.instagram.com/_o_murphy_/",
+            "icon": "instagram"
+        },
+        {
+            "name": "LinkedIn",
+            "url": "https://www.linkedin.com/in/o--murphy/",
+            "icon": "linkedin"
+        },
+        {
+            "name": "Email",
+            "url": "mailto:thehelixpg@gmail.com?subject=[Inquiry]%20o-murphy.net",
+            "icon": "envelope"
+        }
+    ],
+    "contacts": [
+        {
+            "name": "GitHub",
+            "url": "https://github.com/o-murphy/",
+            "icon": "github",
+            "color": "text-gray-700",
+            "bgColor": ""
+        },
+        {
+            "name": "Telegram",
+            "url": "https://t.me/beanyone/",
+            "icon": "telegram",
+            "color": "text-gray-700",
+            "bgColor": ""
+        },
+        {
+            "name": "LinkedIn",
+            "url": "https://www.linkedin.com/in/o--murphy/",
+            "icon": "linkedin",
+            "color": "text-gray-700",
+            "bgColor": ""
+        },
+        {
+            "name": "Email",
+            "url": "mailto:thehelixpg@gmail.com?subject=[Inquiry]%20o-murphy.net",
+            "icon": "envelope",
+            "color": "text-gray-700",
+            "bgColor": ""
+        }
+    ],
+    "projects": [
+        {
+            "title": "py-ballisticcalc",
+            "url": "https://github.com/o-murphy/py-ballisticcalc",
+            "desc": "LGPL library for small arms ballistic calculations.",
+            "icons": [
+                {
+                    "name": "python",
+                    "color": "text-blue-500"
+                },
+                {
+                    "name": "c",
+                    "color": "text-purple-600"
+                }
+            ]
+        },
+        {
+            "title": "bclibc",
+            "url": "https://github.com/ballistics-lab/bclibc",
+            "desc": "High performance C++ Ballistic solver engine",
+            "icons": [
+                {
+                    "name": "c",
+                    "color": "text-purple-600"
+                }
+            ]
+        },
+        {
+            "title": "ebalistyka",
+            "url": "https://github.com/o-murphy/ebalistyka",
+            "desc": "Ballistic Calculator built with Flutter and high performance C++ engine",
+            "icons": [
+                {
+                    "name": "flutter",
+                    "color": "text-blue-500"
+                },
+                {
+                    "name": "c",
+                    "color": "text-purple-500"
+                }
+            ]
+        },
+        {
+            "title": "pydfuutil",
+            "url": "https://github.com/o-murphy/pydfuutil",
+            "desc": "A pure Python wrapper for `dfu-util` to libusb.",
+            "icons": [
+                {
+                    "name": "python",
+                    "color": "text-blue-500"
+                }
+            ]
+        },
+        {
+            "title": "js-ballistics",
+            "url": "https://github.com/o-murphy/js-ballistics",
+            "desc": "ISC library for small arms ballistic calculations (JavaScript ES6+).",
+            "icons": [
+                {
+                    "name": "js",
+                    "color": "text-yellow-500"
+                }
+            ]
+        },
+        {
+            "title": "py-aiowialon",
+            "url": "https://github.com/o-murphy/py-aiowialon",
+            "desc": "An async Python wrapper for the Wialon Remote API.",
+            "icons": [
+                {
+                    "name": "python",
+                    "color": "text-blue-500"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,99 @@
+{
+  "data": [
+    {
+      "login": "cython",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/486082?v=4",
+      "__typename": "Organization"
+    },
+    {
+      "login": "mod-audio",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/2923351?v=4",
+      "__typename": "Organization"
+    },
+    {
+      "login": "micropython",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/6298560?v=4",
+      "__typename": "Organization"
+    },
+    {
+      "login": "flutter",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/14101776?v=4",
+      "__typename": "Organization"
+    },
+    {
+      "login": "adafruit",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/181069?v=4",
+      "__typename": "Organization"
+    },
+    {
+      "login": "flathub",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/27268838?v=4",
+      "__typename": "Organization"
+    },
+    {
+      "login": "TheCellule",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/32386355?v=4",
+      "__typename": "Organization"
+    },
+    {
+      "login": "astral-sh",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/115962839?v=4",
+      "__typename": "Organization"
+    },
+    {
+      "login": "microsoft",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/6154722?v=4",
+      "__typename": "Organization"
+    },
+    {
+      "login": "objectbox",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/22327943?v=4",
+      "__typename": "Organization"
+    },
+    {
+      "login": "amnezia-vpn",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/74861536?v=4",
+      "__typename": "Organization"
+    },
+    {
+      "login": "bufbuild",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/54191850?v=4",
+      "__typename": "Organization"
+    },
+    {
+      "login": "archerdfu",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/161811269?v=4",
+      "__typename": "Organization"
+    },
+    {
+      "login": "tvt-tech",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/161299857?v=4",
+      "__typename": "Organization"
+    },
+    {
+      "login": "goimp",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/170461021?v=4",
+      "__typename": "Organization"
+    },
+    {
+      "login": "TheAppgineer",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/26184252?v=4",
+      "__typename": "Organization"
+    },
+    {
+      "login": "vaultbin",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/297733415?v=4",
+      "__typename": "Organization"
+    },
+    {
+      "login": "permissionlesstech",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/220183803?v=4",
+      "__typename": "Organization"
+    },
+    {
+      "login": "ballistics-lab",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/195828045?v=4",
+      "__typename": "Organization"
+    }
+  ]
+}

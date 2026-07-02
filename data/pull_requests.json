@@ -1,0 +1,2528 @@
+{
+  "data": [
+    {
+      "id": "PR_kwDORofZ487sbBl7",
+      "title": "replace: bclibc submodule with dart_bclibc",
+      "url": "https://github.com/o-murphy/ebalistyka/pull/84",
+      "state": "OPEN",
+      "mergedBy": null,
+      "createdAt": "2026-06-30T21:52:02Z",
+      "number": 84,
+      "changedFiles": 148,
+      "additions": 326,
+      "deletions": 5089,
+      "baseRepository": {
+        "name": "ebalistyka",
+        "url": "https://github.com/o-murphy/ebalistyka",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "login": "o-murphy",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOTDzPXs7rKL0p",
+      "title": "Precision flag unified across all build systems",
+      "url": "https://github.com/ballistics-lab/micropython-bclibc/pull/6",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+        "url": "https://github.com/o-murphy",
+        "login": "o-murphy"
+      },
+      "createdAt": "2026-06-26T22:49:42Z",
+      "number": 6,
+      "changedFiles": 9,
+      "additions": 78,
+      "deletions": 61,
+      "baseRepository": {
+        "name": "micropython-bclibc",
+        "url": "https://github.com/ballistics-lab/micropython-bclibc",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/195828045?v=4",
+          "login": "ballistics-lab",
+          "url": "https://github.com/ballistics-lab"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOC8Ivn87rAhPk",
+      "title": "New version: o-murphy.ebalistyka version 0.1.18.191",
+      "url": "https://github.com/microsoft/winget-pkgs/pull/393467",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/in/95686?v=4",
+        "url": "https://github.com/apps/microsoft-github-policy-service",
+        "login": "microsoft-github-policy-service"
+      },
+      "createdAt": "2026-06-26T14:10:17Z",
+      "number": 393467,
+      "changedFiles": 3,
+      "additions": 48,
+      "deletions": 0,
+      "baseRepository": {
+        "name": "winget-pkgs",
+        "url": "https://github.com/microsoft/winget-pkgs",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/6154722?v=4",
+          "login": "microsoft",
+          "url": "https://github.com/microsoft"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDORofZ487rALnf",
+      "title": "chore: flutter pub upgrade --major-versions",
+      "url": "https://github.com/o-murphy/ebalistyka/pull/83",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+        "url": "https://github.com/o-murphy",
+        "login": "o-murphy"
+      },
+      "createdAt": "2026-06-26T13:54:29Z",
+      "number": 83,
+      "changedFiles": 6,
+      "additions": 79,
+      "deletions": 95,
+      "baseRepository": {
+        "name": "ebalistyka",
+        "url": "https://github.com/o-murphy/ebalistyka",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "login": "o-murphy",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOHjeS287q-H6g",
+      "title": "chore: bump deps",
+      "url": "https://github.com/o-murphy/py-ballisticcalc/pull/322",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+        "url": "https://github.com/o-murphy",
+        "login": "o-murphy"
+      },
+      "createdAt": "2026-06-26T12:15:12Z",
+      "number": 322,
+      "changedFiles": 4,
+      "additions": 475,
+      "deletions": 314,
+      "baseRepository": {
+        "name": "py-ballisticcalc",
+        "url": "https://github.com/o-murphy/py-ballisticcalc",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "login": "o-murphy",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDORofZ487q9BEv",
+      "title": "chore: bump bclibc to v1.1.4, bump ci actions refs",
+      "url": "https://github.com/o-murphy/ebalistyka/pull/76",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+        "url": "https://github.com/o-murphy",
+        "login": "o-murphy"
+      },
+      "createdAt": "2026-06-26T11:18:00Z",
+      "number": 76,
+      "changedFiles": 19,
+      "additions": 65,
+      "deletions": 43,
+      "baseRepository": {
+        "name": "ebalistyka",
+        "url": "https://github.com/o-murphy/ebalistyka",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "login": "o-murphy",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOAOoGts7q6Zfv",
+      "title": "webassembly/library: Fix ccall ABI for mp_hal_get_interrupt_char.",
+      "url": "https://github.com/micropython/micropython/pull/19382",
+      "state": "OPEN",
+      "mergedBy": null,
+      "createdAt": "2026-06-26T09:08:31Z",
+      "number": 19382,
+      "changedFiles": 4,
+      "additions": 17,
+      "deletions": 2,
+      "baseRepository": {
+        "name": "micropython",
+        "url": "https://github.com/micropython/micropython",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/6298560?v=4",
+          "login": "micropython",
+          "url": "https://github.com/micropython"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOSgTuy87q5YNj",
+      "title": "feat: flutter.ref symbolic channel names",
+      "url": "https://github.com/o-murphy/flutpak/pull/40",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+        "url": "https://github.com/o-murphy",
+        "login": "o-murphy"
+      },
+      "createdAt": "2026-06-26T08:19:01Z",
+      "number": 40,
+      "changedFiles": 9,
+      "additions": 130,
+      "deletions": 28,
+      "baseRepository": {
+        "name": "flutpak",
+        "url": "https://github.com/o-murphy/flutpak",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "login": "o-murphy",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOHjeS287qrpAi",
+      "title": "Revise README for clarity and additional information",
+      "url": "https://github.com/o-murphy/py-ballisticcalc/pull/321",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+        "url": "https://github.com/o-murphy",
+        "login": "o-murphy"
+      },
+      "createdAt": "2026-06-25T18:00:54Z",
+      "number": 321,
+      "changedFiles": 1,
+      "additions": 23,
+      "deletions": 21,
+      "baseRepository": {
+        "name": "py-ballisticcalc",
+        "url": "https://github.com/o-murphy/py-ballisticcalc",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "login": "o-murphy",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOTDzPXs7qgHOR",
+      "title": "add: usermod wasm target",
+      "url": "https://github.com/ballistics-lab/micropython-bclibc/pull/2",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+        "url": "https://github.com/o-murphy",
+        "login": "o-murphy"
+      },
+      "createdAt": "2026-06-25T10:01:58Z",
+      "number": 2,
+      "changedFiles": 15,
+      "additions": 582,
+      "deletions": 129,
+      "baseRepository": {
+        "name": "micropython-bclibc",
+        "url": "https://github.com/ballistics-lab/micropython-bclibc",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/195828045?v=4",
+          "login": "ballistics-lab",
+          "url": "https://github.com/ballistics-lab"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOAOoGts7qUjqo",
+      "title": "tools/mpy_ld: Support picolibc on RISC-V (.srodata, absolute LO12).",
+      "url": "https://github.com/micropython/micropython/pull/19378",
+      "state": "OPEN",
+      "mergedBy": null,
+      "createdAt": "2026-06-24T22:46:05Z",
+      "number": 19378,
+      "changedFiles": 4,
+      "additions": 78,
+      "deletions": 15,
+      "baseRepository": {
+        "name": "micropython",
+        "url": "https://github.com/micropython/micropython",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/6298560?v=4",
+          "login": "micropython",
+          "url": "https://github.com/micropython"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDORuj2X87qA0pk",
+      "title": "chore: move micropython native module to separate repo `micropython-bclibc`",
+      "url": "https://github.com/ballistics-lab/bclibc/pull/17",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+        "url": "https://github.com/o-murphy",
+        "login": "o-murphy"
+      },
+      "createdAt": "2026-06-24T08:20:43Z",
+      "number": 17,
+      "changedFiles": 46,
+      "additions": 33,
+      "deletions": 6913,
+      "baseRepository": {
+        "name": "bclibc",
+        "url": "https://github.com/ballistics-lab/bclibc",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/195828045?v=4",
+          "login": "ballistics-lab",
+          "url": "https://github.com/ballistics-lab"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDORuj2X87px3EJ",
+      "title": "natmod: Refactor/optimize",
+      "url": "https://github.com/ballistics-lab/bclibc/pull/16",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+        "url": "https://github.com/o-murphy",
+        "login": "o-murphy"
+      },
+      "createdAt": "2026-06-23T18:20:25Z",
+      "number": 16,
+      "changedFiles": 55,
+      "additions": 4427,
+      "deletions": 3852,
+      "baseRepository": {
+        "name": "bclibc",
+        "url": "https://github.com/ballistics-lab/bclibc",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/195828045?v=4",
+          "login": "ballistics-lab",
+          "url": "https://github.com/ballistics-lab"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDORuj2X87prZCm",
+      "title": "natmod: fix: finding performance, feat: integration stream ",
+      "url": "https://github.com/ballistics-lab/bclibc/pull/15",
+      "state": "CLOSED",
+      "mergedBy": null,
+      "createdAt": "2026-06-23T13:51:25Z",
+      "number": 15,
+      "changedFiles": 17,
+      "additions": 1042,
+      "deletions": 360,
+      "baseRepository": {
+        "name": "bclibc",
+        "url": "https://github.com/ballistics-lab/bclibc",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/195828045?v=4",
+          "login": "ballistics-lab",
+          "url": "https://github.com/ballistics-lab"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOHjeS287pOc-M",
+      "title": "fix: Root cause & fix for _find_zero_angle (Ridder's method)",
+      "url": "https://github.com/o-murphy/py-ballisticcalc/pull/319",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+        "url": "https://github.com/o-murphy",
+        "login": "o-murphy"
+      },
+      "createdAt": "2026-06-22T14:47:19Z",
+      "number": 319,
+      "changedFiles": 5,
+      "additions": 80,
+      "deletions": 16,
+      "baseRepository": {
+        "name": "py-ballisticcalc",
+        "url": "https://github.com/o-murphy/py-ballisticcalc",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "login": "o-murphy",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDORuj2X87oxBbq",
+      "title": "Feature/micropython natmod",
+      "url": "https://github.com/ballistics-lab/bclibc/pull/14",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+        "url": "https://github.com/o-murphy",
+        "login": "o-murphy"
+      },
+      "createdAt": "2026-06-20T22:03:33Z",
+      "number": 14,
+      "changedFiles": 48,
+      "additions": 10264,
+      "deletions": 15,
+      "baseRepository": {
+        "name": "bclibc",
+        "url": "https://github.com/ballistics-lab/bclibc",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/195828045?v=4",
+          "login": "ballistics-lab",
+          "url": "https://github.com/ballistics-lab"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDORuj2X87oYAeh",
+      "title": "fix: CMakeLists.txt",
+      "url": "https://github.com/ballistics-lab/bclibc/pull/13",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+        "url": "https://github.com/o-murphy",
+        "login": "o-murphy"
+      },
+      "createdAt": "2026-06-19T12:43:43Z",
+      "number": 13,
+      "changedFiles": 4,
+      "additions": 78,
+      "deletions": 27,
+      "baseRepository": {
+        "name": "bclibc",
+        "url": "https://github.com/ballistics-lab/bclibc",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/195828045?v=4",
+          "login": "ballistics-lab",
+          "url": "https://github.com/ballistics-lab"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOSgTuy87k8OvZ",
+      "title": "ci: automated flutter-sdk registry updates",
+      "url": "https://github.com/o-murphy/flutpak/pull/34",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+        "url": "https://github.com/o-murphy",
+        "login": "o-murphy"
+      },
+      "createdAt": "2026-06-10T16:26:02Z",
+      "number": 34,
+      "changedFiles": 1,
+      "additions": 139,
+      "deletions": 0,
+      "baseRepository": {
+        "name": "flutpak",
+        "url": "https://github.com/o-murphy/flutpak",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "login": "o-murphy",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDORofZ487kvBcx",
+      "title": "try: flatpak flutter shared module",
+      "url": "https://github.com/o-murphy/ebalistyka/pull/75",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+        "url": "https://github.com/o-murphy",
+        "login": "o-murphy"
+      },
+      "createdAt": "2026-06-10T07:26:54Z",
+      "number": 75,
+      "changedFiles": 5,
+      "additions": 9,
+      "deletions": 16,
+      "baseRepository": {
+        "name": "ebalistyka",
+        "url": "https://github.com/o-murphy/ebalistyka",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "login": "o-murphy",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOSgTuy87kl8gB",
+      "title": "Feat/flutter sdk module",
+      "url": "https://github.com/o-murphy/flutpak/pull/33",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+        "url": "https://github.com/o-murphy",
+        "login": "o-murphy"
+      },
+      "createdAt": "2026-06-09T22:48:07Z",
+      "number": 33,
+      "changedFiles": 19,
+      "additions": 517,
+      "deletions": 178,
+      "baseRepository": {
+        "name": "flutpak",
+        "url": "https://github.com/o-murphy/flutpak",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "login": "o-murphy",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOSgTuy87kijnd",
+      "title": "Feat/rust based deps",
+      "url": "https://github.com/o-murphy/flutpak/pull/32",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+        "url": "https://github.com/o-murphy",
+        "login": "o-murphy"
+      },
+      "createdAt": "2026-06-09T20:03:21Z",
+      "number": 32,
+      "changedFiles": 40,
+      "additions": 3685,
+      "deletions": 447,
+      "baseRepository": {
+        "name": "flutpak",
+        "url": "https://github.com/o-murphy/flutpak",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "login": "o-murphy",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOSgTuy87keSfu",
+      "title": "use predefined sdk",
+      "url": "https://github.com/o-murphy/flutpak/pull/31",
+      "state": "OPEN",
+      "mergedBy": null,
+      "createdAt": "2026-06-09T16:52:32Z",
+      "number": 31,
+      "changedFiles": 2,
+      "additions": 2,
+      "deletions": 2,
+      "baseRepository": {
+        "name": "flutpak",
+        "url": "https://github.com/o-murphy/flutpak",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "login": "o-murphy",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOSgTuy87kduLw",
+      "title": "try: official action",
+      "url": "https://github.com/o-murphy/flutpak/pull/30",
+      "state": "OPEN",
+      "mergedBy": null,
+      "createdAt": "2026-06-09T16:26:24Z",
+      "number": 30,
+      "changedFiles": 3,
+      "additions": 90,
+      "deletions": 58,
+      "baseRepository": {
+        "name": "flutpak",
+        "url": "https://github.com/o-murphy/flutpak",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "login": "o-murphy",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDORofZ487kc_j_",
+      "title": "chore: bump flutpak version",
+      "url": "https://github.com/o-murphy/ebalistyka/pull/74",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+        "url": "https://github.com/o-murphy",
+        "login": "o-murphy"
+      },
+      "createdAt": "2026-06-09T15:52:41Z",
+      "number": 74,
+      "changedFiles": 4,
+      "additions": 7,
+      "deletions": 7,
+      "baseRepository": {
+        "name": "ebalistyka",
+        "url": "https://github.com/o-murphy/ebalistyka",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "login": "o-murphy",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOSgTuy87kc_Eq",
+      "title": "feat: foreign_deps version matching",
+      "url": "https://github.com/o-murphy/flutpak/pull/29",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+        "url": "https://github.com/o-murphy",
+        "login": "o-murphy"
+      },
+      "createdAt": "2026-06-09T15:52:21Z",
+      "number": 29,
+      "changedFiles": 6,
+      "additions": 261,
+      "deletions": 6,
+      "baseRepository": {
+        "name": "flutpak",
+        "url": "https://github.com/o-murphy/flutpak",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "login": "o-murphy",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDORofZ487kXA4r",
+      "title": "chore: bump flutpak to 0.7.0",
+      "url": "https://github.com/o-murphy/ebalistyka/pull/73",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+        "url": "https://github.com/o-murphy",
+        "login": "o-murphy"
+      },
+      "createdAt": "2026-06-09T11:56:30Z",
+      "number": 73,
+      "changedFiles": 13,
+      "additions": 71,
+      "deletions": 90,
+      "baseRepository": {
+        "name": "ebalistyka",
+        "url": "https://github.com/o-murphy/ebalistyka",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "login": "o-murphy",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOSgTuy87kWx51",
+      "title": "Refactor/simplify",
+      "url": "https://github.com/o-murphy/flutpak/pull/27",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+        "url": "https://github.com/o-murphy",
+        "login": "o-murphy"
+      },
+      "createdAt": "2026-06-09T11:46:32Z",
+      "number": 27,
+      "changedFiles": 64,
+      "additions": 6066,
+      "deletions": 2024,
+      "baseRepository": {
+        "name": "flutpak",
+        "url": "https://github.com/o-murphy/flutpak",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "login": "o-murphy",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDORofZ487kAamf",
+      "title": "Fix/setup flutter",
+      "url": "https://github.com/o-murphy/ebalistyka/pull/72",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+        "url": "https://github.com/o-murphy",
+        "login": "o-murphy"
+      },
+      "createdAt": "2026-06-08T16:59:46Z",
+      "number": 72,
+      "changedFiles": 6,
+      "additions": 11,
+      "deletions": 11,
+      "baseRepository": {
+        "name": "ebalistyka",
+        "url": "https://github.com/o-murphy/ebalistyka",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "login": "o-murphy",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOSgTuy87kAXL5",
+      "title": "fix: remove setup flutter oneliner",
+      "url": "https://github.com/o-murphy/flutpak/pull/26",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+        "url": "https://github.com/o-murphy",
+        "login": "o-murphy"
+      },
+      "createdAt": "2026-06-08T16:57:38Z",
+      "number": 26,
+      "changedFiles": 9,
+      "additions": 31,
+      "deletions": 39,
+      "baseRepository": {
+        "name": "flutpak",
+        "url": "https://github.com/o-murphy/flutpak",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "login": "o-murphy",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOSgTuy87j7sbh",
+      "title": "try: flutter module",
+      "url": "https://github.com/o-murphy/flutpak/pull/25",
+      "state": "CLOSED",
+      "mergedBy": null,
+      "createdAt": "2026-06-08T13:53:44Z",
+      "number": 25,
+      "changedFiles": 16,
+      "additions": 385,
+      "deletions": 214,
+      "baseRepository": {
+        "name": "flutpak",
+        "url": "https://github.com/o-murphy/flutpak",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "login": "o-murphy",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOSgTuy87j0iTg",
+      "title": "Refactor/patches/use git",
+      "url": "https://github.com/o-murphy/flutpak/pull/24",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+        "url": "https://github.com/o-murphy",
+        "login": "o-murphy"
+      },
+      "createdAt": "2026-06-08T08:44:17Z",
+      "number": 24,
+      "changedFiles": 51,
+      "additions": 2431,
+      "deletions": 310,
+      "baseRepository": {
+        "name": "flutpak",
+        "url": "https://github.com/o-murphy/flutpak",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "login": "o-murphy",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDORofZ487j0PZ7",
+      "title": "try: new flutpak pub patches structure",
+      "url": "https://github.com/o-murphy/ebalistyka/pull/71",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+        "url": "https://github.com/o-murphy",
+        "login": "o-murphy"
+      },
+      "createdAt": "2026-06-08T08:29:10Z",
+      "number": 71,
+      "changedFiles": 9,
+      "additions": 15,
+      "deletions": 73,
+      "baseRepository": {
+        "name": "ebalistyka",
+        "url": "https://github.com/o-murphy/ebalistyka",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "login": "o-murphy",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDONpz45c7jsip4",
+      "title": "Add foreign dep for objectbox_flutter_libs and objectbox_sync_flutter_libs",
+      "url": "https://github.com/TheAppgineer/flatpak-flutter/pull/116",
+      "state": "OPEN",
+      "mergedBy": null,
+      "createdAt": "2026-06-07T21:53:22Z",
+      "number": 116,
+      "changedFiles": 8,
+      "additions": 291,
+      "deletions": 3,
+      "baseRepository": {
+        "name": "flatpak-flutter",
+        "url": "https://github.com/TheAppgineer/flatpak-flutter",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/26184252?v=4",
+          "login": "TheAppgineer",
+          "url": "https://github.com/TheAppgineer"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOSgTuy87jFz8y",
+      "title": "Feature/demo",
+      "url": "https://github.com/o-murphy/flutpak/pull/23",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+        "url": "https://github.com/o-murphy",
+        "login": "o-murphy"
+      },
+      "createdAt": "2026-06-05T12:08:05Z",
+      "number": 23,
+      "changedFiles": 49,
+      "additions": 1262,
+      "deletions": 112,
+      "baseRepository": {
+        "name": "flutpak",
+        "url": "https://github.com/o-murphy/flutpak",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "login": "o-murphy",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOSgTuy87jEaQD",
+      "title": "chore: remove flathub.json generation",
+      "url": "https://github.com/o-murphy/flutpak/pull/22",
+      "state": "CLOSED",
+      "mergedBy": null,
+      "createdAt": "2026-06-05T10:56:18Z",
+      "number": 22,
+      "changedFiles": 11,
+      "additions": 66,
+      "deletions": 50,
+      "baseRepository": {
+        "name": "flutpak",
+        "url": "https://github.com/o-murphy/flutpak",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "login": "o-murphy",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDORofZ487jB-qL",
+      "title": "fix: flatpak manifest",
+      "url": "https://github.com/o-murphy/ebalistyka/pull/70",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+        "url": "https://github.com/o-murphy",
+        "login": "o-murphy"
+      },
+      "createdAt": "2026-06-05T08:51:50Z",
+      "number": 70,
+      "changedFiles": 9,
+      "additions": 24,
+      "deletions": 26,
+      "baseRepository": {
+        "name": "ebalistyka",
+        "url": "https://github.com/o-murphy/ebalistyka",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "login": "o-murphy",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOSgTuy87i6Pag",
+      "title": "fix: convert strip-trailing-cr patches to CRLF at generate time",
+      "url": "https://github.com/o-murphy/flutpak/pull/21",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+        "url": "https://github.com/o-murphy",
+        "login": "o-murphy"
+      },
+      "createdAt": "2026-06-05T00:50:20Z",
+      "number": 21,
+      "changedFiles": 22,
+      "additions": 421,
+      "deletions": 128,
+      "baseRepository": {
+        "name": "flutpak",
+        "url": "https://github.com/o-murphy/flutpak",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "login": "o-murphy",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOSgTuy87i5Hz7",
+      "title": "feat: add build-flatpak-official action (experimental)",
+      "url": "https://github.com/o-murphy/flutpak/pull/20",
+      "state": "CLOSED",
+      "mergedBy": null,
+      "createdAt": "2026-06-04T23:30:33Z",
+      "number": 20,
+      "changedFiles": 28,
+      "additions": 568,
+      "deletions": 14,
+      "baseRepository": {
+        "name": "flutpak",
+        "url": "https://github.com/o-murphy/flutpak",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "login": "o-murphy",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOBUvmZs7i4pw3",
+      "title": "Add io.github.o_murphy.ebalistyka",
+      "url": "https://github.com/flathub/flathub/pull/8889",
+      "state": "CLOSED",
+      "mergedBy": null,
+      "createdAt": "2026-06-04T23:00:29Z",
+      "number": 8889,
+      "changedFiles": 4,
+      "additions": 2761,
+      "deletions": 0,
+      "baseRepository": {
+        "name": "flathub",
+        "url": "https://github.com/flathub/flathub",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/27268838?v=4",
+          "login": "flathub",
+          "url": "https://github.com/flathub"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOC8Ivn87i4aWG",
+      "title": "New version: o-murphy.ebalistyka version 0.1.17.184",
+      "url": "https://github.com/microsoft/winget-pkgs/pull/383808",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/in/95686?v=4",
+        "url": "https://github.com/apps/microsoft-github-policy-service",
+        "login": "microsoft-github-policy-service"
+      },
+      "createdAt": "2026-06-04T22:46:10Z",
+      "number": 383808,
+      "changedFiles": 3,
+      "additions": 48,
+      "deletions": 0,
+      "baseRepository": {
+        "name": "winget-pkgs",
+        "url": "https://github.com/microsoft/winget-pkgs",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/6154722?v=4",
+          "login": "microsoft",
+          "url": "https://github.com/microsoft"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDORofZ487ite22",
+      "title": "Feature/chart sight line",
+      "url": "https://github.com/o-murphy/ebalistyka/pull/69",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+        "url": "https://github.com/o-murphy",
+        "login": "o-murphy"
+      },
+      "createdAt": "2026-06-04T14:08:17Z",
+      "number": 69,
+      "changedFiles": 24,
+      "additions": 671,
+      "deletions": 54,
+      "baseRepository": {
+        "name": "ebalistyka",
+        "url": "https://github.com/o-murphy/ebalistyka",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "login": "o-murphy",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDORuj2X87ismfl",
+      "title": "fix: add missing traj_data.hpp include in exceptions.hpp",
+      "url": "https://github.com/ballistics-lab/bclibc/pull/12",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+        "url": "https://github.com/o-murphy",
+        "login": "o-murphy"
+      },
+      "createdAt": "2026-06-04T13:30:29Z",
+      "number": 12,
+      "changedFiles": 2,
+      "additions": 4,
+      "deletions": 0,
+      "baseRepository": {
+        "name": "bclibc",
+        "url": "https://github.com/ballistics-lab/bclibc",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/195828045?v=4",
+          "login": "ballistics-lab",
+          "url": "https://github.com/ballistics-lab"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOSgTuy87isadL",
+      "title": "docs: remove checkout from build job example",
+      "url": "https://github.com/o-murphy/flutpak/pull/19",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+        "url": "https://github.com/o-murphy",
+        "login": "o-murphy"
+      },
+      "createdAt": "2026-06-04T13:23:03Z",
+      "number": 19,
+      "changedFiles": 1,
+      "additions": 0,
+      "deletions": 2,
+      "baseRepository": {
+        "name": "flutpak",
+        "url": "https://github.com/o-murphy/flutpak",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "login": "o-murphy",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDORofZ487isKJY",
+      "title": "ci(flatpak): remove checkout from build job",
+      "url": "https://github.com/o-murphy/ebalistyka/pull/68",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+        "url": "https://github.com/o-murphy",
+        "login": "o-murphy"
+      },
+      "createdAt": "2026-06-04T13:12:00Z",
+      "number": 68,
+      "changedFiles": 2,
+      "additions": 83,
+      "deletions": 20,
+      "baseRepository": {
+        "name": "ebalistyka",
+        "url": "https://github.com/o-murphy/ebalistyka",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "login": "o-murphy",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOC8Ivn87ikdat",
+      "title": "Update: o-murphy.ebalistyka metadata",
+      "url": "https://github.com/microsoft/winget-pkgs/pull/383540",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/in/95686?v=4",
+        "url": "https://github.com/apps/microsoft-github-policy-service",
+        "login": "microsoft-github-policy-service"
+      },
+      "createdAt": "2026-06-04T07:10:42Z",
+      "number": 383540,
+      "changedFiles": 1,
+      "additions": 2,
+      "deletions": 2,
+      "baseRepository": {
+        "name": "winget-pkgs",
+        "url": "https://github.com/microsoft/winget-pkgs",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/6154722?v=4",
+          "login": "microsoft",
+          "url": "https://github.com/microsoft"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDORuj2X87iUike",
+      "title": "feat: add MicroPython/CircuitPython native module (.mpy) support",
+      "url": "https://github.com/ballistics-lab/bclibc/pull/10",
+      "state": "CLOSED",
+      "mergedBy": null,
+      "createdAt": "2026-06-03T16:43:10Z",
+      "number": 10,
+      "changedFiles": 22,
+      "additions": 2032,
+      "deletions": 94,
+      "baseRepository": {
+        "name": "bclibc",
+        "url": "https://github.com/ballistics-lab/bclibc",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/195828045?v=4",
+          "login": "ballistics-lab",
+          "url": "https://github.com/ballistics-lab"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDORofZ487h49ny",
+      "title": "feat: repository pattern + Sembast backend for future web support",
+      "url": "https://github.com/o-murphy/ebalistyka/pull/67",
+      "state": "CLOSED",
+      "mergedBy": null,
+      "createdAt": "2026-06-02T17:03:29Z",
+      "number": 67,
+      "changedFiles": 21,
+      "additions": 3492,
+      "deletions": 709,
+      "baseRepository": {
+        "name": "ebalistyka",
+        "url": "https://github.com/o-murphy/ebalistyka",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "login": "o-murphy",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOK5ACsc7htBKy",
+      "title": "fix(release): npm publish glob expansion + prerelease dist-tag",
+      "url": "https://github.com/o-murphy/js-ballistics/pull/41",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+        "url": "https://github.com/o-murphy",
+        "login": "o-murphy"
+      },
+      "createdAt": "2026-06-02T08:30:11Z",
+      "number": 41,
+      "changedFiles": 1,
+      "additions": 9,
+      "deletions": 3,
+      "baseRepository": {
+        "name": "js-ballistics",
+        "url": "https://github.com/o-murphy/js-ballistics",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "login": "o-murphy",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOSgTuy87hlWsG",
+      "title": "feat: sdk-ext from Flutter version tag without local SDK",
+      "url": "https://github.com/o-murphy/flutpak/pull/18",
+      "state": "CLOSED",
+      "mergedBy": null,
+      "createdAt": "2026-06-02T00:57:22Z",
+      "number": 18,
+      "changedFiles": 6,
+      "additions": 141,
+      "deletions": 10,
+      "baseRepository": {
+        "name": "flutpak",
+        "url": "https://github.com/o-murphy/flutpak",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "login": "o-murphy",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOK5ACsc7hcZND",
+      "title": "test: align tests with Python reference and fix bugs",
+      "url": "https://github.com/o-murphy/js-ballistics/pull/40",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+        "url": "https://github.com/o-murphy",
+        "login": "o-murphy"
+      },
+      "createdAt": "2026-06-01T16:31:24Z",
+      "number": 40,
+      "changedFiles": 31,
+      "additions": 3871,
+      "deletions": 3046,
+      "baseRepository": {
+        "name": "js-ballistics",
+        "url": "https://github.com/o-murphy/js-ballistics",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "login": "o-murphy",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDORofZ487hbBs-",
+      "title": "ci: add per-store approval gates to publish jobs",
+      "url": "https://github.com/o-murphy/ebalistyka/pull/66",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+        "url": "https://github.com/o-murphy",
+        "login": "o-murphy"
+      },
+      "createdAt": "2026-06-01T15:26:05Z",
+      "number": 66,
+      "changedFiles": 7,
+      "additions": 117,
+      "deletions": 13,
+      "baseRepository": {
+        "name": "ebalistyka",
+        "url": "https://github.com/o-murphy/ebalistyka",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "login": "o-murphy",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOSgTuy87hBfHd",
+      "title": "refactor: inject modules/sources/patches via yaml_edit",
+      "url": "https://github.com/o-murphy/flutpak/pull/17",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+        "url": "https://github.com/o-murphy",
+        "login": "o-murphy"
+      },
+      "createdAt": "2026-05-31T00:35:34Z",
+      "number": 17,
+      "changedFiles": 24,
+      "additions": 798,
+      "deletions": 1151,
+      "baseRepository": {
+        "name": "flutpak",
+        "url": "https://github.com/o-murphy/flutpak",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "login": "o-murphy",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDORuj2X87goBRx",
+      "title": "fix: vacuum NaN in altitude update, move-construct MachList",
+      "url": "https://github.com/ballistics-lab/bclibc/pull/9",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+        "url": "https://github.com/o-murphy",
+        "login": "o-murphy"
+      },
+      "createdAt": "2026-05-29T11:32:43Z",
+      "number": 9,
+      "changedFiles": 2,
+      "additions": 20,
+      "deletions": 3,
+      "baseRepository": {
+        "name": "bclibc",
+        "url": "https://github.com/ballistics-lab/bclibc",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/195828045?v=4",
+          "login": "ballistics-lab",
+          "url": "https://github.com/ballistics-lab"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOC8Ivn87gntcN",
+      "title": "New version: o-murphy.ebalistyka version 0.1.16.1",
+      "url": "https://github.com/microsoft/winget-pkgs/pull/381145",
+      "state": "CLOSED",
+      "mergedBy": null,
+      "createdAt": "2026-05-29T11:18:34Z",
+      "number": 381145,
+      "changedFiles": 3,
+      "additions": 48,
+      "deletions": 0,
+      "baseRepository": {
+        "name": "winget-pkgs",
+        "url": "https://github.com/microsoft/winget-pkgs",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/6154722?v=4",
+          "login": "microsoft",
+          "url": "https://github.com/microsoft"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOHjeS287gb1Ls",
+      "title": "bump: bclibc@v1.1.2, wrappers consilidation",
+      "url": "https://github.com/o-murphy/py-ballisticcalc/pull/318",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+        "url": "https://github.com/o-murphy",
+        "login": "o-murphy"
+      },
+      "createdAt": "2026-05-28T22:53:54Z",
+      "number": 318,
+      "changedFiles": 13,
+      "additions": 207,
+      "deletions": 167,
+      "baseRepository": {
+        "name": "py-ballisticcalc",
+        "url": "https://github.com/o-murphy/py-ballisticcalc",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "login": "o-murphy",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDORofZ487gYnWa",
+      "title": "feat(bclibc_ffi): migrate to BCShot — physics conversion centralized in C++",
+      "url": "https://github.com/o-murphy/ebalistyka/pull/65",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+        "url": "https://github.com/o-murphy",
+        "login": "o-murphy"
+      },
+      "createdAt": "2026-05-28T19:59:35Z",
+      "number": 65,
+      "changedFiles": 27,
+      "additions": 1043,
+      "deletions": 741,
+      "baseRepository": {
+        "name": "ebalistyka",
+        "url": "https://github.com/o-murphy/ebalistyka",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "login": "o-murphy",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOHjeS287gM7sJ",
+      "title": "feat(cython): use BCLIBC_Coriolis::from_lat_az() factory from bclibc",
+      "url": "https://github.com/o-murphy/py-ballisticcalc/pull/317",
+      "state": "CLOSED",
+      "mergedBy": null,
+      "createdAt": "2026-05-28T10:59:24Z",
+      "number": 317,
+      "changedFiles": 9,
+      "additions": 185,
+      "deletions": 159,
+      "baseRepository": {
+        "name": "py-ballisticcalc",
+        "url": "https://github.com/o-murphy/py-ballisticcalc",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "login": "o-murphy",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDORuj2X87gM1c2",
+      "title": "feat: bclibc consilidation for wrappers",
+      "url": "https://github.com/ballistics-lab/bclibc/pull/8",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+        "url": "https://github.com/o-murphy",
+        "login": "o-murphy"
+      },
+      "createdAt": "2026-05-28T10:54:09Z",
+      "number": 8,
+      "changedFiles": 6,
+      "additions": 718,
+      "deletions": 140,
+      "baseRepository": {
+        "name": "bclibc",
+        "url": "https://github.com/ballistics-lab/bclibc",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/195828045?v=4",
+          "login": "ballistics-lab",
+          "url": "https://github.com/ballistics-lab"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOC8Ivn87gLtvZ",
+      "title": "New version: o-murphy.ebalistyka version 0.1.16.0",
+      "url": "https://github.com/microsoft/winget-pkgs/pull/380711",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/in/95686?v=4",
+        "url": "https://github.com/apps/microsoft-github-policy-service",
+        "login": "microsoft-github-policy-service"
+      },
+      "createdAt": "2026-05-28T09:57:37Z",
+      "number": 380711,
+      "changedFiles": 3,
+      "additions": 48,
+      "deletions": 0,
+      "baseRepository": {
+        "name": "winget-pkgs",
+        "url": "https://github.com/microsoft/winget-pkgs",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/6154722?v=4",
+          "login": "microsoft",
+          "url": "https://github.com/microsoft"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOHjeS287gBLWx",
+      "title": "docs: add BACKLOG.md with session findings and bclibc architecture plan",
+      "url": "https://github.com/o-murphy/py-ballisticcalc/pull/316",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+        "url": "https://github.com/o-murphy",
+        "login": "o-murphy"
+      },
+      "createdAt": "2026-05-27T22:40:01Z",
+      "number": 316,
+      "changedFiles": 7,
+      "additions": 173,
+      "deletions": 20,
+      "baseRepository": {
+        "name": "py-ballisticcalc",
+        "url": "https://github.com/o-murphy/py-ballisticcalc",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "login": "o-murphy",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOSgTuy87gASsd",
+      "title": "Feat/known patch objectbox 5.3.2",
+      "url": "https://github.com/o-murphy/flutpak/pull/16",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+        "url": "https://github.com/o-murphy",
+        "login": "o-murphy"
+      },
+      "createdAt": "2026-05-27T21:45:56Z",
+      "number": 16,
+      "changedFiles": 9,
+      "additions": 182,
+      "deletions": 17,
+      "baseRepository": {
+        "name": "flutpak",
+        "url": "https://github.com/o-murphy/flutpak",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "login": "o-murphy",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDORofZ487f_wnM",
+      "title": "chore: bump pub dependencies, update CHANGELOG.md",
+      "url": "https://github.com/o-murphy/ebalistyka/pull/64",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+        "url": "https://github.com/o-murphy",
+        "login": "o-murphy"
+      },
+      "createdAt": "2026-05-27T21:15:12Z",
+      "number": 64,
+      "changedFiles": 13,
+      "additions": 147,
+      "deletions": 124,
+      "baseRepository": {
+        "name": "ebalistyka",
+        "url": "https://github.com/o-murphy/ebalistyka",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "login": "o-murphy",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOSgTuy87flJYy",
+      "title": "feat: add generate and build-flatpak composite actions",
+      "url": "https://github.com/o-murphy/flutpak/pull/15",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+        "url": "https://github.com/o-murphy",
+        "login": "o-murphy"
+      },
+      "createdAt": "2026-05-26T21:22:02Z",
+      "number": 15,
+      "changedFiles": 7,
+      "additions": 458,
+      "deletions": 17,
+      "baseRepository": {
+        "name": "flutpak",
+        "url": "https://github.com/o-murphy/flutpak",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "login": "o-murphy",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOSgTuy87e1Yha",
+      "title": "fix: inject patch sources during generate, not init",
+      "url": "https://github.com/o-murphy/flutpak/pull/14",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+        "url": "https://github.com/o-murphy",
+        "login": "o-murphy"
+      },
+      "createdAt": "2026-05-24T20:20:10Z",
+      "number": 14,
+      "changedFiles": 16,
+      "additions": 737,
+      "deletions": 126,
+      "baseRepository": {
+        "name": "flutpak",
+        "url": "https://github.com/o-murphy/flutpak",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "login": "o-murphy",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOSgTuy87eGZJ4",
+      "title": "refactor: architecture update",
+      "url": "https://github.com/o-murphy/flutpak/pull/13",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+        "url": "https://github.com/o-murphy",
+        "login": "o-murphy"
+      },
+      "createdAt": "2026-05-21T20:45:31Z",
+      "number": 13,
+      "changedFiles": 19,
+      "additions": 1663,
+      "deletions": 1152,
+      "baseRepository": {
+        "name": "flutpak",
+        "url": "https://github.com/o-murphy/flutpak",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "login": "o-murphy",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOSgTuy87d9UEx",
+      "title": "feat: auto-detect command, repo_url and flutter_version_file",
+      "url": "https://github.com/o-murphy/flutpak/pull/12",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+        "url": "https://github.com/o-murphy",
+        "login": "o-murphy"
+      },
+      "createdAt": "2026-05-21T13:42:18Z",
+      "number": 12,
+      "changedFiles": 19,
+      "additions": 1667,
+      "deletions": 1152,
+      "baseRepository": {
+        "name": "flutpak",
+        "url": "https://github.com/o-murphy/flutpak",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "login": "o-murphy",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDORofZ487d3D5G",
+      "title": "Refactor/packaging",
+      "url": "https://github.com/o-murphy/ebalistyka/pull/63",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+        "url": "https://github.com/o-murphy",
+        "login": "o-murphy"
+      },
+      "createdAt": "2026-05-21T08:48:55Z",
+      "number": 63,
+      "changedFiles": 46,
+      "additions": 630,
+      "deletions": 3573,
+      "baseRepository": {
+        "name": "ebalistyka",
+        "url": "https://github.com/o-murphy/ebalistyka",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "login": "o-murphy",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOSgTuy87dtSGa",
+      "title": "fix: resolve utility bugs and expand README manual",
+      "url": "https://github.com/o-murphy/flutpak/pull/11",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+        "url": "https://github.com/o-murphy",
+        "login": "o-murphy"
+      },
+      "createdAt": "2026-05-20T21:32:17Z",
+      "number": 11,
+      "changedFiles": 22,
+      "additions": 1056,
+      "deletions": 129,
+      "baseRepository": {
+        "name": "flutpak",
+        "url": "https://github.com/o-murphy/flutpak",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "login": "o-murphy",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDORofZ487dlDSl",
+      "title": "App/tree",
+      "url": "https://github.com/o-murphy/ebalistyka/pull/62",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+        "url": "https://github.com/o-murphy",
+        "login": "o-murphy"
+      },
+      "createdAt": "2026-05-20T14:50:35Z",
+      "number": 62,
+      "changedFiles": 79,
+      "additions": 231,
+      "deletions": 515,
+      "baseRepository": {
+        "name": "ebalistyka",
+        "url": "https://github.com/o-murphy/ebalistyka",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "login": "o-murphy",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOSgTuy87di1gl",
+      "title": "feat: add --update-metainfo flag to prepare command",
+      "url": "https://github.com/o-murphy/flutpak/pull/10",
+      "state": "CLOSED",
+      "mergedBy": null,
+      "createdAt": "2026-05-20T13:24:01Z",
+      "number": 10,
+      "changedFiles": 2,
+      "additions": 38,
+      "deletions": 10,
+      "baseRepository": {
+        "name": "flutpak",
+        "url": "https://github.com/o-murphy/flutpak",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "login": "o-murphy",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOSgTuy87dik7m",
+      "title": "Action/setup flutpak",
+      "url": "https://github.com/o-murphy/flutpak/pull/9",
+      "state": "CLOSED",
+      "mergedBy": null,
+      "createdAt": "2026-05-20T13:13:47Z",
+      "number": 9,
+      "changedFiles": 2,
+      "additions": 76,
+      "deletions": 0,
+      "baseRepository": {
+        "name": "flutpak",
+        "url": "https://github.com/o-murphy/flutpak",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "login": "o-murphy",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOSgTuy87dd979",
+      "title": "Claude/flutpak desktop entry pn ks b",
+      "url": "https://github.com/o-murphy/flutpak/pull/8",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+        "url": "https://github.com/o-murphy",
+        "login": "o-murphy"
+      },
+      "createdAt": "2026-05-20T10:06:01Z",
+      "number": 8,
+      "changedFiles": 17,
+      "additions": 888,
+      "deletions": 239,
+      "baseRepository": {
+        "name": "flutpak",
+        "url": "https://github.com/o-murphy/flutpak",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "login": "o-murphy",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDORofZ487dSvrf",
+      "title": " ci: reworking CI and packaging pipeline",
+      "url": "https://github.com/o-murphy/ebalistyka/pull/61",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+        "url": "https://github.com/o-murphy",
+        "login": "o-murphy"
+      },
+      "createdAt": "2026-05-19T23:25:27Z",
+      "number": 61,
+      "changedFiles": 123,
+      "additions": 1060,
+      "deletions": 4158,
+      "baseRepository": {
+        "name": "ebalistyka",
+        "url": "https://github.com/o-murphy/ebalistyka",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "login": "o-murphy",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOSgTuy87dROJd",
+      "title": "feat: generate metainfo XML from flutpak config",
+      "url": "https://github.com/o-murphy/flutpak/pull/7",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+        "url": "https://github.com/o-murphy",
+        "login": "o-murphy"
+      },
+      "createdAt": "2026-05-19T21:57:39Z",
+      "number": 7,
+      "changedFiles": 21,
+      "additions": 1933,
+      "deletions": 125,
+      "baseRepository": {
+        "name": "flutpak",
+        "url": "https://github.com/o-murphy/flutpak",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "login": "o-murphy",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOSgTuy87dQWRs",
+      "title": "feat: expose cache input in pin-manifest action",
+      "url": "https://github.com/o-murphy/flutpak/pull/6",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+        "url": "https://github.com/o-murphy",
+        "login": "o-murphy"
+      },
+      "createdAt": "2026-05-19T21:12:18Z",
+      "number": 6,
+      "changedFiles": 1,
+      "additions": 5,
+      "deletions": 0,
+      "baseRepository": {
+        "name": "flutpak",
+        "url": "https://github.com/o-murphy/flutpak",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "login": "o-murphy",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOSgTuy87dQP5d",
+      "title": "fix: re-clone Flutter SDK when cached version differs from requested",
+      "url": "https://github.com/o-murphy/flutpak/pull/5",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+        "url": "https://github.com/o-murphy",
+        "login": "o-murphy"
+      },
+      "createdAt": "2026-05-19T21:07:37Z",
+      "number": 5,
+      "changedFiles": 1,
+      "additions": 5,
+      "deletions": 4,
+      "baseRepository": {
+        "name": "flutpak",
+        "url": "https://github.com/o-murphy/flutpak",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "login": "o-murphy",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOSgTuy87dP68Z",
+      "title": "feat: add pin-manifest composite action and build Linux binary on rel…",
+      "url": "https://github.com/o-murphy/flutpak/pull/4",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+        "url": "https://github.com/o-murphy",
+        "login": "o-murphy"
+      },
+      "createdAt": "2026-05-19T20:51:45Z",
+      "number": 4,
+      "changedFiles": 3,
+      "additions": 173,
+      "deletions": 5,
+      "baseRepository": {
+        "name": "flutpak",
+        "url": "https://github.com/o-murphy/flutpak",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "login": "o-murphy",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOSgTuy87dOT2d",
+      "title": "Fix/re pin manifest placeholders",
+      "url": "https://github.com/o-murphy/flutpak/pull/3",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+        "url": "https://github.com/o-murphy",
+        "login": "o-murphy"
+      },
+      "createdAt": "2026-05-19T19:42:04Z",
+      "number": 3,
+      "changedFiles": 3,
+      "additions": 269,
+      "deletions": 8,
+      "baseRepository": {
+        "name": "flutpak",
+        "url": "https://github.com/o-murphy/flutpak",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "login": "o-murphy",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOC8Ivn87dOENX",
+      "title": "New version: o-murphy.ebalistyka version 0.1.15.0",
+      "url": "https://github.com/microsoft/winget-pkgs/pull/376775",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/in/95686?v=4",
+        "url": "https://github.com/apps/microsoft-github-policy-service",
+        "login": "microsoft-github-policy-service"
+      },
+      "createdAt": "2026-05-19T19:30:57Z",
+      "number": 376775,
+      "changedFiles": 3,
+      "additions": 48,
+      "deletions": 0,
+      "baseRepository": {
+        "name": "winget-pkgs",
+        "url": "https://github.com/microsoft/winget-pkgs",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/6154722?v=4",
+          "login": "microsoft",
+          "url": "https://github.com/microsoft"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDORofZ487dM8i4",
+      "title": "refactor: pr-summary as composite action",
+      "url": "https://github.com/o-murphy/ebalistyka/pull/60",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+        "url": "https://github.com/o-murphy",
+        "login": "o-murphy"
+      },
+      "createdAt": "2026-05-19T18:40:39Z",
+      "number": 60,
+      "changedFiles": 11,
+      "additions": 167,
+      "deletions": 176,
+      "baseRepository": {
+        "name": "ebalistyka",
+        "url": "https://github.com/o-murphy/ebalistyka",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "login": "o-murphy",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDORofZ487dJfHg",
+      "title": "ci: source-build flatpak + pin generated-sources on release",
+      "url": "https://github.com/o-murphy/ebalistyka/pull/59",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+        "url": "https://github.com/o-murphy",
+        "login": "o-murphy"
+      },
+      "createdAt": "2026-05-19T16:07:56Z",
+      "number": 59,
+      "changedFiles": 12,
+      "additions": 96,
+      "deletions": 146,
+      "baseRepository": {
+        "name": "ebalistyka",
+        "url": "https://github.com/o-murphy/ebalistyka",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "login": "o-murphy",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDORofZ487dA4uX",
+      "title": "flatpak: OARS rating + auto-pin manifest on release",
+      "url": "https://github.com/o-murphy/ebalistyka/pull/58",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+        "url": "https://github.com/o-murphy",
+        "login": "o-murphy"
+      },
+      "createdAt": "2026-05-19T09:53:26Z",
+      "number": 58,
+      "changedFiles": 6,
+      "additions": 64,
+      "deletions": 7,
+      "baseRepository": {
+        "name": "ebalistyka",
+        "url": "https://github.com/o-murphy/ebalistyka",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "login": "o-murphy",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDORofZ487dAe6k",
+      "title": "bingo: first flatpack sandboxed build! (#53) (#54)",
+      "url": "https://github.com/o-murphy/ebalistyka/pull/57",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+        "url": "https://github.com/o-murphy",
+        "login": "o-murphy"
+      },
+      "createdAt": "2026-05-19T09:36:53Z",
+      "number": 57,
+      "changedFiles": 16,
+      "additions": 978,
+      "deletions": 202,
+      "baseRepository": {
+        "name": "ebalistyka",
+        "url": "https://github.com/o-murphy/ebalistyka",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "login": "o-murphy",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOSgTuy87c1aQ2",
+      "title": "feat: prepare command, pubspec.yaml config, manifest generator, patches registry",
+      "url": "https://github.com/o-murphy/flutpak/pull/1",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+        "url": "https://github.com/o-murphy",
+        "login": "o-murphy"
+      },
+      "createdAt": "2026-05-18T21:36:16Z",
+      "number": 1,
+      "changedFiles": 11,
+      "additions": 1652,
+      "deletions": 205,
+      "baseRepository": {
+        "name": "flutpak",
+        "url": "https://github.com/o-murphy/flutpak",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "login": "o-murphy",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDORofZ487c1VhD",
+      "title": "flatpak: migrate to flatpak_gen prepare, pubspec.yaml config, placeholder manifest",
+      "url": "https://github.com/o-murphy/ebalistyka/pull/56",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+        "url": "https://github.com/o-murphy",
+        "login": "o-murphy"
+      },
+      "createdAt": "2026-05-18T21:32:22Z",
+      "number": 56,
+      "changedFiles": 4,
+      "additions": 56,
+      "deletions": 79,
+      "baseRepository": {
+        "name": "ebalistyka",
+        "url": "https://github.com/o-murphy/ebalistyka",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "login": "o-murphy",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDORofZ487cm-GQ",
+      "title": "patch: FetchContent_MakeAvailable",
+      "url": "https://github.com/o-murphy/ebalistyka/pull/55",
+      "state": "CLOSED",
+      "mergedBy": null,
+      "createdAt": "2026-05-18T10:31:12Z",
+      "number": 55,
+      "changedFiles": 1,
+      "additions": 5,
+      "deletions": 18,
+      "baseRepository": {
+        "name": "ebalistyka",
+        "url": "https://github.com/o-murphy/ebalistyka",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "login": "o-murphy",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDORofZ487clm9R",
+      "title": "bingo: first flatpack sandboxed build! (#53)",
+      "url": "https://github.com/o-murphy/ebalistyka/pull/54",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+        "url": "https://github.com/o-murphy",
+        "login": "o-murphy"
+      },
+      "createdAt": "2026-05-18T09:27:33Z",
+      "number": 54,
+      "changedFiles": 16,
+      "additions": 978,
+      "deletions": 202,
+      "baseRepository": {
+        "name": "ebalistyka",
+        "url": "https://github.com/o-murphy/ebalistyka",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "login": "o-murphy",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDORofZ487cdBWJ",
+      "title": "bingo: first flatpack sandboxed build!",
+      "url": "https://github.com/o-murphy/ebalistyka/pull/53",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+        "url": "https://github.com/o-murphy",
+        "login": "o-murphy"
+      },
+      "createdAt": "2026-05-17T22:58:27Z",
+      "number": 53,
+      "changedFiles": 13,
+      "additions": 370,
+      "deletions": 3748,
+      "baseRepository": {
+        "name": "ebalistyka",
+        "url": "https://github.com/o-murphy/ebalistyka",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "login": "o-murphy",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDORuj2X87bkHxn",
+      "title": "Make a flatpak compatible module  (#7)",
+      "url": "https://github.com/ballistics-lab/bclibc/pull/7",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+        "url": "https://github.com/o-murphy",
+        "login": "o-murphy"
+      },
+      "createdAt": "2026-05-14T14:54:01Z",
+      "number": 7,
+      "changedFiles": 8,
+      "additions": 434,
+      "deletions": 57,
+      "baseRepository": {
+        "name": "bclibc",
+        "url": "https://github.com/ballistics-lab/bclibc",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/195828045?v=4",
+          "login": "ballistics-lab",
+          "url": "https://github.com/ballistics-lab"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOGtMrFM7bf4bn",
+      "title": "Ci/summary + PR message (#8)",
+      "url": "https://github.com/o-murphy/py-aiowialon/pull/8",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+        "url": "https://github.com/o-murphy",
+        "login": "o-murphy"
+      },
+      "createdAt": "2026-05-14T11:32:27Z",
+      "number": 8,
+      "changedFiles": 6,
+      "additions": 1549,
+      "deletions": 1050,
+      "baseRepository": {
+        "name": "py-aiowialon",
+        "url": "https://github.com/o-murphy/py-aiowialon",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "login": "o-murphy",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOC8Ivn87bNCpI",
+      "title": "New version: o-murphy.ebalistyka version 0.1.14.0",
+      "url": "https://github.com/microsoft/winget-pkgs/pull/374116",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/in/95686?v=4",
+        "url": "https://github.com/apps/microsoft-github-policy-service",
+        "login": "microsoft-github-policy-service"
+      },
+      "createdAt": "2026-05-13T16:37:16Z",
+      "number": 374116,
+      "changedFiles": 3,
+      "additions": 48,
+      "deletions": 0,
+      "baseRepository": {
+        "name": "winget-pkgs",
+        "url": "https://github.com/microsoft/winget-pkgs",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/6154722?v=4",
+          "login": "microsoft",
+          "url": "https://github.com/microsoft"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDORofZ487bNAZh",
+      "title": "Refs/heads/fix/publish/winget",
+      "url": "https://github.com/o-murphy/ebalistyka/pull/52",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+        "url": "https://github.com/o-murphy",
+        "login": "o-murphy"
+      },
+      "createdAt": "2026-05-13T16:35:35Z",
+      "number": 52,
+      "changedFiles": 1,
+      "additions": 28,
+      "deletions": 3,
+      "baseRepository": {
+        "name": "ebalistyka",
+        "url": "https://github.com/o-murphy/ebalistyka",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "login": "o-murphy",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOGtMrFM7bKa3R",
+      "title": "Update/modernize",
+      "url": "https://github.com/o-murphy/py-aiowialon/pull/7",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+        "url": "https://github.com/o-murphy",
+        "login": "o-murphy"
+      },
+      "createdAt": "2026-05-13T14:41:58Z",
+      "number": 7,
+      "changedFiles": 46,
+      "additions": 1729,
+      "deletions": 1071,
+      "baseRepository": {
+        "name": "py-aiowialon",
+        "url": "https://github.com/o-murphy/py-aiowialon",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "login": "o-murphy",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOC8Ivn87bHGJZ",
+      "title": "New version: o-murphy.ebalistyka version 0.1.13.0",
+      "url": "https://github.com/microsoft/winget-pkgs/pull/373966",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/in/95686?v=4",
+        "url": "https://github.com/apps/microsoft-github-policy-service",
+        "login": "microsoft-github-policy-service"
+      },
+      "createdAt": "2026-05-13T12:20:53Z",
+      "number": 373966,
+      "changedFiles": 3,
+      "additions": 48,
+      "deletions": 0,
+      "baseRepository": {
+        "name": "winget-pkgs",
+        "url": "https://github.com/microsoft/winget-pkgs",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/6154722?v=4",
+          "login": "microsoft",
+          "url": "https://github.com/microsoft"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDORofZ487bC6EE",
+      "title": "Add WinGet package publishing workflow",
+      "url": "https://github.com/o-murphy/ebalistyka/pull/51",
+      "state": "CLOSED",
+      "mergedBy": null,
+      "createdAt": "2026-05-13T09:16:46Z",
+      "number": 51,
+      "changedFiles": 2,
+      "additions": 60,
+      "deletions": 0,
+      "baseRepository": {
+        "name": "ebalistyka",
+        "url": "https://github.com/o-murphy/ebalistyka",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "login": "o-murphy",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOHjeS287bBJiW",
+      "title": "Feature/build abi3 wheels",
+      "url": "https://github.com/o-murphy/py-ballisticcalc/pull/314",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+        "url": "https://github.com/o-murphy",
+        "login": "o-murphy"
+      },
+      "createdAt": "2026-05-13T07:58:35Z",
+      "number": 314,
+      "changedFiles": 15,
+      "additions": 233,
+      "deletions": 120,
+      "baseRepository": {
+        "name": "py-ballisticcalc",
+        "url": "https://github.com/o-murphy/py-ballisticcalc",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "login": "o-murphy",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOSauke87arTol",
+      "title": "Fix regenerate.yml: collect commits per arch from OSTree refs",
+      "url": "https://github.com/o-murphy/flatpak-repo/pull/14",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+        "url": "https://github.com/o-murphy",
+        "login": "o-murphy"
+      },
+      "createdAt": "2026-05-12T12:48:06Z",
+      "number": 14,
+      "changedFiles": 1,
+      "additions": 10,
+      "deletions": 1,
+      "baseRepository": {
+        "name": "flatpak-repo",
+        "url": "https://github.com/o-murphy/flatpak-repo",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "login": "o-murphy",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOSauke87arJM5",
+      "title": "Support per-architecture commit tracking for app versions",
+      "url": "https://github.com/o-murphy/flatpak-repo/pull/13",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+        "url": "https://github.com/o-murphy",
+        "login": "o-murphy"
+      },
+      "createdAt": "2026-05-12T12:40:27Z",
+      "number": 13,
+      "changedFiles": 3,
+      "additions": 55,
+      "deletions": 25,
+      "baseRepository": {
+        "name": "flatpak-repo",
+        "url": "https://github.com/o-murphy/flatpak-repo",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "login": "o-murphy",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOSauke87aqrXY",
+      "title": "Claude/fix package versioning 6 g xnh",
+      "url": "https://github.com/o-murphy/flatpak-repo/pull/12",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+        "url": "https://github.com/o-murphy",
+        "login": "o-murphy"
+      },
+      "createdAt": "2026-05-12T12:19:07Z",
+      "number": 12,
+      "changedFiles": 4,
+      "additions": 179,
+      "deletions": 12,
+      "baseRepository": {
+        "name": "flatpak-repo",
+        "url": "https://github.com/o-murphy/flatpak-repo",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "login": "o-murphy",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDORofZ487aorx2",
+      "title": "Publish/winget",
+      "url": "https://github.com/o-murphy/ebalistyka/pull/50",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+        "url": "https://github.com/o-murphy",
+        "login": "o-murphy"
+      },
+      "createdAt": "2026-05-12T10:49:54Z",
+      "number": 50,
+      "changedFiles": 6,
+      "additions": 133,
+      "deletions": 32,
+      "baseRepository": {
+        "name": "ebalistyka",
+        "url": "https://github.com/o-murphy/ebalistyka",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "login": "o-murphy",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    }
+  ],
+  "open": 6,
+  "closed": 14,
+  "merged": 80,
+  "totalCount": 100
+}

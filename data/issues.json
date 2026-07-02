@@ -1,0 +1,2191 @@
+{
+  "data": [
+    {
+      "id": "I_kwDOAReijM8AAAABG72IWw",
+      "closed": false,
+      "title": "mip: can't resolve relative paths `../` and `requests` raises `Unsupported protocol`",
+      "createdAt": "2026-06-27T23:48:29Z",
+      "url": "https://github.com/micropython/micropython-lib/issues/1127",
+      "number": 1127,
+      "updatedAt": "2026-06-29T09:29:04Z",
+      "assignees": {
+        "nodes": []
+      },
+      "repository": {
+        "name": "micropython-lib",
+        "url": "https://github.com/micropython/micropython-lib",
+        "isPrivate": false,
+        "owner": {
+          "login": "micropython",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/6298560?v=4",
+          "url": "https://github.com/micropython"
+        }
+      }
+    },
+    {
+      "id": "I_kwDOAReijM8AAAABHBIZZQ",
+      "closed": false,
+      "title": "[question] mip: native mpy modules distribution",
+      "createdAt": "2026-06-29T07:20:44Z",
+      "url": "https://github.com/micropython/micropython-lib/issues/1129",
+      "number": 1129,
+      "updatedAt": "2026-06-29T07:20:44Z",
+      "assignees": {
+        "nodes": []
+      },
+      "repository": {
+        "name": "micropython-lib",
+        "url": "https://github.com/micropython/micropython-lib",
+        "isPrivate": false,
+        "owner": {
+          "login": "micropython",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/6298560?v=4",
+          "url": "https://github.com/micropython"
+        }
+      }
+    },
+    {
+      "id": "I_kwDOAOoGts8AAAABG3Zpmg",
+      "closed": false,
+      "title": "mpy-cross/mpy-ld/natmod Please add target for aarch64",
+      "createdAt": "2026-06-26T23:26:06Z",
+      "url": "https://github.com/micropython/micropython/issues/19386",
+      "number": 19386,
+      "updatedAt": "2026-06-28T21:47:04Z",
+      "assignees": {
+        "nodes": []
+      },
+      "repository": {
+        "name": "micropython",
+        "url": "https://github.com/micropython/micropython",
+        "isPrivate": false,
+        "owner": {
+          "login": "micropython",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/6298560?v=4",
+          "url": "https://github.com/micropython"
+        }
+      }
+    },
+    {
+      "id": "I_kwDOAOoGts8AAAABGrBCog",
+      "closed": false,
+      "title": "webassembly `standard` variant broken with modern Emscripten: two bugs in `library.js` and `api.js`",
+      "createdAt": "2026-06-25T09:57:56Z",
+      "url": "https://github.com/micropython/micropython/issues/19380",
+      "number": 19380,
+      "updatedAt": "2026-06-28T21:45:48Z",
+      "assignees": {
+        "nodes": []
+      },
+      "repository": {
+        "name": "micropython",
+        "url": "https://github.com/micropython/micropython",
+        "isPrivate": false,
+        "owner": {
+          "login": "micropython",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/6298560?v=4",
+          "url": "https://github.com/micropython"
+        }
+      }
+    },
+    {
+      "id": "I_kwDOAOoGts8AAAABGNvIrw",
+      "closed": false,
+      "title": "`mpy_ld.py`: `AttributeError: 'Symbol' object has no attribute 'section'` when linking RISC-V natmod with picolibc",
+      "createdAt": "2026-06-21T21:28:33Z",
+      "url": "https://github.com/micropython/micropython/issues/19364",
+      "number": 19364,
+      "updatedAt": "2026-06-28T21:40:53Z",
+      "assignees": {
+        "nodes": []
+      },
+      "repository": {
+        "name": "micropython",
+        "url": "https://github.com/micropython/micropython",
+        "isPrivate": false,
+        "owner": {
+          "login": "micropython",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/6298560?v=4",
+          "url": "https://github.com/micropython"
+        }
+      }
+    },
+    {
+      "id": "I_kwDOHjeS287Satyt",
+      "closed": true,
+      "title": "Move [charts] codebase, tests and deps to `py_ballisticcalc.charts`",
+      "createdAt": "2025-10-19T16:25:42Z",
+      "url": "https://github.com/o-murphy/py-ballisticcalc/issues/245",
+      "number": 245,
+      "updatedAt": "2026-06-26T13:41:52Z",
+      "assignees": {
+        "nodes": []
+      },
+      "repository": {
+        "name": "py-ballisticcalc",
+        "url": "https://github.com/o-murphy/py-ballisticcalc",
+        "isPrivate": false,
+        "owner": {
+          "login": "o-murphy",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    },
+    {
+      "id": "I_kwDOHjeS288AAAABG0OVpg",
+      "closed": false,
+      "title": "[Proposal] Rename cythonized engines and entry points",
+      "createdAt": "2026-06-26T13:31:34Z",
+      "url": "https://github.com/o-murphy/py-ballisticcalc/issues/323",
+      "number": 323,
+      "updatedAt": "2026-06-26T13:31:34Z",
+      "assignees": {
+        "nodes": []
+      },
+      "repository": {
+        "name": "py-ballisticcalc",
+        "url": "https://github.com/o-murphy/py-ballisticcalc",
+        "isPrivate": false,
+        "owner": {
+          "login": "o-murphy",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    },
+    {
+      "id": "I_kwDOTDzPXs8AAAABGywcsw",
+      "closed": true,
+      "title": "[ENH] usermod/unix: use MICROPY_FORCE_32BIT=1 for x86 instead of using docker",
+      "createdAt": "2026-06-26T09:20:36Z",
+      "url": "https://github.com/ballistics-lab/micropython-bclibc/issues/4",
+      "number": 4,
+      "updatedAt": "2026-06-26T09:58:39Z",
+      "assignees": {
+        "nodes": []
+      },
+      "repository": {
+        "name": "micropython-bclibc",
+        "url": "https://github.com/ballistics-lab/micropython-bclibc",
+        "isPrivate": false,
+        "owner": {
+          "login": "ballistics-lab",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/195828045?v=4",
+          "url": "https://github.com/ballistics-lab"
+        }
+      }
+    },
+    {
+      "id": "I_kwDOTDzPXs8AAAABGyx5tw",
+      "closed": false,
+      "title": "[ENH] usermod/unix: Add alpine linux support",
+      "createdAt": "2026-06-26T09:24:45Z",
+      "url": "https://github.com/ballistics-lab/micropython-bclibc/issues/5",
+      "number": 5,
+      "updatedAt": "2026-06-26T09:25:00Z",
+      "assignees": {
+        "nodes": []
+      },
+      "repository": {
+        "name": "micropython-bclibc",
+        "url": "https://github.com/ballistics-lab/micropython-bclibc",
+        "isPrivate": false,
+        "owner": {
+          "login": "ballistics-lab",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/195828045?v=4",
+          "url": "https://github.com/ballistics-lab"
+        }
+      }
+    },
+    {
+      "id": "I_kwDOTDzPXs8AAAABGyv02g",
+      "closed": false,
+      "title": "[ENH] usermod/webassembly: use VARIANT=pyscript as stable workaround",
+      "createdAt": "2026-06-26T09:18:47Z",
+      "url": "https://github.com/ballistics-lab/micropython-bclibc/issues/3",
+      "number": 3,
+      "updatedAt": "2026-06-26T09:18:47Z",
+      "assignees": {
+        "nodes": []
+      },
+      "repository": {
+        "name": "micropython-bclibc",
+        "url": "https://github.com/ballistics-lab/micropython-bclibc",
+        "isPrivate": false,
+        "owner": {
+          "login": "ballistics-lab",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/195828045?v=4",
+          "url": "https://github.com/ballistics-lab"
+        }
+      }
+    },
+    {
+      "id": "I_kwDOHjeS287gHiso",
+      "closed": true,
+      "title": "[ENH] Add Curve C++ factory",
+      "createdAt": "2025-12-24T11:24:15Z",
+      "url": "https://github.com/o-murphy/py-ballisticcalc/issues/298",
+      "number": 298,
+      "updatedAt": "2026-06-21T23:00:10Z",
+      "assignees": {
+        "nodes": []
+      },
+      "repository": {
+        "name": "py-ballisticcalc",
+        "url": "https://github.com/o-murphy/py-ballisticcalc",
+        "isPrivate": false,
+        "owner": {
+          "login": "o-murphy",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    },
+    {
+      "id": "I_kwDOC8blQc8AAAABDpF5kA",
+      "closed": false,
+      "title": "[BUG] `objectbox_flutter_libs@5.3.2` pub package files line endings was unconditionally changed",
+      "createdAt": "2026-05-28T09:42:28Z",
+      "url": "https://github.com/objectbox/objectbox-dart/issues/811",
+      "number": 811,
+      "updatedAt": "2026-06-11T22:59:30Z",
+      "assignees": {
+        "nodes": []
+      },
+      "repository": {
+        "name": "objectbox-dart",
+        "url": "https://github.com/objectbox/objectbox-dart",
+        "isPrivate": false,
+        "owner": {
+          "login": "objectbox",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/22327943?v=4",
+          "url": "https://github.com/objectbox"
+        }
+      }
+    },
+    {
+      "id": "I_kwDONpz45c8AAAABErH3zw",
+      "closed": true,
+      "title": "[BUG] `generate_sources` tuple not unpacked in standalone CLI mode",
+      "createdAt": "2026-06-07T20:27:54Z",
+      "url": "https://github.com/TheAppgineer/flatpak-flutter/issues/115",
+      "number": 115,
+      "updatedAt": "2026-06-11T06:41:52Z",
+      "assignees": {
+        "nodes": []
+      },
+      "repository": {
+        "name": "flatpak-flutter",
+        "url": "https://github.com/TheAppgineer/flatpak-flutter",
+        "isPrivate": false,
+        "owner": {
+          "login": "TheAppgineer",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/26184252?v=4",
+          "url": "https://github.com/TheAppgineer"
+        }
+      }
+    },
+    {
+      "id": "I_kwDONpz45c8AAAABCiMzHw",
+      "closed": true,
+      "title": "[ENH] looking the way to make it usefull",
+      "createdAt": "2026-05-17T21:51:26Z",
+      "url": "https://github.com/TheAppgineer/flatpak-flutter/issues/106",
+      "number": 106,
+      "updatedAt": "2026-06-08T17:26:37Z",
+      "assignees": {
+        "nodes": []
+      },
+      "repository": {
+        "name": "flatpak-flutter",
+        "url": "https://github.com/TheAppgineer/flatpak-flutter",
+        "isPrivate": false,
+        "owner": {
+          "login": "TheAppgineer",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/26184252?v=4",
+          "url": "https://github.com/TheAppgineer"
+        }
+      }
+    },
+    {
+      "id": "I_kwDONpz45c8AAAABEDPCMg",
+      "closed": true,
+      "title": "Offer to join forces",
+      "createdAt": "2026-06-01T22:19:07Z",
+      "url": "https://github.com/TheAppgineer/flatpak-flutter/issues/111",
+      "number": 111,
+      "updatedAt": "2026-06-08T17:26:28Z",
+      "assignees": {
+        "nodes": []
+      },
+      "repository": {
+        "name": "flatpak-flutter",
+        "url": "https://github.com/TheAppgineer/flatpak-flutter",
+        "isPrivate": false,
+        "owner": {
+          "login": "TheAppgineer",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/26184252?v=4",
+          "url": "https://github.com/TheAppgineer"
+        }
+      }
+    },
+    {
+      "id": "I_kwDONpz45c8AAAABEv6n9Q",
+      "closed": true,
+      "title": "[ENH] Reusable flutter sdk modules registry",
+      "createdAt": "2026-06-08T14:14:37Z",
+      "url": "https://github.com/TheAppgineer/flatpak-flutter/issues/118",
+      "number": 118,
+      "updatedAt": "2026-06-08T17:21:36Z",
+      "assignees": {
+        "nodes": []
+      },
+      "repository": {
+        "name": "flatpak-flutter",
+        "url": "https://github.com/TheAppgineer/flatpak-flutter",
+        "isPrivate": false,
+        "owner": {
+          "login": "TheAppgineer",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/26184252?v=4",
+          "url": "https://github.com/TheAppgineer"
+        }
+      }
+    },
+    {
+      "id": "I_kwDOMviu688AAAABERfM5A",
+      "closed": false,
+      "title": "Phase 3: Replace React Navigation with React Router v7",
+      "createdAt": "2026-06-03T16:27:59Z",
+      "url": "https://github.com/o-murphy/ebalistyka-web/issues/6",
+      "number": 6,
+      "updatedAt": "2026-06-08T10:38:14Z",
+      "assignees": {
+        "nodes": []
+      },
+      "repository": {
+        "name": "ebalistyka-web",
+        "url": "https://github.com/o-murphy/ebalistyka-web",
+        "isPrivate": false,
+        "owner": {
+          "login": "o-murphy",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    },
+    {
+      "id": "I_kwDONpz45c8AAAABErYLBw",
+      "closed": false,
+      "title": "[ENH] Please add  `objectbox_flutter_libs` and `objectbox_sync_flutter_libs` to `foreign_deps.json`",
+      "createdAt": "2026-06-07T22:12:02Z",
+      "url": "https://github.com/TheAppgineer/flatpak-flutter/issues/117",
+      "number": 117,
+      "updatedAt": "2026-06-07T22:12:02Z",
+      "assignees": {
+        "nodes": []
+      },
+      "repository": {
+        "name": "flatpak-flutter",
+        "url": "https://github.com/TheAppgineer/flatpak-flutter",
+        "isPrivate": false,
+        "owner": {
+          "login": "TheAppgineer",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/26184252?v=4",
+          "url": "https://github.com/TheAppgineer"
+        }
+      }
+    },
+    {
+      "id": "I_kwDORuj2X88AAAABEXUzOw",
+      "closed": true,
+      "title": "[BUG] Transitive includes in exceptions.hpp",
+      "createdAt": "2026-06-04T10:19:23Z",
+      "url": "https://github.com/ballistics-lab/bclibc/issues/11",
+      "number": 11,
+      "updatedAt": "2026-06-04T13:41:39Z",
+      "assignees": {
+        "nodes": []
+      },
+      "repository": {
+        "name": "bclibc",
+        "url": "https://github.com/ballistics-lab/bclibc",
+        "isPrivate": false,
+        "owner": {
+          "login": "ballistics-lab",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/195828045?v=4",
+          "url": "https://github.com/ballistics-lab"
+        }
+      }
+    },
+    {
+      "id": "I_kwDOMviu688AAAABERe8kg",
+      "closed": false,
+      "title": "[Meta] Migrate from React Native + Expo to React + Vite + Tailwind + shadcn/ui",
+      "createdAt": "2026-06-03T16:27:23Z",
+      "url": "https://github.com/o-murphy/ebalistyka-web/issues/3",
+      "number": 3,
+      "updatedAt": "2026-06-03T16:29:10Z",
+      "assignees": {
+        "nodes": []
+      },
+      "repository": {
+        "name": "ebalistyka-web",
+        "url": "https://github.com/o-murphy/ebalistyka-web",
+        "isPrivate": false,
+        "owner": {
+          "login": "o-murphy",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    },
+    {
+      "id": "I_kwDOMviu688AAAABERfpHw",
+      "closed": false,
+      "title": "Phase 8: Cleanup — remove dead code, old deps, _old/ directory",
+      "createdAt": "2026-06-03T16:28:58Z",
+      "url": "https://github.com/o-murphy/ebalistyka-web/issues/11",
+      "number": 11,
+      "updatedAt": "2026-06-03T16:28:58Z",
+      "assignees": {
+        "nodes": []
+      },
+      "repository": {
+        "name": "ebalistyka-web",
+        "url": "https://github.com/o-murphy/ebalistyka-web",
+        "isPrivate": false,
+        "owner": {
+          "login": "o-murphy",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    },
+    {
+      "id": "I_kwDOMviu688AAAABERfjWA",
+      "closed": false,
+      "title": "Phase 7: Unify mobile/desktop screens into single responsive layout",
+      "createdAt": "2026-06-03T16:28:46Z",
+      "url": "https://github.com/o-murphy/ebalistyka-web/issues/10",
+      "number": 10,
+      "updatedAt": "2026-06-03T16:28:46Z",
+      "assignees": {
+        "nodes": []
+      },
+      "repository": {
+        "name": "ebalistyka-web",
+        "url": "https://github.com/o-murphy/ebalistyka-web",
+        "isPrivate": false,
+        "owner": {
+          "login": "o-murphy",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    },
+    {
+      "id": "I_kwDOMviu688AAAABERfeUg",
+      "closed": false,
+      "title": "Phase 6: Migrate charts and file handling",
+      "createdAt": "2026-06-03T16:28:35Z",
+      "url": "https://github.com/o-murphy/ebalistyka-web/issues/9",
+      "number": 9,
+      "updatedAt": "2026-06-03T16:28:35Z",
+      "assignees": {
+        "nodes": []
+      },
+      "repository": {
+        "name": "ebalistyka-web",
+        "url": "https://github.com/o-murphy/ebalistyka-web",
+        "isPrivate": false,
+        "owner": {
+          "login": "o-murphy",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    },
+    {
+      "id": "I_kwDOMviu688AAAABERfY1A",
+      "closed": false,
+      "title": "Phase 5: Replace React Native Paper with shadcn/ui components",
+      "createdAt": "2026-06-03T16:28:24Z",
+      "url": "https://github.com/o-murphy/ebalistyka-web/issues/8",
+      "number": 8,
+      "updatedAt": "2026-06-03T16:28:24Z",
+      "assignees": {
+        "nodes": []
+      },
+      "repository": {
+        "name": "ebalistyka-web",
+        "url": "https://github.com/o-murphy/ebalistyka-web",
+        "isPrivate": false,
+        "owner": {
+          "login": "o-murphy",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    },
+    {
+      "id": "I_kwDOMviu688AAAABERfSfA",
+      "closed": false,
+      "title": "Phase 4: Migrate React Native primitives → HTML elements + Tailwind (~80 files)",
+      "createdAt": "2026-06-03T16:28:10Z",
+      "url": "https://github.com/o-murphy/ebalistyka-web/issues/7",
+      "number": 7,
+      "updatedAt": "2026-06-03T16:28:10Z",
+      "assignees": {
+        "nodes": []
+      },
+      "repository": {
+        "name": "ebalistyka-web",
+        "url": "https://github.com/o-murphy/ebalistyka-web",
+        "isPrivate": false,
+        "owner": {
+          "login": "o-murphy",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    },
+    {
+      "id": "I_kwDOMviu688AAAABERfIVQ",
+      "closed": false,
+      "title": "Phase 2: Replace Expo with Vite + Tailwind CSS + shadcn/ui bootstrap",
+      "createdAt": "2026-06-03T16:27:49Z",
+      "url": "https://github.com/o-murphy/ebalistyka-web/issues/5",
+      "number": 5,
+      "updatedAt": "2026-06-03T16:27:49Z",
+      "assignees": {
+        "nodes": []
+      },
+      "repository": {
+        "name": "ebalistyka-web",
+        "url": "https://github.com/o-murphy/ebalistyka-web",
+        "isPrivate": false,
+        "owner": {
+          "login": "o-murphy",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    },
+    {
+      "id": "I_kwDOMviu688AAAABERfDTw",
+      "closed": false,
+      "title": "Phase 1: Upgrade js-ballistics v2 → v3 (WASM engine)",
+      "createdAt": "2026-06-03T16:27:37Z",
+      "url": "https://github.com/o-murphy/ebalistyka-web/issues/4",
+      "number": 4,
+      "updatedAt": "2026-06-03T16:27:37Z",
+      "assignees": {
+        "nodes": []
+      },
+      "repository": {
+        "name": "ebalistyka-web",
+        "url": "https://github.com/o-murphy/ebalistyka-web",
+        "isPrivate": false,
+        "owner": {
+          "login": "o-murphy",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    },
+    {
+      "id": "I_kwDORofZ488AAAABB8MRiw",
+      "closed": true,
+      "title": "Flutter installer type instead of env vars",
+      "createdAt": "2026-05-12T00:09:55Z",
+      "url": "https://github.com/o-murphy/ebalistyka/issues/47",
+      "number": 47,
+      "updatedAt": "2026-06-02T12:53:13Z",
+      "assignees": {
+        "nodes": []
+      },
+      "repository": {
+        "name": "ebalistyka",
+        "url": "https://github.com/o-murphy/ebalistyka",
+        "isPrivate": false,
+        "owner": {
+          "login": "o-murphy",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    },
+    {
+      "id": "I_kwDOK5ACsc62aQxV",
+      "closed": true,
+      "title": "Bump to v2.1.x (sync with python implementation)",
+      "createdAt": "2025-05-13T14:45:31Z",
+      "url": "https://github.com/o-murphy/js-ballistics/issues/12",
+      "number": 12,
+      "updatedAt": "2026-06-02T11:12:30Z",
+      "assignees": {
+        "nodes": []
+      },
+      "repository": {
+        "name": "js-ballistics",
+        "url": "https://github.com/o-murphy/js-ballistics",
+        "isPrivate": false,
+        "owner": {
+          "login": "o-murphy",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    },
+    {
+      "id": "I_kwDOSgTuy88AAAABCwszOw",
+      "closed": true,
+      "title": "[BUG] metainfo release version and tag is not updating during prepare",
+      "createdAt": "2026-05-19T19:08:48Z",
+      "url": "https://github.com/o-murphy/flutpak/issues/2",
+      "number": 2,
+      "updatedAt": "2026-06-01T18:37:33Z",
+      "assignees": {
+        "nodes": []
+      },
+      "repository": {
+        "name": "flutpak",
+        "url": "https://github.com/o-murphy/flutpak",
+        "isPrivate": false,
+        "owner": {
+          "login": "o-murphy",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    },
+    {
+      "id": "I_kwDOHjeS287Sa08o",
+      "closed": true,
+      "title": "platform: pyodide: Try to build for pyodide WASM",
+      "createdAt": "2025-10-19T16:59:43Z",
+      "url": "https://github.com/o-murphy/py-ballisticcalc/issues/246",
+      "number": 246,
+      "updatedAt": "2026-06-01T14:47:04Z",
+      "assignees": {
+        "nodes": []
+      },
+      "repository": {
+        "name": "py-ballisticcalc",
+        "url": "https://github.com/o-murphy/py-ballisticcalc",
+        "isPrivate": false,
+        "owner": {
+          "login": "o-murphy",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    },
+    {
+      "id": "I_kwDOC8blQc8AAAABCRjZtw",
+      "closed": false,
+      "title": "`linux/CMakeLists.txt`: support offline/sandboxed builds via OBJECTBOX_PREBUILT_DIR",
+      "createdAt": "2026-05-14T16:36:54Z",
+      "url": "https://github.com/objectbox/objectbox-dart/issues/808",
+      "number": 808,
+      "updatedAt": "2026-05-28T09:39:15Z",
+      "assignees": {
+        "nodes": []
+      },
+      "repository": {
+        "name": "objectbox-dart",
+        "url": "https://github.com/objectbox/objectbox-dart",
+        "isPrivate": false,
+        "owner": {
+          "login": "objectbox",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/22327943?v=4",
+          "url": "https://github.com/objectbox"
+        }
+      }
+    },
+    {
+      "id": "I_kwDOAeUeuM8AAAABBBYkEQ",
+      "closed": true,
+      "title": "[Linux/Wayland/NVIDIA] [Flutter: 3.41.9] Failed to create OpenGL context / assertion 'FL_IS_COMPOSITOR(self)' failed",
+      "createdAt": "2026-05-01T08:20:43Z",
+      "url": "https://github.com/flutter/flutter/issues/185882",
+      "number": 185882,
+      "updatedAt": "2026-05-17T21:14:28Z",
+      "assignees": {
+        "nodes": []
+      },
+      "repository": {
+        "name": "flutter",
+        "url": "https://github.com/flutter/flutter",
+        "isPrivate": false,
+        "owner": {
+          "login": "flutter",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/14101776?v=4",
+          "url": "https://github.com/flutter"
+        }
+      }
+    },
+    {
+      "id": "I_kwDOFbL2vs8AAAABBvcRGg",
+      "closed": true,
+      "title": "Wingetcreate silently allows not valid PackageIdentifiers for the publishing",
+      "createdAt": "2026-05-09T08:14:35Z",
+      "url": "https://github.com/microsoft/winget-create/issues/667",
+      "number": 667,
+      "updatedAt": "2026-05-11T20:14:42Z",
+      "assignees": {
+        "nodes": []
+      },
+      "repository": {
+        "name": "winget-create",
+        "url": "https://github.com/microsoft/winget-create",
+        "isPrivate": false,
+        "owner": {
+          "login": "microsoft",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/6154722?v=4",
+          "url": "https://github.com/microsoft"
+        }
+      }
+    },
+    {
+      "id": "I_kwDODUhI5M6PTOMK",
+      "closed": true,
+      "title": "Interbase support",
+      "createdAt": "2024-07-11T21:43:44Z",
+      "url": "https://github.com/fdcastel/sqlalchemy-firebird/issues/70",
+      "number": 70,
+      "updatedAt": "2026-05-07T10:22:54Z",
+      "assignees": {
+        "nodes": []
+      },
+      "repository": {
+        "name": "sqlalchemy-firebird",
+        "url": "https://github.com/fdcastel/sqlalchemy-firebird",
+        "isPrivate": false,
+        "owner": {
+          "login": "fdcastel",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/629408?u=6b2b2579db7979e0d534416b05824307531a2108&v=4",
+          "url": "https://github.com/fdcastel"
+        }
+      }
+    },
+    {
+      "id": "I_kwDORuj2X872tft0",
+      "closed": false,
+      "title": "[ENH] Possibly we should try to use EIGEN",
+      "createdAt": "2026-03-25T22:57:05Z",
+      "url": "https://github.com/ballistics-lab/bclibc/issues/2",
+      "number": 2,
+      "updatedAt": "2026-03-30T22:52:23Z",
+      "assignees": {
+        "nodes": []
+      },
+      "repository": {
+        "name": "bclibc",
+        "url": "https://github.com/ballistics-lab/bclibc",
+        "isPrivate": false,
+        "owner": {
+          "login": "ballistics-lab",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/195828045?v=4",
+          "url": "https://github.com/ballistics-lab"
+        }
+      }
+    },
+    {
+      "id": "I_kwDORuj2X8740mu_",
+      "closed": false,
+      "title": "[ENH] Coplete FFI to allow dense output",
+      "createdAt": "2026-03-30T22:51:59Z",
+      "url": "https://github.com/ballistics-lab/bclibc/issues/5",
+      "number": 5,
+      "updatedAt": "2026-03-30T22:51:59Z",
+      "assignees": {
+        "nodes": []
+      },
+      "repository": {
+        "name": "bclibc",
+        "url": "https://github.com/ballistics-lab/bclibc",
+        "isPrivate": false,
+        "owner": {
+          "login": "ballistics-lab",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/195828045?v=4",
+          "url": "https://github.com/ballistics-lab"
+        }
+      }
+    },
+    {
+      "id": "I_kwDOHjeS2871nqmZ",
+      "closed": true,
+      "title": "[ENH] Extern C or universal native FFI",
+      "createdAt": "2026-03-23T13:17:49Z",
+      "url": "https://github.com/o-murphy/py-ballisticcalc/issues/309",
+      "number": 309,
+      "updatedAt": "2026-03-23T20:17:25Z",
+      "assignees": {
+        "nodes": []
+      },
+      "repository": {
+        "name": "py-ballisticcalc",
+        "url": "https://github.com/o-murphy/py-ballisticcalc",
+        "isPrivate": false,
+        "owner": {
+          "login": "o-murphy",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    },
+    {
+      "id": "I_kwDOHjeS2871oI7k",
+      "closed": false,
+      "title": "[ENH] Internalize muzzle velocity temperature compensation in C++ Engine",
+      "createdAt": "2026-03-23T13:34:53Z",
+      "url": "https://github.com/o-murphy/py-ballisticcalc/issues/310",
+      "number": 310,
+      "updatedAt": "2026-03-23T13:34:53Z",
+      "assignees": {
+        "nodes": []
+      },
+      "repository": {
+        "name": "py-ballisticcalc",
+        "url": "https://github.com/o-murphy/py-ballisticcalc",
+        "isPrivate": false,
+        "owner": {
+          "login": "o-murphy",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    },
+    {
+      "id": "I_kwDOA6e1yM7DAzc3",
+      "closed": true,
+      "title": "_cb.Peripheral.write_characteristic_value raises SystemError",
+      "createdAt": "2025-07-29T02:40:47Z",
+      "url": "https://github.com/omz/Pythonista-Issues/issues/778",
+      "number": 778,
+      "updatedAt": "2026-03-01T15:34:44Z",
+      "assignees": {
+        "nodes": []
+      },
+      "repository": {
+        "name": "Pythonista-Issues",
+        "url": "https://github.com/omz/Pythonista-Issues",
+        "isPrivate": false,
+        "owner": {
+          "login": "omz",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/82469?u=374ad23a91a7259075f4d0bdde025cd1dc7c01b2&v=4",
+          "url": "https://github.com/omz"
+        }
+      }
+    },
+    {
+      "id": "I_kwDOA6e1yM7ufc7R",
+      "closed": false,
+      "title": "[BUG] pip support is broken again",
+      "createdAt": "2026-02-27T14:11:02Z",
+      "url": "https://github.com/omz/Pythonista-Issues/issues/797",
+      "number": 797,
+      "updatedAt": "2026-02-27T14:11:02Z",
+      "assignees": {
+        "nodes": []
+      },
+      "repository": {
+        "name": "Pythonista-Issues",
+        "url": "https://github.com/omz/Pythonista-Issues",
+        "isPrivate": false,
+        "owner": {
+          "login": "omz",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/82469?u=374ad23a91a7259075f4d0bdde025cd1dc7c01b2&v=4",
+          "url": "https://github.com/omz"
+        }
+      }
+    },
+    {
+      "id": "I_kwDOJqT2Fc7QNJhl",
+      "closed": true,
+      "title": "Bump cel-python version",
+      "createdAt": "2025-10-07T21:32:51Z",
+      "url": "https://github.com/bufbuild/protovalidate-python/issues/382",
+      "number": 382,
+      "updatedAt": "2026-02-02T13:51:50Z",
+      "assignees": {
+        "nodes": []
+      },
+      "repository": {
+        "name": "protovalidate-python",
+        "url": "https://github.com/bufbuild/protovalidate-python",
+        "isPrivate": false,
+        "owner": {
+          "login": "bufbuild",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/54191850?v=4",
+          "url": "https://github.com/bufbuild"
+        }
+      }
+    },
+    {
+      "id": "I_kwDOALQARM7kIDXh",
+      "closed": false,
+      "title": "RIG/RACK mod for MOD sdk/ui server",
+      "createdAt": "2026-01-18T20:53:50Z",
+      "url": "https://github.com/mod-audio/mod-ui/issues/157",
+      "number": 157,
+      "updatedAt": "2026-01-18T21:05:13Z",
+      "assignees": {
+        "nodes": []
+      },
+      "repository": {
+        "name": "mod-ui",
+        "url": "https://github.com/mod-audio/mod-ui",
+        "isPrivate": false,
+        "owner": {
+          "login": "mod-audio",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/2923351?v=4",
+          "url": "https://github.com/mod-audio"
+        }
+      }
+    },
+    {
+      "id": "I_kwDOABDGAc7cU071",
+      "closed": true,
+      "title": "[ENH] Enhanced C++ Exception Handling Pattern for Cython",
+      "createdAt": "2025-12-04T20:33:45Z",
+      "url": "https://github.com/cython/cython/issues/7388",
+      "number": 7388,
+      "updatedAt": "2026-01-10T10:35:15Z",
+      "assignees": {
+        "nodes": []
+      },
+      "repository": {
+        "name": "cython",
+        "url": "https://github.com/cython/cython",
+        "isPrivate": false,
+        "owner": {
+          "login": "cython",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/486082?v=4",
+          "url": "https://github.com/cython"
+        }
+      }
+    },
+    {
+      "id": "I_kwDOHjeS287hBeXd",
+      "closed": false,
+      "title": "[ENH] move max wind distance characteristic to engine config",
+      "createdAt": "2026-01-01T22:02:13Z",
+      "url": "https://github.com/o-murphy/py-ballisticcalc/issues/301",
+      "number": 301,
+      "updatedAt": "2026-01-08T14:09:24Z",
+      "assignees": {
+        "nodes": []
+      },
+      "repository": {
+        "name": "py-ballisticcalc",
+        "url": "https://github.com/o-murphy/py-ballisticcalc",
+        "isPrivate": false,
+        "owner": {
+          "login": "o-murphy",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    },
+    {
+      "id": "I_kwDOHjeS287iFV72",
+      "closed": false,
+      "title": "[ENH] move `BaseIntegrationEngine` class vars to `config`",
+      "createdAt": "2026-01-08T14:09:08Z",
+      "url": "https://github.com/o-murphy/py-ballisticcalc/issues/304",
+      "number": 304,
+      "updatedAt": "2026-01-08T14:09:08Z",
+      "assignees": {
+        "nodes": []
+      },
+      "repository": {
+        "name": "py-ballisticcalc",
+        "url": "https://github.com/o-murphy/py-ballisticcalc",
+        "isPrivate": false,
+        "owner": {
+          "login": "o-murphy",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    },
+    {
+      "id": "I_kwDOEscO687hMdEk",
+      "closed": false,
+      "title": "[ENH] Add cloudflare warp support for amneziawg and xray",
+      "createdAt": "2026-01-03T15:02:42Z",
+      "url": "https://github.com/amnezia-vpn/amnezia-client/issues/2113",
+      "number": 2113,
+      "updatedAt": "2026-01-03T15:03:44Z",
+      "assignees": {
+        "nodes": []
+      },
+      "repository": {
+        "name": "amnezia-client",
+        "url": "https://github.com/amnezia-vpn/amnezia-client",
+        "isPrivate": false,
+        "owner": {
+          "login": "amnezia-vpn",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/74861536?v=4",
+          "url": "https://github.com/amnezia-vpn"
+        }
+      }
+    },
+    {
+      "id": "I_kwDOB9Ig8c7CjQOl",
+      "closed": true,
+      "title": "Pythonista/iOS: `pythonista.cb` based bleak-compatible backend",
+      "createdAt": "2025-07-25T18:18:09Z",
+      "url": "https://github.com/hbldh/bleak/issues/1797",
+      "number": 1797,
+      "updatedAt": "2025-12-29T01:04:45Z",
+      "assignees": {
+        "nodes": []
+      },
+      "repository": {
+        "name": "bleak",
+        "url": "https://github.com/hbldh/bleak",
+        "isPrivate": false,
+        "owner": {
+          "login": "hbldh",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/4191111?u=06f8cb8fdc6efe3a1568ff9f404616df15c17abc&v=4",
+          "url": "https://github.com/hbldh"
+        }
+      }
+    },
+    {
+      "id": "I_kwDOB9Ig8c7HDHP5",
+      "closed": true,
+      "title": "Too much repeating conditional imports",
+      "createdAt": "2025-08-20T20:39:41Z",
+      "url": "https://github.com/hbldh/bleak/issues/1813",
+      "number": 1813,
+      "updatedAt": "2025-12-29T00:55:27Z",
+      "assignees": {
+        "nodes": []
+      },
+      "repository": {
+        "name": "bleak",
+        "url": "https://github.com/hbldh/bleak",
+        "isPrivate": false,
+        "owner": {
+          "login": "hbldh",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/4191111?u=06f8cb8fdc6efe3a1568ff9f404616df15c17abc&v=4",
+          "url": "https://github.com/hbldh"
+        }
+      }
+    },
+    {
+      "id": "I_kwDOB9Ig8c7G1Dna",
+      "closed": true,
+      "title": "Adafruit СircuitPython backend",
+      "createdAt": "2025-08-19T21:52:43Z",
+      "url": "https://github.com/hbldh/bleak/issues/1812",
+      "number": 1812,
+      "updatedAt": "2025-12-28T23:46:19Z",
+      "assignees": {
+        "nodes": []
+      },
+      "repository": {
+        "name": "bleak",
+        "url": "https://github.com/hbldh/bleak",
+        "isPrivate": false,
+        "owner": {
+          "login": "hbldh",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/4191111?u=06f8cb8fdc6efe3a1568ff9f404616df15c17abc&v=4",
+          "url": "https://github.com/hbldh"
+        }
+      }
+    },
+    {
+      "id": "I_kwDOHjeS287gGnAM",
+      "closed": true,
+      "title": "[ENH] WindSock constructor with vector::move",
+      "createdAt": "2025-12-24T09:50:58Z",
+      "url": "https://github.com/o-murphy/py-ballisticcalc/issues/297",
+      "number": 297,
+      "updatedAt": "2025-12-26T21:29:43Z",
+      "assignees": {
+        "nodes": []
+      },
+      "repository": {
+        "name": "py-ballisticcalc",
+        "url": "https://github.com/o-murphy/py-ballisticcalc",
+        "isPrivate": false,
+        "owner": {
+          "login": "o-murphy",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    },
+    {
+      "id": "I_kwDOB5XGSc7e5_8N",
+      "closed": false,
+      "title": "Need the ability to stop the transfer without waiting for completion",
+      "createdAt": "2025-12-17T17:13:20Z",
+      "url": "https://github.com/alexwoo1900/ymodem/issues/32",
+      "number": 32,
+      "updatedAt": "2025-12-17T21:17:50Z",
+      "assignees": {
+        "nodes": []
+      },
+      "repository": {
+        "name": "ymodem",
+        "url": "https://github.com/alexwoo1900/ymodem",
+        "isPrivate": false,
+        "owner": {
+          "login": "alexwoo1900",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/30644144?u=acf78fb5a6c9cd0d7223f3b550f31160846eed7b&v=4",
+          "url": "https://github.com/alexwoo1900"
+        }
+      }
+    },
+    {
+      "id": "I_kwDOB9Ig8c7Da5yE",
+      "closed": true,
+      "title": "enhancement: BLE to TCP/WebSocket bridge",
+      "createdAt": "2025-07-30T22:34:50Z",
+      "url": "https://github.com/hbldh/bleak/issues/1801",
+      "number": 1801,
+      "updatedAt": "2025-12-16T04:14:47Z",
+      "assignees": {
+        "nodes": []
+      },
+      "repository": {
+        "name": "bleak",
+        "url": "https://github.com/hbldh/bleak",
+        "isPrivate": false,
+        "owner": {
+          "login": "hbldh",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/4191111?u=06f8cb8fdc6efe3a1568ff9f404616df15c17abc&v=4",
+          "url": "https://github.com/hbldh"
+        }
+      }
+    },
+    {
+      "id": "I_kwDOCa0F0M7axJ5c",
+      "closed": false,
+      "title": "Add precompiled python distribution for aarch64-linux-android",
+      "createdAt": "2025-11-27T08:11:39Z",
+      "url": "https://github.com/astral-sh/python-build-standalone/issues/895",
+      "number": 895,
+      "updatedAt": "2025-12-11T20:36:30Z",
+      "assignees": {
+        "nodes": []
+      },
+      "repository": {
+        "name": "python-build-standalone",
+        "url": "https://github.com/astral-sh/python-build-standalone",
+        "isPrivate": false,
+        "owner": {
+          "login": "astral-sh",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/115962839?v=4",
+          "url": "https://github.com/astral-sh"
+        }
+      }
+    },
+    {
+      "id": "I_kwDOHjeS287c_O6G",
+      "closed": false,
+      "title": "[ENH] Make RK45 pretty",
+      "createdAt": "2025-12-08T18:33:42Z",
+      "url": "https://github.com/o-murphy/py-ballisticcalc/issues/290",
+      "number": 290,
+      "updatedAt": "2025-12-08T18:33:42Z",
+      "assignees": {
+        "nodes": []
+      },
+      "repository": {
+        "name": "py-ballisticcalc",
+        "url": "https://github.com/o-murphy/py-ballisticcalc",
+        "isPrivate": false,
+        "owner": {
+          "login": "o-murphy",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    },
+    {
+      "id": "I_kwDOKbIFZc7a_Gr4",
+      "closed": true,
+      "title": "`debug` cli command is missing in `uv pip`",
+      "createdAt": "2025-11-28T07:57:42Z",
+      "url": "https://github.com/astral-sh/uv/issues/16879",
+      "number": 16879,
+      "updatedAt": "2025-12-03T17:50:56Z",
+      "assignees": {
+        "nodes": [
+          {
+            "avatarUrl": "https://avatars.githubusercontent.com/u/4272014?u=f6f66a9ecc22a312e1651bbc6a09b8012b860b8e&v=4",
+            "name": "Tomasz Kramkowski",
+            "url": "https://github.com/EliteTK"
+          }
+        ]
+      },
+      "repository": {
+        "name": "uv",
+        "url": "https://github.com/astral-sh/uv",
+        "isPrivate": false,
+        "owner": {
+          "login": "astral-sh",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/115962839?v=4",
+          "url": "https://github.com/astral-sh"
+        }
+      }
+    },
+    {
+      "id": "I_kwDOHjeS287Urk18",
+      "closed": true,
+      "title": "Try `setuptools-scm`",
+      "createdAt": "2025-10-29T22:36:51Z",
+      "url": "https://github.com/o-murphy/py-ballisticcalc/issues/253",
+      "number": 253,
+      "updatedAt": "2025-11-28T15:45:54Z",
+      "assignees": {
+        "nodes": []
+      },
+      "repository": {
+        "name": "py-ballisticcalc",
+        "url": "https://github.com/o-murphy/py-ballisticcalc",
+        "isPrivate": false,
+        "owner": {
+          "login": "o-murphy",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    },
+    {
+      "id": "I_kwDOHjeS287aialf",
+      "closed": true,
+      "title": "Calculator instances are not picklable",
+      "createdAt": "2025-11-26T08:35:53Z",
+      "url": "https://github.com/o-murphy/py-ballisticcalc/issues/283",
+      "number": 283,
+      "updatedAt": "2025-11-27T13:04:31Z",
+      "assignees": {
+        "nodes": []
+      },
+      "repository": {
+        "name": "py-ballisticcalc",
+        "url": "https://github.com/o-murphy/py-ballisticcalc",
+        "isPrivate": false,
+        "owner": {
+          "login": "o-murphy",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    },
+    {
+      "id": "I_kwDOKbIFZc7TJgNf",
+      "closed": true,
+      "title": "platform: Please add build for aarch64-linux-android aka termux",
+      "createdAt": "2025-10-22T21:52:41Z",
+      "url": "https://github.com/astral-sh/uv/issues/16413",
+      "number": 16413,
+      "updatedAt": "2025-11-27T08:08:05Z",
+      "assignees": {
+        "nodes": []
+      },
+      "repository": {
+        "name": "uv",
+        "url": "https://github.com/astral-sh/uv",
+        "isPrivate": false,
+        "owner": {
+          "login": "astral-sh",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/115962839?v=4",
+          "url": "https://github.com/astral-sh"
+        }
+      }
+    },
+    {
+      "id": "I_kwDOABDGAc7XZ-hK",
+      "closed": false,
+      "title": "[ENH] Allow register custom types convertion for `<type>var` syntax",
+      "createdAt": "2025-11-11T21:05:22Z",
+      "url": "https://github.com/cython/cython/issues/7316",
+      "number": 7316,
+      "updatedAt": "2025-11-11T21:11:59Z",
+      "assignees": {
+        "nodes": []
+      },
+      "repository": {
+        "name": "cython",
+        "url": "https://github.com/cython/cython",
+        "isPrivate": false,
+        "owner": {
+          "login": "cython",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/486082?v=4",
+          "url": "https://github.com/cython"
+        }
+      }
+    },
+    {
+      "id": "I_kwDOHjeS287VL54S",
+      "closed": true,
+      "title": "Exts setup.py issue",
+      "createdAt": "2025-10-31T22:16:28Z",
+      "url": "https://github.com/o-murphy/py-ballisticcalc/issues/255",
+      "number": 255,
+      "updatedAt": "2025-11-02T15:33:36Z",
+      "assignees": {
+        "nodes": []
+      },
+      "repository": {
+        "name": "py-ballisticcalc",
+        "url": "https://github.com/o-murphy/py-ballisticcalc",
+        "isPrivate": false,
+        "owner": {
+          "login": "o-murphy",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    },
+    {
+      "id": "I_kwDOKbIFZc7SjiNn",
+      "closed": true,
+      "title": "Allow Script Installation as CLI Tools",
+      "createdAt": "2025-10-20T13:50:50Z",
+      "url": "https://github.com/astral-sh/uv/issues/16376",
+      "number": 16376,
+      "updatedAt": "2025-10-28T23:53:08Z",
+      "assignees": {
+        "nodes": []
+      },
+      "repository": {
+        "name": "uv",
+        "url": "https://github.com/astral-sh/uv",
+        "isPrivate": false,
+        "owner": {
+          "login": "astral-sh",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/115962839?v=4",
+          "url": "https://github.com/astral-sh"
+        }
+      }
+    },
+    {
+      "id": "I_kwDOHjeS287Ryd4E",
+      "closed": true,
+      "title": "Bump to Python 3.14 / Stop support Python 3.9",
+      "createdAt": "2025-10-15T21:41:09Z",
+      "url": "https://github.com/o-murphy/py-ballisticcalc/issues/240",
+      "number": 240,
+      "updatedAt": "2025-10-19T17:12:32Z",
+      "assignees": {
+        "nodes": []
+      },
+      "repository": {
+        "name": "py-ballisticcalc",
+        "url": "https://github.com/o-murphy/py-ballisticcalc",
+        "isPrivate": false,
+        "owner": {
+          "login": "o-murphy",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    },
+    {
+      "id": "I_kwDOHjeS287SXW-K",
+      "closed": true,
+      "title": "platform: ARM: Build and publish ARM64 wheels",
+      "createdAt": "2025-10-18T23:29:38Z",
+      "url": "https://github.com/o-murphy/py-ballisticcalc/issues/244",
+      "number": 244,
+      "updatedAt": "2025-10-19T17:12:32Z",
+      "assignees": {
+        "nodes": []
+      },
+      "repository": {
+        "name": "py-ballisticcalc",
+        "url": "https://github.com/o-murphy/py-ballisticcalc",
+        "isPrivate": false,
+        "owner": {
+          "login": "o-murphy",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    },
+    {
+      "id": "I_kwDOHjeS28681YtZ",
+      "closed": true,
+      "title": "init trajectory is not thread safe",
+      "createdAt": "2025-06-23T12:57:59Z",
+      "url": "https://github.com/o-murphy/py-ballisticcalc/issues/182",
+      "number": 182,
+      "updatedAt": "2025-10-19T17:12:31Z",
+      "assignees": {
+        "nodes": []
+      },
+      "repository": {
+        "name": "py-ballisticcalc",
+        "url": "https://github.com/o-murphy/py-ballisticcalc",
+        "isPrivate": false,
+        "owner": {
+          "login": "o-murphy",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    },
+    {
+      "id": "I_kwDOHjeS287R63zk",
+      "closed": false,
+      "title": "Refactor BaseTrajSeq key_attribute",
+      "createdAt": "2025-10-16T13:19:58Z",
+      "url": "https://github.com/o-murphy/py-ballisticcalc/issues/242",
+      "number": 242,
+      "updatedAt": "2025-10-16T14:25:05Z",
+      "assignees": {
+        "nodes": []
+      },
+      "repository": {
+        "name": "py-ballisticcalc",
+        "url": "https://github.com/o-murphy/py-ballisticcalc",
+        "isPrivate": false,
+        "owner": {
+          "login": "o-murphy",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    },
+    {
+      "id": "I_kwDOHjeS287RMopn",
+      "closed": false,
+      "title": "Deffered TrajectoryData Dimensions evaluating",
+      "createdAt": "2025-10-13T11:52:36Z",
+      "url": "https://github.com/o-murphy/py-ballisticcalc/issues/239",
+      "number": 239,
+      "updatedAt": "2025-10-13T11:52:36Z",
+      "assignees": {
+        "nodes": []
+      },
+      "repository": {
+        "name": "py-ballisticcalc",
+        "url": "https://github.com/o-murphy/py-ballisticcalc",
+        "isPrivate": false,
+        "owner": {
+          "login": "o-murphy",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    },
+    {
+      "id": "I_kwDOHjeS287QNxdr",
+      "closed": true,
+      "title": "Compatibility issue",
+      "createdAt": "2025-10-07T22:54:11Z",
+      "url": "https://github.com/o-murphy/py-ballisticcalc/issues/233",
+      "number": 233,
+      "updatedAt": "2025-10-08T12:55:12Z",
+      "assignees": {
+        "nodes": []
+      },
+      "repository": {
+        "name": "py-ballisticcalc",
+        "url": "https://github.com/o-murphy/py-ballisticcalc",
+        "isPrivate": false,
+        "owner": {
+          "login": "o-murphy",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    },
+    {
+      "id": "I_kwDOPgNvFc7PvPzQ",
+      "closed": false,
+      "title": "Recommendation: bump py-ballisticcalc",
+      "createdAt": "2025-10-05T23:26:04Z",
+      "url": "https://github.com/longrangelab/FAWD-and-User-Interface/issues/5",
+      "number": 5,
+      "updatedAt": "2025-10-08T08:35:09Z",
+      "assignees": {
+        "nodes": []
+      },
+      "repository": {
+        "name": "FAWD-and-User-Interface",
+        "url": "https://github.com/longrangelab/FAWD-and-User-Interface",
+        "isPrivate": false,
+        "owner": {
+          "login": "longrangelab",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/223011668?u=10c57651f50a15047a90c7cdd164848fc8e7537b&v=4",
+          "url": "https://github.com/longrangelab"
+        }
+      }
+    },
+    {
+      "id": "I_kwDOHjeS287PlnS4",
+      "closed": true,
+      "title": "Remove `include guard` from `bind.c`",
+      "createdAt": "2025-10-03T22:28:58Z",
+      "url": "https://github.com/o-murphy/py-ballisticcalc/issues/231",
+      "number": 231,
+      "updatedAt": "2025-10-05T18:09:34Z",
+      "assignees": {
+        "nodes": []
+      },
+      "repository": {
+        "name": "py-ballisticcalc",
+        "url": "https://github.com/o-murphy/py-ballisticcalc",
+        "isPrivate": false,
+        "owner": {
+          "login": "o-murphy",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    },
+    {
+      "id": "I_kwDOHjeS2850OkCo",
+      "closed": true,
+      "title": "Add optional support of the Coriolis force",
+      "createdAt": "2023-10-18T15:03:12Z",
+      "url": "https://github.com/o-murphy/py-ballisticcalc/issues/36",
+      "number": 36,
+      "updatedAt": "2025-10-01T17:11:12Z",
+      "assignees": {
+        "nodes": []
+      },
+      "repository": {
+        "name": "py-ballisticcalc",
+        "url": "https://github.com/o-murphy/py-ballisticcalc",
+        "isPrivate": false,
+        "owner": {
+          "login": "o-murphy",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    },
+    {
+      "id": "I_kwDOP0j40c7NNbgD",
+      "closed": false,
+      "title": "Create Simplified Schema for Guitar Processor",
+      "createdAt": "2025-09-22T21:37:02Z",
+      "url": "https://github.com/o-murphy/Voicemeeter/issues/3",
+      "number": 3,
+      "updatedAt": "2025-09-22T21:37:02Z",
+      "assignees": {
+        "nodes": []
+      },
+      "repository": {
+        "name": "Voicemeeter",
+        "url": "https://github.com/o-murphy/Voicemeeter",
+        "isPrivate": false,
+        "owner": {
+          "login": "o-murphy",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    },
+    {
+      "id": "I_kwDOP0j40c7NNbWK",
+      "closed": false,
+      "title": "Update Hi-End Audio Interface Routing schema",
+      "createdAt": "2025-09-22T21:36:43Z",
+      "url": "https://github.com/o-murphy/Voicemeeter/issues/2",
+      "number": 2,
+      "updatedAt": "2025-09-22T21:36:43Z",
+      "assignees": {
+        "nodes": []
+      },
+      "repository": {
+        "name": "Voicemeeter",
+        "url": "https://github.com/o-murphy/Voicemeeter",
+        "isPrivate": false,
+        "owner": {
+          "login": "o-murphy",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    },
+    {
+      "id": "I_kwDOP0j40c7NNbGP",
+      "closed": false,
+      "title": "Add DAW Inputs routing example",
+      "createdAt": "2025-09-22T21:36:18Z",
+      "url": "https://github.com/o-murphy/Voicemeeter/issues/1",
+      "number": 1,
+      "updatedAt": "2025-09-22T21:36:18Z",
+      "assignees": {
+        "nodes": []
+      },
+      "repository": {
+        "name": "Voicemeeter",
+        "url": "https://github.com/o-murphy/Voicemeeter",
+        "isPrivate": false,
+        "owner": {
+          "login": "o-murphy",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    },
+    {
+      "id": "I_kwDOKNavAc62PoFB",
+      "closed": true,
+      "title": "async files operations too slow",
+      "createdAt": "2025-05-12T16:44:09Z",
+      "url": "https://github.com/o-murphy/a7p/issues/21",
+      "number": 21,
+      "updatedAt": "2025-09-15T13:31:22Z",
+      "assignees": {
+        "nodes": []
+      },
+      "repository": {
+        "name": "a7p",
+        "url": "https://github.com/o-murphy/a7p",
+        "isPrivate": false,
+        "owner": {
+          "login": "o-murphy",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    },
+    {
+      "id": "I_kwDOKNavAc62PooA",
+      "closed": true,
+      "title": "protovalidate extremely slow",
+      "createdAt": "2025-05-12T16:45:13Z",
+      "url": "https://github.com/o-murphy/a7p/issues/22",
+      "number": 22,
+      "updatedAt": "2025-09-15T13:31:22Z",
+      "assignees": {
+        "nodes": []
+      },
+      "repository": {
+        "name": "a7p",
+        "url": "https://github.com/o-murphy/a7p",
+        "isPrivate": false,
+        "owner": {
+          "login": "o-murphy",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    },
+    {
+      "id": "I_kwDOKNavAc7LgTby",
+      "closed": true,
+      "title": "[ANNOUNCEMENT] Future update `v1.0.1`",
+      "createdAt": "2025-09-13T22:48:40Z",
+      "url": "https://github.com/o-murphy/a7p/issues/25",
+      "number": 25,
+      "updatedAt": "2025-09-15T13:31:22Z",
+      "assignees": {
+        "nodes": []
+      },
+      "repository": {
+        "name": "a7p",
+        "url": "https://github.com/o-murphy/a7p",
+        "isPrivate": false,
+        "owner": {
+          "login": "o-murphy",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    },
+    {
+      "id": "I_kwDOKNavAc62Prjg",
+      "closed": true,
+      "title": "gallery will be moved to side-party repo",
+      "createdAt": "2025-05-12T16:50:51Z",
+      "url": "https://github.com/o-murphy/a7p/issues/23",
+      "number": 23,
+      "updatedAt": "2025-09-13T22:41:05Z",
+      "assignees": {
+        "nodes": []
+      },
+      "repository": {
+        "name": "a7p",
+        "url": "https://github.com/o-murphy/a7p",
+        "isPrivate": false,
+        "owner": {
+          "login": "o-murphy",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    },
+    {
+      "id": "I_kwDOPgNvFc7Hv-5p",
+      "closed": true,
+      "title": "Link to py-ballisticcalc in the README is wrong",
+      "createdAt": "2025-08-25T10:10:14Z",
+      "url": "https://github.com/longrangelab/FAWD-and-User-Interface/issues/3",
+      "number": 3,
+      "updatedAt": "2025-09-07T14:29:46Z",
+      "assignees": {
+        "nodes": []
+      },
+      "repository": {
+        "name": "FAWD-and-User-Interface",
+        "url": "https://github.com/longrangelab/FAWD-and-User-Interface",
+        "isPrivate": false,
+        "owner": {
+          "login": "longrangelab",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/223011668?u=10c57651f50a15047a90c7cdd164848fc8e7537b&v=4",
+          "url": "https://github.com/longrangelab"
+        }
+      }
+    },
+    {
+      "id": "I_kwDOAZsu_c7I_hvU",
+      "closed": false,
+      "title": "dev: Enchance development environment setup with `pythonista-stubs` package",
+      "createdAt": "2025-09-01T10:12:31Z",
+      "url": "https://github.com/ywangd/stash/issues/554",
+      "number": 554,
+      "updatedAt": "2025-09-01T11:48:34Z",
+      "assignees": {
+        "nodes": []
+      },
+      "repository": {
+        "name": "stash",
+        "url": "https://github.com/ywangd/stash",
+        "isPrivate": false,
+        "owner": {
+          "login": "ywangd",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/2344308?u=f046f21d52b9289e27f62b6a62e5a5745ad278b6&v=4",
+          "url": "https://github.com/ywangd"
+        }
+      }
+    },
+    {
+      "id": "I_kwDOAZsu_c7EVaJI",
+      "closed": false,
+      "title": "enchantment: Register entry points",
+      "createdAt": "2025-08-05T17:49:44Z",
+      "url": "https://github.com/ywangd/stash/issues/532",
+      "number": 532,
+      "updatedAt": "2025-09-01T10:14:33Z",
+      "assignees": {
+        "nodes": []
+      },
+      "repository": {
+        "name": "stash",
+        "url": "https://github.com/ywangd/stash",
+        "isPrivate": false,
+        "owner": {
+          "login": "ywangd",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/2344308?u=f046f21d52b9289e27f62b6a62e5a5745ad278b6&v=4",
+          "url": "https://github.com/ywangd"
+        }
+      }
+    },
+    {
+      "id": "I_kwDOA_GdNc7HdOI8",
+      "closed": false,
+      "title": "espressif: Fails every time with Nimble \"not connected\" error on `_bleio.Connection..discover_remote_services()`",
+      "createdAt": "2025-08-22T18:38:36Z",
+      "url": "https://github.com/adafruit/circuitpython/issues/10580",
+      "number": 10580,
+      "updatedAt": "2025-09-01T10:04:18Z",
+      "assignees": {
+        "nodes": []
+      },
+      "repository": {
+        "name": "circuitpython",
+        "url": "https://github.com/adafruit/circuitpython",
+        "isPrivate": false,
+        "owner": {
+          "login": "adafruit",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/181069?v=4",
+          "url": "https://github.com/adafruit"
+        }
+      }
+    },
+    {
+      "id": "I_kwDOAZsu_c7I_Vk1",
+      "closed": false,
+      "title": "py3: `subprocess.py` patch needed",
+      "createdAt": "2025-09-01T09:57:16Z",
+      "url": "https://github.com/ywangd/stash/issues/553",
+      "number": 553,
+      "updatedAt": "2025-09-01T09:57:16Z",
+      "assignees": {
+        "nodes": []
+      },
+      "repository": {
+        "name": "stash",
+        "url": "https://github.com/ywangd/stash",
+        "isPrivate": false,
+        "owner": {
+          "login": "ywangd",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/2344308?u=f046f21d52b9289e27f62b6a62e5a5745ad278b6&v=4",
+          "url": "https://github.com/ywangd"
+        }
+      }
+    },
+    {
+      "id": "I_kwDOA6e1yM7G0sxO",
+      "closed": false,
+      "title": "Pythonista 3.5: Does not reset `stdin/stdout/stderr` on new script execution",
+      "createdAt": "2025-08-19T21:12:35Z",
+      "url": "https://github.com/omz/Pythonista-Issues/issues/792",
+      "number": 792,
+      "updatedAt": "2025-08-29T10:44:31Z",
+      "assignees": {
+        "nodes": []
+      },
+      "repository": {
+        "name": "Pythonista-Issues",
+        "url": "https://github.com/omz/Pythonista-Issues",
+        "isPrivate": false,
+        "owner": {
+          "login": "omz",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/82469?u=374ad23a91a7259075f4d0bdde025cd1dc7c01b2&v=4",
+          "url": "https://github.com/omz"
+        }
+      }
+    },
+    {
+      "id": "I_kwDOHjeS2850OjaT",
+      "closed": true,
+      "title": "Refactor the unit.py module to make it simplier and flexible",
+      "createdAt": "2023-10-18T15:02:05Z",
+      "url": "https://github.com/o-murphy/py-ballisticcalc/issues/35",
+      "number": 35,
+      "updatedAt": "2025-08-29T00:26:20Z",
+      "assignees": {
+        "nodes": []
+      },
+      "repository": {
+        "name": "py-ballisticcalc",
+        "url": "https://github.com/o-murphy/py-ballisticcalc",
+        "isPrivate": false,
+        "owner": {
+          "login": "o-murphy",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    },
+    {
+      "id": "I_kwDOASzMQc7HwW_n",
+      "closed": false,
+      "title": "Python 3.12 and upper wheels",
+      "createdAt": "2025-08-25T10:44:37Z",
+      "url": "https://github.com/ricmoo/pyaes/issues/55",
+      "number": 55,
+      "updatedAt": "2025-08-25T10:54:01Z",
+      "assignees": {
+        "nodes": []
+      },
+      "repository": {
+        "name": "pyaes",
+        "url": "https://github.com/ricmoo/pyaes",
+        "isPrivate": false,
+        "owner": {
+          "login": "ricmoo",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/975687?v=4",
+          "url": "https://github.com/ricmoo"
+        }
+      }
+    },
+    {
+      "id": "I_kwDODrqxy87HdK8P",
+      "closed": true,
+      "title": "Fails with HCI TIMEOUT error on bleio_connection.discover_remote_services()",
+      "createdAt": "2025-08-22T18:32:29Z",
+      "url": "https://github.com/adafruit/Adafruit_CircuitPython_BLE_Adafruit/issues/27",
+      "number": 27,
+      "updatedAt": "2025-08-22T18:51:39Z",
+      "assignees": {
+        "nodes": []
+      },
+      "repository": {
+        "name": "Adafruit_CircuitPython_BLE_Adafruit",
+        "url": "https://github.com/adafruit/Adafruit_CircuitPython_BLE_Adafruit",
+        "isPrivate": false,
+        "owner": {
+          "login": "adafruit",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/181069?v=4",
+          "url": "https://github.com/adafruit"
+        }
+      }
+    },
+    {
+      "id": "I_kwDOA6e1yM7GKXrc",
+      "closed": false,
+      "title": "How to setup PYTHONPATH globally by default?",
+      "createdAt": "2025-08-15T07:42:19Z",
+      "url": "https://github.com/omz/Pythonista-Issues/issues/790",
+      "number": 790,
+      "updatedAt": "2025-08-15T10:38:13Z",
+      "assignees": {
+        "nodes": []
+      },
+      "repository": {
+        "name": "Pythonista-Issues",
+        "url": "https://github.com/omz/Pythonista-Issues",
+        "isPrivate": false,
+        "owner": {
+          "login": "omz",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/82469?u=374ad23a91a7259075f4d0bdde025cd1dc7c01b2&v=4",
+          "url": "https://github.com/omz"
+        }
+      }
+    },
+    {
+      "id": "I_kwDOAZsu_c7GDXa0",
+      "closed": false,
+      "title": "StaSh Pythonvenv understanding",
+      "createdAt": "2025-08-14T16:11:17Z",
+      "url": "https://github.com/ywangd/stash/issues/545",
+      "number": 545,
+      "updatedAt": "2025-08-14T16:50:47Z",
+      "assignees": {
+        "nodes": []
+      },
+      "repository": {
+        "name": "stash",
+        "url": "https://github.com/ywangd/stash",
+        "isPrivate": false,
+        "owner": {
+          "login": "ywangd",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/2344308?u=f046f21d52b9289e27f62b6a62e5a5745ad278b6&v=4",
+          "url": "https://github.com/ywangd"
+        }
+      }
+    },
+    {
+      "id": "I_kwDOAZsu_c7F_bih",
+      "closed": false,
+      "title": "Crypto: outdated",
+      "createdAt": "2025-08-14T10:42:38Z",
+      "url": "https://github.com/ywangd/stash/issues/544",
+      "number": 544,
+      "updatedAt": "2025-08-14T10:42:38Z",
+      "assignees": {
+        "nodes": []
+      },
+      "repository": {
+        "name": "stash",
+        "url": "https://github.com/ywangd/stash",
+        "isPrivate": false,
+        "owner": {
+          "login": "ywangd",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/2344308?u=f046f21d52b9289e27f62b6a62e5a5745ad278b6&v=4",
+          "url": "https://github.com/ywangd"
+        }
+      }
+    },
+    {
+      "id": "I_kwDOA6e1yM7FyVUs",
+      "closed": false,
+      "title": "Pythonista 3.5: Crypto is deprecated",
+      "createdAt": "2025-08-13T12:38:16Z",
+      "url": "https://github.com/omz/Pythonista-Issues/issues/788",
+      "number": 788,
+      "updatedAt": "2025-08-13T22:06:01Z",
+      "assignees": {
+        "nodes": []
+      },
+      "repository": {
+        "name": "Pythonista-Issues",
+        "url": "https://github.com/omz/Pythonista-Issues",
+        "isPrivate": false,
+        "owner": {
+          "login": "omz",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/82469?u=374ad23a91a7259075f4d0bdde025cd1dc7c01b2&v=4",
+          "url": "https://github.com/omz"
+        }
+      }
+    },
+    {
+      "id": "I_kwDOA6e1yM7F1SQ9",
+      "closed": false,
+      "title": "Pythonista 3.5: legacy SDK for objc_util",
+      "createdAt": "2025-08-13T16:23:18Z",
+      "url": "https://github.com/omz/Pythonista-Issues/issues/789",
+      "number": 789,
+      "updatedAt": "2025-08-13T16:24:02Z",
+      "assignees": {
+        "nodes": []
+      },
+      "repository": {
+        "name": "Pythonista-Issues",
+        "url": "https://github.com/omz/Pythonista-Issues",
+        "isPrivate": false,
+        "owner": {
+          "login": "omz",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/82469?u=374ad23a91a7259075f4d0bdde025cd1dc7c01b2&v=4",
+          "url": "https://github.com/omz"
+        }
+      }
+    },
+    {
+      "id": "I_kwDOCow09c7FAxmJ",
+      "closed": true,
+      "title": "Some mypy compatible stubs",
+      "createdAt": "2025-08-08T22:02:54Z",
+      "url": "https://github.com/hbmartin/pythonista-stubs/issues/4",
+      "number": 4,
+      "updatedAt": "2025-08-11T12:17:37Z",
+      "assignees": {
+        "nodes": []
+      },
+      "repository": {
+        "name": "pythonista-stubs",
+        "url": "https://github.com/hbmartin/pythonista-stubs",
+        "isPrivate": false,
+        "owner": {
+          "login": "hbmartin",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/745166?u=92613f6d672cc0157aa9513667f4cc09935a4b1a&v=4",
+          "url": "https://github.com/hbmartin"
+        }
+      }
+    },
+    {
+      "id": "I_kwDOA6e1yM7E67QA",
+      "closed": false,
+      "title": "Pythonista 3.5 uses old python 3.13.0rc1",
+      "createdAt": "2025-08-08T12:00:24Z",
+      "url": "https://github.com/omz/Pythonista-Issues/issues/783",
+      "number": 783,
+      "updatedAt": "2025-08-08T22:01:04Z",
+      "assignees": {
+        "nodes": []
+      },
+      "repository": {
+        "name": "Pythonista-Issues",
+        "url": "https://github.com/omz/Pythonista-Issues",
+        "isPrivate": false,
+        "owner": {
+          "login": "omz",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/82469?u=374ad23a91a7259075f4d0bdde025cd1dc7c01b2&v=4",
+          "url": "https://github.com/omz"
+        }
+      }
+    },
+    {
+      "id": "I_kwDOAZsu_c7E6935",
+      "closed": false,
+      "title": "enchantment: There is no `system()` attribute in `os` module in Pythonsta",
+      "createdAt": "2025-08-08T12:03:29Z",
+      "url": "https://github.com/ywangd/stash/issues/539",
+      "number": 539,
+      "updatedAt": "2025-08-08T20:33:02Z",
+      "assignees": {
+        "nodes": []
+      },
+      "repository": {
+        "name": "stash",
+        "url": "https://github.com/ywangd/stash",
+        "isPrivate": false,
+        "owner": {
+          "login": "ywangd",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/2344308?u=f046f21d52b9289e27f62b6a62e5a5745ad278b6&v=4",
+          "url": "https://github.com/ywangd"
+        }
+      }
+    },
+    {
+      "id": "I_kwDOA6e1yM7E8Tl-",
+      "closed": false,
+      "title": "Pythonuista 3.5: `exit` statement not recognized by interpreter",
+      "createdAt": "2025-08-08T13:52:02Z",
+      "url": "https://github.com/omz/Pythonista-Issues/issues/786",
+      "number": 786,
+      "updatedAt": "2025-08-08T19:14:33Z",
+      "assignees": {
+        "nodes": []
+      },
+      "repository": {
+        "name": "Pythonista-Issues",
+        "url": "https://github.com/omz/Pythonista-Issues",
+        "isPrivate": false,
+        "owner": {
+          "login": "omz",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/82469?u=374ad23a91a7259075f4d0bdde025cd1dc7c01b2&v=4",
+          "url": "https://github.com/omz"
+        }
+      }
+    },
+    {
+      "id": "I_kwDOA6e1yM7E8PRK",
+      "closed": true,
+      "title": "Pythonuista 3.5: ImportError `platform`",
+      "createdAt": "2025-08-08T13:47:18Z",
+      "url": "https://github.com/omz/Pythonista-Issues/issues/784",
+      "number": 784,
+      "updatedAt": "2025-08-08T19:06:06Z",
+      "assignees": {
+        "nodes": []
+      },
+      "repository": {
+        "name": "Pythonista-Issues",
+        "url": "https://github.com/omz/Pythonista-Issues",
+        "isPrivate": false,
+        "owner": {
+          "login": "omz",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/82469?u=374ad23a91a7259075f4d0bdde025cd1dc7c01b2&v=4",
+          "url": "https://github.com/omz"
+        }
+      }
+    },
+    {
+      "id": "I_kwDOA6e1yM7E8YHD",
+      "closed": false,
+      "title": "Pythonuista 3.5: ANSI C0 and C1 control codes support patch needed for `sys.std`",
+      "createdAt": "2025-08-08T13:57:04Z",
+      "url": "https://github.com/omz/Pythonista-Issues/issues/787",
+      "number": 787,
+      "updatedAt": "2025-08-08T13:57:04Z",
+      "assignees": {
+        "nodes": []
+      },
+      "repository": {
+        "name": "Pythonista-Issues",
+        "url": "https://github.com/omz/Pythonista-Issues",
+        "isPrivate": false,
+        "owner": {
+          "login": "omz",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/82469?u=374ad23a91a7259075f4d0bdde025cd1dc7c01b2&v=4",
+          "url": "https://github.com/omz"
+        }
+      }
+    },
+    {
+      "id": "I_kwDOA6e1yM7E8Qi4",
+      "closed": false,
+      "title": "Pythonuista 3.5: AttributeError `os.system()`",
+      "createdAt": "2025-08-08T13:48:37Z",
+      "url": "https://github.com/omz/Pythonista-Issues/issues/785",
+      "number": 785,
+      "updatedAt": "2025-08-08T13:48:37Z",
+      "assignees": {
+        "nodes": []
+      },
+      "repository": {
+        "name": "Pythonista-Issues",
+        "url": "https://github.com/omz/Pythonista-Issues",
+        "isPrivate": false,
+        "owner": {
+          "login": "omz",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/82469?u=374ad23a91a7259075f4d0bdde025cd1dc7c01b2&v=4",
+          "url": "https://github.com/omz"
+        }
+      }
+    }
+  ],
+  "open": 54,
+  "closed": 45,
+  "totalCount": 99
+}
