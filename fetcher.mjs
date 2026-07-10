@@ -9,6 +9,20 @@ const openSource = {
     githubUserName: process.env.GITHUB_USERNAME,
 };
 
+// Репозиторії, які потрібно ПРИХОВАТИ (застосовується до PR та Issues)
+const hideRepos = [
+    "ArcherBC2",
+    "ar612-issues"            // Додайте інші репозиторії для приховування
+];
+
+// Організації, які потрібно ПРИХОВАТИ
+const hideOrgs = [
+    // "SomeOrgLogin",      // Додайте інші організації для приховування
+    "archerdfu",
+    "vaultbin",
+    "tvt-tech",
+];
+
 // Додаємо is:public у всі пошукові запити
 const query_pr = {
     query: `query {
@@ -172,10 +186,6 @@ fetch(baseUrl, {
         // Фільтруємо приватні PR
         const allNodes = data.data.search.nodes || [];
         const publicNodes = filterPrivateNodes(allNodes);
-        // Репозиторії, які потрібно ПРИХОВАТИ
-        const hideRepos = [
-            "ArcherBC2",            // Додайте інші репозиторії для приховування
-        ];
         // Фільтрація - виключаємо зазначені репозиторії
         const filteredPRs = publicNodes.filter(pr => {
             const repoName = pr.baseRepository?.name;
@@ -236,11 +246,6 @@ fetch(baseUrl, {
         const allNodes = data.data.search.nodes || [];
         const publicIssues = filterPrivateNodes(allNodes);
 
-        // Репозиторії, які потрібно ПРИХОВАТИ
-        const hideRepos = [
-            "ArcherBC2",
-            // Додайте інші репозиторії для приховування
-        ];
         // Фільтрація - виключаємо зазначені репозиторії
         const filteredIssues = publicIssues.filter(issue => {
             const repoName = issue.repository?.name;
@@ -317,7 +322,7 @@ fetch(baseUrl, {
         var newOrgs = { data: [] };
         for (var i = 0; i < publicRepos.length; i++) {
             var obj = publicRepos[i]["owner"];
-            if (obj["__typename"] === "Organization") {
+            if (obj["__typename"] === "Organization" && !hideOrgs.includes(obj["login"])) {
                 var flag = 0;
                 for (var j = 0; j < newOrgs["data"].length; j++) {
                     if (JSON.stringify(obj) === JSON.stringify(newOrgs["data"][j])) {
