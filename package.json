@@ -18,7 +18,7 @@
     "@fortawesome/fontawesome-svg-core": "^7.3.0",
     "@fortawesome/free-brands-svg-icons": "^7.3.0",
     "@fortawesome/free-solid-svg-icons": "^7.3.0",
-    "@fortawesome/react-fontawesome": "^3.3.1",
+    "@fortawesome/react-fontawesome": "^3.4.0",
     "@iconify-json/octicon": "^1.2.29",
     "@iconify/react": "^6.0.2",
     "@icons-pack/react-simple-icons": "^13.13.0",
@@ -28,17 +28,17 @@
     "react-scroll": "^1.9.3"
   },
   "devDependencies": {
-    "@eslint/eslintrc": "^3.3.5",
+    "@eslint/eslintrc": "^3.3.6",
     "@tailwindcss/postcss": "^4.3.2",
-    "@types/node": "^26.1.0",
+    "@types/node": "^26.1.1",
     "@types/react": "^19.2.17",
     "@types/react-dom": "^19.2.3",
     "@types/react-scroll": "^1.8.10",
     "dotenv": "^17.4.2",
-    "eslint": "^10.6.0",
+    "eslint": "^10.7.0",
     "eslint-config-next": "^16.2.10",
     "node-fetch": "^3.3.2",
     "tailwindcss": "^4.2.4",
-    "typescript": "^6.0.3"
+    "typescript": "^7.0.2"
   }
 }
