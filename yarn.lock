@@ -225,10 +225,10 @@
   dependencies:
     "@types/json-schema" "^7.0.15"
 
-"@eslint/eslintrc@^3.3.5":
-  version "3.3.5"
-  resolved "https://registry.npmjs.org/@eslint/eslintrc/-/eslintrc-3.3.5.tgz"
-  integrity sha512-4IlJx0X0qftVsN5E+/vGujTRIFtwuLbNsVUe7TO6zYPDR1O6nFwvwhIKEKSrl6dZchmYBITazxKoUYOjdtjlRg==
+"@eslint/eslintrc@^3.3.6":
+  version "3.3.6"
+  resolved "https://registry.yarnpkg.com/@eslint/eslintrc/-/eslintrc-3.3.6.tgz#d22bfd6b3a7d8e1f2c0b2f2e6de111b53ec6e13e"
+  integrity sha512-l2Ul9PrHsPCKcEY/ac7VgFj9D80C7S68sOKc618SyHDPK36s1XcFebXY0iTzUVn4Yq+YbwvSnDmCz9yxjX+QrA==
   dependencies:
     ajv "^6.14.0"
     debug "^4.3.2"
@@ -236,7 +236,7 @@
     globals "^14.0.0"
     ignore "^5.2.0"
     import-fresh "^3.2.1"
-    js-yaml "^4.1.1"
+    js-yaml "^4.3.0"
     minimatch "^3.1.5"
     strip-json-comments "^3.1.1"
 
@@ -279,10 +279,10 @@
   dependencies:
     "@fortawesome/fontawesome-common-types" "7.3.0"
 
-"@fortawesome/react-fontawesome@^3.3.1":
-  version "3.3.1"
-  resolved "https://registry.npmjs.org/@fortawesome/react-fontawesome/-/react-fontawesome-3.3.1.tgz"
-  integrity sha512-wGnAPhfzivDwBWYmEG8MSrEXPruoiMMo48NnsRkj1NZkoaawgOijPNAiSHKMYEoCsqTBSgLTzL6EqTTWGaUR4w==
+"@fortawesome/react-fontawesome@^3.4.0":
+  version "3.4.0"
+  resolved "https://registry.yarnpkg.com/@fortawesome/react-fontawesome/-/react-fontawesome-3.4.0.tgz#17b989390349ded9214ffb35ad279da7c9a728ba"
+  integrity sha512-EgY5CXzzm6WGnUB40j9qNajYmoJHC8TUV/rvpcmHUoPZmQyRlh8WuRaxaerjMq61NZAz0vS+MOoJaPbZWRDibw==
 
 "@humanfs/core@^0.19.2":
   version "0.19.2"
@@ -769,10 +769,10 @@
   resolved "https://registry.npmjs.org/@types/json5/-/json5-0.0.29.tgz"
   integrity sha512-dRLjCWHYg4oaA77cxO64oO+7JwCwnIzkZPdrrC71jQmQtlhM556pwKo5bUzqvZndkVbeFLIIi+9TC40JNF5hNQ==
 
-"@types/node@^26.1.0":
-  version "26.1.0"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-26.1.0.tgz#aa85f0727fc5611347091c478341c63650903439"
-  integrity sha512-O0A1G3xPGy4w7AgQdAQYUlQ+BKk2Oovw8eRpofyp5KdBZULnbe+WqaOVNrm705SHphCiG4XHsACrSmPu1f+Kgw==
+"@types/node@^26.1.1":
+  version "26.1.1"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-26.1.1.tgz#bad758d601e97d6cf457d204ee76a35fce7bd119"
+  integrity sha512-nxAkRSVkN1Y0JC1W8ky/fTfkGsMmcrRsbx+3XoZE+rMOX71kLYTV7fLXpqud1GpbpP5TuffXFqfX7fH2GgZREw==
   dependencies:
     undici-types "~8.3.0"
 
@@ -1652,10 +1652,10 @@ eslint-visitor-keys@^5.0.0, eslint-visitor-keys@^5.0.1:
   resolved "https://registry.npmjs.org/eslint-visitor-keys/-/eslint-visitor-keys-5.0.1.tgz"
   integrity sha512-tD40eHxA35h0PEIZNeIjkHoDR4YjjJp34biM0mDvplBe//mB+IHCqHDGV7pxF+7MklTvighcCPPZC7ynWyjdTA==
 
-eslint@^10.6.0:
-  version "10.6.0"
-  resolved "https://registry.yarnpkg.com/eslint/-/eslint-10.6.0.tgz#e1b4059c582be950c7088c9b55f984738b243c27"
-  integrity sha512-6lVbcqSodALYo+4ELD0heG6lFiFxnLMuLkiMi2qV8LMp54N8tE8FT1GMH+ev4Ti00nFjNze2+Su6DsV5OQW3Dg==
+eslint@^10.7.0:
+  version "10.7.0"
+  resolved "https://registry.yarnpkg.com/eslint/-/eslint-10.7.0.tgz#cd3b8022f3b1e3b183760d90dfc58e9d3644106b"
+  integrity sha512-GVTD7s1vdIl6UYvAfriOPeY1Df8LIZjfofLvHwde+erDHGGuHyuM6xoxRxmHiebhYuD2p1vN4wWh0XzPARSGDQ==
   dependencies:
     "@eslint-community/eslint-utils" "^4.8.0"
     "@eslint-community/regexpp" "^4.12.2"
@@ -2243,10 +2243,10 @@ jiti@^2.7.0:
   resolved "https://registry.npmjs.org/js-tokens/-/js-tokens-4.0.0.tgz"
   integrity sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==
 
-js-yaml@^4.1.1:
-  version "4.1.1"
-  resolved "https://registry.npmjs.org/js-yaml/-/js-yaml-4.1.1.tgz"
-  integrity sha512-qQKT4zQxXl8lLwBtHMWwaTcGfFOZviOJet3Oy/xmGk2gZH677CJM9EvtfdSkgWcATZhj/55JZ0rmy3myCT5lsA==
+js-yaml@^4.3.0:
+  version "4.3.0"
+  resolved "https://registry.yarnpkg.com/js-yaml/-/js-yaml-4.3.0.tgz#d1900572a7f7cf0b5f540c83673e60bad3436592"
+  integrity sha512-1td788aAnnZ5qs7V2QIRl1owjtYpbKt749Y3xauqQgwIIGF/xXWz1wMTEBx5O3LK3lXLVuqXPdPxj2BoFHaW9Q==
   dependencies:
     argparse "^2.0.1"
 
@@ -3186,7 +3186,7 @@ typescript-eslint@^8.46.0:
 
 typescript@^6.0.3:
   version "6.0.3"
-  resolved "https://registry.npmjs.org/typescript/-/typescript-6.0.3.tgz"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-6.0.3.tgz#90251dc007916e972786cb94d74d15b185577d21"
   integrity sha512-y2TvuxSZPDyQakkFRPZHKFm+KKVqIisdg9/CZwm9ftvKXLP8NRWj38/ODjNbr43SsoXqNuAisEf1GdCxqWcdBw==
 
 unbox-primitive@^1.1.0:
