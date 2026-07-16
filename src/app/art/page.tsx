@@ -5,11 +5,22 @@ import { Template } from '@/components/template';
 import { Loading, MIN_LOADING_MS } from '@/components/loading';
 import { ArtLink } from '@/types/dataTypes';
 import { useEffect, useState } from 'react';
+import { useTheme } from 'next-themes';
 import { basePath } from '@/app/basePath';
 
 export default function ArtPage() {
     const [artLinks, setArtLinks] = useState<ArtLink[]>([]);
     const [loading, setLoading] = useState(true);
+    const { resolvedTheme } = useTheme();
+    const [mounted, setMounted] = useState(false);
+
+    useEffect(() => {
+        setMounted(true);
+    }, []);
+
+    // Spotify's embed defaults to its own dark skin; `theme=0` forces the light one. Only ask
+    // for it when the site itself is light, otherwise the white widget clashes with our dark bg.
+    const spotifyTheme = mounted && resolvedTheme === 'dark' ? '' : '&theme=0';
 
     useEffect(() => {
         fetch(`${basePath}/data/portfolio.json`)
@@ -56,12 +67,13 @@ export default function ArtPage() {
                     <div className="w-full max-w-md mx-auto">
                         <iframe
                             data-testid="embed-iframe"
-                            className="rounded-xl border- w-full bg-transparent"
-                            src="https://open.spotify.com/embed/track/7FcGOFQQhCqLBINpd0ERNg?utm_source=generator&theme=0"
+                            className="w-full bg-transparent"
+                            src={`https://open.spotify.com/embed/track/7FcGOFQQhCqLBINpd0ERNg?utm_source=generator${spotifyTheme}`}
                             height="152"
                             allowFullScreen
                             allow="clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                             loading="lazy"
+                            style={{ borderRadius: '12px' }}
                         ></iframe>
                     </div>
 
