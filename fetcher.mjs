@@ -9,19 +9,13 @@ const openSource = {
     githubUserName: process.env.GITHUB_USERNAME,
 };
 
+const portfolio = JSON.parse(fs.readFileSync('./portfolio.json', 'utf-8'));
+
 // Репозиторії, які потрібно ПРИХОВАТИ (застосовується до PR та Issues)
-const hideRepos = [
-    'ArcherBC2',
-    'ar612-issues', // Додайте інші репозиторії для приховування
-];
+const hideRepos = portfolio.githubFetch?.hideRepos || [];
 
 // Організації, які потрібно ПРИХОВАТИ
-const hideOrgs = [
-    // "SomeOrgLogin",      // Додайте інші організації для приховування
-    'archerdfu',
-    'vaultbin',
-    'tvt-tech',
-];
+const hideOrgs = portfolio.githubFetch?.hideOrgs || [];
 
 // Додаємо is:public у всі пошукові запити
 const query_pr = {

@@ -15,6 +15,10 @@
             "Always eager to learn new technologies and deliver innovative solutions."
         ]
     },
+    "githubFetch": {
+        "hideRepos": ["ArcherBC2", "ar612-issues"],
+        "hideOrgs": ["archerdfu", "vaultbin", "tvt-tech"]
+    },
     "markdown": [
         {
             "name": "Ballistics Lab",
