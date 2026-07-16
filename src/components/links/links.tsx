@@ -18,9 +18,11 @@ export function IconTextLink({ link }: { link: IconTextLinkData }) {
             href={link.url}
             target={link.name !== 'Email' ? '_blank' : undefined}
             rel={link.name !== 'Email' ? 'noopener noreferrer' : undefined}
-            className={`group flex items-center justify-center gap-2 hover:bg-black hover:text-white p-2 transition-colors ${link.bgColor}`}
+            className={`group flex items-center justify-center gap-2 hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black p-2 transition-colors ${link.bgColor}`}
         >
-            <Icon className={`w-5 h-5 ${link.color} group-hover:text-white transition-colors`} />
+            <Icon
+                className={`w-5 h-5 ${link.color} group-hover:text-white dark:group-hover:text-black transition-colors`}
+            />
             <span className="text-sm">{link.name}</span>
         </Link>
     );

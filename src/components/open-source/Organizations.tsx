@@ -38,14 +38,14 @@ export default function Organizations({ organizations }: OrganizationsProps) {
                             key={org.login}
                             href={`https://github.com/${org.login}`}
                             target="_blank"
-                            className="flex items-center justify-center p-2 hover:bg-gray-100 rounded transition-colors"
+                            className="flex items-center justify-center p-2 hover:bg-gray-100 dark:hover:bg-gray-800 rounded transition-colors"
                             title={org.login}
                         >
                             <img src={org.avatarUrl} alt={org.login} className="w-8 h-8 rounded-full" />
                         </Link>
                     ))}
                 </div>
-                <p className="flex justify-center text-xs text-gray-400 mt-6">Includes Pull Requests and Issues</p>
+                <p className="flex justify-center text-xs text-gray-400 dark:text-gray-500 mt-6">Includes Pull Requests and Issues</p>
             </section>
         );
     }
@@ -60,14 +60,14 @@ export default function Organizations({ organizations }: OrganizationsProps) {
                         key={org.login}
                         href={`https://github.com/${org.login}`}
                         target="_blank"
-                        className="flex items-center gap-2 p-2 hover:bg-gray-200 rounded transition-colors"
+                        className="flex items-center gap-2 p-2 hover:bg-gray-200 dark:hover:bg-gray-800 rounded transition-colors"
                     >
                         <img src={org.avatarUrl} alt={org.login} className="w-8 h-8 rounded-full flex-shrink-0" />
                         <span className="text-sm font-medium truncate">{org.login}</span>
                     </Link>
                 ))}
             </div>
-            <p className="flex justify-center text-xs text-gray-400 mt-6">Includes Pull Requests and Issues</p>
+            <p className="flex justify-center text-xs text-gray-400 dark:text-gray-500 mt-6">Includes Pull Requests and Issues</p>
         </section>
     );
 }

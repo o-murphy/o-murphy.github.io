@@ -23,7 +23,7 @@ export const EnvelopeSVG = () => {
 
 export function IssueIcon({ closed, color: customColor }: { closed: boolean; color?: string }) {
     const icon = closed ? 'octicon:issue-closed-16' : 'octicon:issue-opened-16';
-    const defaultColor = closed ? 'text-purple-700' : 'text-green-600';
+    const defaultColor = closed ? 'text-purple-700 dark:text-purple-400' : 'text-green-600 dark:text-green-400';
     const color = customColor || defaultColor;
 
     return <Icon icon={icon} className={`inline w-4 h-4 ${color} align-middle`} />;
@@ -53,15 +53,15 @@ export function PrIcon({ state }: { state: PrState }) {
     const config = {
         [PrState.merged]: {
             icon: 'octicon:git-merge-16',
-            color: 'text-purple-700',
+            color: 'text-purple-700 dark:text-purple-400',
         },
         [PrState.open]: {
             icon: 'octicon:git-pull-request-16',
-            color: 'text-green-700',
+            color: 'text-green-700 dark:text-green-400',
         },
         [PrState.closed]: {
             icon: 'octicon:git-pull-request-16',
-            color: 'text-red-700',
+            color: 'text-red-700 dark:text-red-400',
         },
     };
 

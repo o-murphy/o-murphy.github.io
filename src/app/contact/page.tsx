@@ -47,7 +47,7 @@ export default function ContactPage() {
 
                     {/* Greeting */}
                     <h2 className="text-xl font-bold mb-2">Let&apos;s connect</h2>
-                    <p className="text-sm text-gray-500 mb-6">
+                    <p className="text-sm text-gray-500 dark:text-gray-400 mb-6">
                         Feel free to reach out for collaborations or just a chat
                     </p>
 
@@ -59,7 +59,9 @@ export default function ContactPage() {
                     </div>
 
                     {/* Response time note */}
-                    <p className="text-xs text-gray-400 mt-6">⚡ Usually responds within 24 hours</p>
+                    <p className="text-xs text-gray-400 dark:text-gray-500 mt-6">
+                        ⚡ Usually responds within 24 hours
+                    </p>
                 </section>
             </div>
         </Template>

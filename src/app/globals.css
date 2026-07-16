@@ -1,9 +1,19 @@
 @import 'tailwindcss';
 
+/* next-themes toggles this class on <html>; drive dark: utilities off it instead of only
+   prefers-color-scheme so the manual toggle can override the system setting. */
+@custom-variant dark (&:where(.dark, .dark *));
+
 :root {
     --background: #ffffff;
     --foreground: #171717;
     --accent: #c62828;
+}
+
+.dark {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+    --accent: #ff6b6b;
 }
 
 @theme inline {
@@ -16,4 +26,7 @@
 body {
     background: var(--background);
     color: var(--foreground);
+    transition:
+        background-color 0.2s ease,
+        color 0.2s ease;
 }

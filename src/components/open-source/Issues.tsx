@@ -32,7 +32,7 @@ export default function Issues({ issues, limit = 20, id }: IssuesProps) {
         <section id={id}>
             <h2 className="text-2xl font-bold mb-4">
                 Issues ({issues.length})
-                <span className="ml-2 text-sm font-normal text-gray-500">
+                <span className="ml-2 text-sm font-normal text-gray-500 dark:text-gray-400">
                     (
                     <IssueIcon closed={true} />
                     <span className="ml-1">
@@ -47,30 +47,30 @@ export default function Issues({ issues, limit = 20, id }: IssuesProps) {
                     )
                 </span>
             </h2>
-            <div className="border border-gray-400 rounded-lg bg-white-50 overflow-hidden">
+            <div className="border border-gray-400 dark:border-gray-700 rounded-lg bg-white-50 dark:bg-gray-900 overflow-hidden">
                 <div className="space-y-3 max-h-96 overflow-y-auto p-4">
                     {displayIssues.map((issue) => (
                         <div
                             key={issue.url}
-                            className="relative border border-gray-300 rounded-lg p-4 hover:bg-gray-100 transition-colors bg-white"
+                            className="relative border border-gray-300 dark:border-gray-700 rounded-lg p-4 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors bg-white dark:bg-gray-900"
                         >
                             <Link href={issue.url} target="_blank" className="block">
                                 <div className="flex justify-between items-start gap-2">
-                                    <span className="font-semibold text-blue-600 hover:underline text-sm line-clamp-2">
+                                    <span className="font-semibold text-blue-600 dark:text-blue-400 hover:underline text-sm line-clamp-2">
                                         <IssueIcon closed={issue.closed} />
                                         <span> {issue.title}</span>
                                     </span>
                                     <span
                                         className={`text-xs px-2 py-1 rounded whitespace-nowrap ${
                                             issue.closed
-                                                ? 'bg-purple-100 text-purple-700'
-                                                : 'bg-green-100 text-green-700'
+                                                ? 'bg-purple-100 dark:bg-purple-950 text-purple-700 dark:text-purple-400'
+                                                : 'bg-green-100 dark:bg-green-950 text-green-700 dark:text-green-400'
                                         }`}
                                     >
                                         {issue.closed ? 'CLOSED' : 'OPEN'}
                                     </span>
                                 </div>
-                                <div className="text-xs text-gray-500 mt-2 flex items-center gap-1">
+                                <div className="text-xs text-gray-500 dark:text-gray-400 mt-2 flex items-center gap-1">
                                     <span className="font-mono">#{issue.number}</span>
                                     <span>in</span>
                                     <span className="sm:hidden">
@@ -84,7 +84,7 @@ export default function Issues({ issues, limit = 20, id }: IssuesProps) {
                                         {issue.repository.owner.login}/{issue.repository.name}
                                     </span>
                                 </div>
-                                <div className="flex flex-wrap items-center gap-3 mt-2 text-xs text-gray-500">
+                                <div className="flex flex-wrap items-center gap-3 mt-2 text-xs text-gray-500 dark:text-gray-400">
                                     <div className="flex items-center gap-1">
                                         <Icon icon="octicon:calendar-16" className="w-3.5 h-3.5" />
                                         <span>{new Date(issue.createdAt).toLocaleDateString()}</span>
@@ -98,7 +98,7 @@ export default function Issues({ issues, limit = 20, id }: IssuesProps) {
                                 </div>
 
                                 {issue.assignees.nodes.length > 0 && (
-                                    <div className="mt-2 text-xs text-gray-500">
+                                    <div className="mt-2 text-xs text-gray-500 dark:text-gray-400">
                                         <Icon icon="octicon:people-16" className="w-4 h-4" />{' '}
                                         {issue.assignees.nodes.map(getAssigneeName).join(', ')}
                                     </div>
@@ -111,7 +111,7 @@ export default function Issues({ issues, limit = 20, id }: IssuesProps) {
                                 <Link
                                     href={issue.repository.owner.url}
                                     target="_blank"
-                                    className="flex items-center gap-1 hover:underline hover:text-gray-700"
+                                    className="flex items-center gap-1 hover:underline hover:text-gray-700 dark:hover:text-gray-300"
                                 >
                                     <img
                                         src={issue.repository.owner.avatarUrl}
@@ -123,7 +123,9 @@ export default function Issues({ issues, limit = 20, id }: IssuesProps) {
                         </div>
                     ))}
                     {hasMore && (
-                        <p className="text-center text-gray-400 text-sm pt-2">+ {issues.length - limit} more issues</p>
+                        <p className="text-center text-gray-400 dark:text-gray-500 text-sm pt-2">
+                            + {issues.length - limit} more issues
+                        </p>
                     )}
                 </div>
             </div>

@@ -73,7 +73,7 @@ export function MdPageClient({ slug }: { slug: string }) {
     return (
         <Template>
             <div className="w-full max-w-4xl p-8">
-                <div className="border border-gray-300 rounded-lg p-6 md:p-8 bg-white">
+                <div className="border border-gray-300 dark:border-gray-700 rounded-lg p-6 md:p-8 bg-white dark:bg-gray-900">
                     <MarkdownContent markdown={markdown} />
                 </div>
             </div>
