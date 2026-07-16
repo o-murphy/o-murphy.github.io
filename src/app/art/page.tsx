@@ -6,20 +6,19 @@ import { ArtLink } from '@/types/dataTypes';
 import { useEffect, useState } from 'react';
 import { basePath } from '@/app/basePath';
 
-
 export default function ArtPage() {
     const [artLinks, setArtLinks] = useState<ArtLink[]>([]);
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
         fetch(`${basePath}/data/portfolio.json`)
-            .then(res => res.json())
-            .then(data => {
+            .then((res) => res.json())
+            .then((data) => {
                 setArtLinks(data.artLinks || []);
                 console.log(data.artLinks);
                 setLoading(false);
             })
-            .catch(err => {
+            .catch((err) => {
                 console.error('Error loading art data:', err);
                 setLoading(false);
             });
@@ -55,7 +54,6 @@ export default function ArtPage() {
                         />
                     </div> */}
 
-
                     <div className="w-full max-w-md mx-auto">
                         <iframe
                             data-testid="embed-iframe"
@@ -64,7 +62,9 @@ export default function ArtPage() {
                             height="152"
                             frameBorder="0"
                             allowFullScreen
-                            allow="clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                            allow="clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                            loading="lazy"
+                        ></iframe>
                     </div>
 
                     {/* Music Links */}

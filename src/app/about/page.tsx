@@ -11,12 +11,12 @@ export default function AboutPage() {
 
     useEffect(() => {
         fetch(`${basePath}/data/portfolio.json`)
-            .then(res => res.json())
-            .then(data => {
+            .then((res) => res.json())
+            .then((data) => {
                 setParagraphs(data.about?.paragraphs || []);
                 setLoading(false);
             })
-            .catch(err => {
+            .catch((err) => {
                 console.error('Error loading about content:', err);
                 setLoading(false);
             });
@@ -35,7 +35,10 @@ export default function AboutPage() {
     return (
         <Template>
             <div className="w-full max-w-4xl p-8">
-                <section id="about-content" className="flex flex-col md:flex-row items-center justify-center md:justify-between h-full text-center md:text-left">
+                <section
+                    id="about-content"
+                    className="flex flex-col md:flex-row items-center justify-center md:justify-between h-full text-center md:text-left"
+                >
                     <div className="md:w-1/2 flex justify-center md:justify-start md:pr-4">
                         <MFeelingProud className="w-full h-auto max-w-sm" />
                     </div>
@@ -43,10 +46,7 @@ export default function AboutPage() {
                     <div className="md:w-1/2">
                         <div className="text-sm font-light leading-relaxed space-y-4">
                             {paragraphs.map((paragraph, index) => (
-                                <p 
-                                    key={index}
-                                    dangerouslySetInnerHTML={{ __html: paragraph }}
-                                />
+                                <p key={index} dangerouslySetInnerHTML={{ __html: paragraph }} />
                             ))}
                         </div>
                     </div>

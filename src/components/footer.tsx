@@ -8,92 +8,92 @@ import { basePath } from '@/app/basePath';
 import { iconMap } from '@/components/links/iconMap';
 
 export const Footer = () => {
-  const [navLinks, setNavLinks] = useState<NavLink[]>([]);
-  const [socialLinks, setSocialLinks] = useState<SocialLink[]>([]);
-  const [copyright, setCopyright] = useState<string>('');
-  const [loading, setLoading] = useState(true);
+    const [navLinks, setNavLinks] = useState<NavLink[]>([]);
+    const [socialLinks, setSocialLinks] = useState<SocialLink[]>([]);
+    const [copyright, setCopyright] = useState<string>('');
+    const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
-    fetch(`${basePath}/data/portfolio.json`)
-      .then(res => res.json())
-      .then(data => {
-        setNavLinks(data.navLinks || []);
-        setSocialLinks(data.socialLinks || []);
-        setCopyright(data.person?.copyright || 'Copyright &copy; 2025. Dmytro Yaroshenko');
-        setLoading(false);
-      })
-      .catch(err => {
-        console.error('Error loading footer data:', err);
-        setLoading(false);
-      });
-  }, []);
+    useEffect(() => {
+        fetch(`${basePath}/data/portfolio.json`)
+            .then((res) => res.json())
+            .then((data) => {
+                setNavLinks(data.navLinks || []);
+                setSocialLinks(data.socialLinks || []);
+                setCopyright(data.person?.copyright || 'Copyright &copy; 2025. Dmytro Yaroshenko');
+                setLoading(false);
+            })
+            .catch((err) => {
+                console.error('Error loading footer data:', err);
+                setLoading(false);
+            });
+    }, []);
 
-  if (loading) {
+    if (loading) {
+        return (
+            <footer className="p-8 text-center text-gray-500 text-sm">
+                <div className="max-w-7xl mx-auto">
+                    <p>Loading...</p>
+                </div>
+            </footer>
+        );
+    }
+
     return (
-      <footer className="p-8 text-center text-gray-500 text-sm">
-        <div className="max-w-7xl mx-auto">
-          <p>Loading...</p>
-        </div>
-      </footer>
-    );
-  }
+        <footer className="p-8 text-center text-gray-500 text-sm">
+            <div className="max-w-7xl mx-auto">
+                {/* Навігаційні лінки */}
+                <div className="flex justify-center space-x-4 mb-4 flex-wrap gap-1">
+                    {navLinks.map((link) => (
+                        <Link
+                            key={link.path}
+                            href={link.path}
+                            className="hover:bg-black hover:text-white p-1 transition-colors underline"
+                        >
+                            {link.name}
+                        </Link>
+                    ))}
+                </div>
 
-  return (
-    <footer className="p-8 text-center text-gray-500 text-sm">
-      <div className="max-w-7xl mx-auto">
-        {/* Навігаційні лінки */}
-        <div className="flex justify-center space-x-4 mb-4 flex-wrap gap-1">
-          {navLinks.map((link) => (
-            <Link 
-              key={link.path} 
-              href={link.path} 
-              className="hover:bg-black hover:text-white p-1 transition-colors underline"
-            >
-              {link.name}
-            </Link>
-          ))}
-        </div>
-        
-        {/* Соціальні лінки з іконками */}
-        <div className="flex justify-center items-center gap-3 mb-4 flex-wrap">
-          {socialLinks.map((link) => {
-            const Icon = iconMap[link.icon];
-            return (
-              <Link
-                key={link.name}
-                href={link.url}
-                target={link.name !== 'Email' ? '_blank' : undefined}
-                rel={link.name !== 'Email' ? 'noopener noreferrer' : undefined}
-                className="hover:bg-black hover:text-white p-1 transition-colors rounded"
-              >
-                <Icon className="w-5 h-5" />
-              </Link>
-            );
-          })}
-        </div>
-        
-        {/* Банер Support Ukraine */}
-        <div className="flex justify-center mb-4">
-          <Link 
-            href="https://stand-with-ukraine.pp.ua"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block hover:opacity-80 transition-opacity"
-          >
-            <Image
-              src="https://raw.githubusercontent.com/vshymanskyy/StandWithUkraine/main/badges/StandWithUkraine.svg"
-              alt="Support Ukraine Badge"
-              width={160}
-              height={40}
-              className="h-auto"
-              unoptimized
-            />
-          </Link>
-        </div>
-        
-        {/* Копірайт з JSON */}
-        <p className="text-gray-400">{copyright}</p>
-      </div>
-    </footer>
-  );
+                {/* Соціальні лінки з іконками */}
+                <div className="flex justify-center items-center gap-3 mb-4 flex-wrap">
+                    {socialLinks.map((link) => {
+                        const Icon = iconMap[link.icon];
+                        return (
+                            <Link
+                                key={link.name}
+                                href={link.url}
+                                target={link.name !== 'Email' ? '_blank' : undefined}
+                                rel={link.name !== 'Email' ? 'noopener noreferrer' : undefined}
+                                className="hover:bg-black hover:text-white p-1 transition-colors rounded"
+                            >
+                                <Icon className="w-5 h-5" />
+                            </Link>
+                        );
+                    })}
+                </div>
+
+                {/* Банер Support Ukraine */}
+                <div className="flex justify-center mb-4">
+                    <Link
+                        href="https://stand-with-ukraine.pp.ua"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-block hover:opacity-80 transition-opacity"
+                    >
+                        <Image
+                            src="https://raw.githubusercontent.com/vshymanskyy/StandWithUkraine/main/badges/StandWithUkraine.svg"
+                            alt="Support Ukraine Badge"
+                            width={160}
+                            height={40}
+                            className="h-auto"
+                            unoptimized
+                        />
+                    </Link>
+                </div>
+
+                {/* Копірайт з JSON */}
+                <p className="text-gray-400">{copyright}</p>
+            </div>
+        </footer>
+    );
 };
