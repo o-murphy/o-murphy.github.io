@@ -3,6 +3,7 @@
 import MProjectsImg from '@/components/images/MProjectsImg';
 import { iconMap } from '@/components/links/iconMap';
 import { Template } from '@/components/template';
+import { Loading, MIN_LOADING_MS } from '@/components/loading';
 import { ProjectInfo } from '@/types/dataTypes';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
@@ -17,20 +18,19 @@ export default function ProjectsPage() {
             .then((res) => res.json())
             .then((data) => {
                 setProjects(data.projects || []);
-                setLoading(false);
             })
             .catch((err) => {
                 console.error('Error loading projects:', err);
-                setLoading(false);
+            })
+            .finally(() => {
+                setTimeout(() => setLoading(false), MIN_LOADING_MS);
             });
     }, []);
 
     if (loading) {
         return (
             <Template>
-                <div className="w-full max-w-4xl p-8 text-center">
-                    <p>Loading projects...</p>
-                </div>
+                <Loading message="Loading projects..." />
             </Template>
         );
     }

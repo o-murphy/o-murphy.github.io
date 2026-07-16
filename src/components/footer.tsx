@@ -6,6 +6,7 @@ import { useEffect, useState } from 'react';
 import { NavLink, SocialLink } from '@/types/dataTypes';
 import { basePath } from '@/app/basePath';
 import { iconMap } from '@/components/links/iconMap';
+import { Loading, MIN_LOADING_MS } from '@/components/loading';
 
 export const Footer = () => {
     const [navLinks, setNavLinks] = useState<NavLink[]>([]);
@@ -20,20 +21,19 @@ export const Footer = () => {
                 setNavLinks(data.navLinks || []);
                 setSocialLinks(data.socialLinks || []);
                 setCopyright(data.person?.copyright || 'Copyright &copy; 2025. Dmytro Yaroshenko');
-                setLoading(false);
             })
             .catch((err) => {
                 console.error('Error loading footer data:', err);
-                setLoading(false);
+            })
+            .finally(() => {
+                setTimeout(() => setLoading(false), MIN_LOADING_MS);
             });
     }, []);
 
     if (loading) {
         return (
             <footer className="p-8 text-center text-gray-500 text-sm">
-                <div className="max-w-7xl mx-auto">
-                    <p>Loading...</p>
-                </div>
+                <Loading className="max-w-7xl mx-auto" />
             </footer>
         );
     }

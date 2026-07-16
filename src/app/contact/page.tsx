@@ -3,6 +3,7 @@
 import ContactsImg from '@/components/images/MContactsImg';
 import { IconTextLink } from '@/components/links/links';
 import { Template } from '@/components/template';
+import { Loading, MIN_LOADING_MS } from '@/components/loading';
 import { ContactLink } from '@/types/dataTypes';
 import { useEffect, useState } from 'react';
 import { basePath } from '@/app/basePath';
@@ -16,20 +17,19 @@ export default function ContactPage() {
             .then((res) => res.json())
             .then((data) => {
                 setContacts(data.contacts || []);
-                setLoading(false);
             })
             .catch((err) => {
                 console.error('Error loading contacts:', err);
-                setLoading(false);
+            })
+            .finally(() => {
+                setTimeout(() => setLoading(false), MIN_LOADING_MS);
             });
     }, []);
 
     if (loading) {
         return (
             <Template>
-                <div className="w-full max-w-4xl p-8 text-center">
-                    <p>Loading...</p>
-                </div>
+                <Loading />
             </Template>
         );
     }

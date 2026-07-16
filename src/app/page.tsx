@@ -2,6 +2,7 @@
 
 import React from 'react'; // ← Додайте цей імпорт
 import { Template } from '@/components/template';
+import { Loading, MIN_LOADING_MS } from '@/components/loading';
 import { useEffect, useState } from 'react';
 import { Person } from '@/types/dataTypes';
 import { basePath } from '@/app/basePath';
@@ -15,20 +16,19 @@ export default function Home() {
             .then((res) => res.json())
             .then((data) => {
                 setPerson(data.person);
-                setLoading(false);
             })
             .catch((err) => {
                 console.error('Error loading portfolio data:', err);
-                setLoading(false);
+            })
+            .finally(() => {
+                setTimeout(() => setLoading(false), MIN_LOADING_MS);
             });
     }, []);
 
     if (loading) {
         return (
             <Template>
-                <div className="w-full max-w-4xl p-8 text-center">
-                    <p>Loading...</p>
-                </div>
+                <Loading />
             </Template>
         );
     }

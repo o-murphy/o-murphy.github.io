@@ -2,6 +2,7 @@
 'use client';
 
 import { Template } from '@/components/template';
+import { Loading, MIN_LOADING_MS } from '@/components/loading';
 import { useEffect, useState } from 'react';
 import { Project, PullRequest, Issue, Organization } from '@/types/dataTypes';
 import Organizations from '@/components/open-source/Organizations';
@@ -30,20 +31,19 @@ export default function OpenSourcePage() {
                 setIssues(issuesData.data || []);
                 setProjects(projectsData.data || []);
                 setOrganizations(orgsData.data || []);
-                setLoading(false);
             })
             .catch((err) => {
                 console.error('Error loading data:', err);
-                setLoading(false);
+            })
+            .finally(() => {
+                setTimeout(() => setLoading(false), MIN_LOADING_MS);
             });
     }, []);
 
     if (loading) {
         return (
             <Template>
-                <div className="w-full max-w-6xl p-8 text-center">
-                    <p>Loading open source contributions...</p>
-                </div>
+                <Loading message="Loading open source contributions..." className="w-full max-w-6xl p-8 text-center" />
             </Template>
         );
     }
