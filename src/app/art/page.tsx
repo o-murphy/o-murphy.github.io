@@ -6,13 +6,26 @@ import { Loading, MIN_LOADING_MS } from '@/components/loading';
 import { ArtLink } from '@/types/dataTypes';
 import { useEffect, useState } from 'react';
 import { useTheme } from 'next-themes';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPlay, faSpinner } from '@fortawesome/free-solid-svg-icons';
 import { basePath } from '@/app/basePath';
+
+// Fetched once from https://open.spotify.com/oembed?url=...track/7FcGOFQQhCqLBINpd0ERNg
+const SPOTIFY_TRACK_ID = '7FcGOFQQhCqLBINpd0ERNg';
+const SPOTIFY_TITLE = 'On the Edge of a Ruins';
+const SPOTIFY_THUMBNAIL = 'https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02d13482847bf9ccc3d48ecbbf';
 
 export default function ArtPage() {
     const [artLinks, setArtLinks] = useState<ArtLink[]>([]);
     const [loading, setLoading] = useState(true);
     const { resolvedTheme } = useTheme();
     const [mounted, setMounted] = useState(false);
+    // The Spotify embed is heavy (its own app/CSS/JS/DRM checks) — don't pay that cost until the
+    // visitor actually asks to play something. Show a static cover + play button first instead.
+    const [spotifyLoaded, setSpotifyLoaded] = useState(false);
+    // Spotify's iframe document paints white/blank (with its own scrollbar) for a moment before
+    // its JS applies the real theme — keep the cover on top until the iframe fires onLoad.
+    const [spotifyReady, setSpotifyReady] = useState(false);
 
     useEffect(() => {
         setMounted(true);
@@ -64,17 +77,43 @@ export default function ArtPage() {
                         />
                     </div> */}
 
-                    <div className="w-full max-w-md mx-auto">
-                        <iframe
-                            data-testid="embed-iframe"
-                            className="w-full bg-transparent"
-                            src={`https://open.spotify.com/embed/track/7FcGOFQQhCqLBINpd0ERNg?utm_source=generator${spotifyTheme}`}
-                            height="152"
-                            allowFullScreen
-                            allow="clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                            loading="lazy"
-                            style={{ borderRadius: '12px' }}
-                        ></iframe>
+                    <div className="relative w-full max-w-md mx-auto h-[152px] rounded-xl overflow-hidden">
+                        {spotifyLoaded && (
+                            <iframe
+                                data-testid="embed-iframe"
+                                className="w-full bg-transparent"
+                                src={`https://open.spotify.com/embed/track/${SPOTIFY_TRACK_ID}?utm_source=generator${spotifyTheme}`}
+                                height="152"
+                                allowFullScreen
+                                allow="clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                                onLoad={() => setSpotifyReady(true)}
+                                style={{ borderRadius: '12px' }}
+                            ></iframe>
+                        )}
+
+                        {!spotifyReady && (
+                            <button
+                                onClick={() => setSpotifyLoaded(true)}
+                                className="group absolute inset-0 block w-full h-full"
+                                aria-label={`Play "${SPOTIFY_TITLE}" on Spotify`}
+                            >
+                                {/* eslint-disable-next-line @next/next/no-img-element */}
+                                <img
+                                    src={SPOTIFY_THUMBNAIL}
+                                    alt=""
+                                    className="absolute inset-0 w-full h-full object-cover"
+                                />
+                                <div className="absolute inset-0 bg-black/50 group-hover:bg-black/60 transition-colors flex items-center justify-center gap-3 px-4">
+                                    <span className="flex items-center justify-center w-12 h-12 rounded-full bg-green-500 text-white shrink-0">
+                                        <FontAwesomeIcon
+                                            icon={spotifyLoaded ? faSpinner : faPlay}
+                                            className={`w-4 h-4 ${spotifyLoaded ? 'animate-spin' : 'ml-0.5'}`}
+                                        />
+                                    </span>
+                                    <span className="text-white text-sm font-medium truncate">{SPOTIFY_TITLE}</span>
+                                </div>
+                            </button>
+                        )}
                     </div>
 
                     {/* Music Links */}
