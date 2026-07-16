@@ -28,7 +28,7 @@ export interface PullRequest {
 // src/types/opensource.ts
 export interface Assignee {
   avatarUrl: string;
-  name: string | null;  // name може бути null
+  name: string | null; // name може бути null
   url: string;
 }
 
@@ -41,7 +41,7 @@ export interface Issue {
   number: number;
   updatedAt: string;
   assignees: {
-    nodes: Assignee[];  // ← Використовуємо тип Assignee
+    nodes: Assignee[]; // ← Використовуємо тип Assignee
   };
   repository: {
     name: string;
@@ -57,7 +57,7 @@ export interface Issue {
 export interface Organization {
   login: string;
   avatarUrl: string;
-  url: string;  // зробити url необов'язковим
+  url: string; // зробити url необов'язковим
   __typename?: string; // додати як необов'язкове
 }
 
@@ -74,7 +74,6 @@ export interface Project {
   }>;
 }
 
-
 export interface Person {
   name: string;
   copyright: string;
@@ -82,7 +81,6 @@ export interface Person {
   homeSubtitles: string[];
   homeEmojis: string[];
 }
-
 
 export interface ProjectLangIcon {
   name: string;
@@ -121,4 +119,9 @@ export interface ArtLink {
   icon: string;
   color: string;
   bgColor: string;
+}
+
+export interface MarkdownEntry {
+  name: string;
+  url: string;
 }

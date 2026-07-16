@@ -17,12 +17,18 @@
     "about": {
         "paragraphs": [
             "Based in Kyiv, Ukraine. Passionate about building sustainable and scalable systems.",
-            "Creator of <a href='https://github.com/ballistics-lab' class='underline hover:bg-black hover:text-white p-1'>Ballistics Lab</a> — an open-source ecosystem for small-arms exterior ballistics, with one C++/C99 physics core (3-DOF + spin drift) exposed natively to Python, TypeScript, Dart, and MicroPython, as well as a cross-platform Flutter app.",
+            "Creator of <a href='/md/ballistics-lab/' class='underline hover:bg-black hover:text-white p-1'>Ballistics Lab</a> — an open-source ecosystem for small-arms exterior ballistics, with one C++/C99 physics core (3-DOF + spin drift) exposed natively to Python, TypeScript, Dart, and MicroPython, as well as a cross-platform Flutter app.",
             "Experienced in cross-platform development and cross-language integration (Cython, WASM, FFI). Author of <a href='https://github.com/o-murphy/pydfuutil' class='underline hover:bg-black hover:text-white p-1'>pydfuutil</a> (a Python DFU utility wrapper) and <a href='https://github.com/o-murphy/py-aiowialon' class='underline hover:bg-black hover:text-white p-1'>py-aiowialon</a> (an async Python wrapper for the Wialon Remote API).",
             "Former Telematics Specialist, currently working with IoT solutions.",
             "Always eager to learn new technologies and deliver innovative solutions."
         ]
     },
+    "markdown": [
+        {
+            "name": "Ballistics Lab",
+            "url": "https://raw.githubusercontent.com/ballistics-lab/.github/main/profile/README.md"
+        }
+    ],
     "artLinks": [
         {
             "name": "Spotify",
@@ -149,7 +155,7 @@
     "projects": [
         {
             "title": "ballistics lab",
-            "url": "https://github.com/ballistics-lab",
+            "url": "/md/ballistics-lab/",
             "desc": "Open-source ecosystem for small-arms exterior ballistics — one C++/C99 physics core (3-DOF + spin drift) exposed to Python, TypeScript, Dart, and MicroPython.",
             "icons": [
                 {
@@ -203,7 +209,7 @@
         },
         {
             "title": "flutpak",
-            "url": "https://github.com/flutpak",
+            "url": "https://github.com/o-murphy/flutpak",
             "desc": "Flatpak packaging and offline builds for Flutter apps from pubspec.yaml.",
             "icons": [
                 {

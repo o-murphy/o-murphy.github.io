@@ -47,11 +47,14 @@ export default function ProjectsPage() {
           <div className="md:w-1/2">
             <h2 className="text-lg p-2 font-bold mb-4 text-center md:text-left">Projects & Libraries</h2>
             <div className="space-y-2">
-              {projects.map((project) => (
+              {projects.map((project) => {
+                const isInternal = project.url.startsWith('/');
+                return (
                 <Link
                   key={project.title}
                   href={project.url}
-                  target="_blank"
+                  target={isInternal ? undefined : '_blank'}
+                  rel={isInternal ? undefined : 'noopener noreferrer'}
                   className="block p-2 text-black hover:bg-black hover:text-white transition-colors"
                 >
                   <div className="flex justify-between items-center">
@@ -70,7 +73,8 @@ export default function ProjectsPage() {
                   </div>
                   <p className="text-xs font-light leading-relaxed mt-1">{project.desc}</p>
                 </Link>
-              ))}
+                );
+              })}
             </div>
           </div>
         </section>
