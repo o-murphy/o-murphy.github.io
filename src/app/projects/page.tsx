@@ -57,14 +57,19 @@ export default function ProjectsPage() {
                                         href={project.url}
                                         target={isInternal ? undefined : '_blank'}
                                         rel={isInternal ? undefined : 'noopener noreferrer'}
-                                        className="block p-2 text-black hover:bg-black hover:text-white transition-colors"
+                                        className="group block p-2 text-black hover:bg-black hover:text-white transition-colors"
                                     >
                                         <div className="flex justify-between items-center">
                                             <h3 className="font-bold text-sm">{project.title}</h3>
                                             <div className="flex gap-1.5">
                                                 {project.icons.map((icon, idx) => {
                                                     const Icon = iconMap[icon.name];
-                                                    return <Icon key={idx} className={`w-4 h-4 ${icon.color}`} />;
+                                                    return (
+                                                        <Icon
+                                                            key={idx}
+                                                            className={`w-4 h-4 ${icon.color} group-hover:text-white transition-colors`}
+                                                        />
+                                                    );
                                                 })}
                                             </div>
                                         </div>

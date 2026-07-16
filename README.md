@@ -41,14 +41,14 @@ The site is data-driven: page copy, navigation, social links, and project cards 
 
 Besides the standard Next.js scripts (`dev`, `build`, `start`, `lint`), this project adds:
 
-| Command             | Description                                                                                                          |
-| -------------------- | --------------------------------------------------------------------------------------------------------------------- |
-| `yarn fetch:data`    | Runs [`fetcher.mjs`](fetcher.mjs) to pull fresh GitHub data into `public/data/*.json`.                                 |
-| `yarn setup`         | Creates the `public/data` directory (only needed if it was removed, e.g. by `yarn clean`).                             |
-| `yarn clean`         | Removes `.next`, `out`, and `public/data`.                                                                              |
-| `yarn deploy`        | Fetches fresh GitHub data and builds the static site (`yarn fetch:data && yarn build`).                                |
-| `yarn format`        | Formats the codebase with Prettier.                                                                                    |
-| `yarn format:check`  | Checks formatting without writing changes.                                                                             |
+| Command             | Description                                                                                |
+| ------------------- | ------------------------------------------------------------------------------------------ |
+| `yarn fetch:data`   | Runs [`fetcher.mjs`](fetcher.mjs) to pull fresh GitHub data into `public/data/*.json`.     |
+| `yarn setup`        | Creates the `public/data` directory (only needed if it was removed, e.g. by `yarn clean`). |
+| `yarn clean`        | Removes `.next`, `out`, and `public/data`.                                                 |
+| `yarn deploy`       | Fetches fresh GitHub data and builds the static site (`yarn fetch:data && yarn build`).    |
+| `yarn format`       | Formats the codebase with Prettier.                                                        |
+| `yarn format:check` | Checks formatting without writing changes.                                                 |
 
 `prebuild` and `postbuild` hooks run automatically as part of `yarn build`/`yarn deploy` — you don't need to call them directly:
 
@@ -82,3 +82,7 @@ To learn more about Next.js, take a look at the following resources:
 
 - [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+
+## License
+
+[MIT](LICENSE)
