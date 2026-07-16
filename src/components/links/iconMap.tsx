@@ -4,9 +4,9 @@ import type { IconDefinition } from '@fortawesome/fontawesome-svg-core';
 import { faApple, faSpotify, faTiktok, faYoutube } from "@fortawesome/free-brands-svg-icons";
 import { faMusic, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faGithub, faInstagram, faLinkedin, faTelegram } from '@fortawesome/free-brands-svg-icons';
-import { faFlutter, faJs, faPython } from '@fortawesome/free-brands-svg-icons';
+import { faDartLang, faFlutter, faJs, faPython } from '@fortawesome/free-brands-svg-icons';
 import { faC } from '@fortawesome/free-solid-svg-icons';
-import { SiTypescript, SiCplusplus, SiWebassembly } from '@icons-pack/react-simple-icons';
+import { SiTypescript, SiCplusplus, SiWebassembly, SiMicropython } from '@icons-pack/react-simple-icons';
 
 type IconComponent = ComponentType<{ className?: string }>;
 
@@ -40,10 +40,12 @@ export const iconMap: Record<string, IconComponent> = {
     // no Cython logo in either icon set, Python's is the closest fit (Cython is a Python superset)
     'cython': wrapFa(faPython),
     'flutter': wrapFa(faFlutter),
+    'dart': wrapFa(faDartLang),
     'js': wrapFa(faJs),
     'c': wrapFa(faC),
     // no FontAwesome logo for these, simple-icons has them
     'ts': wrapSi(SiTypescript),
     'cpp': wrapSi(SiCplusplus),
     'wasm': wrapSi(SiWebassembly),
+    'micropython': wrapSi(SiMicropython),
 };

@@ -17,8 +17,8 @@
     "about": {
         "paragraphs": [
             "Based in Kyiv, Ukraine. Passionate about building sustainable and scalable systems.",
-            "Creator of the leading <a href='https://github.com/o-murphy/py-ballisticcalc' class='underline hover:bg-black hover:text-white p-1'>open-source ballistics project</a> — a 3-DOF + spin-drift ballistic solver with extensive customization features.",
-            "Experienced in cross-platform development and cross-language integration (Cython, WASM, C++). Author of <a href='https://github.com/o-murphy/ebalistyka' class='underline hover:bg-black hover:text-white p-1'>eBalistyka</a> (Ballistic Calculator built with Flutter), <a href='https://github.com/ballistics-lab/bclibc' class='underline hover:bg-black hover:text-white p-1'>bclibc</a> (high performance C++ ballistic calculation engine), and <a href='https://github.com/o-murphy/pydfuutil' class='underline hover:bg-black hover:text-white p-1'>pydfuutil</a> (Python DFU utility wrapper).",
+            "Creator of <a href='https://github.com/ballistics-lab' class='underline hover:bg-black hover:text-white p-1'>Ballistics Lab</a> — an open-source ecosystem for small-arms exterior ballistics, with one C++/C99 physics core (3-DOF + spin drift) exposed natively to Python, TypeScript, Dart, and MicroPython, as well as a cross-platform Flutter app.",
+            "Experienced in cross-platform development and cross-language integration (Cython, WASM, FFI). Author of <a href='https://github.com/o-murphy/pydfuutil' class='underline hover:bg-black hover:text-white p-1'>pydfuutil</a> (a Python DFU utility wrapper) and <a href='https://github.com/o-murphy/py-aiowialon' class='underline hover:bg-black hover:text-white p-1'>py-aiowialon</a> (an async Python wrapper for the Wialon Remote API).",
             "Former Telematics Specialist, currently working with IoT solutions.",
             "Always eager to learn new technologies and deliver innovative solutions."
         ]
@@ -148,24 +148,9 @@
     ],
     "projects": [
         {
-            "title": "py-ballisticcalc",
-            "url": "https://github.com/o-murphy/py-ballisticcalc",
-            "desc": "LGPL library for small arms ballistic calculations.",
-            "icons": [
-                {
-                    "name": "python",
-                    "color": "text-blue-500"
-                },
-                {
-                    "name": "c",
-                    "color": "text-[#A8B9CC]"
-                }
-            ]
-        },
-        {
-            "title": "bclibc",
-            "url": "https://github.com/ballistics-lab/bclibc",
-            "desc": "High performance C++ Ballistic solver engine",
+            "title": "ballistics lab",
+            "url": "https://github.com/ballistics-lab",
+            "desc": "Open-source ecosystem for small-arms exterior ballistics — one C++/C99 physics core (3-DOF + spin drift) exposed to Python, TypeScript, Dart, and MicroPython.",
             "icons": [
                 {
                     "name": "cpp",
@@ -174,14 +159,31 @@
                 {
                     "name": "c",
                     "color": "text-[#A8B9CC]"
-                }
-            ]
-        },
-        {
-            "title": "ebalistyka",
-            "url": "https://github.com/o-murphy/ebalistyka",
-            "desc": "Ballistic Calculator built with Flutter and high performance C++ engine",
-            "icons": [
+                },
+                {
+                    "name": "python",
+                    "color": "text-[#3776AB]"
+                },
+                {
+                    "name": "micropython",
+                    "color": "text-[#2B2728]"
+                },
+                {
+                    "name": "wasm",
+                    "color": "text-[#654FF0]"
+                },
+                {
+                    "name": "ts",
+                    "color": "text-[#3178C6]"
+                },
+                {
+                    "name": "js",
+                    "color": "text-yellow-500"
+                },
+                {
+                    "name": "dart",
+                    "color": "text-[#0175C2]"
+                },
                 {
                     "name": "flutter",
                     "color": "text-blue-500"
@@ -200,21 +202,17 @@
             ]
         },
         {
-            "title": "js-ballistics",
-            "url": "https://github.com/o-murphy/js-ballistics",
-            "desc": "ISC library for small arms ballistic calculations (JavaScript ES6+).",
+            "title": "flutpak",
+            "url": "https://github.com/flutpak",
+            "desc": "Flatpak packaging and offline builds for Flutter apps from pubspec.yaml.",
             "icons": [
                 {
-                    "name": "wasm",
-                    "color": "text-[#654FF0]"
+                    "name": "dart",
+                    "color": "text-[#0175C2]"
                 },
                 {
-                    "name": "ts",
-                    "color": "text-[#3178C6]"
-                },
-                {
-                    "name": "js",
-                    "color": "text-yellow-500"
+                    "name": "flutter",
+                    "color": "text-blue-500"
                 }
             ]
         },
