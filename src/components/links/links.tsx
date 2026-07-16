@@ -1,4 +1,3 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from 'next/link';
 import { iconMap } from "./iconMap";
 
@@ -13,6 +12,7 @@ interface IconTextLinkData {
 
 
 export function IconTextLink({ link }: { link: IconTextLinkData }) {
+    const Icon = iconMap[link.icon];
 
     return <Link
         key={link.name}
@@ -21,7 +21,7 @@ export function IconTextLink({ link }: { link: IconTextLinkData }) {
         rel={link.name !== 'Email' ? 'noopener noreferrer' : undefined}
         className={`group flex items-center justify-center gap-2 hover:bg-black hover:text-white p-2 transition-colors ${link.bgColor}`}
     >
-        <FontAwesomeIcon icon={iconMap[link.icon]}
+        <Icon
             className={`w-5 h-5 ${link.color} group-hover:text-white transition-colors`}
         />
         <span className="text-sm">{link.name}</span>
@@ -29,6 +29,7 @@ export function IconTextLink({ link }: { link: IconTextLinkData }) {
 }
 
 export function IconTextLinkBordered({ link }: { link: IconTextLinkData }) {
+    const Icon = iconMap[link.icon] || iconMap.music;
 
     return <Link
         key={link.name}
@@ -37,8 +38,7 @@ export function IconTextLinkBordered({ link }: { link: IconTextLinkData }) {
         rel="noopener noreferrer"
         className={`group flex items-center justify-center gap-2 w-full p-2 border rounded-lg hover:text-white transition-colors ${link.bgColor}`}
     >
-        <FontAwesomeIcon
-            icon={iconMap[link.icon] || iconMap.music}
+        <Icon
             className={`w-5 h-5 ${link.color} group-hover:text-white transition-colors`}
         />
         <span className="text-sm font-medium">{link.name}</span>

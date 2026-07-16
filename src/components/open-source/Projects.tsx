@@ -4,12 +4,12 @@
 import Link from 'next/link';
 import { Project } from '@/types/dataTypes';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { 
-  faPython, 
-  faJs, 
-  faJava, 
-  faPhp, 
-  faRust, 
+import {
+  faPython,
+  faJs,
+  faJava,
+  faPhp,
+  faRust,
   faGitAlt,
   faDocker,
   faSwift,
@@ -18,52 +18,63 @@ import {
   faDartLang,
   faFlutter
 } from '@fortawesome/free-brands-svg-icons';
-import { 
-  faCode, 
-  faDatabase, 
+import {
+  faCode,
+  faDatabase,
   faGem,
-  faGear,
   faTerminal,
   faFileCode
 } from '@fortawesome/free-solid-svg-icons';
+import { SiTypescript, SiCplusplus } from '@icons-pack/react-simple-icons';
 
 interface ProjectsProps {
   projects: Project[];
 }
 
-const languageIcons: Record<string, any> = {
-  'Python': faPython,
-  'JavaScript': faJs,
-  'TypeScript': faJs,
-  'Java': faJava,
-  'PHP': faPhp,
-  'Rust': faRust,
-  'Flutter': faFlutter,
-  'Dart': faDartLang,
-  'Git': faGitAlt,
-  'Dockerfile': faDocker,
-  'Docker': faDocker,
-  'Swift': faSwift,
-  'Node.js': faNode,
-  'React': faReact,
-  'Ruby': faGem,
-  'C++': faGear,
-  'C#': faCode,
-  'Shell': faTerminal,
-  'HTML': faCode,
-  'CSS': faCode,
-  'SQL': faDatabase,
-  'Go': faCode,
-  'Kotlin': faCode,
-  'Jupyter Notebook': faFileCode,
+type SiIconComponent = React.ComponentType<{ className?: string; size?: number; style?: React.CSSProperties }>;
+
+type LanguageIcon =
+  | { kind: 'fa'; icon: any }
+  | { kind: 'si'; Icon: SiIconComponent };
+
+const fa = (icon: any): LanguageIcon => ({ kind: 'fa', icon });
+const si = (Icon: SiIconComponent): LanguageIcon => ({ kind: 'si', Icon });
+
+// no decent FontAwesome logo for these two, simple-icons draws them correctly
+const languageIcons: Record<string, LanguageIcon> = {
+  'Python': fa(faPython),
+  'JavaScript': fa(faJs),
+  'TypeScript': si(SiTypescript),
+  'Java': fa(faJava),
+  'PHP': fa(faPhp),
+  'Rust': fa(faRust),
+  'Flutter': fa(faFlutter),
+  'Dart': fa(faDartLang),
+  'Git': fa(faGitAlt),
+  'Dockerfile': fa(faDocker),
+  'Docker': fa(faDocker),
+  'Swift': fa(faSwift),
+  'Node.js': fa(faNode),
+  'React': fa(faReact),
+  'Ruby': fa(faGem),
+  'C++': si(SiCplusplus),
+  'C#': fa(faCode),
+  'Shell': fa(faTerminal),
+  'HTML': fa(faCode),
+  'CSS': fa(faCode),
+  'SQL': fa(faDatabase),
+  'Go': fa(faCode),
+  'Kotlin': fa(faCode),
+  'Jupyter Notebook': fa(faFileCode),
 };
 
 const getLanguageIcon = (langName: string) => {
-  const icon = languageIcons[langName];
-  if (icon) {
-    return <FontAwesomeIcon icon={icon} className="w-3.5 h-3.5" />;
+  const entry = languageIcons[langName] ?? fa(faCode);
+  if (entry.kind === 'si') {
+    // match FontAwesome's own forced `width: 1.125em; height: 1em` (see iconMap.tsx) so both read the same size
+    return <entry.Icon className="w-3.5 h-3.5" style={{ width: '1.125em', height: '1em' }} />;
   }
-  return <FontAwesomeIcon icon={faCode} className="w-3.5 h-3.5" />;
+  return <FontAwesomeIcon icon={entry.icon} className="w-3.5 h-3.5" />;
 };
 
 export default function Projects({ projects }: ProjectsProps) {
@@ -84,11 +95,11 @@ export default function Projects({ projects }: ProjectsProps) {
               {project.description && (
                 <p className="text-gray-600 text-sm mb-3 line-clamp-2">{project.description}</p>
               )}
-              
+
               <div className="flex flex-wrap gap-2 mb-3">
                 {project.languages?.map((lang) => (
-                  <span 
-                    key={lang.name} 
+                  <span
+                    key={lang.name}
                     className="inline-flex items-center gap-1.5 text-xs bg-blue-200 px-2.5 py-1.5 rounded-full"
                     title={lang.name}
                   >
@@ -97,7 +108,7 @@ export default function Projects({ projects }: ProjectsProps) {
                   </span>
                 ))}
               </div>
-              
+
               <div className="text-xs text-gray-400">
                 📅 Created: {new Date(project.createdAt).toLocaleDateString()}
               </div>

@@ -4,7 +4,6 @@ import MProjectsImg from '@/components/images/MProjectsImg';
 import { iconMap } from '@/components/links/iconMap';
 import { Template } from '@/components/template';
 import { ProjectInfo } from '@/types/dataTypes';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import { basePath } from '@/app/basePath';
@@ -58,13 +57,15 @@ export default function ProjectsPage() {
                   <div className="flex justify-between items-center">
                     <h3 className="font-bold text-sm">{project.title}</h3>
                     <div className="flex gap-1.5">
-                      {project.icons.map((icon, idx) => (
-                        <FontAwesomeIcon 
-                          key={idx}
-                          icon={iconMap[icon.name]} 
-                          className={`w-4 h-4 ${icon.color}`}
-                        />
-                      ))}
+                      {project.icons.map((icon, idx) => {
+                        const Icon = iconMap[icon.name];
+                        return (
+                          <Icon
+                            key={idx}
+                            className={`w-4 h-4 ${icon.color}`}
+                          />
+                        );
+                      })}
                     </div>
                   </div>
                   <p className="text-xs font-light leading-relaxed mt-1">{project.desc}</p>

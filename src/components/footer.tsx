@@ -1,24 +1,11 @@
 'use client';
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faGithub, faInstagram, faLinkedin, faSpotify, faTelegram, faTiktok } from '@fortawesome/free-brands-svg-icons';
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import Link from 'next/link';
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
 import { NavLink, SocialLink } from '@/types/dataTypes';
 import { basePath } from '@/app/basePath';
-
-// Мапінг назв іконок до компонентів FontAwesome
-const iconMap: Record<string, any> = {
-  'github': faGithub,
-  'telegram': faTelegram,
-  'tiktok': faTiktok,
-  'spotify': faSpotify,
-  'instagram': faInstagram,
-  'linkedin': faLinkedin,
-  'envelope': faEnvelope,
-};
+import { iconMap } from '@/components/links/iconMap';
 
 export const Footer = () => {
   const [navLinks, setNavLinks] = useState<NavLink[]>([]);
@@ -69,17 +56,20 @@ export const Footer = () => {
         
         {/* Соціальні лінки з іконками */}
         <div className="flex justify-center items-center gap-3 mb-4 flex-wrap">
-          {socialLinks.map((link) => (
-            <Link 
-              key={link.name}
-              href={link.url}
-              target={link.name !== 'Email' ? '_blank' : undefined}
-              rel={link.name !== 'Email' ? 'noopener noreferrer' : undefined}
-              className="hover:bg-black hover:text-white p-1 transition-colors rounded"
-            >
-              <FontAwesomeIcon icon={iconMap[link.icon]} className="w-5 h-5" />
-            </Link>
-          ))}
+          {socialLinks.map((link) => {
+            const Icon = iconMap[link.icon];
+            return (
+              <Link
+                key={link.name}
+                href={link.url}
+                target={link.name !== 'Email' ? '_blank' : undefined}
+                rel={link.name !== 'Email' ? 'noopener noreferrer' : undefined}
+                className="hover:bg-black hover:text-white p-1 transition-colors rounded"
+              >
+                <Icon className="w-5 h-5" />
+              </Link>
+            );
+          })}
         </div>
         
         {/* Банер Support Ukraine */}
