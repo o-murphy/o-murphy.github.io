@@ -57,7 +57,7 @@ export default function ProjectsPage() {
                                         href={project.url}
                                         target={isInternal ? undefined : '_blank'}
                                         rel={isInternal ? undefined : 'noopener noreferrer'}
-                                        className="group block p-2 text-black hover:bg-black hover:text-white transition-colors"
+                                        className="group block p-2 text-black hover:bg-black hover:text-white dark:text-white dark:hover:bg-white dark:hover:text-black transition-colors"
                                     >
                                         <div className="flex justify-between items-center">
                                             <h3 className="font-bold text-sm">{project.title}</h3>
@@ -67,7 +67,7 @@ export default function ProjectsPage() {
                                                     return (
                                                         <Icon
                                                             key={idx}
-                                                            className={`w-4 h-4 ${icon.color} group-hover:text-white transition-colors`}
+                                                            className={`w-4 h-4 ${icon.color} group-hover:text-white dark:group-hover:text-black transition-colors`}
                                                         />
                                                     );
                                                 })}

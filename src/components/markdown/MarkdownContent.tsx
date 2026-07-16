@@ -17,7 +17,11 @@ import type { IconDefinition } from '@fortawesome/fontawesome-svg-core';
 import { slugify } from '@/lib/slugify';
 import { Mermaid } from './Mermaid';
 
-const linkClass = 'underline hover:bg-black hover:text-white p-1 transition-colors';
+// inline-block (not plain inline): vertical padding on a plain inline <a> doesn't reserve
+// space in the line box, so when these links wrap across lines their padding paints over
+// the neighboring line instead of pushing it away.
+const linkClass =
+    'underline hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black p-1 inline-block transition-colors';
 
 // GitHub's "> [!WARNING]" alert syntax isn't standard markdown, remark-gfm doesn't parse it into
 // anything special — it just shows up as literal "[!WARNING]" text inside a normal blockquote's
@@ -31,21 +35,36 @@ function extractText(node: ReactNode): string {
 }
 
 const ALERT_STYLES: Record<string, { label: string; icon: IconDefinition; classes: string; iconClasses: string }> = {
-    NOTE: { label: 'Note', icon: faCircleInfo, classes: 'border-blue-400 bg-blue-50', iconClasses: 'text-blue-500' },
-    TIP: { label: 'Tip', icon: faLightbulb, classes: 'border-green-400 bg-green-50', iconClasses: 'text-green-600' },
+    NOTE: {
+        label: 'Note',
+        icon: faCircleInfo,
+        classes: 'border-blue-400 dark:border-blue-500/40 bg-blue-50 dark:bg-blue-500/15',
+        iconClasses: 'text-blue-500 dark:text-blue-400',
+    },
+    TIP: {
+        label: 'Tip',
+        icon: faLightbulb,
+        classes: 'border-green-400 dark:border-green-500/40 bg-green-50 dark:bg-green-500/15',
+        iconClasses: 'text-green-600 dark:text-green-400',
+    },
     IMPORTANT: {
         label: 'Important',
         icon: faCircleExclamation,
-        classes: 'border-purple-400 bg-purple-50',
-        iconClasses: 'text-purple-600',
+        classes: 'border-purple-400 dark:border-purple-500/40 bg-purple-50 dark:bg-purple-500/15',
+        iconClasses: 'text-purple-600 dark:text-purple-400',
     },
     WARNING: {
         label: 'Warning',
         icon: faTriangleExclamation,
-        classes: 'border-yellow-400 bg-yellow-50',
-        iconClasses: 'text-yellow-600',
+        classes: 'border-yellow-400 dark:border-yellow-500/40 bg-yellow-50 dark:bg-yellow-500/15',
+        iconClasses: 'text-yellow-600 dark:text-yellow-400',
     },
-    CAUTION: { label: 'Caution', icon: faBan, classes: 'border-red-400 bg-red-50', iconClasses: 'text-red-600' },
+    CAUTION: {
+        label: 'Caution',
+        icon: faBan,
+        classes: 'border-red-400 dark:border-red-500/40 bg-red-50 dark:bg-red-500/15',
+        iconClasses: 'text-red-600 dark:text-red-400',
+    },
 };
 
 // GitHub-style heading anchors: a chain-link icon that only appears on hover, linking to `#slug`.
@@ -68,7 +87,7 @@ function Heading({
             aria-label="Link to this section"
             className="absolute left-[var(--heading-anchor-offset,-1.5rem)] top-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity no-underline inline-flex items-center"
         >
-            <Icon icon="octicon:link-16" className="w-4 h-4 text-gray-400 hover:text-black" />
+            <Icon icon="octicon:link-16" className="w-4 h-4 text-gray-400 hover:text-black dark:hover:text-white" />
         </a>,
         children,
     );
@@ -131,7 +150,7 @@ const components: Components = {
     },
     ul: ({ children }) => <ul className="list-disc list-inside text-sm space-y-1 mb-4">{children}</ul>,
     ol: ({ children }) => <ol className="list-decimal list-inside text-sm space-y-1 mb-4">{children}</ol>,
-    hr: () => <hr className="my-8 border-gray-300" />,
+    hr: () => <hr className="my-8 border-gray-300 dark:border-gray-700" />,
     blockquote: ({ children }) => {
         const items = Children.toArray(children).filter((c) => !(typeof c === 'string' && c.trim() === ''));
         const marker = /^\[!(NOTE|TIP|IMPORTANT|WARNING|CAUTION)\]$/i.exec(extractText(items[0]).trim());
@@ -150,7 +169,7 @@ const components: Components = {
 
         return (
             <blockquote
-                className="border-l-4 border-gray-400 bg-gray-50 p-3 my-4 text-sm"
+                className="border-l-4 border-gray-400 dark:border-gray-600 bg-gray-50 dark:bg-gray-800 p-3 my-4 text-sm"
                 style={anchorIndentStyle(16)}
             >
                 {children}
@@ -178,8 +197,10 @@ const components: Components = {
             <table className="text-sm border-collapse">{children}</table>
         </div>
     ),
-    th: ({ children }) => <th className="border border-gray-300 px-2 py-1 text-left font-bold">{children}</th>,
-    td: ({ children }) => <td className="border border-gray-300 px-2 py-1">{children}</td>,
+    th: ({ children }) => (
+        <th className="border border-gray-300 dark:border-gray-700 px-2 py-1 text-left font-bold">{children}</th>
+    ),
+    td: ({ children }) => <td className="border border-gray-300 dark:border-gray-700 px-2 py-1">{children}</td>,
     pre: ({ children }) => {
         const child = Array.isArray(children) ? children[0] : children;
         const childClassName =
@@ -189,7 +210,11 @@ const components: Components = {
         if (childClassName?.includes('language-mermaid')) {
             return <>{children}</>;
         }
-        return <pre className="bg-gray-100 rounded p-3 overflow-x-auto text-sm my-4 font-mono">{children}</pre>;
+        return (
+            <pre className="bg-gray-100 dark:bg-gray-800 rounded p-3 overflow-x-auto text-sm my-4 font-mono">
+                {children}
+            </pre>
+        );
     },
     code: ({ className, children }) => {
         const match = /language-(\w+)/.exec(className || '');
@@ -199,7 +224,7 @@ const components: Components = {
         if (match) {
             return <code className={`${className} font-mono`}>{children}</code>;
         }
-        return <code className="bg-gray-100 px-1.5 py-0.5 rounded text-sm font-mono">{children}</code>;
+        return <code className="bg-gray-100 dark:bg-gray-800 px-1.5 py-0.5 rounded text-sm font-mono">{children}</code>;
     },
 };
 

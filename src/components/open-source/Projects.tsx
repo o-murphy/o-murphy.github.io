@@ -82,19 +82,23 @@ export default function Projects({ projects }: ProjectsProps) {
                 {projects.map((project) => (
                     <div
                         key={project.url}
-                        className="border border-gray-300 rounded-lg p-5 hover:bg-gray-100 transition-colors bg-white"
+                        className="border border-gray-300 dark:border-gray-700 rounded-lg p-5 hover:bg-gray-100 dark:hover:bg-white/5 transition-colors bg-white dark:bg-background"
                     >
                         <Link href={project.url} target="_blank" className="block">
-                            <h3 className="text-xl font-semibold text-blue-600 hover:underline mb-2">{project.name}</h3>
+                            <h3 className="text-xl font-semibold text-blue-600 dark:text-blue-400 hover:underline mb-2">
+                                {project.name}
+                            </h3>
                             {project.description && (
-                                <p className="text-gray-600 text-sm mb-3 line-clamp-2">{project.description}</p>
+                                <p className="text-gray-600 dark:text-gray-400 text-sm mb-3 line-clamp-2">
+                                    {project.description}
+                                </p>
                             )}
 
                             <div className="flex flex-wrap gap-2 mb-3">
                                 {project.languages?.map((lang) => (
                                     <span
                                         key={lang.name}
-                                        className="inline-flex items-center gap-1.5 text-xs bg-blue-200 px-2.5 py-1.5 rounded-full"
+                                        className="inline-flex items-center gap-1.5 text-xs bg-blue-200 dark:bg-blue-900 px-2.5 py-1.5 rounded-full"
                                         title={lang.name}
                                     >
                                         {getLanguageIcon(lang.name)}
@@ -103,7 +107,7 @@ export default function Projects({ projects }: ProjectsProps) {
                                 ))}
                             </div>
 
-                            <div className="text-xs text-gray-400">
+                            <div className="text-xs text-gray-400 dark:text-gray-500">
                                 📅 Created: {new Date(project.createdAt).toLocaleDateString()}
                             </div>
                         </Link>

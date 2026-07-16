@@ -1,6 +1,7 @@
 // layout.tsx
 import './globals.css';
 import { IBM_Plex_Mono } from 'next/font/google';
+import { ThemeProvider } from 'next-themes';
 import fs from 'fs';
 import path from 'path';
 
@@ -40,8 +41,12 @@ export async function generateMetadata() {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
     return (
-        <html lang="en" className={plexMono.variable}>
-            <body>{children}</body>
+        <html lang="en" className={plexMono.variable} suppressHydrationWarning>
+            <body>
+                <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+                    {children}
+                </ThemeProvider>
+            </body>
         </html>
     );
 }

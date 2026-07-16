@@ -28,7 +28,7 @@ export default function PullRequests({ pullRequests, limit = 20, id }: PullReque
         <section id={id}>
             <h2 className="text-2xl font-bold mb-4">
                 Pull Requests ({pullRequests.length})
-                <span className="ml-2 text-sm font-normal text-gray-500">
+                <span className="ml-2 text-sm font-normal text-gray-500 dark:text-gray-400">
                     (
                     <PrIcon state={PrState.merged} />
                     <span>
@@ -48,35 +48,35 @@ export default function PullRequests({ pullRequests, limit = 20, id }: PullReque
                     )
                 </span>
             </h2>
-            <div className="border border-gray-400 rounded-lg bg-white-50 overflow-hidden">
+            <div className="border border-gray-400 dark:border-gray-700 rounded-lg bg-white-50 dark:bg-background overflow-hidden">
                 <div className="space-y-3 max-h-96 overflow-y-auto p-4">
                     {displayPRs.map((pr) => (
                         <div
                             key={pr.url}
-                            className="relative border border-gray-300 rounded-lg p-4 hover:bg-gray-100 transition-colors bg-white"
+                            className="relative border border-gray-300 dark:border-gray-700 rounded-lg p-4 hover:bg-gray-100 dark:hover:bg-white/5 transition-colors bg-white dark:bg-background"
                         >
                             <Link href={pr.url} target="_blank" className="block">
                                 <div className="flex justify-between items-start gap-2">
-                                    <span className="font-semibold text-blue-600 hover:underline text-sm line-clamp-2">
+                                    <span className="font-semibold text-blue-600 dark:text-blue-400 hover:underline text-sm line-clamp-2">
                                         <PrIcon state={stringToPrState(pr.state)} />
                                         <span> {pr.title}</span>
                                     </span>
                                     <span
                                         className={`text-xs px-2 py-1 rounded whitespace-nowrap ${
                                             pr.state === 'MERGED'
-                                                ? 'bg-purple-100 text-purple-700'
+                                                ? 'bg-purple-100 dark:bg-purple-950 text-purple-700 dark:text-purple-400'
                                                 : pr.state === 'OPEN'
-                                                  ? 'bg-green-100 text-green-700'
-                                                  : 'bg-red-100 text-red-700'
+                                                  ? 'bg-green-100 dark:bg-green-950 text-green-700 dark:text-green-400'
+                                                  : 'bg-red-100 dark:bg-red-950 text-red-700 dark:text-red-400'
                                         }`}
                                     >
                                         {pr.state}
                                     </span>
                                 </div>
-                                <div className="text-xs text-gray-500 mt-2 flex items-center gap-1">
+                                <div className="text-xs text-gray-500 dark:text-gray-400 mt-2 flex items-center gap-1">
                                     <span className="font-mono">#{pr.number}</span>
                                     <span>in</span>
-                                    <span className="sm:hidden">
+                                    <span className="sm:hidden inline-flex items-center justify-center aspect-square bg-transparent dark:bg-[#26292F] rounded-md p-px">
                                         <img
                                             src={pr.baseRepository.owner.avatarUrl}
                                             alt={pr.baseRepository.owner.login}
@@ -88,19 +88,29 @@ export default function PullRequests({ pullRequests, limit = 20, id }: PullReque
                                     </span>
                                 </div>
                                 <div className="flex flex-wrap items-center gap-3 mt-2 text-xs">
-                                    <div className="flex items-center gap-1 text-gray-500">
+                                    <div className="flex items-center gap-1 text-gray-500 dark:text-gray-400">
                                         <Icon icon="octicon:calendar-16" className="w-4 h-4" />
                                         <span>{new Date(pr.createdAt).toLocaleDateString()}</span>
                                     </div>{' '}
                                     <div className="flex items-center gap-1">
-                                        <Icon icon="octicon:diff-added-16" className="w-4 h-4 text-green-600" />
-                                        <span className="font-medium text-green-600">+{pr.additions}</span>
+                                        <Icon
+                                            icon="octicon:diff-added-16"
+                                            className="w-4 h-4 text-green-600 dark:text-green-400"
+                                        />
+                                        <span className="font-medium text-green-600 dark:text-green-400">
+                                            +{pr.additions}
+                                        </span>
                                     </div>
                                     <div className="flex items-center gap-1">
-                                        <Icon icon="octicon:diff-removed-16" className="w-4 h-4 text-red-600" />
-                                        <span className="font-medium text-red-600">-{pr.deletions}</span>
+                                        <Icon
+                                            icon="octicon:diff-removed-16"
+                                            className="w-4 h-4 text-red-600 dark:text-red-400"
+                                        />
+                                        <span className="font-medium text-red-600 dark:text-red-400">
+                                            -{pr.deletions}
+                                        </span>
                                     </div>
-                                    <div className="flex items-center gap-1 text-gray-500">
+                                    <div className="flex items-center gap-1 text-gray-500 dark:text-gray-400">
                                         <Icon icon="octicon:file-diff-16" className="w-4 h-4" />
                                         <span>{pr.changedFiles}</span>
                                     </div>
@@ -112,19 +122,21 @@ export default function PullRequests({ pullRequests, limit = 20, id }: PullReque
                                 <Link
                                     href={pr.baseRepository.owner.url}
                                     target="_blank"
-                                    className="flex items-center gap-1 hover:underline hover:text-gray-700"
+                                    className="flex items-center gap-1 hover:underline hover:text-gray-700 dark:hover:text-gray-300"
                                 >
-                                    <img
-                                        src={pr.baseRepository.owner.avatarUrl}
-                                        alt={pr.baseRepository.owner.login}
-                                        className="w-9 h-9 rounded-full"
-                                    />
+                                    <span className="inline-flex items-center justify-center aspect-square bg-transparent dark:bg-[#26292F] rounded-md p-0.5">
+                                        <img
+                                            src={pr.baseRepository.owner.avatarUrl}
+                                            alt={pr.baseRepository.owner.login}
+                                            className="w-9 h-9 rounded-full"
+                                        />
+                                    </span>
                                 </Link>
                             </div>
                         </div>
                     ))}
                     {hasMore && (
-                        <p className="text-center text-gray-400 text-sm pt-2">
+                        <p className="text-center text-gray-400 dark:text-gray-500 text-sm pt-2">
                             + {pullRequests.length - limit} more contributions
                         </p>
                     )}

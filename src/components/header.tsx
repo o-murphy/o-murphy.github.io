@@ -43,11 +43,14 @@ export const Header = () => {
     if (loading) {
         return (
             <header
-                className={`sticky top-0 z-50 py-6 px-8 flex justify-start w-full bg-white transition-shadow duration-100 ${
+                className={`sticky top-0 z-50 py-6 px-8 flex justify-start w-full bg-background transition-shadow duration-100 ${
                     scrolled ? 'shadow-md' : 'shadow-sm'
                 }`}
             >
-                <Link href="/" className="hover:bg-black hover:text-white p-1">
+                <Link
+                    href="/"
+                    className="hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black p-1"
+                >
                     <h1 className="text-l underline font-medium">{'<Loading...>'}</h1>
                 </Link>
             </header>
@@ -57,11 +60,14 @@ export const Header = () => {
     return (
         <>
             <header
-                className={`sticky top-0 z-50 py-6 px-8 flex justify-between items-center w-full bg-white transition-shadow duration-100 ${
+                className={`sticky top-0 z-50 py-6 px-8 flex justify-between items-center w-full bg-background transition-shadow duration-100 ${
                     scrolled ? 'shadow-md' : ''
                 }`}
             >
-                <Link href="/" className="hover:bg-black hover:text-white p-1 shrink-0">
+                <Link
+                    href="/"
+                    className="hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black p-1 shrink-0"
+                >
                     <h1 className="text-l underline font-medium whitespace-nowrap">{`<${name}>`}</h1>
                 </Link>
 
@@ -71,7 +77,7 @@ export const Header = () => {
                         <Link
                             key={link.path}
                             href={link.path}
-                            className="hover:bg-black hover:text-white p-1 transition-colors underline whitespace-nowrap"
+                            className="hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black p-1 transition-colors underline whitespace-nowrap"
                         >
                             {link.name}
                         </Link>
@@ -81,7 +87,7 @@ export const Header = () => {
                 {/* Mobile hamburger button */}
                 <button
                     onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-                    className="md:hidden p-1 hover:bg-black hover:text-white transition-colors shrink-0"
+                    className="md:hidden p-1 hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition-colors shrink-0"
                     aria-label="Menu"
                 >
                     <Icon icon="heroicons:bars-3-20-solid" className="w-6 h-6" />
@@ -90,7 +96,7 @@ export const Header = () => {
 
             {/* Mobile dropdown menu */}
             <div
-                className={`fixed top-[73px] left-0 right-0 z-40 bg-white border-b border-gray-200 shadow-md transition-all duration-300 md:hidden ${
+                className={`fixed top-[73px] left-0 right-0 z-40 bg-background border-b border-gray-200 dark:border-gray-700 shadow-md transition-all duration-300 md:hidden ${
                     mobileMenuOpen ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-full pointer-events-none'
                 }`}
             >
@@ -100,7 +106,7 @@ export const Header = () => {
                             key={link.path}
                             href={link.path}
                             onClick={handleLinkClick}
-                            className="hover:bg-black hover:text-white p-2 transition-colors underline"
+                            className="hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black p-2 transition-colors underline"
                         >
                             {link.name}
                         </Link>

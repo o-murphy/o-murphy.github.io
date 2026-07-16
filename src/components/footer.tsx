@@ -32,14 +32,14 @@ export const Footer = () => {
 
     if (loading) {
         return (
-            <footer className="p-8 text-center text-gray-500 text-sm">
+            <footer className="p-8 text-center text-gray-500 dark:text-gray-400 text-sm">
                 <Loading className="max-w-7xl mx-auto" />
             </footer>
         );
     }
 
     return (
-        <footer className="p-8 text-center text-gray-500 text-sm">
+        <footer className="p-8 text-center text-gray-500 dark:text-gray-400 text-sm">
             <div className="max-w-7xl mx-auto">
                 {/* Навігаційні лінки */}
                 <div className="flex justify-center space-x-4 mb-4 flex-wrap gap-1">
@@ -47,7 +47,7 @@ export const Footer = () => {
                         <Link
                             key={link.path}
                             href={link.path}
-                            className="hover:bg-black hover:text-white p-1 transition-colors underline"
+                            className="hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black p-1 transition-colors underline"
                         >
                             {link.name}
                         </Link>
@@ -64,7 +64,7 @@ export const Footer = () => {
                                 href={link.url}
                                 target={link.name !== 'Email' ? '_blank' : undefined}
                                 rel={link.name !== 'Email' ? 'noopener noreferrer' : undefined}
-                                className="hover:bg-black hover:text-white p-1 transition-colors rounded"
+                                className="hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black p-1 transition-colors rounded"
                             >
                                 <Icon className="w-5 h-5" />
                             </Link>
@@ -92,7 +92,7 @@ export const Footer = () => {
                 </div>
 
                 {/* Копірайт з JSON */}
-                <p className="text-gray-400">{copyright}</p>
+                <p className="text-gray-400 dark:text-gray-500">{copyright}</p>
             </div>
         </footer>
     );
