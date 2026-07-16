@@ -17,8 +17,11 @@ import type { IconDefinition } from '@fortawesome/fontawesome-svg-core';
 import { slugify } from '@/lib/slugify';
 import { Mermaid } from './Mermaid';
 
+// inline-block (not plain inline): vertical padding on a plain inline <a> doesn't reserve
+// space in the line box, so when these links wrap across lines their padding paints over
+// the neighboring line instead of pushing it away.
 const linkClass =
-    'underline hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black p-1 transition-colors';
+    'underline hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black p-1 inline-block transition-colors';
 
 // GitHub's "> [!WARNING]" alert syntax isn't standard markdown, remark-gfm doesn't parse it into
 // anything special — it just shows up as literal "[!WARNING]" text inside a normal blockquote's
