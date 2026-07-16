@@ -76,7 +76,7 @@ export default function PullRequests({ pullRequests, limit = 20, id }: PullReque
                                 <div className="text-xs text-gray-500 dark:text-gray-400 mt-2 flex items-center gap-1">
                                     <span className="font-mono">#{pr.number}</span>
                                     <span>in</span>
-                                    <span className="sm:hidden inline-flex aspect-square bg-white rounded-full p-px">
+                                    <span className="sm:hidden inline-flex items-center justify-center aspect-square bg-[#26292F] rounded-lg p-px">
                                         <img
                                             src={pr.baseRepository.owner.avatarUrl}
                                             alt={pr.baseRepository.owner.login}
@@ -124,7 +124,7 @@ export default function PullRequests({ pullRequests, limit = 20, id }: PullReque
                                     target="_blank"
                                     className="flex items-center gap-1 hover:underline hover:text-gray-700 dark:hover:text-gray-300"
                                 >
-                                    <span className="inline-flex aspect-square bg-white rounded-full p-0.5">
+                                    <span className="inline-flex items-center justify-center aspect-square bg-[#26292F] rounded-lg p-0.5">
                                         <img
                                             src={pr.baseRepository.owner.avatarUrl}
                                             alt={pr.baseRepository.owner.login}

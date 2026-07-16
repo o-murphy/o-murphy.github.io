@@ -73,7 +73,7 @@ export default function Issues({ issues, limit = 20, id }: IssuesProps) {
                                 <div className="text-xs text-gray-500 dark:text-gray-400 mt-2 flex items-center gap-1">
                                     <span className="font-mono">#{issue.number}</span>
                                     <span>in</span>
-                                    <span className="sm:hidden">
+                                    <span className="sm:hidden inline-flex items-center justify-center aspect-square bg-[#26292F] rounded-lg p-px">
                                         <img
                                             src={issue.repository.owner.avatarUrl}
                                             alt={issue.repository.owner.login}
@@ -113,11 +113,13 @@ export default function Issues({ issues, limit = 20, id }: IssuesProps) {
                                     target="_blank"
                                     className="flex items-center gap-1 hover:underline hover:text-gray-700 dark:hover:text-gray-300"
                                 >
-                                    <img
-                                        src={issue.repository.owner.avatarUrl}
-                                        alt={issue.repository.owner.login}
-                                        className="w-9 h-9 rounded-full"
-                                    />
+                                    <span className="inline-flex items-center justify-center aspect-square bg-[#26292F] rounded-lg p-0.5">
+                                        <img
+                                            src={issue.repository.owner.avatarUrl}
+                                            alt={issue.repository.owner.login}
+                                            className="w-9 h-9 rounded-full"
+                                        />
+                                    </span>
                                 </Link>
                             </div>
                         </div>
