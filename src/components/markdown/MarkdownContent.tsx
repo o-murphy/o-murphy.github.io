@@ -1,6 +1,6 @@
 'use client';
 
-import { Children, createElement, isValidElement, type ReactElement, type ReactNode } from 'react';
+import { Children, createElement, isValidElement, type CSSProperties, type ReactElement, type ReactNode } from 'react';
 import ReactMarkdown, { type Components } from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import rehypeRaw from 'rehype-raw';
@@ -66,12 +66,20 @@ function Heading({
         <a
             href={`#${slug}`}
             aria-label="Link to this section"
-            className="absolute -left-6 top-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity no-underline inline-flex items-center"
+            className="absolute left-[var(--heading-anchor-offset,-1.5rem)] top-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity no-underline inline-flex items-center"
         >
             <Icon icon="octicon:link-16" className="w-4 h-4 text-gray-400 hover:text-black" />
         </a>,
         children,
     );
+}
+
+// Blockquotes/alerts indent their content past the markdown's left edge (border + padding).
+// Headings inside them would otherwise anchor the link icon to their own (indented) edge instead
+// of the shared left gutter every other heading uses — this pushes the anchor out by the same
+// amount, so it lines up with the rest regardless of nesting.
+function anchorIndentStyle(insetPx: number): CSSProperties {
+    return { '--heading-anchor-offset': `calc(-1.5rem - ${insetPx}px)` } as CSSProperties;
 }
 
 const components: Components = {
@@ -131,7 +139,7 @@ const components: Components = {
         if (marker) {
             const style = ALERT_STYLES[marker[1].toUpperCase()];
             return (
-                <div className={`border-l-4 ${style.classes} p-4 my-4 rounded-r`}>
+                <div className={`border-l-4 ${style.classes} p-4 my-4 rounded-r`} style={anchorIndentStyle(20)}>
                     <p className="font-bold text-sm mb-2 flex items-center gap-1.5">
                         <FontAwesomeIcon icon={style.icon} className={`w-4 h-4 ${style.iconClasses}`} /> {style.label}
                     </p>
@@ -140,7 +148,14 @@ const components: Components = {
             );
         }
 
-        return <blockquote className="border-l-4 border-gray-400 bg-gray-50 p-3 my-4 text-sm">{children}</blockquote>;
+        return (
+            <blockquote
+                className="border-l-4 border-gray-400 bg-gray-50 p-3 my-4 text-sm"
+                style={anchorIndentStyle(16)}
+            >
+                {children}
+            </blockquote>
+        );
     },
     img: ({ src, alt, width, height }) => {
         // Explicit width/height (e.g. the org logo's raw <img width="100" height="100">) means the
