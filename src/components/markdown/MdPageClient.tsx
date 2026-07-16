@@ -15,8 +15,6 @@ export function MdPageClient({ slug }: { slug: string }) {
     const [markdown, setMarkdown] = useState('');
 
     useEffect(() => {
-        setStatus('loading');
-
         fetch(`${basePath}/data/portfolio.json`)
             .then(res => res.json())
             .then((data: { markdown?: MarkdownEntry[] }) => {

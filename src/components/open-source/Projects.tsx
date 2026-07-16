@@ -26,6 +26,7 @@ import {
   faFileCode
 } from '@fortawesome/free-solid-svg-icons';
 import { SiTypescript, SiCplusplus } from '@icons-pack/react-simple-icons';
+import type { IconDefinition } from '@fortawesome/fontawesome-svg-core';
 
 interface ProjectsProps {
   projects: Project[];
@@ -34,10 +35,10 @@ interface ProjectsProps {
 type SiIconComponent = React.ComponentType<{ className?: string; size?: number; style?: React.CSSProperties }>;
 
 type LanguageIcon =
-  | { kind: 'fa'; icon: any }
+  | { kind: 'fa'; icon: IconDefinition }
   | { kind: 'si'; Icon: SiIconComponent };
 
-const fa = (icon: any): LanguageIcon => ({ kind: 'fa', icon });
+const fa = (icon: IconDefinition): LanguageIcon => ({ kind: 'fa', icon });
 const si = (Icon: SiIconComponent): LanguageIcon => ({ kind: 'si', Icon });
 
 // no decent FontAwesome logo for these two, simple-icons draws them correctly

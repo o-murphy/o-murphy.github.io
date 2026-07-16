@@ -48,7 +48,7 @@ export default function ContactPage() {
           </div>
 
           {/* Greeting */}
-          <h2 className="text-xl font-bold mb-2">Let's connect</h2>
+          <h2 className="text-xl font-bold mb-2">Let&apos;s connect</h2>
           <p className="text-sm text-gray-500 mb-6">Feel free to reach out for collaborations or just a chat</p>
 
           {/* Contact Links - 2 columns grid */}

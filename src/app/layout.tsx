@@ -1,6 +1,8 @@
 // layout.tsx
 import "./globals.css";
 import { IBM_Plex_Mono } from "next/font/google";
+import fs from "fs";
+import path from "path";
 
 const plexMono = IBM_Plex_Mono({
   subsets: ["latin"],
@@ -12,8 +14,6 @@ const plexMono = IBM_Plex_Mono({
 async function getPortfolioData() {
   try {
     // В Next.js 15+ можна читати файли напряму
-    const fs = require('fs');
-    const path = require('path');
     const filePath = path.join(process.cwd(), 'public', 'data', 'portfolio.json');
     const jsonData = fs.readFileSync(filePath, 'utf8');
     return JSON.parse(jsonData);
