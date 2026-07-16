@@ -59,9 +59,7 @@ export default function ContactPage() {
                     </div>
 
                     {/* Response time note */}
-                    <p className="text-xs text-gray-400 dark:text-gray-500 mt-6">
-                        ⚡ Usually responds within 24 hours
-                    </p>
+                    <p className="text-xs text-gray-400 dark:text-gray-500 mt-6">⚡ Usually responds within 24 hours</p>
                 </section>
             </div>
         </Template>

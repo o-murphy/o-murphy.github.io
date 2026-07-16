@@ -48,12 +48,12 @@ export default function PullRequests({ pullRequests, limit = 20, id }: PullReque
                     )
                 </span>
             </h2>
-            <div className="border border-gray-400 dark:border-gray-700 rounded-lg bg-white-50 dark:bg-gray-900 overflow-hidden">
+            <div className="border border-gray-400 dark:border-gray-700 rounded-lg bg-white-50 dark:bg-background overflow-hidden">
                 <div className="space-y-3 max-h-96 overflow-y-auto p-4">
                     {displayPRs.map((pr) => (
                         <div
                             key={pr.url}
-                            className="relative border border-gray-300 dark:border-gray-700 rounded-lg p-4 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors bg-white dark:bg-gray-900"
+                            className="relative border border-gray-300 dark:border-gray-700 rounded-lg p-4 hover:bg-gray-100 dark:hover:bg-white/5 transition-colors bg-white dark:bg-background"
                         >
                             <Link href={pr.url} target="_blank" className="block">
                                 <div className="flex justify-between items-start gap-2">
@@ -76,7 +76,7 @@ export default function PullRequests({ pullRequests, limit = 20, id }: PullReque
                                 <div className="text-xs text-gray-500 dark:text-gray-400 mt-2 flex items-center gap-1">
                                     <span className="font-mono">#{pr.number}</span>
                                     <span>in</span>
-                                    <span className="sm:hidden">
+                                    <span className="sm:hidden inline-flex aspect-square bg-white rounded-full p-px">
                                         <img
                                             src={pr.baseRepository.owner.avatarUrl}
                                             alt={pr.baseRepository.owner.login}
@@ -124,11 +124,13 @@ export default function PullRequests({ pullRequests, limit = 20, id }: PullReque
                                     target="_blank"
                                     className="flex items-center gap-1 hover:underline hover:text-gray-700 dark:hover:text-gray-300"
                                 >
-                                    <img
-                                        src={pr.baseRepository.owner.avatarUrl}
-                                        alt={pr.baseRepository.owner.login}
-                                        className="w-9 h-9 rounded-full"
-                                    />
+                                    <span className="inline-flex aspect-square bg-white rounded-full p-0.5">
+                                        <img
+                                            src={pr.baseRepository.owner.avatarUrl}
+                                            alt={pr.baseRepository.owner.login}
+                                            className="w-9 h-9 rounded-full"
+                                        />
+                                    </span>
                                 </Link>
                             </div>
                         </div>

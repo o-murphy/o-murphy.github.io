@@ -56,10 +56,9 @@ export default function ArtPage() {
                     <div className="w-full max-w-md mx-auto">
                         <iframe
                             data-testid="embed-iframe"
-                            className="rounded-xl w-full"
+                            className="rounded-xl border- w-full bg-transparent"
                             src="https://open.spotify.com/embed/track/7FcGOFQQhCqLBINpd0ERNg?utm_source=generator&theme=0"
                             height="152"
-                            frameBorder="0"
                             allowFullScreen
                             allow="clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                             loading="lazy"

@@ -35,31 +35,31 @@ const ALERT_STYLES: Record<string, { label: string; icon: IconDefinition; classe
     NOTE: {
         label: 'Note',
         icon: faCircleInfo,
-        classes: 'border-blue-400 dark:border-blue-700 bg-blue-50 dark:bg-blue-950',
+        classes: 'border-blue-400 dark:border-blue-500/40 bg-blue-50 dark:bg-blue-500/15',
         iconClasses: 'text-blue-500 dark:text-blue-400',
     },
     TIP: {
         label: 'Tip',
         icon: faLightbulb,
-        classes: 'border-green-400 dark:border-green-700 bg-green-50 dark:bg-green-950',
+        classes: 'border-green-400 dark:border-green-500/40 bg-green-50 dark:bg-green-500/15',
         iconClasses: 'text-green-600 dark:text-green-400',
     },
     IMPORTANT: {
         label: 'Important',
         icon: faCircleExclamation,
-        classes: 'border-purple-400 dark:border-purple-700 bg-purple-50 dark:bg-purple-950',
+        classes: 'border-purple-400 dark:border-purple-500/40 bg-purple-50 dark:bg-purple-500/15',
         iconClasses: 'text-purple-600 dark:text-purple-400',
     },
     WARNING: {
         label: 'Warning',
         icon: faTriangleExclamation,
-        classes: 'border-yellow-400 dark:border-yellow-700 bg-yellow-50 dark:bg-yellow-950',
+        classes: 'border-yellow-400 dark:border-yellow-500/40 bg-yellow-50 dark:bg-yellow-500/15',
         iconClasses: 'text-yellow-600 dark:text-yellow-400',
     },
     CAUTION: {
         label: 'Caution',
         icon: faBan,
-        classes: 'border-red-400 dark:border-red-700 bg-red-50 dark:bg-red-950',
+        classes: 'border-red-400 dark:border-red-500/40 bg-red-50 dark:bg-red-500/15',
         iconClasses: 'text-red-600 dark:text-red-400',
     },
 };
@@ -84,10 +84,7 @@ function Heading({
             aria-label="Link to this section"
             className="absolute left-[var(--heading-anchor-offset,-1.5rem)] top-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity no-underline inline-flex items-center"
         >
-            <Icon
-                icon="octicon:link-16"
-                className="w-4 h-4 text-gray-400 hover:text-black dark:hover:text-white"
-            />
+            <Icon icon="octicon:link-16" className="w-4 h-4 text-gray-400 hover:text-black dark:hover:text-white" />
         </a>,
         children,
     );
@@ -197,7 +194,9 @@ const components: Components = {
             <table className="text-sm border-collapse">{children}</table>
         </div>
     ),
-    th: ({ children }) => <th className="border border-gray-300 dark:border-gray-700 px-2 py-1 text-left font-bold">{children}</th>,
+    th: ({ children }) => (
+        <th className="border border-gray-300 dark:border-gray-700 px-2 py-1 text-left font-bold">{children}</th>
+    ),
     td: ({ children }) => <td className="border border-gray-300 dark:border-gray-700 px-2 py-1">{children}</td>,
     pre: ({ children }) => {
         const child = Array.isArray(children) ? children[0] : children;
@@ -222,9 +221,7 @@ const components: Components = {
         if (match) {
             return <code className={`${className} font-mono`}>{children}</code>;
         }
-        return (
-            <code className="bg-gray-100 dark:bg-gray-800 px-1.5 py-0.5 rounded text-sm font-mono">{children}</code>
-        );
+        return <code className="bg-gray-100 dark:bg-gray-800 px-1.5 py-0.5 rounded text-sm font-mono">{children}</code>;
     },
 };
 

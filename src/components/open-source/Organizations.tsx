@@ -41,11 +41,18 @@ export default function Organizations({ organizations }: OrganizationsProps) {
                             className="flex items-center justify-center p-2 hover:bg-gray-100 dark:hover:bg-gray-800 rounded transition-colors"
                             title={org.login}
                         >
-                            <img src={org.avatarUrl} alt={org.login} className="w-8 h-8 rounded-full" />
+                            {/* Fixed-light backing plate: org logos are often dark-on-transparent or
+                                light-on-transparent, so they need a surface that stays legible
+                                regardless of the page's own theme. */}
+                            <span className="inline-flex aspect-square bg-white rounded-full p-0.5">
+                                <img src={org.avatarUrl} alt={org.login} className="w-8 h-8 rounded-full" />
+                            </span>
                         </Link>
                     ))}
                 </div>
-                <p className="flex justify-center text-xs text-gray-400 dark:text-gray-500 mt-6">Includes Pull Requests and Issues</p>
+                <p className="flex justify-center text-xs text-gray-400 dark:text-gray-500 mt-6">
+                    Includes Pull Requests and Issues
+                </p>
             </section>
         );
     }
@@ -62,12 +69,16 @@ export default function Organizations({ organizations }: OrganizationsProps) {
                         target="_blank"
                         className="flex items-center gap-2 p-2 hover:bg-gray-200 dark:hover:bg-gray-800 rounded transition-colors"
                     >
-                        <img src={org.avatarUrl} alt={org.login} className="w-8 h-8 rounded-full flex-shrink-0" />
+                        <span className="inline-flex aspect-square bg-white rounded-full p-0.5 shrink-0">
+                            <img src={org.avatarUrl} alt={org.login} className="w-8 h-8 rounded-full" />
+                        </span>
                         <span className="text-sm font-medium truncate">{org.login}</span>
                     </Link>
                 ))}
             </div>
-            <p className="flex justify-center text-xs text-gray-400 dark:text-gray-500 mt-6">Includes Pull Requests and Issues</p>
+            <p className="flex justify-center text-xs text-gray-400 dark:text-gray-500 mt-6">
+                Includes Pull Requests and Issues
+            </p>
         </section>
     );
 }

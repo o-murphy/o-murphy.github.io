@@ -47,12 +47,12 @@ export default function Issues({ issues, limit = 20, id }: IssuesProps) {
                     )
                 </span>
             </h2>
-            <div className="border border-gray-400 dark:border-gray-700 rounded-lg bg-white-50 dark:bg-gray-900 overflow-hidden">
+            <div className="border border-gray-400 dark:border-gray-700 rounded-lg bg-white-50 dark:bg-background overflow-hidden">
                 <div className="space-y-3 max-h-96 overflow-y-auto p-4">
                     {displayIssues.map((issue) => (
                         <div
                             key={issue.url}
-                            className="relative border border-gray-300 dark:border-gray-700 rounded-lg p-4 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors bg-white dark:bg-gray-900"
+                            className="relative border border-gray-300 dark:border-gray-700 rounded-lg p-4 hover:bg-gray-100 dark:hover:bg-white/5 transition-colors bg-white dark:bg-background"
                         >
                             <Link href={issue.url} target="_blank" className="block">
                                 <div className="flex justify-between items-start gap-2">

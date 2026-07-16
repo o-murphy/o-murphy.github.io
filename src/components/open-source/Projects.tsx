@@ -82,7 +82,7 @@ export default function Projects({ projects }: ProjectsProps) {
                 {projects.map((project) => (
                     <div
                         key={project.url}
-                        className="border border-gray-300 dark:border-gray-700 rounded-lg p-5 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors bg-white dark:bg-gray-900"
+                        className="border border-gray-300 dark:border-gray-700 rounded-lg p-5 hover:bg-gray-100 dark:hover:bg-white/5 transition-colors bg-white dark:bg-background"
                     >
                         <Link href={project.url} target="_blank" className="block">
                             <h3 className="text-xl font-semibold text-blue-600 dark:text-blue-400 hover:underline mb-2">

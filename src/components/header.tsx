@@ -47,7 +47,10 @@ export const Header = () => {
                     scrolled ? 'shadow-md' : 'shadow-sm'
                 }`}
             >
-                <Link href="/" className="hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black p-1">
+                <Link
+                    href="/"
+                    className="hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black p-1"
+                >
                     <h1 className="text-l underline font-medium">{'<Loading...>'}</h1>
                 </Link>
             </header>
@@ -61,7 +64,10 @@ export const Header = () => {
                     scrolled ? 'shadow-md' : ''
                 }`}
             >
-                <Link href="/" className="hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black p-1 shrink-0">
+                <Link
+                    href="/"
+                    className="hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black p-1 shrink-0"
+                >
                     <h1 className="text-l underline font-medium whitespace-nowrap">{`<${name}>`}</h1>
                 </Link>
 
@@ -90,7 +96,7 @@ export const Header = () => {
 
             {/* Mobile dropdown menu */}
             <div
-                className={`fixed top-[73px] left-0 right-0 z-40 bg-white border-b border-gray-200 shadow-md transition-all duration-300 md:hidden ${
+                className={`fixed top-[73px] left-0 right-0 z-40 bg-background border-b border-gray-200 dark:border-gray-700 shadow-md transition-all duration-300 md:hidden ${
                     mobileMenuOpen ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-full pointer-events-none'
                 }`}
             >
