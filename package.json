@@ -11,7 +11,8 @@
         "format:check": "prettier --check .",
         "fetch": "node fetcher.mjs",
         "fetch:data": "node fetcher.mjs",
-        "prebuild": "yarn fetch:data",
+        "prebuild": "yarn fetch:data && cpy portfolio.json public/data",
+        "postbuild": "touch out/.nojekyll",
         "deploy": "yarn fetch:data && yarn build",
         "clean": "rm -rf .next out public/data",
         "setup": "mkdir -p public/data"
@@ -38,6 +39,7 @@
         "@types/node": "^26.1.1",
         "@types/react": "^19.2.17",
         "@types/react-dom": "^19.2.3",
+        "cpy-cli": "^7.0.0",
         "dotenv": "^17.4.2",
         "eslint": "^9.39.5",
         "eslint-config-next": "^16.2.10",
