@@ -31,21 +31,21 @@
             "url": "https://open.spotify.com/artist/5MMonfU5cEE3wKrAmIUmoi",
             "icon": "spotify",
             "color": "text-green-500",
-            "bgColor": "bg-green-100 dark:bg-green-950 border-green-300 dark:border-green-800 hover:bg-green-500 dark:hover:bg-green-600 hover:border-transparent"
+            "bgColor": "bg-green-100 dark:bg-green-500/15 border-green-300 dark:border-green-500/40 hover:bg-green-500 dark:hover:bg-green-500/30 hover:border-transparent"
         },
         {
             "name": "YouTube Music",
             "url": "https://music.youtube.com/@murphyslawproductions9838",
             "icon": "youtubeMusic",
             "color": "text-red-500",
-            "bgColor": "bg-red-100 dark:bg-red-950 border-red-300 dark:border-red-800 hover:bg-red-500 dark:hover:bg-red-600 hover:border-transparent"
+            "bgColor": "bg-red-100 dark:bg-red-500/15 border-red-300 dark:border-red-500/40 hover:bg-red-500 dark:hover:bg-red-500/30 hover:border-transparent"
         },
         {
             "name": "Apple Music",
             "url": "https://music.apple.com/ua/artist/murphys-law",
             "icon": "appleMusic",
             "color": "text-gray-700 dark:text-gray-300",
-            "bgColor": "bg-purple-100 dark:bg-purple-950 border-purple-300 dark:border-purple-800 hover:bg-purple-500 dark:hover:bg-purple-600 hover:border-transparent"
+            "bgColor": "bg-purple-100 dark:bg-purple-500/15 border-purple-300 dark:border-purple-500/40 hover:bg-purple-500 dark:hover:bg-purple-500/30 hover:border-transparent"
         },
         {
             "name": "TikTok",
