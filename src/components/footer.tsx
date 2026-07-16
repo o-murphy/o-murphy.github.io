@@ -85,7 +85,7 @@ export const Footer = () => {
                             alt="Support Ukraine Badge"
                             width={160}
                             height={40}
-                            className="h-auto"
+                            className="w-auto h-auto"
                             unoptimized
                         />
                     </Link>

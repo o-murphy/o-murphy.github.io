@@ -1,7 +1,6 @@
 // src/components/opensource/Statistics.tsx
 'use client';
 
-import { Link as ScrollLink } from 'react-scroll';
 import { IssueIcon, PrIcon, PrState } from '../icons';
 
 interface StatisticsProps {
@@ -11,10 +10,14 @@ interface StatisticsProps {
     closedIssues: number;
 }
 
+function scrollToId(id: string) {
+    document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
+}
+
 export default function Statistics({ mergedPRs, openPRs, openIssues, closedIssues }: StatisticsProps) {
     return (
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
-            <ScrollLink to="pull-requests" smooth={true} duration={500} className="cursor-pointer">
+            <div onClick={() => scrollToId('pull-requests')} className="cursor-pointer">
                 <div className="bg-green-100 p-4 rounded-lg hover:bg-green-200 transition-colors">
                     <div className="flex items-center justify-center gap-2">
                         <PrIcon state={PrState.open} />
@@ -22,9 +25,9 @@ export default function Statistics({ mergedPRs, openPRs, openIssues, closedIssue
                     </div>
                     <div className="text-sm text-center mt-1">Open PRs</div>
                 </div>
-            </ScrollLink>
+            </div>
 
-            <ScrollLink to="pull-requests" smooth={true} duration={500} className="cursor-pointer">
+            <div onClick={() => scrollToId('pull-requests')} className="cursor-pointer">
                 <div className="bg-purple-100 p-4 rounded-lg hover:bg-purple-200 transition-colors">
                     <div className="flex items-center justify-center">
                         <PrIcon state={PrState.merged} />
@@ -32,9 +35,9 @@ export default function Statistics({ mergedPRs, openPRs, openIssues, closedIssue
                     </div>
                     <div className="text-sm text-center mt-1">Merged PRs</div>
                 </div>
-            </ScrollLink>
+            </div>
 
-            <ScrollLink to="issues" smooth={true} duration={500} className="cursor-pointer">
+            <div onClick={() => scrollToId('issues')} className="cursor-pointer">
                 <div className="bg-blue-100 p-4 rounded-lg hover:bg-blue-200 transition-colors">
                     <div className="flex items-center justify-center gap-2">
                         <IssueIcon closed={false} color="text-blue-600" />
@@ -42,9 +45,9 @@ export default function Statistics({ mergedPRs, openPRs, openIssues, closedIssue
                     </div>
                     <div className="text-sm text-center mt-1">Open Issues</div>
                 </div>
-            </ScrollLink>
+            </div>
 
-            <ScrollLink to="issues" smooth={true} duration={500} className="cursor-pointer">
+            <div onClick={() => scrollToId('issues')} className="cursor-pointer">
                 <div className="bg-gray-100 p-4 rounded-lg hover:bg-gray-200 transition-colors">
                     <div className="flex items-center justify-center gap-2">
                         <IssueIcon closed={true} />
@@ -52,7 +55,7 @@ export default function Statistics({ mergedPRs, openPRs, openIssues, closedIssue
                     </div>
                     <div className="text-sm text-center mt-1">Closed Issues</div>
                 </div>
-            </ScrollLink>
+            </div>
         </div>
     );
 }
