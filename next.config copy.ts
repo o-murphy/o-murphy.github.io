@@ -1,4 +1,4 @@
-import type { NextConfig } from "next";
+import type { NextConfig } from 'next';
 
 const isProd = process.env.NODE_ENV === 'production';
 
@@ -7,26 +7,26 @@ const isProd = process.env.NODE_ENV === 'production';
 const basePath = '';
 
 const nextConfig: NextConfig = {
-  output: 'export',
+    output: 'export',
 
-  basePath,
-  assetPrefix: basePath ? `${basePath}/` : '',
+    basePath,
+    assetPrefix: basePath ? `${basePath}/` : '',
 
-  trailingSlash: true,
+    trailingSlash: true,
 
-  allowedDevOrigins: ['192.168.6.162', '192.168.88.211', 'localhost'],
+    allowedDevOrigins: ['192.168.6.162', '192.168.88.211', 'localhost'],
 
-  images: {
-    unoptimized: true,
-  },
+    images: {
+        unoptimized: true,
+    },
 
-  webpack: (config) => {
-    config.module.rules.push({
-      test: /\.json$/,
-      type: 'json',
-    });
-    return config;
-  },
+    webpack: (config) => {
+        config.module.rules.push({
+            test: /\.json$/,
+            type: 'json',
+        });
+        return config;
+    },
 };
 
 export default nextConfig;

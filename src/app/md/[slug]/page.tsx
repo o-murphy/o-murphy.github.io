@@ -16,7 +16,7 @@ function getMarkdownEntries(): MarkdownEntry[] {
 }
 
 export async function generateStaticParams() {
-    return getMarkdownEntries().map(entry => ({ slug: slugify(entry.name) }));
+    return getMarkdownEntries().map((entry) => ({ slug: slugify(entry.name) }));
 }
 
 export default async function MdPage({ params }: { params: Promise<{ slug: string }> }) {

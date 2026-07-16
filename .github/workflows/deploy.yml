@@ -1,97 +1,97 @@
 name: Deploy to GitHub Pages
 
 on:
-  schedule:
-    - cron: "0 0 * * *"
-  workflow_dispatch:
-  push:
-    branches:
-      - main
-      - master
+    schedule:
+        - cron: '0 0 * * *'
+    workflow_dispatch:
+    push:
+        branches:
+            - main
+            - master
 
 permissions:
-  contents: write
-  pages: write
-  id-token: write
+    contents: write
+    pages: write
+    id-token: write
 
 concurrency:
-  group: "pages"
-  cancel-in-progress: false
+    group: 'pages'
+    cancel-in-progress: false
 
 jobs:
-  build-and-deploy:
-    runs-on: ubuntu-latest
+    build-and-deploy:
+        runs-on: ubuntu-latest
 
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v7
+        steps:
+            - name: Checkout repository
+              uses: actions/checkout@v7
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v6
-        with:
-          node-version: "24"
-          cache: "yarn"
+            - name: Setup Node.js
+              uses: actions/setup-node@v6
+              with:
+                  node-version: '24'
+                  cache: 'yarn'
 
-      - name: Install dependencies
-        run: yarn install --frozen-lockfile
+            - name: Install dependencies
+              run: yarn install --frozen-lockfile
 
-      - name: Setup public/data directory
-        run: mkdir -p public/data
+            - name: Setup public/data directory
+              run: mkdir -p public/data
 
-      - name: Create .env file for fetch script
-        run: |
-          echo "GITHUB_TOKEN=${{ secrets.GITHUB_TOKEN }}" >> .env
-          echo "GITHUB_USERNAME=${{ github.repository_owner }}" >> .env
+            - name: Create .env file for fetch script
+              run: |
+                  echo "GITHUB_TOKEN=${{ secrets.GITHUB_TOKEN }}" >> .env
+                  echo "GITHUB_USERNAME=${{ github.repository_owner }}" >> .env
 
-      - name: Run fetch script to update GitHub data
-        run: node fetcher.mjs
-        env:
-          GITHUB_USERNAME: ${{ github.repository_owner }}
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+            - name: Run fetch script to update GitHub data
+              run: node fetcher.mjs
+              env:
+                  GITHUB_USERNAME: ${{ github.repository_owner }}
+                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Copy portfolio.json to public/data
-        run: |
-          if [ -f "portfolio.json" ]; then
-            cp portfolio.json public/data/portfolio.json
-            echo "✅ Copied portfolio.json to public/data/"
-          fi
-          echo "📁 Files in public/data:"
-          ls -la public/data/
+            - name: Copy portfolio.json to public/data
+              run: |
+                  if [ -f "portfolio.json" ]; then
+                    cp portfolio.json public/data/portfolio.json
+                    echo "✅ Copied portfolio.json to public/data/"
+                  fi
+                  echo "📁 Files in public/data:"
+                  ls -la public/data/
 
-      - name: Build Next.js static site
-        run: yarn build
-        env:
-          NODE_ENV: production
+            - name: Build Next.js static site
+              run: yarn build
+              env:
+                  NODE_ENV: production
 
-      - name: Copy JSON files to out directory
-        run: |
-          mkdir -p out/data
-          cp -r public/data/. out/data/
-          echo "📁 Files in out/data:"
-          ls -la out/data/
+            - name: Copy JSON files to out directory
+              run: |
+                  mkdir -p out/data
+                  cp -r public/data/. out/data/
+                  echo "📁 Files in out/data:"
+                  ls -la out/data/
 
-      - name: Create .nojekyll file
-        run: touch out/.nojekyll
+            - name: Create .nojekyll file
+              run: touch out/.nojekyll
 
-      - name: Create CNAME file
-        run: echo "o-murphy.net" > out/CNAME
+            - name: Create CNAME file
+              run: echo "o-murphy.net" > out/CNAME
 
-      - name: Debug - check output directory
-        run: |
-          echo "🔍 Checking build outputs:"
-          echo "out/ contents:"
-          ls -la out/
-          echo ""
-          echo "out/data/ contents:"
-          ls -la out/data/ || echo "No out/data folder"
+            - name: Debug - check output directory
+              run: |
+                  echo "🔍 Checking build outputs:"
+                  echo "out/ contents:"
+                  ls -la out/
+                  echo ""
+                  echo "out/data/ contents:"
+                  ls -la out/data/ || echo "No out/data folder"
 
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v4
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./out
-          publish_branch: gh-pages
-          force_orphan: true
-          user_name: "github-actions[bot]"
-          user_email: "github-actions[bot]@users.noreply.github.com"
-          commit_message: "Deploy to GitHub Pages"
+            - name: Deploy to GitHub Pages
+              uses: peaceiris/actions-gh-pages@v4
+              with:
+                  github_token: ${{ secrets.GITHUB_TOKEN }}
+                  publish_dir: ./out
+                  publish_branch: gh-pages
+                  force_orphan: true
+                  user_name: 'github-actions[bot]'
+                  user_email: 'github-actions[bot]@users.noreply.github.com'
+                  commit_message: 'Deploy to GitHub Pages'

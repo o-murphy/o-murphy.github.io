@@ -3,16 +3,8 @@
         "name": "Dmytro Yaroshenko",
         "copyright": "Copyright © 2025. Dmytro Yaroshenko",
         "homeTitle": "👋🏻 I'm Dmytro: Python Developer & Software Engineer.",
-        "homeSubtitles": [
-            "Lover of programming languages.",
-            "Amateur musician and singer."
-        ],
-        "homeEmojis": [
-            "👨‍💻",
-            "🐍",
-            "🎸",
-            "🎤"
-        ]
+        "homeSubtitles": ["Lover of programming languages.", "Amateur musician and singer."],
+        "homeEmojis": ["👨‍💻", "🐍", "🎸", "🎤"]
     },
     "about": {
         "paragraphs": [

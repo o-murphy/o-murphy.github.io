@@ -6,7 +6,13 @@ import remarkGfm from 'remark-gfm';
 import rehypeRaw from 'rehype-raw';
 import { Icon } from '@iconify/react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBan, faCircleInfo, faLightbulb, faTriangleExclamation, faCircleExclamation } from '@fortawesome/free-solid-svg-icons';
+import {
+    faBan,
+    faCircleInfo,
+    faLightbulb,
+    faTriangleExclamation,
+    faCircleExclamation,
+} from '@fortawesome/free-solid-svg-icons';
 import type { IconDefinition } from '@fortawesome/fontawesome-svg-core';
 import { slugify } from '@/lib/slugify';
 import { Mermaid } from './Mermaid';
@@ -27,13 +33,31 @@ function extractText(node: ReactNode): string {
 const ALERT_STYLES: Record<string, { label: string; icon: IconDefinition; classes: string; iconClasses: string }> = {
     NOTE: { label: 'Note', icon: faCircleInfo, classes: 'border-blue-400 bg-blue-50', iconClasses: 'text-blue-500' },
     TIP: { label: 'Tip', icon: faLightbulb, classes: 'border-green-400 bg-green-50', iconClasses: 'text-green-600' },
-    IMPORTANT: { label: 'Important', icon: faCircleExclamation, classes: 'border-purple-400 bg-purple-50', iconClasses: 'text-purple-600' },
-    WARNING: { label: 'Warning', icon: faTriangleExclamation, classes: 'border-yellow-400 bg-yellow-50', iconClasses: 'text-yellow-600' },
+    IMPORTANT: {
+        label: 'Important',
+        icon: faCircleExclamation,
+        classes: 'border-purple-400 bg-purple-50',
+        iconClasses: 'text-purple-600',
+    },
+    WARNING: {
+        label: 'Warning',
+        icon: faTriangleExclamation,
+        classes: 'border-yellow-400 bg-yellow-50',
+        iconClasses: 'text-yellow-600',
+    },
     CAUTION: { label: 'Caution', icon: faBan, classes: 'border-red-400 bg-red-50', iconClasses: 'text-red-600' },
 };
 
 // GitHub-style heading anchors: a chain-link icon that only appears on hover, linking to `#slug`.
-function Heading({ level, className, children }: { level: 1 | 2 | 3 | 4 | 5 | 6; className: string; children: ReactNode }) {
+function Heading({
+    level,
+    className,
+    children,
+}: {
+    level: 1 | 2 | 3 | 4 | 5 | 6;
+    className: string;
+    children: ReactNode;
+}) {
     const slug = slugify(extractText(children));
     return createElement(
         `h${level}`,
@@ -51,12 +75,36 @@ function Heading({ level, className, children }: { level: 1 | 2 | 3 | 4 | 5 | 6;
 }
 
 const components: Components = {
-    h1: ({ children }) => <Heading level={1} className="text-2xl md:text-3xl font-bold mt-6 mb-6">{children}</Heading>,
-    h2: ({ children }) => <Heading level={2} className="text-xl font-bold mt-6 mb-5">{children}</Heading>,
-    h3: ({ children }) => <Heading level={3} className="text-lg font-bold mt-4 mb-4">{children}</Heading>,
-    h4: ({ children }) => <Heading level={4} className="text-base font-bold mt-3 mb-3">{children}</Heading>,
-    h5: ({ children }) => <Heading level={5} className="text-sm font-bold mt-2 mb-2">{children}</Heading>,
-    h6: ({ children }) => <Heading level={6} className="text-sm font-bold mt-2 mb-2">{children}</Heading>,
+    h1: ({ children }) => (
+        <Heading level={1} className="text-2xl md:text-3xl font-bold mt-6 mb-6">
+            {children}
+        </Heading>
+    ),
+    h2: ({ children }) => (
+        <Heading level={2} className="text-xl font-bold mt-6 mb-5">
+            {children}
+        </Heading>
+    ),
+    h3: ({ children }) => (
+        <Heading level={3} className="text-lg font-bold mt-4 mb-4">
+            {children}
+        </Heading>
+    ),
+    h4: ({ children }) => (
+        <Heading level={4} className="text-base font-bold mt-3 mb-3">
+            {children}
+        </Heading>
+    ),
+    h5: ({ children }) => (
+        <Heading level={5} className="text-sm font-bold mt-2 mb-2">
+            {children}
+        </Heading>
+    ),
+    h6: ({ children }) => (
+        <Heading level={6} className="text-sm font-bold mt-2 mb-2">
+            {children}
+        </Heading>
+    ),
     p: ({ children }) => <p className="text-sm leading-relaxed mb-4">{children}</p>,
     a: ({ children, href }) => {
         // Badge links (shields.io etc, wrapping only an image with no text) shouldn't get the
@@ -77,7 +125,7 @@ const components: Components = {
     ol: ({ children }) => <ol className="list-decimal list-inside text-sm space-y-1 mb-4">{children}</ol>,
     hr: () => <hr className="my-8 border-gray-300" />,
     blockquote: ({ children }) => {
-        const items = Children.toArray(children).filter(c => !(typeof c === 'string' && c.trim() === ''));
+        const items = Children.toArray(children).filter((c) => !(typeof c === 'string' && c.trim() === ''));
         const marker = /^\[!(NOTE|TIP|IMPORTANT|WARNING|CAUTION)\]$/i.exec(extractText(items[0]).trim());
 
         if (marker) {
@@ -92,11 +140,7 @@ const components: Components = {
             );
         }
 
-        return (
-            <blockquote className="border-l-4 border-gray-400 bg-gray-50 p-3 my-4 text-sm">
-                {children}
-            </blockquote>
-        );
+        return <blockquote className="border-l-4 border-gray-400 bg-gray-50 p-3 my-4 text-sm">{children}</blockquote>;
     },
     img: ({ src, alt, width, height }) => {
         // Explicit width/height (e.g. the org logo's raw <img width="100" height="100">) means the
@@ -124,7 +168,9 @@ const components: Components = {
     pre: ({ children }) => {
         const child = Array.isArray(children) ? children[0] : children;
         const childClassName =
-            child && typeof child === 'object' && 'props' in child ? (child.props as { className?: string }).className : undefined;
+            child && typeof child === 'object' && 'props' in child
+                ? (child.props as { className?: string }).className
+                : undefined;
         if (childClassName?.includes('language-mermaid')) {
             return <>{children}</>;
         }

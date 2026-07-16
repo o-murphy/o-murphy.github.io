@@ -1,8 +1,8 @@
 import type { ComponentType } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import type { IconDefinition } from '@fortawesome/fontawesome-svg-core';
-import { faApple, faSpotify, faTiktok, faYoutube } from "@fortawesome/free-brands-svg-icons";
-import { faMusic, faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faApple, faSpotify, faTiktok, faYoutube } from '@fortawesome/free-brands-svg-icons';
+import { faMusic, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faGithub, faInstagram, faLinkedin, faTelegram } from '@fortawesome/free-brands-svg-icons';
 import { faDartLang, faFlutter, faJs, faPython } from '@fortawesome/free-brands-svg-icons';
 import { faC } from '@fortawesome/free-solid-svg-icons';
@@ -24,28 +24,28 @@ export const wrapSi = (Icon: ComponentType<{ className?: string; style?: React.C
     };
 
 export const iconMap: Record<string, IconComponent> = {
-    'spotify': wrapFa(faSpotify),
-    'youtube': wrapFa(faYoutube),
-    'youtubeMusic': wrapFa(faYoutube),
-    'apple': wrapFa(faYoutube),
-    'appleMusic': wrapFa(faApple),
-    'tiktok': wrapFa(faTiktok),
-    'music': wrapFa(faMusic),
-    'github': wrapFa(faGithub),
-    'telegram': wrapFa(faTelegram),
-    'instagram': wrapFa(faInstagram),
-    'linkedin': wrapFa(faLinkedin),
-    'envelope': wrapFa(faEnvelope),
-    'python': wrapFa(faPython),
+    spotify: wrapFa(faSpotify),
+    youtube: wrapFa(faYoutube),
+    youtubeMusic: wrapFa(faYoutube),
+    apple: wrapFa(faYoutube),
+    appleMusic: wrapFa(faApple),
+    tiktok: wrapFa(faTiktok),
+    music: wrapFa(faMusic),
+    github: wrapFa(faGithub),
+    telegram: wrapFa(faTelegram),
+    instagram: wrapFa(faInstagram),
+    linkedin: wrapFa(faLinkedin),
+    envelope: wrapFa(faEnvelope),
+    python: wrapFa(faPython),
     // no Cython logo in either icon set, Python's is the closest fit (Cython is a Python superset)
-    'cython': wrapFa(faPython),
-    'flutter': wrapFa(faFlutter),
-    'dart': wrapFa(faDartLang),
-    'js': wrapFa(faJs),
-    'c': wrapFa(faC),
+    cython: wrapFa(faPython),
+    flutter: wrapFa(faFlutter),
+    dart: wrapFa(faDartLang),
+    js: wrapFa(faJs),
+    c: wrapFa(faC),
     // no FontAwesome logo for these, simple-icons has them
-    'ts': wrapSi(SiTypescript),
-    'cpp': wrapSi(SiCplusplus),
-    'wasm': wrapSi(SiWebassembly),
-    'micropython': wrapSi(SiMicropython),
+    ts: wrapSi(SiTypescript),
+    cpp: wrapSi(SiCplusplus),
+    wasm: wrapSi(SiWebassembly),
+    micropython: wrapSi(SiMicropython),
 };

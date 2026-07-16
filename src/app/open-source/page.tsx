@@ -20,10 +20,10 @@ export default function OpenSourcePage() {
 
     useEffect(() => {
         Promise.all([
-            fetch(`${basePath}/data/pull_requests.json`).then(res => res.json()),
-            fetch(`${basePath}/data/issues.json`).then(res => res.json()),
-            fetch(`${basePath}/data/projects.json`).then(res => res.json()),
-            fetch(`${basePath}/data/organizations.json`).then(res => res.json()),
+            fetch(`${basePath}/data/pull_requests.json`).then((res) => res.json()),
+            fetch(`${basePath}/data/issues.json`).then((res) => res.json()),
+            fetch(`${basePath}/data/projects.json`).then((res) => res.json()),
+            fetch(`${basePath}/data/organizations.json`).then((res) => res.json()),
         ])
             .then(([prData, issuesData, projectsData, orgsData]) => {
                 setPullRequests(prData.data || []);
@@ -32,7 +32,7 @@ export default function OpenSourcePage() {
                 setOrganizations(orgsData.data || []);
                 setLoading(false);
             })
-            .catch(err => {
+            .catch((err) => {
                 console.error('Error loading data:', err);
                 setLoading(false);
             });
@@ -72,7 +72,6 @@ export default function OpenSourcePage() {
                 <PullRequests pullRequests={pullRequests} limit={20} id="pull-requests" />
 
                 <Issues issues={issues} limit={20} id="issues" />
-
             </div>
         </Template>
     );

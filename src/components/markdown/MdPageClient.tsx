@@ -16,25 +16,25 @@ export function MdPageClient({ slug }: { slug: string }) {
 
     useEffect(() => {
         fetch(`${basePath}/data/portfolio.json`)
-            .then(res => res.json())
+            .then((res) => res.json())
             .then((data: { markdown?: MarkdownEntry[] }) => {
-                const match = (data.markdown || []).find(e => slugify(e.name) === slug);
+                const match = (data.markdown || []).find((e) => slugify(e.name) === slug);
                 if (!match) {
                     setStatus('not-found');
                     return;
                 }
                 setEntry(match);
                 return fetch(match.url)
-                    .then(res => {
+                    .then((res) => {
                         if (!res.ok) throw new Error(`${res.status} ${res.statusText}`);
                         return res.text();
                     })
-                    .then(text => {
+                    .then((text) => {
                         setMarkdown(text);
                         setStatus('ready');
                     });
             })
-            .catch(err => {
+            .catch((err) => {
                 console.error('Error loading markdown page:', err);
                 setStatus('error');
             });

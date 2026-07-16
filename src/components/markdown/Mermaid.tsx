@@ -30,11 +30,7 @@ export function Mermaid({ chart }: { chart: string }) {
     }, [chart, id]);
 
     if (error) {
-        return (
-            <pre className="bg-gray-100 rounded p-3 overflow-x-auto text-xs my-4 text-red-600">
-                {chart}
-            </pre>
-        );
+        return <pre className="bg-gray-100 rounded p-3 overflow-x-auto text-xs my-4 text-red-600">{chart}</pre>;
     }
 
     return <div ref={containerRef} className="my-4 flex justify-center overflow-x-auto" />;
