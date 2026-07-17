@@ -2,6 +2,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { Issue } from '@/types/dataTypes';
 import { IssueIcon } from '../icons';
 import { Icon } from '@iconify/react';
@@ -74,9 +75,11 @@ export default function Issues({ issues, limit = 20, id }: IssuesProps) {
                                     <span className="font-mono">#{issue.number}</span>
                                     <span>in</span>
                                     <span className="sm:hidden inline-flex items-center justify-center aspect-square bg-transparent dark:bg-[#26292F] rounded-md p-px">
-                                        <img
+                                        <Image
                                             src={issue.repository.owner.avatarUrl}
                                             alt={issue.repository.owner.login}
+                                            width={12}
+                                            height={12}
                                             className="w-3 h-3 rounded-full"
                                         />
                                     </span>
@@ -114,9 +117,11 @@ export default function Issues({ issues, limit = 20, id }: IssuesProps) {
                                     className="flex items-center gap-1 hover:underline hover:text-gray-700 dark:hover:text-gray-300"
                                 >
                                     <span className="inline-flex items-center justify-center aspect-square bg-transparent dark:bg-[#26292F] rounded-md p-0.5">
-                                        <img
+                                        <Image
                                             src={issue.repository.owner.avatarUrl}
                                             alt={issue.repository.owner.login}
+                                            width={36}
+                                            height={36}
                                             className="w-9 h-9 rounded-full"
                                         />
                                     </span>

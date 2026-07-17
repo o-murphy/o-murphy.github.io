@@ -1,9 +1,7 @@
 import type { NextConfig } from 'next';
 
-const isProd = process.env.NODE_ENV === 'production';
-
 // setup for subpath
-// const basePath = isProd ? '/portfolio' : '';
+// const basePath = process.env.NODE_ENV === 'production' ? '/portfolio' : '';
 const basePath = '';
 
 const nextConfig: NextConfig = {

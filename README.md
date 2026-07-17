@@ -49,6 +49,7 @@ Besides the standard Next.js scripts (`dev`, `build`, `start`, `lint`), this pro
 | `yarn deploy`       | Fetches fresh GitHub data and builds the static site (`yarn fetch:data && yarn build`).    |
 | `yarn format`       | Formats the codebase with Prettier.                                                        |
 | `yarn format:check` | Checks formatting without writing changes.                                                 |
+| `yarn typecheck`    | Runs `tsc --noEmit` to check types without emitting output.                                |
 
 `prebuild` and `postbuild` hooks run automatically as part of `yarn build`/`yarn deploy` — you don't need to call them directly:
 
@@ -61,6 +62,18 @@ Next's static export (`output: 'export'`) automatically copies everything in `pu
 
 - **Site copy, links, projects**: edit [`portfolio.json`](portfolio.json) — sections include `person`, `about`, `navLinks`, `socialLinks`, `contacts`, `artLinks`, and `projects`.
 - **Standalone markdown pages**: entries in `portfolio.json`'s `markdown` array (`{ "name", "url" }`) each generate a static page at `/md/<slugified-name>`, which fetches and renders the raw markdown from `url` at runtime (e.g. `/md/ballistics-lab` renders the Ballistics Lab README).
+- **Ad-hoc markdown pages**: `/md/?url=<markdown-url>` fetches and renders any markdown document at runtime, without needing an entry in `portfolio.json`. The source `url` must match one of the patterns in `portfolio.json`'s `markdownTrustedHosts` array, e.g.:
+
+    ```json
+    "markdownTrustedHosts": [
+        "raw.githubusercontent.com/o-murphy",
+        "o-murphy.github.io",
+        "*.o-murphy.net"
+    ]
+    ```
+
+    A pattern is either a hostname (`o-murphy.net`), a hostname with a leading wildcard for any subdomain (`*.o-murphy.net`), or a hostname scoped to a path prefix (`raw.githubusercontent.com/o-murphy` only trusts that account's repos, not every GitHub user's). URLs that don't match any pattern, or whose source responds with a non-2xx status, render a styled error/404 instead of fetching further.
+
 - **GitHub data filtering**: `portfolio.json`'s `githubFetch` section controls what `fetcher.mjs` excludes from the fetched data:
 
     ```json

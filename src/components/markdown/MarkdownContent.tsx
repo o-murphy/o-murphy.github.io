@@ -1,6 +1,14 @@
 'use client';
 
-import { Children, createElement, isValidElement, type CSSProperties, type ReactElement, type ReactNode } from 'react';
+import {
+    Children,
+    createElement,
+    isValidElement,
+    useMemo,
+    type CSSProperties,
+    type ReactElement,
+    type ReactNode,
+} from 'react';
 import ReactMarkdown, { type Components } from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import rehypeRaw from 'rehype-raw';
@@ -15,6 +23,7 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 import type { IconDefinition } from '@fortawesome/fontawesome-svg-core';
 import { slugify } from '@/lib/slugify';
+import { resolveMarkdownUrl } from '@/lib/resolveMarkdownUrl';
 import { Mermaid } from './Mermaid';
 
 // inline-block (not plain inline): vertical padding on a plain inline <a> doesn't reserve
@@ -85,7 +94,7 @@ function Heading({
         <a
             href={`#${slug}`}
             aria-label="Link to this section"
-            className="absolute left-[var(--heading-anchor-offset,-1.5rem)] top-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity no-underline inline-flex items-center"
+            className="absolute left-[var(--heading-anchor-offset,var(--md-gutter,-1.25rem))] top-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity no-underline inline-flex items-center"
         >
             <Icon icon="octicon:link-16" className="w-4 h-4 text-gray-400 hover:text-black dark:hover:text-white" />
         </a>,
@@ -96,141 +105,165 @@ function Heading({
 // Blockquotes/alerts indent their content past the markdown's left edge (border + padding).
 // Headings inside them would otherwise anchor the link icon to their own (indented) edge instead
 // of the shared left gutter every other heading uses — this pushes the anchor out by the same
-// amount, so it lines up with the rest regardless of nesting.
+// amount, so it lines up with the rest regardless of nesting. Built on --md-gutter (not a literal
+// value) so it stays centered in the gutter at both breakpoints, same as top-level headings.
 function anchorIndentStyle(insetPx: number): CSSProperties {
-    return { '--heading-anchor-offset': `calc(-1.5rem - ${insetPx}px)` } as CSSProperties;
+    return { '--heading-anchor-offset': `calc(var(--md-gutter,-1.25rem) - ${insetPx}px)` } as CSSProperties;
 }
 
-const components: Components = {
-    h1: ({ children }) => (
-        <Heading level={1} className="text-2xl md:text-3xl font-bold mt-6 mb-6">
-            {children}
-        </Heading>
-    ),
-    h2: ({ children }) => (
-        <Heading level={2} className="text-xl font-bold mt-6 mb-5">
-            {children}
-        </Heading>
-    ),
-    h3: ({ children }) => (
-        <Heading level={3} className="text-lg font-bold mt-4 mb-4">
-            {children}
-        </Heading>
-    ),
-    h4: ({ children }) => (
-        <Heading level={4} className="text-base font-bold mt-3 mb-3">
-            {children}
-        </Heading>
-    ),
-    h5: ({ children }) => (
-        <Heading level={5} className="text-sm font-bold mt-2 mb-2">
-            {children}
-        </Heading>
-    ),
-    h6: ({ children }) => (
-        <Heading level={6} className="text-sm font-bold mt-2 mb-2">
-            {children}
-        </Heading>
-    ),
-    p: ({ children }) => <p className="text-sm leading-relaxed mb-4">{children}</p>,
-    a: ({ children, href }) => {
-        // Badge links (shields.io etc, wrapping only an image with no text) shouldn't get the
-        // black-box text-link hover — it clashes with the badge's own colors. Fade it instead.
-        const isBadgeLink = extractText(children).trim() === '';
-        return (
-            <a
-                href={href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className={isBadgeLink ? 'hover:opacity-70 transition-opacity' : linkClass}
-            >
+function createComponents(baseUrl?: string): Components {
+    return {
+        h1: ({ children }) => (
+            <Heading level={1} className="text-2xl md:text-3xl font-bold mt-6 mb-6">
                 {children}
-            </a>
-        );
-    },
-    ul: ({ children }) => <ul className="list-disc list-inside text-sm space-y-1 mb-4">{children}</ul>,
-    ol: ({ children }) => <ol className="list-decimal list-inside text-sm space-y-1 mb-4">{children}</ol>,
-    hr: () => <hr className="my-8 border-gray-300 dark:border-gray-700" />,
-    blockquote: ({ children }) => {
-        const items = Children.toArray(children).filter((c) => !(typeof c === 'string' && c.trim() === ''));
-        const marker = /^\[!(NOTE|TIP|IMPORTANT|WARNING|CAUTION)\]$/i.exec(extractText(items[0]).trim());
-
-        if (marker) {
-            const style = ALERT_STYLES[marker[1].toUpperCase()];
+            </Heading>
+        ),
+        h2: ({ children }) => (
+            <Heading level={2} className="text-xl font-bold mt-6 mb-5">
+                {children}
+            </Heading>
+        ),
+        h3: ({ children }) => (
+            <Heading level={3} className="text-lg font-bold mt-4 mb-4">
+                {children}
+            </Heading>
+        ),
+        h4: ({ children }) => (
+            <Heading level={4} className="text-base font-bold mt-3 mb-3">
+                {children}
+            </Heading>
+        ),
+        h5: ({ children }) => (
+            <Heading level={5} className="text-sm font-bold mt-2 mb-2">
+                {children}
+            </Heading>
+        ),
+        h6: ({ children }) => (
+            <Heading level={6} className="text-sm font-bold mt-2 mb-2">
+                {children}
+            </Heading>
+        ),
+        p: ({ children }) => <p className="text-sm leading-relaxed mb-4">{children}</p>,
+        a: ({ children, href }) => {
+            // Badge links (shields.io etc, wrapping only an image with no text) shouldn't get the
+            // black-box text-link hover — it clashes with the badge's own colors. Fade it instead.
+            const isBadgeLink = extractText(children).trim() === '';
             return (
-                <div className={`border-l-4 ${style.classes} p-4 my-4 rounded-r`} style={anchorIndentStyle(20)}>
-                    <p className="font-bold text-sm mb-2 flex items-center gap-1.5">
-                        <FontAwesomeIcon icon={style.icon} className={`w-4 h-4 ${style.iconClasses}`} /> {style.label}
-                    </p>
-                    <div className="text-sm [&>*:last-child]:mb-0">{items.slice(1)}</div>
-                </div>
+                <a
+                    href={href ? resolveMarkdownUrl(href, baseUrl) : href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={isBadgeLink ? 'hover:opacity-70 transition-opacity' : linkClass}
+                >
+                    {children}
+                </a>
             );
-        }
+        },
+        ul: ({ children }) => <ul className="list-disc list-inside text-sm space-y-1 mb-4">{children}</ul>,
+        ol: ({ children }) => <ol className="list-decimal list-inside text-sm space-y-1 mb-4">{children}</ol>,
+        hr: () => <hr className="my-8 border-gray-300 dark:border-gray-700" />,
+        blockquote: ({ children }) => {
+            const items = Children.toArray(children).filter((c) => !(typeof c === 'string' && c.trim() === ''));
+            const first = items[0];
+            // GitHub's own convention puts the marker and the alert's first line in the same
+            // paragraph (no blank line between "> [!WARNING]" and the next "> " line), so the
+            // marker only ever shows up as the leading text of the first paragraph's first child
+            // — never as a whole paragraph by itself. Look for it there instead of matching the
+            // full first-paragraph text.
+            const firstInline = isValidElement(first)
+                ? Children.toArray((first as ReactElement<{ children?: ReactNode }>).props.children)
+                : [first];
+            const leadingText = typeof firstInline[0] === 'string' ? firstInline[0] : '';
+            const marker = /^\[!(NOTE|TIP|IMPORTANT|WARNING|CAUTION)\]\s*/i.exec(leadingText);
 
-        return (
-            <blockquote
-                className="border-l-4 border-gray-400 dark:border-gray-600 bg-gray-50 dark:bg-gray-800 p-3 my-4 text-sm"
-                style={anchorIndentStyle(16)}
-            >
-                {children}
-            </blockquote>
-        );
-    },
-    img: ({ src, alt, width, height }) => {
-        // Explicit width/height (e.g. the org logo's raw <img width="100" height="100">) means the
-        // source sized it deliberately — respect that. Otherwise assume it's an inline badge (shields.io
-        // etc, which never sets these) and keep it small.
-        const hasExplicitSize = width != null || height != null;
-        return (
-            // eslint-disable-next-line @next/next/no-img-element
-            <img
-                src={typeof src === 'string' ? src : undefined}
-                alt={alt}
-                width={width}
-                height={height}
-                className={hasExplicitSize ? 'inline-block' : 'inline-block h-5 my-0.5 align-text-bottom mr-1'}
-            />
-        );
-    },
-    table: ({ children }) => (
-        <div className="overflow-x-auto mb-4">
-            <table className="text-sm border-collapse">{children}</table>
-        </div>
-    ),
-    th: ({ children }) => (
-        <th className="border border-gray-300 dark:border-gray-700 px-2 py-1 text-left font-bold">{children}</th>
-    ),
-    td: ({ children }) => <td className="border border-gray-300 dark:border-gray-700 px-2 py-1">{children}</td>,
-    pre: ({ children }) => {
-        const child = Array.isArray(children) ? children[0] : children;
-        const childClassName =
-            child && typeof child === 'object' && 'props' in child
-                ? (child.props as { className?: string }).className
-                : undefined;
-        if (childClassName?.includes('language-mermaid')) {
-            return <>{children}</>;
-        }
-        return (
-            <pre className="bg-gray-100 dark:bg-gray-800 rounded p-3 overflow-x-auto text-sm my-4 font-mono">
-                {children}
-            </pre>
-        );
-    },
-    code: ({ className, children }) => {
-        const match = /language-(\w+)/.exec(className || '');
-        if (match?.[1] === 'mermaid') {
-            return <Mermaid chart={String(children).replace(/\n$/, '')} />;
-        }
-        if (match) {
-            return <code className={`${className} font-mono`}>{children}</code>;
-        }
-        return <code className="bg-gray-100 dark:bg-gray-800 px-1.5 py-0.5 rounded text-sm font-mono">{children}</code>;
-    },
-};
+            if (marker) {
+                const style = ALERT_STYLES[marker[1].toUpperCase()];
+                const remainder = leadingText.slice(marker[0].length);
+                const restOfFirstLine = [remainder, ...firstInline.slice(1)].filter((c) => c !== '');
+                return (
+                    <div className={`border-l-4 ${style.classes} p-4 my-4 rounded-r`} style={anchorIndentStyle(20)}>
+                        <p className="font-bold text-sm mb-2 flex items-center gap-1.5">
+                            <FontAwesomeIcon icon={style.icon} className={`w-4 h-4 ${style.iconClasses}`} />{' '}
+                            {style.label}
+                        </p>
+                        <div className="text-sm [&>*:last-child]:mb-0">
+                            {restOfFirstLine.length > 0 && (
+                                <p className="text-sm leading-relaxed mb-0">{restOfFirstLine}</p>
+                            )}
+                            {items.slice(1)}
+                        </div>
+                    </div>
+                );
+            }
 
-export function MarkdownContent({ markdown }: { markdown: string }) {
+            return (
+                <blockquote
+                    className="border-l-4 border-gray-400 dark:border-gray-600 bg-gray-50 dark:bg-gray-800 p-3 my-4 text-sm"
+                    style={anchorIndentStyle(16)}
+                >
+                    {children}
+                </blockquote>
+            );
+        },
+        img: ({ src, alt, width, height }) => {
+            // Explicit width/height (e.g. the org logo's raw <img width="100" height="100">) means the
+            // source sized it deliberately — respect that. Otherwise assume it's an inline badge (shields.io
+            // etc, which never sets these) and keep it small.
+            const hasExplicitSize = width != null || height != null;
+            return (
+                // eslint-disable-next-line @next/next/no-img-element
+                <img
+                    src={typeof src === 'string' ? resolveMarkdownUrl(src, baseUrl) : undefined}
+                    alt={alt}
+                    width={width}
+                    height={height}
+                    className={hasExplicitSize ? 'inline-block' : 'inline-block h-5 my-0.5 align-text-bottom mr-1'}
+                />
+            );
+        },
+        table: ({ children }) => (
+            <div className="overflow-x-auto mb-4">
+                <table className="text-sm border-collapse">{children}</table>
+            </div>
+        ),
+        th: ({ children }) => (
+            <th className="border border-gray-300 dark:border-gray-700 px-2 py-1 text-left font-bold">{children}</th>
+        ),
+        td: ({ children }) => <td className="border border-gray-300 dark:border-gray-700 px-2 py-1">{children}</td>,
+        pre: ({ children }) => {
+            const child = Array.isArray(children) ? children[0] : children;
+            const childClassName =
+                child && typeof child === 'object' && 'props' in child
+                    ? (child.props as { className?: string }).className
+                    : undefined;
+            if (childClassName?.includes('language-mermaid')) {
+                return <>{children}</>;
+            }
+            return (
+                <pre className="bg-gray-100 dark:bg-gray-800 rounded p-3 overflow-x-auto text-sm my-4 font-mono">
+                    {children}
+                </pre>
+            );
+        },
+        code: ({ className, children }) => {
+            const match = /language-(\w+)/.exec(className || '');
+            if (match?.[1] === 'mermaid') {
+                return <Mermaid chart={String(children).replace(/\n$/, '')} />;
+            }
+            if (match) {
+                return <code className={`${className} font-mono`}>{children}</code>;
+            }
+            return (
+                <code className="bg-gray-100 dark:bg-gray-800 px-1.5 py-0.5 rounded text-sm font-mono">{children}</code>
+            );
+        },
+    };
+}
+
+export function MarkdownContent({ markdown, baseUrl }: { markdown: string; baseUrl?: string }) {
+    const components = useMemo(() => createComponents(baseUrl), [baseUrl]);
     return (
-        <div className="font-mono">
+        <div className="font-mono [--md-gutter:-1.25rem] md:[--md-gutter:-1.5rem]">
             <ReactMarkdown remarkPlugins={[remarkGfm]} rehypePlugins={[rehypeRaw]} components={components}>
                 {markdown}
             </ReactMarkdown>

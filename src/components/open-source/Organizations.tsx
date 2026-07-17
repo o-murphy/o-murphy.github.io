@@ -2,6 +2,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { Organization } from '@/types/dataTypes';
 import { useEffect, useState } from 'react';
 
@@ -45,7 +46,13 @@ export default function Organizations({ organizations }: OrganizationsProps) {
                                 light-on-transparent, so they need a surface that stays legible
                                 regardless of the page's own theme. */}
                             <span className="inline-flex items-center justify-center aspect-square bg-transparent dark:bg-[#26292F] rounded-md p-0.5">
-                                <img src={org.avatarUrl} alt={org.login} className="w-8 h-8 rounded-full" />
+                                <Image
+                                    src={org.avatarUrl}
+                                    alt={org.login}
+                                    width={32}
+                                    height={32}
+                                    className="w-8 h-8 rounded-full"
+                                />
                             </span>
                         </Link>
                     ))}
@@ -70,7 +77,13 @@ export default function Organizations({ organizations }: OrganizationsProps) {
                         className="flex items-center gap-2 p-2 hover:bg-gray-200 dark:hover:bg-gray-800 rounded transition-colors"
                     >
                         <span className="inline-flex items-center justify-center aspect-square bg-transparent dark:bg-[#26292F] rounded-md p-0.5 shrink-0">
-                            <img src={org.avatarUrl} alt={org.login} className="w-8 h-8 rounded-full" />
+                            <Image
+                                src={org.avatarUrl}
+                                alt={org.login}
+                                width={32}
+                                height={32}
+                                className="w-8 h-8 rounded-full"
+                            />
                         </span>
                         <span className="text-sm font-medium truncate">{org.login}</span>
                     </Link>

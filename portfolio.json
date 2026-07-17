@@ -25,6 +25,20 @@
             "url": "https://raw.githubusercontent.com/ballistics-lab/.github/main/profile/README.md"
         }
     ],
+    "markdownTrustedHosts": [
+        "raw.githubusercontent.com/ballistics-lab",
+        "raw.githubusercontent.com/o-murphy",
+        "raw.githubusercontent.com/tvt-tech",
+        "raw.githubusercontent.com/vaultbin",
+        "gist.githubusercontent.com/o-murphy",
+        "ballistics-lab.github.io",
+        "o-murphy.github.io",
+        "tvt-tech.github.io",
+        "vaultbin.github.io",
+        "*.o-murphy.net",
+        "o-murphy.net",
+        "localhost"
+    ],
     "artLinks": [
         {
             "name": "Spotify",

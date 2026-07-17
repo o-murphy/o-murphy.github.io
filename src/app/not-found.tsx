@@ -1,8 +1,11 @@
-// src/app/not-found.tsx
+import { Template } from '@/components/template';
+
 export default function NotFound() {
     return (
-        <div>
-            <h1>404 - Page Not Found</h1>
-        </div>
+        <Template>
+            <div className="w-full max-w-4xl p-8 text-center">
+                <h1 className="text-xl font-bold">404 - Page Not Found</h1>
+            </div>
+        </Template>
     );
 }
