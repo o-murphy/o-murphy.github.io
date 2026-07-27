@@ -333,10 +333,10 @@
   resolved "https://registry.npmjs.org/@humanwhocodes/retry/-/retry-0.4.3.tgz"
   integrity sha512-bV0Tgo9K4hfPCek+aMAn81RppFKv2ySDQeMoSZuvTASywNTnVJCArCZE2FWqpvIatKu7VMRLWlR1EazvVhDyhQ==
 
-"@iconify-json/octicon@^1.2.29":
-  version "1.2.29"
-  resolved "https://registry.yarnpkg.com/@iconify-json/octicon/-/octicon-1.2.29.tgz#2142c97aae51b56f4592261a600d0a9beec1a27c"
-  integrity sha512-yREprVAv+SiAO8dxGw40LMLou4eXDYJX9Cz4MB1Cki4d+peSCpQ4b99YaaRbwuJeyyjLM4Q03QzBcEfcf6xCcg==
+"@iconify-json/octicon@^1.2.30":
+  version "1.2.30"
+  resolved "https://registry.yarnpkg.com/@iconify-json/octicon/-/octicon-1.2.30.tgz#98c6d46e4742a340ca89cc04747b62fc3691ad90"
+  integrity sha512-6wi8HjjRTKlZ/2BBoQIT00vur67Onr86NSpRqbELsegowjea+L2oEbvtiisc/EhRvMlh3GWIdEfhqyFuPZcd5g==
   dependencies:
     "@iconify/types" "*"
 
