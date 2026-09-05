@@ -1,0 +1,2568 @@
+{
+  "data": [
+    {
+      "id": "PR_kwDOUCvvp88AAAABCROYFg",
+      "title": "usermod: no-user-c-modules for a stock, unmodified MicroPython build",
+      "url": "https://github.com/ballistics-lab/cibuildmp/pull/40",
+      "state": "OPEN",
+      "mergedBy": null,
+      "createdAt": "2026-09-04T22:34:01Z",
+      "number": 40,
+      "changedFiles": 34,
+      "additions": 828,
+      "deletions": 241,
+      "baseRepository": {
+        "name": "cibuildmp",
+        "url": "https://github.com/ballistics-lab/cibuildmp",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/195828045?v=4",
+          "login": "ballistics-lab",
+          "url": "https://github.com/ballistics-lab"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOUCvvp88AAAABCQRk-w",
+      "title": "docs: close 0057 -- document multi-module conventions, credit 0069's fixture proof",
+      "url": "https://github.com/ballistics-lab/cibuildmp/pull/39",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+        "url": "https://github.com/o-murphy",
+        "login": "o-murphy"
+      },
+      "createdAt": "2026-09-04T20:13:03Z",
+      "number": 39,
+      "changedFiles": 3,
+      "additions": 69,
+      "deletions": 6,
+      "baseRepository": {
+        "name": "cibuildmp",
+        "url": "https://github.com/ballistics-lab/cibuildmp",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/195828045?v=4",
+          "login": "ballistics-lab",
+          "url": "https://github.com/ballistics-lab"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOUCvvp88AAAABCQEodQ",
+      "title": "docs: repin README.md and docs/ACTIONS.md to v0.7.0",
+      "url": "https://github.com/ballistics-lab/cibuildmp/pull/38",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+        "url": "https://github.com/o-murphy",
+        "login": "o-murphy"
+      },
+      "createdAt": "2026-09-04T19:44:41Z",
+      "number": 38,
+      "changedFiles": 2,
+      "additions": 4,
+      "deletions": 4,
+      "baseRepository": {
+        "name": "cibuildmp",
+        "url": "https://github.com/ballistics-lab/cibuildmp",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/195828045?v=4",
+          "login": "ballistics-lab",
+          "url": "https://github.com/ballistics-lab"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOUCvvp88AAAABCPBxCg",
+      "title": "Claude/what next mu1m60",
+      "url": "https://github.com/ballistics-lab/cibuildmp/pull/37",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+        "url": "https://github.com/o-murphy",
+        "login": "o-murphy"
+      },
+      "createdAt": "2026-09-04T17:16:43Z",
+      "number": 37,
+      "changedFiles": 81,
+      "additions": 7880,
+      "deletions": 1333,
+      "baseRepository": {
+        "name": "cibuildmp",
+        "url": "https://github.com/ballistics-lab/cibuildmp",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/195828045?v=4",
+          "login": "ballistics-lab",
+          "url": "https://github.com/ballistics-lab"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOUCvvp88AAAABCK4otw",
+      "title": "docs: record the real embedded_base publish (0096 addendum)",
+      "url": "https://github.com/ballistics-lab/cibuildmp/pull/36",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+        "url": "https://github.com/o-murphy",
+        "login": "o-murphy"
+      },
+      "createdAt": "2026-09-04T08:17:18Z",
+      "number": 36,
+      "changedFiles": 34,
+      "additions": 814,
+      "deletions": 400,
+      "baseRepository": {
+        "name": "cibuildmp",
+        "url": "https://github.com/ballistics-lab/cibuildmp",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/195828045?v=4",
+          "login": "ballistics-lab",
+          "url": "https://github.com/ballistics-lab"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOUCvvp88AAAABB-aoUg",
+      "title": "release: mark 0.6.2, close out 0084's own final verification note",
+      "url": "https://github.com/ballistics-lab/cibuildmp/pull/35",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+        "url": "https://github.com/o-murphy",
+        "login": "o-murphy"
+      },
+      "createdAt": "2026-09-02T23:15:06Z",
+      "number": 35,
+      "changedFiles": 47,
+      "additions": 9891,
+      "deletions": 3025,
+      "baseRepository": {
+        "name": "cibuildmp",
+        "url": "https://github.com/ballistics-lab/cibuildmp",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/195828045?v=4",
+          "login": "ballistics-lab",
+          "url": "https://github.com/ballistics-lab"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOToGZZ88AAAABB99JNg",
+      "title": "Cibw cython paralel",
+      "url": "https://github.com/o-murphy/rp2040py/pull/51",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+        "url": "https://github.com/o-murphy",
+        "login": "o-murphy"
+      },
+      "createdAt": "2026-09-02T21:59:31Z",
+      "number": 51,
+      "changedFiles": 3,
+      "additions": 63,
+      "deletions": 3,
+      "baseRepository": {
+        "name": "rp2040py",
+        "url": "https://github.com/o-murphy/rp2040py",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "login": "o-murphy",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOHjeS288AAAABB9vjDw",
+      "title": "Cibw cython paralel",
+      "url": "https://github.com/o-murphy/py-ballisticcalc/pull/346",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+        "url": "https://github.com/o-murphy",
+        "login": "o-murphy"
+      },
+      "createdAt": "2026-09-02T21:25:41Z",
+      "number": 346,
+      "changedFiles": 3,
+      "additions": 57,
+      "deletions": 21,
+      "baseRepository": {
+        "name": "py-ballisticcalc",
+        "url": "https://github.com/o-murphy/py-ballisticcalc",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "login": "o-murphy",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOTDzPXs8AAAABB0S7jg",
+      "title": "Add RPI_PICO2/RPI_PICO2_W usermod builds (build-only, RP2350)",
+      "url": "https://github.com/ballistics-lab/micropython-bclibc/pull/20",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+        "url": "https://github.com/o-murphy",
+        "login": "o-murphy"
+      },
+      "createdAt": "2026-09-01T22:38:52Z",
+      "number": 20,
+      "changedFiles": 4,
+      "additions": 117,
+      "deletions": 23,
+      "baseRepository": {
+        "name": "micropython-bclibc",
+        "url": "https://github.com/ballistics-lab/micropython-bclibc",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/195828045?v=4",
+          "login": "ballistics-lab",
+          "url": "https://github.com/ballistics-lab"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOKNavAc8AAAABB0Mviw",
+      "title": "ci: fix mipsel identifier for cibuildmp v0.6.1",
+      "url": "https://github.com/o-murphy/a7p/pull/90",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+        "url": "https://github.com/o-murphy",
+        "login": "o-murphy"
+      },
+      "createdAt": "2026-09-01T22:21:37Z",
+      "number": 90,
+      "changedFiles": 5,
+      "additions": 20,
+      "deletions": 10,
+      "baseRepository": {
+        "name": "a7p",
+        "url": "https://github.com/o-murphy/a7p",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "login": "o-murphy",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOUADQ488AAAABB0KT0w",
+      "title": "README: real RPI_PICO2_W build size, from CI (1861120 bytes)",
+      "url": "https://github.com/o-murphy/micropython-wasm3/pull/10",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+        "url": "https://github.com/o-murphy",
+        "login": "o-murphy"
+      },
+      "createdAt": "2026-09-01T22:15:08Z",
+      "number": 10,
+      "changedFiles": 5,
+      "additions": 179,
+      "deletions": 20,
+      "baseRepository": {
+        "name": "micropython-wasm3",
+        "url": "https://github.com/o-murphy/micropython-wasm3",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "login": "o-murphy",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOUADQ488AAAABBz-CIg",
+      "title": "Bump cibuildmp to v0.6.1",
+      "url": "https://github.com/o-murphy/micropython-wasm3/pull/9",
+      "state": "CLOSED",
+      "mergedBy": null,
+      "createdAt": "2026-09-01T21:43:35Z",
+      "number": 9,
+      "changedFiles": 5,
+      "additions": 159,
+      "deletions": 18,
+      "baseRepository": {
+        "name": "micropython-wasm3",
+        "url": "https://github.com/o-murphy/micropython-wasm3",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "login": "o-murphy",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOUCvvp88AAAABByjMLg",
+      "title": "docs: repin ppc64le_linux, scope the docker-local skill, close vendored-images gap",
+      "url": "https://github.com/ballistics-lab/cibuildmp/pull/34",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+        "url": "https://github.com/o-murphy",
+        "login": "o-murphy"
+      },
+      "createdAt": "2026-09-01T18:28:14Z",
+      "number": 34,
+      "changedFiles": 7,
+      "additions": 424,
+      "deletions": 25,
+      "baseRepository": {
+        "name": "cibuildmp",
+        "url": "https://github.com/ballistics-lab/cibuildmp",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/195828045?v=4",
+          "login": "ballistics-lab",
+          "url": "https://github.com/ballistics-lab"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOUCvvp88AAAABBxgtGw",
+      "title": "fix: the self-check itself needed -nostartfiles, not -shared",
+      "url": "https://github.com/ballistics-lab/cibuildmp/pull/33",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+        "url": "https://github.com/o-murphy",
+        "login": "o-murphy"
+      },
+      "createdAt": "2026-09-01T16:04:25Z",
+      "number": 33,
+      "changedFiles": 9,
+      "additions": 299,
+      "deletions": 25,
+      "baseRepository": {
+        "name": "cibuildmp",
+        "url": "https://github.com/ballistics-lab/cibuildmp",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/195828045?v=4",
+          "login": "ballistics-lab",
+          "url": "https://github.com/ballistics-lab"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOUCvvp88AAAABBwNDMA",
+      "title": "Docker bump ubuntu 26",
+      "url": "https://github.com/ballistics-lab/cibuildmp/pull/32",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+        "url": "https://github.com/o-murphy",
+        "login": "o-murphy"
+      },
+      "createdAt": "2026-09-01T13:28:57Z",
+      "number": 32,
+      "changedFiles": 27,
+      "additions": 329,
+      "deletions": 115,
+      "baseRepository": {
+        "name": "cibuildmp",
+        "url": "https://github.com/ballistics-lab/cibuildmp",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/195828045?v=4",
+          "login": "ballistics-lab",
+          "url": "https://github.com/ballistics-lab"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOUCvvp88AAAABBvlv-g",
+      "title": "Update mipsel",
+      "url": "https://github.com/ballistics-lab/cibuildmp/pull/30",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+        "url": "https://github.com/o-murphy",
+        "login": "o-murphy"
+      },
+      "createdAt": "2026-09-01T12:12:56Z",
+      "number": 30,
+      "changedFiles": 28,
+      "additions": 871,
+      "deletions": 170,
+      "baseRepository": {
+        "name": "cibuildmp",
+        "url": "https://github.com/ballistics-lab/cibuildmp",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/195828045?v=4",
+          "login": "ballistics-lab",
+          "url": "https://github.com/ballistics-lab"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOUADQ488AAAABBqvscQ",
+      "title": "removed: mipsel builds as deprecated platform",
+      "url": "https://github.com/o-murphy/micropython-wasm3/pull/8",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+        "url": "https://github.com/o-murphy",
+        "login": "o-murphy"
+      },
+      "createdAt": "2026-08-31T22:34:47Z",
+      "number": 8,
+      "changedFiles": 4,
+      "additions": 48,
+      "deletions": 88,
+      "baseRepository": {
+        "name": "micropython-wasm3",
+        "url": "https://github.com/o-murphy/micropython-wasm3",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "login": "o-murphy",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOFRrTuc8AAAABBqjyCw",
+      "title": "ci: use OIDC for codecov",
+      "url": "https://github.com/wasm3/pywasm3/pull/6",
+      "state": "OPEN",
+      "mergedBy": null,
+      "createdAt": "2026-08-31T22:04:51Z",
+      "number": 6,
+      "changedFiles": 2,
+      "additions": 34,
+      "deletions": 32,
+      "baseRepository": {
+        "name": "pywasm3",
+        "url": "https://github.com/wasm3/pywasm3",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/58013131?v=4",
+          "login": "wasm3",
+          "url": "https://github.com/wasm3"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOUADQ488AAAABBp1EZQ",
+      "title": "Bump cibuildmp",
+      "url": "https://github.com/o-murphy/micropython-wasm3/pull/7",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+        "url": "https://github.com/o-murphy",
+        "login": "o-murphy"
+      },
+      "createdAt": "2026-08-31T20:18:11Z",
+      "number": 7,
+      "changedFiles": 3,
+      "additions": 139,
+      "deletions": 67,
+      "baseRepository": {
+        "name": "micropython-wasm3",
+        "url": "https://github.com/o-murphy/micropython-wasm3",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "login": "o-murphy",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOTDzPXs8AAAABBp001Q",
+      "title": "Bump cibuildmp",
+      "url": "https://github.com/ballistics-lab/micropython-bclibc/pull/19",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+        "url": "https://github.com/o-murphy",
+        "login": "o-murphy"
+      },
+      "createdAt": "2026-08-31T20:17:36Z",
+      "number": 19,
+      "changedFiles": 3,
+      "additions": 136,
+      "deletions": 51,
+      "baseRepository": {
+        "name": "micropython-bclibc",
+        "url": "https://github.com/ballistics-lab/micropython-bclibc",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/195828045?v=4",
+          "login": "ballistics-lab",
+          "url": "https://github.com/ballistics-lab"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOKNavAc8AAAABBp0o_g",
+      "title": "Bump cibuildmp",
+      "url": "https://github.com/o-murphy/a7p/pull/87",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+        "url": "https://github.com/o-murphy",
+        "login": "o-murphy"
+      },
+      "createdAt": "2026-08-31T20:17:08Z",
+      "number": 87,
+      "changedFiles": 7,
+      "additions": 294,
+      "deletions": 124,
+      "baseRepository": {
+        "name": "a7p",
+        "url": "https://github.com/o-murphy/a7p",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "login": "o-murphy",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOUCvvp88AAAABBpqSjw",
+      "title": "Fix/companions",
+      "url": "https://github.com/ballistics-lab/cibuildmp/pull/29",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+        "url": "https://github.com/o-murphy",
+        "login": "o-murphy"
+      },
+      "createdAt": "2026-08-31T19:54:23Z",
+      "number": 29,
+      "changedFiles": 10,
+      "additions": 806,
+      "deletions": 28,
+      "baseRepository": {
+        "name": "cibuildmp",
+        "url": "https://github.com/ballistics-lab/cibuildmp",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/195828045?v=4",
+          "login": "ballistics-lab",
+          "url": "https://github.com/ballistics-lab"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOUCvvp88AAAABBoY5Bw",
+      "title": "Windows/qemu usermod smoke tests, live-verified (0080)",
+      "url": "https://github.com/ballistics-lab/cibuildmp/pull/28",
+      "state": "CLOSED",
+      "mergedBy": null,
+      "createdAt": "2026-08-31T16:50:57Z",
+      "number": 28,
+      "changedFiles": 10,
+      "additions": 806,
+      "deletions": 28,
+      "baseRepository": {
+        "name": "cibuildmp",
+        "url": "https://github.com/ballistics-lab/cibuildmp",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/195828045?v=4",
+          "login": "ballistics-lab",
+          "url": "https://github.com/ballistics-lab"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOUCvvp88AAAABBl805Q",
+      "title": "Cleanup",
+      "url": "https://github.com/ballistics-lab/cibuildmp/pull/27",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+        "url": "https://github.com/o-murphy",
+        "login": "o-murphy"
+      },
+      "createdAt": "2026-08-31T11:33:15Z",
+      "number": 27,
+      "changedFiles": 56,
+      "additions": 4168,
+      "deletions": 934,
+      "baseRepository": {
+        "name": "cibuildmp",
+        "url": "https://github.com/ballistics-lab/cibuildmp",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/195828045?v=4",
+          "login": "ballistics-lab",
+          "url": "https://github.com/ballistics-lab"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOUCvvp88AAAABBlGjyw",
+      "title": "docs: legacy composite actions are a permanent fallback, not a usage path",
+      "url": "https://github.com/ballistics-lab/cibuildmp/pull/26",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+        "url": "https://github.com/o-murphy",
+        "login": "o-murphy"
+      },
+      "createdAt": "2026-08-31T09:25:34Z",
+      "number": 26,
+      "changedFiles": 20,
+      "additions": 355,
+      "deletions": 491,
+      "baseRepository": {
+        "name": "cibuildmp",
+        "url": "https://github.com/ballistics-lab/cibuildmp",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/195828045?v=4",
+          "login": "ballistics-lab",
+          "url": "https://github.com/ballistics-lab"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOUCvvp88AAAABBijHRQ",
+      "title": "natmod: {micropython} placeholder in module-dir, upstream examples/natmod CI slice (0055/0072)",
+      "url": "https://github.com/ballistics-lab/cibuildmp/pull/25",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+        "url": "https://github.com/o-murphy",
+        "login": "o-murphy"
+      },
+      "createdAt": "2026-08-31T00:54:23Z",
+      "number": 25,
+      "changedFiles": 13,
+      "additions": 562,
+      "deletions": 33,
+      "baseRepository": {
+        "name": "cibuildmp",
+        "url": "https://github.com/ballistics-lab/cibuildmp",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/195828045?v=4",
+          "login": "ballistics-lab",
+          "url": "https://github.com/ballistics-lab"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOUCvvp88AAAABBias8g",
+      "title": "Repin README/ACTIONS examples to v0.4.1",
+      "url": "https://github.com/ballistics-lab/cibuildmp/pull/24",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+        "url": "https://github.com/o-murphy",
+        "login": "o-murphy"
+      },
+      "createdAt": "2026-08-31T00:16:47Z",
+      "number": 24,
+      "changedFiles": 15,
+      "additions": 558,
+      "deletions": 123,
+      "baseRepository": {
+        "name": "cibuildmp",
+        "url": "https://github.com/ballistics-lab/cibuildmp",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/195828045?v=4",
+          "login": "ballistics-lab",
+          "url": "https://github.com/ballistics-lab"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOUCvvp88AAAABBiGzQQ",
+      "title": "Fix: collected unix binary shipped without its own repaired lib/ sidecar",
+      "url": "https://github.com/ballistics-lab/cibuildmp/pull/23",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+        "url": "https://github.com/o-murphy",
+        "login": "o-murphy"
+      },
+      "createdAt": "2026-08-30T22:32:47Z",
+      "number": 23,
+      "changedFiles": 13,
+      "additions": 710,
+      "deletions": 4,
+      "baseRepository": {
+        "name": "cibuildmp",
+        "url": "https://github.com/ballistics-lab/cibuildmp",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/195828045?v=4",
+          "login": "ballistics-lab",
+          "url": "https://github.com/ballistics-lab"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOUCvvp88AAAABBhaCEQ",
+      "title": "Add vendored-images reference doc, fix stale container-model docs, record mipsel toolchain decision",
+      "url": "https://github.com/ballistics-lab/cibuildmp/pull/22",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+        "url": "https://github.com/o-murphy",
+        "login": "o-murphy"
+      },
+      "createdAt": "2026-08-30T18:49:41Z",
+      "number": 22,
+      "changedFiles": 6,
+      "additions": 347,
+      "deletions": 83,
+      "baseRepository": {
+        "name": "cibuildmp",
+        "url": "https://github.com/ballistics-lab/cibuildmp",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/195828045?v=4",
+          "login": "ballistics-lab",
+          "url": "https://github.com/ballistics-lab"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOUCvvp88AAAABBhRrcQ",
+      "title": "Tracker audit: close [0038], fix stale rp2/README/CHANGELOG entries, flip [0054]'s vendoring call",
+      "url": "https://github.com/ballistics-lab/cibuildmp/pull/21",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+        "url": "https://github.com/o-murphy",
+        "login": "o-murphy"
+      },
+      "createdAt": "2026-08-30T18:09:47Z",
+      "number": 21,
+      "changedFiles": 10,
+      "additions": 191,
+      "deletions": 101,
+      "baseRepository": {
+        "name": "cibuildmp",
+        "url": "https://github.com/ballistics-lab/cibuildmp",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/195828045?v=4",
+          "login": "ballistics-lab",
+          "url": "https://github.com/ballistics-lab"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOUCvvp88AAAABBgEwRg",
+      "title": "Repin both pypa and cibuildmp's own docker image tables to what's live",
+      "url": "https://github.com/ballistics-lab/cibuildmp/pull/20",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+        "url": "https://github.com/o-murphy",
+        "login": "o-murphy"
+      },
+      "createdAt": "2026-08-30T12:05:48Z",
+      "number": 20,
+      "changedFiles": 2,
+      "additions": 58,
+      "deletions": 58,
+      "baseRepository": {
+        "name": "cibuildmp",
+        "url": "https://github.com/ballistics-lab/cibuildmp",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/195828045?v=4",
+          "login": "ballistics-lab",
+          "url": "https://github.com/ballistics-lab"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOUCvvp88AAAABBf-u7g",
+      "title": "Retag superseded digests before publish moves :latest off them",
+      "url": "https://github.com/ballistics-lab/cibuildmp/pull/19",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+        "url": "https://github.com/o-murphy",
+        "login": "o-murphy"
+      },
+      "createdAt": "2026-08-30T11:34:52Z",
+      "number": 19,
+      "changedFiles": 3,
+      "additions": 55,
+      "deletions": 1,
+      "baseRepository": {
+        "name": "cibuildmp",
+        "url": "https://github.com/ballistics-lab/cibuildmp",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/195828045?v=4",
+          "login": "ballistics-lab",
+          "url": "https://github.com/ballistics-lab"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOUCvvp88AAAABBfso9w",
+      "title": "Group docker Dependabot PRs; restructure supporting docs against code/CI reality",
+      "url": "https://github.com/ballistics-lab/cibuildmp/pull/17",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+        "url": "https://github.com/o-murphy",
+        "login": "o-murphy"
+      },
+      "createdAt": "2026-08-30T09:56:42Z",
+      "number": 17,
+      "changedFiles": 11,
+      "additions": 345,
+      "deletions": 76,
+      "baseRepository": {
+        "name": "cibuildmp",
+        "url": "https://github.com/ballistics-lab/cibuildmp",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/195828045?v=4",
+          "login": "ballistics-lab",
+          "url": "https://github.com/ballistics-lab"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOUCvvp88AAAABBeG3IA",
+      "title": "Group docker Dependabot PRs into one, like github-actions already does",
+      "url": "https://github.com/ballistics-lab/cibuildmp/pull/15",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+        "url": "https://github.com/o-murphy",
+        "login": "o-murphy"
+      },
+      "createdAt": "2026-08-29T22:58:23Z",
+      "number": 15,
+      "changedFiles": 1,
+      "additions": 11,
+      "deletions": 0,
+      "baseRepository": {
+        "name": "cibuildmp",
+        "url": "https://github.com/ballistics-lab/cibuildmp",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/195828045?v=4",
+          "login": "ballistics-lab",
+          "url": "https://github.com/ballistics-lab"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOUADQ488AAAABBeEKzA",
+      "title": "Ci/cibuildmp",
+      "url": "https://github.com/o-murphy/micropython-wasm3/pull/6",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+        "url": "https://github.com/o-murphy",
+        "login": "o-murphy"
+      },
+      "createdAt": "2026-08-29T22:41:52Z",
+      "number": 6,
+      "changedFiles": 5,
+      "additions": 340,
+      "deletions": 259,
+      "baseRepository": {
+        "name": "micropython-wasm3",
+        "url": "https://github.com/o-murphy/micropython-wasm3",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "login": "o-murphy",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOTDzPXs8AAAABBeC9Pw",
+      "title": "ci/cibuildmp",
+      "url": "https://github.com/ballistics-lab/micropython-bclibc/pull/18",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+        "url": "https://github.com/o-murphy",
+        "login": "o-murphy"
+      },
+      "createdAt": "2026-08-29T22:34:30Z",
+      "number": 18,
+      "changedFiles": 4,
+      "additions": 293,
+      "deletions": 386,
+      "baseRepository": {
+        "name": "micropython-bclibc",
+        "url": "https://github.com/ballistics-lab/micropython-bclibc",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/195828045?v=4",
+          "login": "ballistics-lab",
+          "url": "https://github.com/ballistics-lab"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOUADQ488AAAABBeAMgg",
+      "title": "Claude/a7p cibuildmp action",
+      "url": "https://github.com/o-murphy/micropython-wasm3/pull/5",
+      "state": "CLOSED",
+      "mergedBy": null,
+      "createdAt": "2026-08-29T22:18:12Z",
+      "number": 5,
+      "changedFiles": 5,
+      "additions": 340,
+      "deletions": 259,
+      "baseRepository": {
+        "name": "micropython-wasm3",
+        "url": "https://github.com/o-murphy/micropython-wasm3",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "login": "o-murphy",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOKNavAc8AAAABBd_Psg",
+      "title": "Ci/cibuildmp",
+      "url": "https://github.com/o-murphy/a7p/pull/86",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+        "url": "https://github.com/o-murphy",
+        "login": "o-murphy"
+      },
+      "createdAt": "2026-08-29T22:12:43Z",
+      "number": 86,
+      "changedFiles": 6,
+      "additions": 507,
+      "deletions": 754,
+      "baseRepository": {
+        "name": "a7p",
+        "url": "https://github.com/o-murphy/a7p",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "login": "o-murphy",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOUCvvp88AAAABBd8fUA",
+      "title": "fix: usermod's own dockerrun.run() mounts package_dir, matching natmo…",
+      "url": "https://github.com/ballistics-lab/cibuildmp/pull/9",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+        "url": "https://github.com/o-murphy",
+        "login": "o-murphy"
+      },
+      "createdAt": "2026-08-29T21:56:55Z",
+      "number": 9,
+      "changedFiles": 190,
+      "additions": 37852,
+      "deletions": 3447,
+      "baseRepository": {
+        "name": "cibuildmp",
+        "url": "https://github.com/ballistics-lab/cibuildmp",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/195828045?v=4",
+          "login": "ballistics-lab",
+          "url": "https://github.com/ballistics-lab"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOUCvvp88AAAABBdDuRg",
+      "title": "fix: usermod's own dockerrun.run() mounts package_dir, matching natmod",
+      "url": "https://github.com/ballistics-lab/cibuildmp/pull/8",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+        "url": "https://github.com/o-murphy",
+        "login": "o-murphy"
+      },
+      "createdAt": "2026-08-29T17:08:08Z",
+      "number": 8,
+      "changedFiles": 190,
+      "additions": 37852,
+      "deletions": 3447,
+      "baseRepository": {
+        "name": "cibuildmp",
+        "url": "https://github.com/ballistics-lab/cibuildmp",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/195828045?v=4",
+          "login": "ballistics-lab",
+          "url": "https://github.com/ballistics-lab"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOUCvvp88AAAABBZg_qQ",
+      "title": "Feat/usermod",
+      "url": "https://github.com/ballistics-lab/cibuildmp/pull/7",
+      "state": "CLOSED",
+      "mergedBy": null,
+      "createdAt": "2026-08-28T23:28:49Z",
+      "number": 7,
+      "changedFiles": 186,
+      "additions": 36578,
+      "deletions": 3447,
+      "baseRepository": {
+        "name": "cibuildmp",
+        "url": "https://github.com/ballistics-lab/cibuildmp",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/195828045?v=4",
+          "login": "ballistics-lab",
+          "url": "https://github.com/ballistics-lab"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOUCvvp88AAAABBXKHHw",
+      "title": "Claude/cibuildmp 0058 next",
+      "url": "https://github.com/ballistics-lab/cibuildmp/pull/6",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+        "url": "https://github.com/o-murphy",
+        "login": "o-murphy"
+      },
+      "createdAt": "2026-08-28T16:29:01Z",
+      "number": 6,
+      "changedFiles": 63,
+      "additions": 5396,
+      "deletions": 3519,
+      "baseRepository": {
+        "name": "cibuildmp",
+        "url": "https://github.com/ballistics-lab/cibuildmp",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/195828045?v=4",
+          "login": "ballistics-lab",
+          "url": "https://github.com/ballistics-lab"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOUCvvp88AAAABBUlqfQ",
+      "title": "Feat/usermod 1",
+      "url": "https://github.com/ballistics-lab/cibuildmp/pull/5",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+        "url": "https://github.com/o-murphy",
+        "login": "o-murphy"
+      },
+      "createdAt": "2026-08-28T09:53:11Z",
+      "number": 5,
+      "changedFiles": 146,
+      "additions": 30666,
+      "deletions": 3141,
+      "baseRepository": {
+        "name": "cibuildmp",
+        "url": "https://github.com/ballistics-lab/cibuildmp",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/195828045?v=4",
+          "login": "ballistics-lab",
+          "url": "https://github.com/ballistics-lab"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOUCvvp88AAAABBUlYFw",
+      "title": "Claude/docs tracker cibuildmp i3s9ac",
+      "url": "https://github.com/ballistics-lab/cibuildmp/pull/4",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+        "url": "https://github.com/o-murphy",
+        "login": "o-murphy"
+      },
+      "createdAt": "2026-08-28T09:52:32Z",
+      "number": 4,
+      "changedFiles": 8,
+      "additions": 287,
+      "deletions": 68,
+      "baseRepository": {
+        "name": "cibuildmp",
+        "url": "https://github.com/ballistics-lab/cibuildmp",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/195828045?v=4",
+          "login": "ballistics-lab",
+          "url": "https://github.com/ballistics-lab"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOUCvvp88AAAABBT71UQ",
+      "title": "Claude/cibuildmp readme update jbuiry",
+      "url": "https://github.com/ballistics-lab/cibuildmp/pull/3",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+        "url": "https://github.com/o-murphy",
+        "login": "o-murphy"
+      },
+      "createdAt": "2026-08-28T08:13:29Z",
+      "number": 3,
+      "changedFiles": 86,
+      "additions": 14840,
+      "deletions": 4388,
+      "baseRepository": {
+        "name": "cibuildmp",
+        "url": "https://github.com/ballistics-lab/cibuildmp",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/195828045?v=4",
+          "login": "ballistics-lab",
+          "url": "https://github.com/ballistics-lab"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOToGZZ88AAAABBHDlSA",
+      "title": "Micropython 1.29.0",
+      "url": "https://github.com/o-murphy/rp2040py/pull/49",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+        "url": "https://github.com/o-murphy",
+        "login": "o-murphy"
+      },
+      "createdAt": "2026-08-26T17:51:53Z",
+      "number": 49,
+      "changedFiles": 23,
+      "additions": 216,
+      "deletions": 45,
+      "baseRepository": {
+        "name": "rp2040py",
+        "url": "https://github.com/o-murphy/rp2040py",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "login": "o-murphy",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOUCvvp88AAAABA_8wTA",
+      "title": "Claude/cibuildmp usermod support ",
+      "url": "https://github.com/ballistics-lab/cibuildmp/pull/2",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+        "url": "https://github.com/o-murphy",
+        "login": "o-murphy"
+      },
+      "createdAt": "2026-08-25T21:42:38Z",
+      "number": 2,
+      "changedFiles": 62,
+      "additions": 9788,
+      "deletions": 211,
+      "baseRepository": {
+        "name": "cibuildmp",
+        "url": "https://github.com/ballistics-lab/cibuildmp",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/195828045?v=4",
+          "login": "ballistics-lab",
+          "url": "https://github.com/ballistics-lab"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOUCvvp88AAAABA3aiaA",
+      "title": "usermod: vendor board database, per-port build data, manifest generation, unix build driver (M6-M8)",
+      "url": "https://github.com/ballistics-lab/cibuildmp/pull/1",
+      "state": "CLOSED",
+      "mergedBy": null,
+      "createdAt": "2026-08-24T22:59:53Z",
+      "number": 1,
+      "changedFiles": 12,
+      "additions": 1605,
+      "deletions": 23,
+      "baseRepository": {
+        "name": "cibuildmp",
+        "url": "https://github.com/ballistics-lab/cibuildmp",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/195828045?v=4",
+          "login": "ballistics-lab",
+          "url": "https://github.com/ballistics-lab"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOToGZZ88AAAABA2yP0A",
+      "title": "docs: update wasm compat",
+      "url": "https://github.com/o-murphy/rp2040py/pull/48",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+        "url": "https://github.com/o-murphy",
+        "login": "o-murphy"
+      },
+      "createdAt": "2026-08-24T21:09:51Z",
+      "number": 48,
+      "changedFiles": 6,
+      "additions": 191,
+      "deletions": 52,
+      "baseRepository": {
+        "name": "rp2040py",
+        "url": "https://github.com/o-murphy/rp2040py",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "login": "o-murphy",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOKNavAc8AAAABA2gecw",
+      "title": "Ci/cibuildmp",
+      "url": "https://github.com/o-murphy/a7p/pull/83",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+        "url": "https://github.com/o-murphy",
+        "login": "o-murphy"
+      },
+      "createdAt": "2026-08-24T20:27:08Z",
+      "number": 83,
+      "changedFiles": 5,
+      "additions": 104,
+      "deletions": 36,
+      "baseRepository": {
+        "name": "a7p",
+        "url": "https://github.com/o-murphy/a7p",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "login": "o-murphy",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOUADQ488AAAABA2gdOg",
+      "title": "Ci/cibuildmp",
+      "url": "https://github.com/o-murphy/micropython-wasm3/pull/4",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+        "url": "https://github.com/o-murphy",
+        "login": "o-murphy"
+      },
+      "createdAt": "2026-08-24T20:27:05Z",
+      "number": 4,
+      "changedFiles": 6,
+      "additions": 72,
+      "deletions": 24,
+      "baseRepository": {
+        "name": "micropython-wasm3",
+        "url": "https://github.com/o-murphy/micropython-wasm3",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "login": "o-murphy",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOTDzPXs8AAAABA2gcHQ",
+      "title": "Ci/cibuildmp",
+      "url": "https://github.com/ballistics-lab/micropython-bclibc/pull/17",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+        "url": "https://github.com/o-murphy",
+        "login": "o-murphy"
+      },
+      "createdAt": "2026-08-24T20:27:03Z",
+      "number": 17,
+      "changedFiles": 10,
+      "additions": 208,
+      "deletions": 203,
+      "baseRepository": {
+        "name": "micropython-bclibc",
+        "url": "https://github.com/ballistics-lab/micropython-bclibc",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/195828045?v=4",
+          "login": "ballistics-lab",
+          "url": "https://github.com/ballistics-lab"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOHjeS288AAAABAzsG-A",
+      "title": "Ci/cibw cache path speedup",
+      "url": "https://github.com/o-murphy/py-ballisticcalc/pull/345",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+        "url": "https://github.com/o-murphy",
+        "login": "o-murphy"
+      },
+      "createdAt": "2026-08-24T14:03:50Z",
+      "number": 345,
+      "changedFiles": 4,
+      "additions": 252,
+      "deletions": 205,
+      "baseRepository": {
+        "name": "py-ballisticcalc",
+        "url": "https://github.com/o-murphy/py-ballisticcalc",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "login": "o-murphy",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOHjeS288AAAABAzpRew",
+      "title": "Ci/cibw cache path speedup afsa1g",
+      "url": "https://github.com/o-murphy/py-ballisticcalc/pull/344",
+      "state": "CLOSED",
+      "mergedBy": null,
+      "createdAt": "2026-08-24T13:58:08Z",
+      "number": 344,
+      "changedFiles": 4,
+      "additions": 252,
+      "deletions": 205,
+      "baseRepository": {
+        "name": "py-ballisticcalc",
+        "url": "https://github.com/o-murphy/py-ballisticcalc",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "login": "o-murphy",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOUADQ488AAAABAza9ew",
+      "title": "Ci/usermod shared action",
+      "url": "https://github.com/o-murphy/micropython-wasm3/pull/3",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+        "url": "https://github.com/o-murphy",
+        "login": "o-murphy"
+      },
+      "createdAt": "2026-08-24T13:28:57Z",
+      "number": 3,
+      "changedFiles": 3,
+      "additions": 189,
+      "deletions": 240,
+      "baseRepository": {
+        "name": "micropython-wasm3",
+        "url": "https://github.com/o-murphy/micropython-wasm3",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "login": "o-murphy",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOKNavAc8AAAABAzYZHA",
+      "title": "Ci/usermod shared action",
+      "url": "https://github.com/o-murphy/a7p/pull/82",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+        "url": "https://github.com/o-murphy",
+        "login": "o-murphy"
+      },
+      "createdAt": "2026-08-24T13:24:27Z",
+      "number": 82,
+      "changedFiles": 4,
+      "additions": 299,
+      "deletions": 327,
+      "baseRepository": {
+        "name": "a7p",
+        "url": "https://github.com/o-murphy/a7p",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "login": "o-murphy",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOTDzPXs8AAAABAzWekQ",
+      "title": "Ci/usermod shared action",
+      "url": "https://github.com/ballistics-lab/micropython-bclibc/pull/16",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+        "url": "https://github.com/o-murphy",
+        "login": "o-murphy"
+      },
+      "createdAt": "2026-08-24T13:20:43Z",
+      "number": 16,
+      "changedFiles": 3,
+      "additions": 239,
+      "deletions": 302,
+      "baseRepository": {
+        "name": "micropython-bclibc",
+        "url": "https://github.com/ballistics-lab/micropython-bclibc",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/195828045?v=4",
+          "login": "ballistics-lab",
+          "url": "https://github.com/ballistics-lab"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOUBCskM8AAAABAzSJjg",
+      "title": "Finalize CHANGELOG.md and README.md for the v0.2.0 release",
+      "url": "https://github.com/ballistics-lab/micropython-native-ci/pull/2",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+        "url": "https://github.com/o-murphy",
+        "login": "o-murphy"
+      },
+      "createdAt": "2026-08-24T13:12:47Z",
+      "number": 2,
+      "changedFiles": 2,
+      "additions": 17,
+      "deletions": 20,
+      "baseRepository": {
+        "name": "micropython-native-ci",
+        "url": "https://github.com/ballistics-lab/micropython-native-ci",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/195828045?v=4",
+          "login": "ballistics-lab",
+          "url": "https://github.com/ballistics-lab"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOUBCskM8AAAABAzNyVQ",
+      "title": "feat/usermod shared actions",
+      "url": "https://github.com/ballistics-lab/micropython-native-ci/pull/1",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+        "url": "https://github.com/o-murphy",
+        "login": "o-murphy"
+      },
+      "createdAt": "2026-08-24T13:03:50Z",
+      "number": 1,
+      "changedFiles": 10,
+      "additions": 1054,
+      "deletions": 45,
+      "baseRepository": {
+        "name": "micropython-native-ci",
+        "url": "https://github.com/ballistics-lab/micropython-native-ci",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/195828045?v=4",
+          "login": "ballistics-lab",
+          "url": "https://github.com/ballistics-lab"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOUADQ488AAAABAucqWQ",
+      "title": "Build module",
+      "url": "https://github.com/o-murphy/micropython-wasm3/pull/1",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+        "url": "https://github.com/o-murphy",
+        "login": "o-murphy"
+      },
+      "createdAt": "2026-08-23T20:34:08Z",
+      "number": 1,
+      "changedFiles": 35,
+      "additions": 4489,
+      "deletions": 1,
+      "baseRepository": {
+        "name": "micropython-wasm3",
+        "url": "https://github.com/o-murphy/micropython-wasm3",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "login": "o-murphy",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOKNavAc8AAAABAuYjaA",
+      "title": "Ci/build action",
+      "url": "https://github.com/o-murphy/a7p/pull/81",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+        "url": "https://github.com/o-murphy",
+        "login": "o-murphy"
+      },
+      "createdAt": "2026-08-23T20:13:10Z",
+      "number": 81,
+      "changedFiles": 7,
+      "additions": 1019,
+      "deletions": 256,
+      "baseRepository": {
+        "name": "a7p",
+        "url": "https://github.com/o-murphy/a7p",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "login": "o-murphy",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOTDzPXs8AAAABAuX2Lw",
+      "title": "Ci/build action",
+      "url": "https://github.com/ballistics-lab/micropython-bclibc/pull/15",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+        "url": "https://github.com/o-murphy",
+        "login": "o-murphy"
+      },
+      "createdAt": "2026-08-23T20:09:32Z",
+      "number": 15,
+      "changedFiles": 9,
+      "additions": 947,
+      "deletions": 252,
+      "baseRepository": {
+        "name": "micropython-bclibc",
+        "url": "https://github.com/ballistics-lab/micropython-bclibc",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/195828045?v=4",
+          "login": "ballistics-lab",
+          "url": "https://github.com/ballistics-lab"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOFRrTuc8AAAABAuSyNQ",
+      "title": "Rework build: wasm3 submodule, src/ layout, uv + pyproject + abi3, CI",
+      "url": "https://github.com/wasm3/pywasm3/pull/4",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/1506708?u=03ac130af6ece3d92329b1a690ae65343128fdf8&v=4",
+        "url": "https://github.com/vshymanskyy",
+        "login": "vshymanskyy"
+      },
+      "createdAt": "2026-08-23T19:44:24Z",
+      "number": 4,
+      "changedFiles": 72,
+      "additions": 1886,
+      "deletions": 14896,
+      "baseRepository": {
+        "name": "pywasm3",
+        "url": "https://github.com/wasm3/pywasm3",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/58013131?v=4",
+          "login": "wasm3",
+          "url": "https://github.com/wasm3"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOToGZZ88AAAABAjN3Nw",
+      "title": "Feat/mcu reset api",
+      "url": "https://github.com/o-murphy/rp2040py/pull/47",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+        "url": "https://github.com/o-murphy",
+        "login": "o-murphy"
+      },
+      "createdAt": "2026-08-21T12:48:12Z",
+      "number": 47,
+      "changedFiles": 111,
+      "additions": 9016,
+      "deletions": 452,
+      "baseRepository": {
+        "name": "rp2040py",
+        "url": "https://github.com/o-murphy/rp2040py",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "login": "o-murphy",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOToGZZ88AAAABAiOUyQ",
+      "title": "docs: the backlog is seconds, not minutes - with the numbers behind it",
+      "url": "https://github.com/o-murphy/rp2040py/pull/46",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+        "url": "https://github.com/o-murphy",
+        "login": "o-murphy"
+      },
+      "createdAt": "2026-08-21T10:07:36Z",
+      "number": 46,
+      "changedFiles": 106,
+      "additions": 7492,
+      "deletions": 1362,
+      "baseRepository": {
+        "name": "rp2040py",
+        "url": "https://github.com/o-murphy/rp2040py",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "login": "o-murphy",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOToGZZ88AAAABAeZYMg",
+      "title": "docs: 0057's option B, in the record, the tracker and the changelog",
+      "url": "https://github.com/o-murphy/rp2040py/pull/45",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+        "url": "https://github.com/o-murphy",
+        "login": "o-murphy"
+      },
+      "createdAt": "2026-08-20T21:47:29Z",
+      "number": 45,
+      "changedFiles": 39,
+      "additions": 2490,
+      "deletions": 1147,
+      "baseRepository": {
+        "name": "rp2040py",
+        "url": "https://github.com/o-murphy/rp2040py",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "login": "o-murphy",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOToGZZ88AAAABAJ_x9w",
+      "title": "Stub/inter core fifo access exception and new boards",
+      "url": "https://github.com/o-murphy/rp2040py/pull/44",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+        "url": "https://github.com/o-murphy",
+        "login": "o-murphy"
+      },
+      "createdAt": "2026-08-18T14:16:22Z",
+      "number": 44,
+      "changedFiles": 31,
+      "additions": 2348,
+      "deletions": 86,
+      "baseRepository": {
+        "name": "rp2040py",
+        "url": "https://github.com/o-murphy/rp2040py",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "login": "o-murphy",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOToGZZ88AAAABAHPYbQ",
+      "title": "Feat/extend custom boards sdk",
+      "url": "https://github.com/o-murphy/rp2040py/pull/43",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+        "url": "https://github.com/o-murphy",
+        "login": "o-murphy"
+      },
+      "createdAt": "2026-08-18T07:44:00Z",
+      "number": 43,
+      "changedFiles": 60,
+      "additions": 5815,
+      "deletions": 595,
+      "baseRepository": {
+        "name": "rp2040py",
+        "url": "https://github.com/o-murphy/rp2040py",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "login": "o-murphy",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOToGZZ88AAAABAHFLWg",
+      "title": "Claude/robi docs record 0059 eyuzzg",
+      "url": "https://github.com/o-murphy/rp2040py/pull/42",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+        "url": "https://github.com/o-murphy",
+        "login": "o-murphy"
+      },
+      "createdAt": "2026-08-18T07:19:50Z",
+      "number": 42,
+      "changedFiles": 41,
+      "additions": 3522,
+      "deletions": 802,
+      "baseRepository": {
+        "name": "rp2040py",
+        "url": "https://github.com/o-murphy/rp2040py",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "login": "o-murphy",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOToGZZ88AAAABAHBezA",
+      "title": "Claude/docs record 0063 experiment s3yxb8",
+      "url": "https://github.com/o-murphy/rp2040py/pull/41",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+        "url": "https://github.com/o-murphy",
+        "login": "o-murphy"
+      },
+      "createdAt": "2026-08-18T07:10:05Z",
+      "number": 41,
+      "changedFiles": 19,
+      "additions": 1014,
+      "deletions": 111,
+      "baseRepository": {
+        "name": "rp2040py",
+        "url": "https://github.com/o-murphy/rp2040py",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "login": "o-murphy",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOTDzPXs8AAAABABMPFg",
+      "title": "chore: bump rp2040py",
+      "url": "https://github.com/ballistics-lab/micropython-bclibc/pull/14",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+        "url": "https://github.com/o-murphy",
+        "login": "o-murphy"
+      },
+      "createdAt": "2026-08-17T12:22:36Z",
+      "number": 14,
+      "changedFiles": 2,
+      "additions": 4,
+      "deletions": 4,
+      "baseRepository": {
+        "name": "micropython-bclibc",
+        "url": "https://github.com/ballistics-lab/micropython-bclibc",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/195828045?v=4",
+          "login": "ballistics-lab",
+          "url": "https://github.com/ballistics-lab"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOToGZZ88AAAABAAvWvg",
+      "title": "Fix/cibuildwheel",
+      "url": "https://github.com/o-murphy/rp2040py/pull/40",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+        "url": "https://github.com/o-murphy",
+        "login": "o-murphy"
+      },
+      "createdAt": "2026-08-17T11:17:39Z",
+      "number": 40,
+      "changedFiles": 11,
+      "additions": 384,
+      "deletions": 175,
+      "baseRepository": {
+        "name": "rp2040py",
+        "url": "https://github.com/o-murphy/rp2040py",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "login": "o-murphy",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOToGZZ87_0b0f",
+      "title": "Feat/custom board spec",
+      "url": "https://github.com/o-murphy/rp2040py/pull/39",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+        "url": "https://github.com/o-murphy",
+        "login": "o-murphy"
+      },
+      "createdAt": "2026-08-16T22:32:19Z",
+      "number": 39,
+      "changedFiles": 37,
+      "additions": 2276,
+      "deletions": 638,
+      "baseRepository": {
+        "name": "rp2040py",
+        "url": "https://github.com/o-murphy/rp2040py",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "login": "o-murphy",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOToGZZ87_x3qx",
+      "title": "Feat/extending cyw43 support",
+      "url": "https://github.com/o-murphy/rp2040py/pull/38",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+        "url": "https://github.com/o-murphy",
+        "login": "o-murphy"
+      },
+      "createdAt": "2026-08-16T18:46:07Z",
+      "number": 38,
+      "changedFiles": 47,
+      "additions": 2353,
+      "deletions": 512,
+      "baseRepository": {
+        "name": "rp2040py",
+        "url": "https://github.com/o-murphy/rp2040py",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "login": "o-murphy",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOToGZZ87_lqVM",
+      "title": "Feat/cyw43 tcp reflector",
+      "url": "https://github.com/o-murphy/rp2040py/pull/37",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+        "url": "https://github.com/o-murphy",
+        "login": "o-murphy"
+      },
+      "createdAt": "2026-08-15T23:12:12Z",
+      "number": 37,
+      "changedFiles": 13,
+      "additions": 2298,
+      "deletions": 36,
+      "baseRepository": {
+        "name": "rp2040py",
+        "url": "https://github.com/o-murphy/rp2040py",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "login": "o-murphy",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOToGZZ87_j0Gw",
+      "title": "Perf/cythonize pio modules",
+      "url": "https://github.com/o-murphy/rp2040py/pull/36",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+        "url": "https://github.com/o-murphy",
+        "login": "o-murphy"
+      },
+      "createdAt": "2026-08-15T20:10:27Z",
+      "number": 36,
+      "changedFiles": 30,
+      "additions": 1995,
+      "deletions": 748,
+      "baseRepository": {
+        "name": "rp2040py",
+        "url": "https://github.com/o-murphy/rp2040py",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "login": "o-murphy",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOToGZZ87_FbPH",
+      "title": "Device/epd2in9g",
+      "url": "https://github.com/o-murphy/rp2040py/pull/35",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+        "url": "https://github.com/o-murphy",
+        "login": "o-murphy"
+      },
+      "createdAt": "2026-08-14T12:09:27Z",
+      "number": 35,
+      "changedFiles": 14,
+      "additions": 782,
+      "deletions": 1,
+      "baseRepository": {
+        "name": "rp2040py",
+        "url": "https://github.com/o-murphy/rp2040py",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "login": "o-murphy",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOToGZZ87-3n7r",
+      "title": "refactor: main thread async loop, update docs, external devices API, stale fixes add partial CYW43 support and much more",
+      "url": "https://github.com/o-murphy/rp2040py/pull/34",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+        "url": "https://github.com/o-murphy",
+        "login": "o-murphy"
+      },
+      "createdAt": "2026-08-14T00:50:42Z",
+      "number": 34,
+      "changedFiles": 144,
+      "additions": 16525,
+      "deletions": 5396,
+      "baseRepository": {
+        "name": "rp2040py",
+        "url": "https://github.com/o-murphy/rp2040py",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "login": "o-murphy",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOToGZZ87-3kdn",
+      "title": "feat: extends board loading api",
+      "url": "https://github.com/o-murphy/rp2040py/pull/33",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+        "url": "https://github.com/o-murphy",
+        "login": "o-murphy"
+      },
+      "createdAt": "2026-08-14T00:47:32Z",
+      "number": 33,
+      "changedFiles": 125,
+      "additions": 15372,
+      "deletions": 4987,
+      "baseRepository": {
+        "name": "rp2040py",
+        "url": "https://github.com/o-murphy/rp2040py",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "login": "o-murphy",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOToGZZ87-3bki",
+      "title": "perf: extra cythonization, stale fixes, docs rework and partial CYW43 implementation",
+      "url": "https://github.com/o-murphy/rp2040py/pull/32",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+        "url": "https://github.com/o-murphy",
+        "login": "o-murphy"
+      },
+      "createdAt": "2026-08-14T00:39:39Z",
+      "number": 32,
+      "changedFiles": 109,
+      "additions": 12162,
+      "deletions": 5944,
+      "baseRepository": {
+        "name": "rp2040py",
+        "url": "https://github.com/o-murphy/rp2040py",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "login": "o-murphy",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOToGZZ879dBkK",
+      "title": "ci: auto pre-commit fix commit",
+      "url": "https://github.com/o-murphy/rp2040py/pull/31",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+        "url": "https://github.com/o-murphy",
+        "login": "o-murphy"
+      },
+      "createdAt": "2026-08-11T10:20:27Z",
+      "number": 31,
+      "changedFiles": 1,
+      "additions": 61,
+      "deletions": 2,
+      "baseRepository": {
+        "name": "rp2040py",
+        "url": "https://github.com/o-murphy/rp2040py",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "login": "o-murphy",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOToGZZ879a1pg",
+      "title": "Compat/termux mpremote",
+      "url": "https://github.com/o-murphy/rp2040py/pull/30",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+        "url": "https://github.com/o-murphy",
+        "login": "o-murphy"
+      },
+      "createdAt": "2026-08-11T08:56:06Z",
+      "number": 30,
+      "changedFiles": 8,
+      "additions": 275,
+      "deletions": 40,
+      "baseRepository": {
+        "name": "rp2040py",
+        "url": "https://github.com/o-murphy/rp2040py",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "login": "o-murphy",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOToGZZ879aq8Y",
+      "title": "Fix/rp2040py termux mpremote tests",
+      "url": "https://github.com/o-murphy/rp2040py/pull/29",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+        "url": "https://github.com/o-murphy",
+        "login": "o-murphy"
+      },
+      "createdAt": "2026-08-11T08:49:16Z",
+      "number": 29,
+      "changedFiles": 7,
+      "additions": 142,
+      "deletions": 48,
+      "baseRepository": {
+        "name": "rp2040py",
+        "url": "https://github.com/o-murphy/rp2040py",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "login": "o-murphy",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOOjDuxc79aRnm",
+      "title": "ci: auto pre-commit fixes",
+      "url": "https://github.com/o-murphy/yupy/pull/16",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+        "url": "https://github.com/o-murphy",
+        "login": "o-murphy"
+      },
+      "createdAt": "2026-08-11T08:33:00Z",
+      "number": 16,
+      "changedFiles": 1,
+      "additions": 45,
+      "deletions": 1,
+      "baseRepository": {
+        "name": "yupy",
+        "url": "https://github.com/o-murphy/yupy",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "login": "o-murphy",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOToGZZ879Hbq3",
+      "title": "Fix Android CI test failure + update mpremote/Cython docs from device testing",
+      "url": "https://github.com/o-murphy/rp2040py/pull/28",
+      "state": "CLOSED",
+      "mergedBy": null,
+      "createdAt": "2026-08-10T16:43:16Z",
+      "number": 28,
+      "changedFiles": 6,
+      "additions": 133,
+      "deletions": 35,
+      "baseRepository": {
+        "name": "rp2040py",
+        "url": "https://github.com/o-murphy/rp2040py",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "login": "o-murphy",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOToGZZ878_2j-",
+      "title": "fix: mpremote repl over socket workaround",
+      "url": "https://github.com/o-murphy/rp2040py/pull/27",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+        "url": "https://github.com/o-murphy",
+        "login": "o-murphy"
+      },
+      "createdAt": "2026-08-10T12:23:34Z",
+      "number": 27,
+      "changedFiles": 8,
+      "additions": 300,
+      "deletions": 35,
+      "baseRepository": {
+        "name": "rp2040py",
+        "url": "https://github.com/o-murphy/rp2040py",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "login": "o-murphy",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOToGZZ8788gpL",
+      "title": "Feat/mpremote support",
+      "url": "https://github.com/o-murphy/rp2040py/pull/26",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+        "url": "https://github.com/o-murphy",
+        "login": "o-murphy"
+      },
+      "createdAt": "2026-08-10T10:11:53Z",
+      "number": 26,
+      "changedFiles": 27,
+      "additions": 2675,
+      "deletions": 313,
+      "baseRepository": {
+        "name": "rp2040py",
+        "url": "https://github.com/o-murphy/rp2040py",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "login": "o-murphy",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOToGZZ877_-NM",
+      "title": "Feat/littlefs dump",
+      "url": "https://github.com/o-murphy/rp2040py/pull/24",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+        "url": "https://github.com/o-murphy",
+        "login": "o-murphy"
+      },
+      "createdAt": "2026-08-07T10:59:24Z",
+      "number": 24,
+      "changedFiles": 42,
+      "additions": 2905,
+      "deletions": 348,
+      "baseRepository": {
+        "name": "rp2040py",
+        "url": "https://github.com/o-murphy/rp2040py",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "login": "o-murphy",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOToGZZ877o1-m",
+      "title": "Fix/asyncio idle yield latency",
+      "url": "https://github.com/o-murphy/rp2040py/pull/23",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+        "url": "https://github.com/o-murphy",
+        "login": "o-murphy"
+      },
+      "createdAt": "2026-08-06T14:30:14Z",
+      "number": 23,
+      "changedFiles": 41,
+      "additions": 2148,
+      "deletions": 802,
+      "baseRepository": {
+        "name": "rp2040py",
+        "url": "https://github.com/o-murphy/rp2040py",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "login": "o-murphy",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOToGZZ877oe34",
+      "title": "Platform/android",
+      "url": "https://github.com/o-murphy/rp2040py/pull/22",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+        "url": "https://github.com/o-murphy",
+        "login": "o-murphy"
+      },
+      "createdAt": "2026-08-06T14:19:05Z",
+      "number": 22,
+      "changedFiles": 20,
+      "additions": 466,
+      "deletions": 277,
+      "baseRepository": {
+        "name": "rp2040py",
+        "url": "https://github.com/o-murphy/rp2040py",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "login": "o-murphy",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOHjeS2877hNH9",
+      "title": "Docs/pyodide examples",
+      "url": "https://github.com/o-murphy/py-ballisticcalc/pull/341",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+        "url": "https://github.com/o-murphy",
+        "login": "o-murphy"
+      },
+      "createdAt": "2026-08-06T09:51:59Z",
+      "number": 341,
+      "changedFiles": 6,
+      "additions": 346,
+      "deletions": 22,
+      "baseRepository": {
+        "name": "py-ballisticcalc",
+        "url": "https://github.com/o-murphy/py-ballisticcalc",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "login": "o-murphy",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOHjeS2877UBuw",
+      "title": "add: native wheels for pyodide",
+      "url": "https://github.com/o-murphy/py-ballisticcalc/pull/340",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+        "url": "https://github.com/o-murphy",
+        "login": "o-murphy"
+      },
+      "createdAt": "2026-08-05T22:24:51Z",
+      "number": 340,
+      "changedFiles": 5,
+      "additions": 33,
+      "deletions": 6,
+      "baseRepository": {
+        "name": "py-ballisticcalc",
+        "url": "https://github.com/o-murphy/py-ballisticcalc",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "login": "o-murphy",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOHjeS2877FEM-",
+      "title": "Platform/android",
+      "url": "https://github.com/o-murphy/py-ballisticcalc/pull/339",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+        "url": "https://github.com/o-murphy",
+        "login": "o-murphy"
+      },
+      "createdAt": "2026-08-05T13:05:00Z",
+      "number": 339,
+      "changedFiles": 9,
+      "additions": 115,
+      "deletions": 24,
+      "baseRepository": {
+        "name": "py-ballisticcalc",
+        "url": "https://github.com/o-murphy/py-ballisticcalc",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "login": "o-murphy",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOToGZZ876z7mw",
+      "title": "Perf/threading model",
+      "url": "https://github.com/o-murphy/rp2040py/pull/21",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+        "url": "https://github.com/o-murphy",
+        "login": "o-murphy"
+      },
+      "createdAt": "2026-08-04T23:38:38Z",
+      "number": 21,
+      "changedFiles": 12,
+      "additions": 772,
+      "deletions": 149,
+      "baseRepository": {
+        "name": "rp2040py",
+        "url": "https://github.com/o-murphy/rp2040py",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "login": "o-murphy",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOToGZZ876h74_",
+      "title": "Feat/core native mode",
+      "url": "https://github.com/o-murphy/rp2040py/pull/20",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+        "url": "https://github.com/o-murphy",
+        "login": "o-murphy"
+      },
+      "createdAt": "2026-08-04T12:11:59Z",
+      "number": 20,
+      "changedFiles": 48,
+      "additions": 6379,
+      "deletions": 2216,
+      "baseRepository": {
+        "name": "rp2040py",
+        "url": "https://github.com/o-murphy/rp2040py",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "login": "o-murphy",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOE9yZA876KWvt",
+      "title": "feat(ssi): emulate JEDEC SPI-NOR flash write commands, so littlefs can actually write",
+      "url": "https://github.com/wokwi/rp2040js/pull/156",
+      "state": "OPEN",
+      "mergedBy": null,
+      "createdAt": "2026-08-03T18:25:58Z",
+      "number": 156,
+      "changedFiles": 10,
+      "additions": 664,
+      "deletions": 59,
+      "baseRepository": {
+        "name": "rp2040js",
+        "url": "https://github.com/wokwi/rp2040js",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/56967200?v=4",
+          "login": "wokwi",
+          "url": "https://github.com/wokwi"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOToGZZ876I7re",
+      "title": "Fix/simulator",
+      "url": "https://github.com/o-murphy/rp2040py/pull/19",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+        "url": "https://github.com/o-murphy",
+        "login": "o-murphy"
+      },
+      "createdAt": "2026-08-03T17:33:14Z",
+      "number": 19,
+      "changedFiles": 5,
+      "additions": 198,
+      "deletions": 21,
+      "baseRepository": {
+        "name": "rp2040py",
+        "url": "https://github.com/o-murphy/rp2040py",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "login": "o-murphy",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOToGZZ876H2n8",
+      "title": "Feat/ssi rw support",
+      "url": "https://github.com/o-murphy/rp2040py/pull/18",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+        "url": "https://github.com/o-murphy",
+        "login": "o-murphy"
+      },
+      "createdAt": "2026-08-03T16:54:38Z",
+      "number": 18,
+      "changedFiles": 14,
+      "additions": 867,
+      "deletions": 34,
+      "baseRepository": {
+        "name": "rp2040py",
+        "url": "https://github.com/o-murphy/rp2040py",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "login": "o-murphy",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOToGZZ876Apg1",
+      "title": "fix: resolve short version tags by semver precedence, not string prefix",
+      "url": "https://github.com/o-murphy/rp2040py/pull/17",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+        "url": "https://github.com/o-murphy",
+        "login": "o-murphy"
+      },
+      "createdAt": "2026-08-03T12:55:54Z",
+      "number": 17,
+      "changedFiles": 6,
+      "additions": 123,
+      "deletions": 4,
+      "baseRepository": {
+        "name": "rp2040py",
+        "url": "https://github.com/o-murphy/rp2040py",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "login": "o-murphy",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOToGZZ876AVx9",
+      "title": "feat: support alternate bootrom revisions via --bootrom",
+      "url": "https://github.com/o-murphy/rp2040py/pull/16",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+        "url": "https://github.com/o-murphy",
+        "login": "o-murphy"
+      },
+      "createdAt": "2026-08-03T12:44:56Z",
+      "number": 16,
+      "changedFiles": 16,
+      "additions": 453,
+      "deletions": 87,
+      "baseRepository": {
+        "name": "rp2040py",
+        "url": "https://github.com/o-murphy/rp2040py",
+        "isPrivate": false,
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/73843436?u=20b28ac8bbba7b2be9208111a9a4f901ea566b64&v=4",
+          "login": "o-murphy",
+          "url": "https://github.com/o-murphy"
+        }
+      }
+    }
+  ],
+  "open": 3,
+  "closed": 7,
+  "merged": 90,
+  "totalCount": 100
+}

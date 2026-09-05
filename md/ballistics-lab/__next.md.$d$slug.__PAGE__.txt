@@ -1,0 +1,26 @@
+1:"$Sreact.fragment"
+2:I[31825,["/_next/static/chunks/3z5452ie-tnfp.js","/_next/static/chunks/3myvedv0-roa4.js","/_next/static/chunks/2l4b96e1w27n5.js","/_next/static/chunks/1zvmqwzs17ikf.js"],"MdPageClient"]
+3:I[97367,["/_next/static/chunks/3z5452ie-tnfp.js"],"OutletBoundary"]
+4:"$Sreact.suspense"
+8:I[97367,["/_next/static/chunks/3z5452ie-tnfp.js"],"ViewportBoundary"]
+9:I[97367,["/_next/static/chunks/3z5452ie-tnfp.js"],"MetadataBoundary"]
+a:I[27201,["/_next/static/chunks/3z5452ie-tnfp.js"],"IconMark"]
+c:I[39756,["/_next/static/chunks/3z5452ie-tnfp.js"],"default"]
+d:I[37457,["/_next/static/chunks/3z5452ie-tnfp.js"],"default"]
+11:I[63178,["/_next/static/chunks/3z5452ie-tnfp.js"],"ThemeProvider"]
+12:I[2227,["/_next/static/chunks/3z5452ie-tnfp.js","/_next/static/chunks/2l4b96e1w27n5.js"],"Template"]
+:HL["/_next/static/chunks/1v9aoxqa09djz.css","style"]
+7:X
+f:X
+f:C
+0:{"buildId":"Tg9EzfD6T78YY_wjhU7vg","data":[{"rsc":["$","$1","c",{"children":[["$","$L2",null,{"slug":"ballistics-lab"}],[["$","script","script-0",{"src":"/_next/static/chunks/3myvedv0-roa4.js","async":true}],["$","script","script-1",{"src":"/_next/static/chunks/2l4b96e1w27n5.js","async":true}],["$","script","script-2",{"src":"/_next/static/chunks/1zvmqwzs17ikf.js","async":true}]],["$","$L3",null,{"children":["$","$4",null,{"name":"Next.MetadataOutlet","children":"$@5"}]}]]}],"isPartial":"$@6","staleTime":"$7","varyParams":null},{"rsc":["$","$1","h",{"children":[null,["$","$L8",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]}],["$","div",null,{"hidden":true,"children":["$","$L9",null,{"children":["$","$4",null,{"name":"Next.Metadata","children":[["$","meta","0",{"name":"description","content":"Portfolio site"}],["$","link","1",{"rel":"icon","href":"/favicon.ico?favicon.2vob68tjqpejf.ico","sizes":"256x256","type":"image/x-icon"}],["$","$La","2",{}]]}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],"isPartial":"$@b","staleTime":"$7","varyParams":null},{"rsc":["$","$1","c",{"children":[null,["$","$Lc",null,{"parallelRouterKey":"children","template":["$","$Ld",null,{}]}]]}],"isPartial":"$@e","staleTime":"$7","varyParams":"$f"},{"rsc":["$","$1","c",{"children":[null,["$","$Lc",null,{"parallelRouterKey":"children","template":["$","$Ld",null,{}]}]]}],"isPartial":"$@10","staleTime":"$7","varyParams":"$f"},{"rsc":["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/1v9aoxqa09djz.css","precedence":"next"}],["$","script","script-0",{"src":"/_next/static/chunks/3z5452ie-tnfp.js","async":true}]],["$","html",null,{"lang":"en","className":"ibm_plex_mono_a6d9e34e-module__st7foq__variable","suppressHydrationWarning":true,"children":["$","body",null,{"children":["$","$L11",null,{"attribute":"class","defaultTheme":"system","enableSystem":true,"children":["$","$Lc",null,{"parallelRouterKey":"children","template":["$","$Ld",null,{}],"notFound":[["$","$L12",null,{"children":["$","div",null,{"className":"w-full max-w-4xl p-8 text-center","children":["$","h1",null,{"className":"text-xl font-bold","children":"404 - Page Not Found"}]}]}],[]]}]}]}]}]]}],"isPartial":"$@13","staleTime":"$7","varyParams":null}],"isUpgradeableISRFallback":false,"a":"$@14","rootVaryParams":null,"needsRuntimeRequest":"$@15"}
+5:null
+7:300
+15:true
+7:C
+14:0
+b:"$undefined"
+e:"$undefined"
+10:"$undefined"
+13:"$undefined"
+6:"$undefined"
