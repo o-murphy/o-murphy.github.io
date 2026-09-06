@@ -49,7 +49,7 @@ export default function Issues({ issues, limit = 20, id }: IssuesProps) {
                 </span>
             </h2>
             <div className="border border-gray-400 dark:border-gray-700 rounded-lg bg-white-50 dark:bg-background overflow-hidden">
-                <div className="space-y-3 max-h-96 overflow-y-auto p-4">
+                <div className="space-y-3 max-h-96 overflow-y-auto overflow-x-hidden p-4">
                     {displayIssues.map((issue) => (
                         <div
                             key={issue.url}
@@ -101,9 +101,11 @@ export default function Issues({ issues, limit = 20, id }: IssuesProps) {
                                 </div>
 
                                 {issue.assignees.nodes.length > 0 && (
-                                    <div className="mt-2 text-xs text-gray-500 dark:text-gray-400">
-                                        <Icon icon="octicon:people-16" className="w-4 h-4" />{' '}
-                                        {issue.assignees.nodes.map(getAssigneeName).join(', ')}
+                                    <div className="mt-2 flex items-start gap-1 text-xs text-gray-500 dark:text-gray-400">
+                                        <Icon icon="octicon:people-16" className="w-4 h-4 shrink-0 mt-0.5" />
+                                        <span className="min-w-0 break-words">
+                                            {issue.assignees.nodes.map(getAssigneeName).join(', ')}
+                                        </span>
                                     </div>
                                 )}
                             </Link>

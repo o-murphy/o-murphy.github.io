@@ -50,7 +50,7 @@ export default function PullRequests({ pullRequests, limit = 20, id }: PullReque
                 </span>
             </h2>
             <div className="border border-gray-400 dark:border-gray-700 rounded-lg bg-white-50 dark:bg-background overflow-hidden">
-                <div className="space-y-3 max-h-96 overflow-y-auto p-4">
+                <div className="space-y-3 max-h-96 overflow-y-auto overflow-x-hidden p-4">
                     {displayPRs.map((pr) => (
                         <div
                             key={pr.url}
