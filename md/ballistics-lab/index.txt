@@ -1,0 +1,32 @@
+1:"$Sreact.fragment"
+2:"/_next/static/chunks/3e483vd26ml0o.js"
+3:I[63178,["$2"],"ThemeProvider"]
+4:I[39756,["$2"],"default"]
+5:I[37457,["$2"],"default"]
+6:"/_next/static/chunks/2n4kiuwby3-xr.js"
+7:I[2227,["$2","$6"],"Template"]
+d:I[97367,["$2"],"OutletBoundary"]
+e:"$Sreact.suspense"
+10:"ViewportBoundary"
+11:I[97367,["$2"],"$10"]
+13:"MetadataBoundary"
+14:I[97367,["$2"],"$13"]
+16:I[68027,["$2"],"default",1]
+:HL["/_next/static/chunks/16q-_5lzfuy5t.css","style"]
+:HL["/_next/static/media/99e609270109b47d-s.p.40sczeszzbjw1.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/a7e15459c1805da0-s.p.3y9b8znjr2455.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/effe91970fc4db64-s.p.0oace-s_gkfks.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+9:X
+b:[["children",{"s":"__PAGE__","h":512,"d":{"r":["$","$1","c",{"children":["$Lc",[["$","script","script-0",{"src":"/_next/static/chunks/3v63mfbj8vq1w.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/_next/static/chunks/2n4kiuwby3-xr.js","async":true,"nonce":"$undefined"}],["$","script","script-2",{"src":"/_next/static/chunks/3x3ln-hyls8vq.js","async":true,"nonce":"$undefined"}]],["$","$Ld",null,{"children":["$","$e",null,{"name":"Next.MetadataOutlet","children":"$@f"}]}]]}],"p":false,"v":null}}]]
+a:[["children",{"s":{"n":"slug","t":"d","k":"ballistics-lab","s":[]},"h":512,"d":{"r":["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],"p":false,"v":"$9"},"c":"$Qb"}]]
+8:[["children",{"s":"md","h":512,"d":{"r":["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],"p":false,"v":"$9"},"c":"$Qa"}]]
+0:{"P":null,"c":["","md","ballistics-lab",""],"q":"","i":false,"t":{"t":{"s":"","h":528,"d":{"r":["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/16q-_5lzfuy5t.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/3e483vd26ml0o.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"en","className":"st7foq_variable","suppressHydrationWarning":true,"children":["$","body",null,{"children":["$","$L3",null,{"attribute":"class","defaultTheme":"system","enableSystem":true,"children":["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","$L7",null,{"children":["$","div",null,{"className":"w-full max-w-4xl p-8 text-center","children":["$","h1",null,{"className":"text-xl font-bold","children":"404 - Page Not Found"}]}]}],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}]}]}]]}],"p":false,"v":null},"c":"$Q8"},"h":{"r":["$","$1","h",{"children":[null,["$","$L11",null,{"children":"$L12"}],["$","$L14",null,{"children":[["$","div",null,{"hidden":true,"children":["$","$e",null,{"name":"Next.Metadata","children":"$L15"}]}],null]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],"p":false,"v":null}},"m":"$undefined","G":["$16",[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/16q-_5lzfuy5t.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]]],"S":true,"r":"$undefined","s":"$undefined","a":"$undefined","l":"$undefined","p":"$undefined","d":"$undefined","b":"B0VTyqvLcR0jSxaSR6hFu"}
+17:"/_next/static/chunks/3v63mfbj8vq1w.js"
+18:"/_next/static/chunks/3x3ln-hyls8vq.js"
+19:I[31825,["$2","$17","$6","$18"],"MdPageClient"]
+9:C
+c:["$","$L19",null,{"slug":"ballistics-lab"}]
+12:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+1a:I[27201,["$2"],"IconMark"]
+f:null
+15:[["$","meta","0",{"name":"description","content":"Portfolio site"}],["$","link","1",{"rel":"icon","href":"/favicon.ico?favicon.2vob68tjqpejf.ico","sizes":"256x256","type":"image/x-icon"}],["$","$L1a","2",{}]]
