@@ -122,11 +122,6 @@
             "icon": "instagram"
         },
         {
-            "name": "LinkedIn",
-            "url": "https://www.linkedin.com/in/o--murphy/",
-            "icon": "linkedin"
-        },
-        {
             "name": "Email",
             "url": "mailto:thehelixpg@gmail.com?subject=[Inquiry]%20o-murphy.net",
             "icon": "envelope"
@@ -144,13 +139,6 @@
             "name": "Telegram",
             "url": "https://t.me/beanyone/",
             "icon": "telegram",
-            "color": "text-gray-700 dark:text-gray-300",
-            "bgColor": ""
-        },
-        {
-            "name": "LinkedIn",
-            "url": "https://www.linkedin.com/in/o--murphy/",
-            "icon": "linkedin",
             "color": "text-gray-700 dark:text-gray-300",
             "bgColor": ""
         },
